@@ -33,7 +33,7 @@
         <prettify replaceBy=' '>\n>LOC_.*\n|\n|\r|\t|\xa0</prettify>
     </database>
     <database dbname="rapdb" type="text/html" method="GET">
-        <link stern="http://rapdb.dna.affrc.go.jp/tools/search/run?type=locus&amp;" aft="&amp;submit=Search&amp;id=on&amp;size=10"/>
+        <link stern="https://rapdb.dna.affrc.go.jp/tools/search/run?type=locus&amp;" aft="&amp;submit=Search&amp;id=on&amp;size=10"/>
         <headers>
             <header type="">ID</header>
             <header type="">Description</header>
