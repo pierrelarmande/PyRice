@@ -18,7 +18,7 @@
             <field>rapId</field>
         </fields>
         <data_struct indicator="table" identifier="class" identification_string="table_summery_list table_nowrapTh max_width_element" line_separator="tr" cell_separator="td"/>
-        <prettify replaceBy=''>\n>LOC_.*\n|\n|\r|\t</prettify>
+        <prettify replaceBy='\s'>\n>LOC_.*\n|\n|\r|\t</prettify>
     </database>
     <database dbname="rnd" type="text/html" method="GET">
         <link stern="http://bis.zju.edu.cn/ricenetdb/genenetwork.php?" aft=""/>
@@ -49,7 +49,7 @@
             <field op="=">keyword</field>
         </fields>
         <data_struct indicator="table" identifier="id" identification_string="result_table" line_separator="tr" cell_separator="td"/>
-        <prettify replaceBy=''>\n>LOC_.*\n|\n|\r|\t</prettify>
+        <prettify replaceBy='\s'>\n>LOC_.*\n|\n|\r|\t</prettify>
     </database>
     <database dbname="gramene" type="text/JSON" method="GET" normalize="false">
         <link stern="http://data.gramene.org/v58/genes?" aft=""/>
@@ -72,7 +72,7 @@
             <field op="=">term</field>
         </fields>
         <data_struct indicator="table" identifier="id" identification_string="dataTable" line_separator="tr" cell_separator="td"/>
-        <prettify replaceBy=''>\n>LOC_.*\n|\n|\r|\t</prettify>
+        <prettify replaceBy='\s'>\n>LOC_.*\n|\n|\r|\t</prettify>
     </database>
     <database dbname="plntfdb" type="text/html" method="GET">
         <link stern="http://plntfdb.bio.uni-potsdam.de/v3.0/get_id.php?" aft=""/>
@@ -85,7 +85,7 @@
             <field op="=">seq_id</field>
         </fields>
         <data_struct indicator="div" identifier="id" identification_string="subcontent" line_separator="tr" cell_separator="td"/>
-        <prettify replaceBy=''>\n>LOC_.*\n|\n|\r|\t</prettify>
+        <prettify replaceBy='\s'>\n>LOC_.*\n|\n|\r|\t</prettify>
     </database>
     <database dbname="funricegene_genekeywords" type="text/csv" method="GET" encoding="Windows-1252" deli="&#009;">
         <link stern="https://funricegenes.github.io/geneKeyword.table.txt" aft=""/>
@@ -147,7 +147,7 @@
             <field op="=">orf</field>
         </fields>
         <data_struct indicator="div" identifier="class" identification_string="content" line_separator="div" cell_separator="pre"/>
-        <prettify replaceBy=''>\n>LOC_.*\n|\n|\r|\t|\*</prettify>
+        <prettify replaceBy='\s'>\n>LOC_.*\n|\n|\r|\t|\*</prettify>
     </database>
     <database dbname="planttfdb" type="text/csv" method="downloadable">
         <link stern="http://planttfdb.cbi.pku.edu.cn/download.php" aft=""/>
@@ -169,7 +169,7 @@
             <field lowercase="true" op=":">gene</field>
         </fields>
         <data_struct indicator="tbody" identifier="" identification_string="" line_separator="tr" cell_separator="td"/>
-        <prettify replaceBy=''>\n>LOC_.*\n|\n|\r|\t</prettify>
+        <prettify replaceBy='\s'>\n>LOC_.*\n|\n|\r|\t</prettify>
     </database>
     <database dbname="uniprot_getprotein" type="text/html" method="GET">
         <link stern="http://www.uniprot.org/uniprot/" aft=".rdf"/>
@@ -180,7 +180,7 @@
             <field lowercase="true" op=""></field>
         </fields>
         <data_struct indicator="tbody" identifier="" identification_string="" line_separator="tr" cell_separator="td"/>
-        <prettify replaceBy=''>\n>LOC_.*\n|\n|\r|\t</prettify>
+        <prettify replaceBy='\s'>\n>LOC_.*\n|\n|\r|\t</prettify>
     </database>
     <database dbname="kegg" type="text/html" method="GET">
         <link stern="http://rest.kegg.jp/" aft=""/>
@@ -191,7 +191,7 @@
             <field lowercase="true" op="/">get</field>
         </fields>
         <data_struct indicator="html" identifier="" line_separator="body" cell_separator="p"/>
-        <prettify replaceBy=''>((^(?!DEFINITION.*).*)&(^(?!DESCRIPTION.*).*))|\n|(DEFINITION *)|(DESCRIPTION *)</prettify>
+        <prettify replaceBy='\s'>((^(?!DEFINITION.*).*)&(^(?!DESCRIPTION.*).*))|\n|(DEFINITION *)|(DESCRIPTION *)</prettify>
     </database>
     <database dbname="eggnog_og" type="text/JSON" method="GET" normalize="true">
         <link stern="http://eggnogapi.embl.de/nog_data/json/" aft=""/>
@@ -225,6 +225,6 @@
             <field lowercase="true" op=":">ko</field>
         </fields>
         <data_struct indicator="html" identifier="" line_separator="body" cell_separator="p"/>
-        <prettify replaceBy=''>((^(?!DEFINITION.*).*)&(^(?!DESCRIPTION.*).*))|\n|(DEFINITION *)|(DESCRIPTION *)</prettify>
+        <prettify replaceBy='\s'>((^(?!DEFINITION.*).*)&(^(?!DESCRIPTION.*).*))|\n|(DEFINITION *)|(DESCRIPTION *)</prettify>
     </database>
 </databases>

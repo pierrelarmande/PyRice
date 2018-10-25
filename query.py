@@ -86,7 +86,7 @@ def query(db, qfields=[], outputFormat="dict", outputFile=None, verbose=False):
                 dict = {}
                 i = 0
                 for dataCell in dataLine.findAll(database_description[0].findAll("data_struct")[0]["cell_separator"]):
-                    dataFormat = reg.sub(replaceBy, dataCell.text)
+                    dataFormat = regex.sub(replaceBy+'+',' ',dataCell.text)
                     if(i<headers.__len__()):
                         dict[headers[i]] = dataFormat
                     i += 1
