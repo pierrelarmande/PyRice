@@ -18,8 +18,7 @@ Return a dictionary in snpseek database
 1. dbs : list of database,default is search gene in all of "msu7","rap","iric"
 
 ```py
-multiquery = MultiQuery().
-multiquery.query_all(idents=[],locs=[],dbs=[])
+MultiQuery().query_all(idents=[],locs=[],dbs=[])
 ```
 Return a dictionary in databases follow idents and locs
 1. idents: list of idents
