@@ -1,21 +1,41 @@
-# Python query engine for rRice R package
+# Python query engine for PyRice package
 
 ## Function
 
 ### Query Module
 
 ```py
-query(db, qfields=[])
+MultiQuery().check_gene(idents=["Os08g0164400", "Os07g0586200"],locs=["LOC_Os10g01006", "LOC_Os07g39750"])
 ```
+Return 2 set :id and loc and 2 dict: id-loc and loc-id (in "/support/id_dict" and "/support/loc_dict")
+1. idents: list of idents
+2. locs: list of locs
 
-Return a list corresponding to the query.
+```py
+MultiQuery().search_gene(chro="chr01", start_pos="1",end_pos="20000",dbs=["msu7"])
+```
+Return a dictionary in snpseek database
+1. dbs : list of database,default is search gene in all of "msu7","rap","iric"
 
-Arguments:
+```py
+multiquery = MultiQuery().
+multiquery.query_all(idents=["Os08g0164400", "Os07g0586200"],locs=["LOC_Os10g01006", "LOC_Os07g39750"],dbs=[""oryzabase", "Gramene""])
+```
+Return a dictionary in databases follow idents and locs
+1. idents: list of idents
+2. locs: list of locs
+3. dbs : list of database,default is search gene in all of "oryzabase", "Gramene", "funricegene_genekeywords",
+                       "funricegene_faminfo", "msu", "rapdb","ic4r",
+                       "funricegene_geneinfo"
 
-1. db: Database name, any database name that is exist in the database description file. Throw an exception if no db found under the name.
-1. qfields: list of argument for said database. The order of these argument follow the order of fields listed in the database description file.
-1. outputFormat: desired output format, Python Dictionary by default. Support CSV (csv), Excel (excel), Pandas' DataFrame (pandas).
-1. outputDestination: path to output file. Required if outputFormat is not default.
+```py
+multiquery = MultiQuery()
+multiquery.query_all(idents=["Os08g0164400", "Os07g0586200"],locs=["LOC_Os10g01006", "LOC_Os07g39750"],dbs="all")
+multiquery.save(folder_path)
+```
+Save file after query
+1. folder_path/data/db.csv: save all gene in all database in one file (.csv)
+2. folder_path/geng/...: save each gene in all database (.txt)
 
 ## Structure of Database description
 
@@ -35,30 +55,45 @@ Arguments:
 </database>
 ```
 
-## Example
+## Example run in Pycharm
 
-### Example of system called query (Oryzabase) - Default output
-
-```bash
-python "run.py" oryzabase Os03g0149100
-```
-
-### Example of system called query - Oryzabase - Output to Excel file
+### Example of system check gene
 
 ```bash
-python "run.py" oryzabase Os03g0149100 -f excel -o rice.xlsx
+set_ids, set_locs, idents, locs = MultiQuery().check_gene(idents=["Os08g0164400", "Os07g0586200"],locs=["LOC_Os10g01006", "LOC_Os07g39750","LOC_Os10g13914"])
+```
+```bash
+Set of ids {'Os07g0586200', 'Os10g0206500', 'Os08g0164400'} 
+Set of locs {'LOC_Os08g06740', 'LOC_Os07g39750', 'LOC_Os08g06760'}
 ```
 
-### Example of query (Oryzabase)
+### Example of system search gene in database snpeek
 
-```py
-query.query("oryzabase", ["Os03g0149100"])
+```bash
+ test = MultiQuery().search_gene(chro="chr01", start_pos="1",
+                                    end_pos="10000",dbs="all")
+```
+```bash
+Database: snpseek
+rap [{'contig': 'chr01', 'fmin': 2982, 'fmax': 10815, 'uniquename': 'Os01g0100100', 'strand': 1, 'msu7Name': 'LOC_Os01g01010', 'raprepName': 'Os01g0100100', 'rappredName': None, 'iricname': 'OsNippo01g010050', 'fgeneshName': 'chr01-gene_1', 'description': 'RabGAP/TBC domain containing protein. (Os01t0100100-01)'}]
+iric [{'contig': 'chr01', 'fmin': 2902, 'fmax': 10817, 'uniquename': 'OsNippo01g010050', 'strand': 1, 'msu7Name': 'LOC_Os01g01010', 'raprepName': 'Os01g0100100', 'rappredName': None, 'iricname': 'OsNippo01g010050', 'fgeneshName': 'chr01-gene_1', 'description': 'RabGAP/TBC domain containing protein. (Os01t0100100-01)'}]
+msu7 [{'contig': 'chr01', 'fmin': 2902, 'fmax': 10817, 'uniquename': 'LOC_Os01g01010', 'strand': 1, 'msu7Name': 'LOC_Os01g01010', 'raprepName': 'Os01g0100100', 'rappredName': None, 'iricname': 'OsNippo01g010050', 'fgeneshName': 'chr01-gene_1', 'description': 'TBC domain containing protein, expressed'}]
 ```
 
-### Example of JSON response (Oryzabase)
+### Example of query all database 
 
-```json
-{'CGSNL Gene Symbol': 'CRL1', 'Gene symbol synonym(s)': 'crl1 crl1* ARL1 ARL1/CRL1 OsLBD3-2 LBD3-2', 'CGSNL Gene Name': 'CROWN ROOTLESS 1', 'Gene name synonym(s)': 'crown rootless-1 CROWN ROOTLESS1 Crown rootless1 ADVENTITIOUS ROOTLESS1 ADVENTITIOUS ROOTLESS 1 lateral organ boundaries domain 3-2', 'Chr. No.': '3', 'Trait Class': ' Vegetative organ - Root', 'Gene Ontology': 'GO:0009888 - tissue developmentGO:0009887 - organ morphogenesis', 'Trait Ontology': 'TO:0000227 - root lengthTO:0000084 - root number', 'Plant Ontology': 'PO:0009005 - root ', 'RAP ID': 'Os03g0149100Oryzabase(IRGSP 1.0/Build5)Rap(IRGSP 1.0/Build5)', 'Mutant Image': ''}
+```bash
+multi_query = MultiQuery()
+test = multi_query.query_all(idents=["Os08g0164400", "Os07g0586200","Os01g0100900"],locs=["LOC_Os10g01006", "LOC_Os07g39750","LOC_Os10g13914","LOC_Os01g01019"],dbs='all')
+#save_file
+multi_query.save_file("./result/")
+```
+One gene (more detail in file)
+```bash
+Gene: Os01g0100200-LOC_Os01g01019
+Gramene [{'_id': 'Os01g0100200', 'name': 'Os01g0100200', 'description': 'Conserved hypothetical protein. (Os01t0100200-01)', 'biotype': 'protein_coding', 'taxon_id': 39947, 'system_name': 'oryza_sativa', 'db_type': 'core', 'gene_idx': 2, 'location': {'region': '1', 'start': 11218, 'end': 12435, 'strand': 1, 'map': 'GCA_001433935.1'}, 'xrefs': [{'db': 'UniParc', 'ids': ['UPI000043A2EB']}, {'db': 'Uniprot/SPTREMBL', 'ids': ['Q655L9']}, {'db': 'protein_id', 'ids': ['EEE53690.1', 'BAD45493.1', 'BAH90846.1', 'BAE79747.1', 'BAS69910.1']}], 'gene_structure': {'exons': [{'id': 'Os01t0100200-01.exon1', 'start': 1, 'end': 843}, {'id': 'Os01t0100200-01.exon2', 'start': 935, 'end': 1218}], 'transcripts': [{'exons': ['Os01t0100200-01.exon1', 'Os01t0100200-01.exon2'], 'length': 1127, 'exon_junctions': [843], 'cds': {'start': 581, 'end': 1009}, 'translation': {'id': 'Os01t0100200-01', 'length': 142, 'features': {}}, 'id': 'Os01t0100200-01'}], 'canonical_transcript': 'Os01t0100200-01'}, 'annotations': {'taxonomy': {'entries': [{'_id': 39947, 'name': 'Oryza sativa Japonica Group'}], 'ancestors': [1, 2759, 3193, 3398, 4447, 4479, 4527, 4530, 4734, 33090, 35493, 38820, 58023, 58024, 78536, 131221, 131567, 147367, 147380, 359160, 1437183, 1437197, 1648021]}, 'familyRoot': {'entries': [{'_id': 4527, 'name': 'Oryza'}], 'ancestors': [1, 2759, 3193, 3398, 4447, 4479, 4734, 33090, 35493, 38820, 58023, 58024, 78536, 131221, 131567, 147367, 147380, 359160, 1437183, 1437197, 1648021]}}, 'homology': {'gene_tree': {'id': 'EPlGT00140000023342', 'root_taxon_id': 4527, 'root_taxon_name': 'Oryza', 'duplications': [40149]}, 'homologous_genes': {'ortholog_one2one': ['BGIOSGA002570', 'ONIVA02G14150', 'OBART01G00030', 'OB02G44720'], 'ortholog_one2many': ['OMERI05G17330', 'OMERI06G01950'], 'syntenic_ortholog_one2one': ['OGLUM01G00040']}}, 'bins': {'fixed_100': 3106, 'fixed_200': 6206, 'fixed_500': 15506, 'fixed_1000': 31008, 'uniform_1Mb': 31350, 'uniform_2Mb': 15789, 'uniform_5Mb': 6466, 'uniform_10Mb': 3342}, 'species_idx': 5}]
+rapdb {'ID': 'Os01g0100200', 'Description': 'Conserved hypothetical protein. (Os01t0100200-01)', 'Position': 'chr01:11218..12435', 'RAP-DB Gene Symbol Synonym(s)': '', 'RAP-DB Gene Name Synonym(s)': '', 'CGSNL Gene Symbol': '', 'CGSNL Gene Name': '', 'Oryzabase Gene Symbol Synonym(s)': '', 'Oryzabase Gene Name Synonym(s)': ''}
+ic4r {'All': '', 'OS Gene ID': 'Os01g0100200', 'LOC Gene ID': 'LOC_Os01g01019', 'Symbol': '-', 'Location': 'Chr1:11218-12435 (+)', 'Description': 'expressed
 ```
 
 ### Example of database description
@@ -101,14 +136,6 @@ query.query("oryzabase", ["Os03g0149100"])
 * Uniprot - Get protein ID
 * pfam - offline
 * Kegg
-
-## List of supported format
-
-* Python Dictionary - dict (Default)
-* JSON String - json
-* Pandas DataFrame - pandas
-* CSV - csv
-* Excel - excel (require openpyxl)
 
 ## List of exception
 
