@@ -5,21 +5,21 @@
 ### Query Module
 
 ```py
-MultiQuery().check_gene(idents=["Os08g0164400", "Os07g0586200"],locs=["LOC_Os10g01006", "LOC_Os07g39750"])
+MultiQuery().check_gene(idents=[],locs=[])
 ```
 Return 2 set :id and loc and 2 dict: id-loc and loc-id (in "/support/id_dict" and "/support/loc_dict")
 1. idents: list of idents
 2. locs: list of locs
 
 ```py
-MultiQuery().search_gene(chro="chr01", start_pos="1",end_pos="20000",dbs=["msu7"])
+MultiQuery().search_gene(chro="", start_pos="",end_pos="",dbs=[])
 ```
 Return a dictionary in snpseek database
 1. dbs : list of database,default is search gene in all of "msu7","rap","iric"
 
 ```py
 multiquery = MultiQuery().
-multiquery.query_all(idents=["Os08g0164400", "Os07g0586200"],locs=["LOC_Os10g01006", "LOC_Os07g39750"],dbs=[""oryzabase", "Gramene""])
+multiquery.query_all(idents=[],locs=[],dbs=[])
 ```
 Return a dictionary in databases follow idents and locs
 1. idents: list of idents
@@ -30,7 +30,7 @@ Return a dictionary in databases follow idents and locs
 
 ```py
 multiquery = MultiQuery()
-multiquery.query_all(idents=["Os08g0164400", "Os07g0586200"],locs=["LOC_Os10g01006", "LOC_Os07g39750"],dbs="all")
+multiquery.query_all(idents=[],locs=[],dbs="all")
 multiquery.save(folder_path)
 ```
 Save file after query
