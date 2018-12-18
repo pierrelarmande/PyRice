@@ -1,4 +1,5 @@
-from model.MultiQuery import MultiQuery
+# -*- coding: utf-8 -*-
+from MultiQuery import MultiQuery
 import time
 
 if __name__ == "__main__":

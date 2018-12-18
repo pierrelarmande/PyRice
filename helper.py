@@ -1,7 +1,7 @@
 """Helper module
 Handle supportive function such as connection handling, path checking and error handling
 """
-
+# -*- coding: utf-8 -*-
 import os
 import requests
 import sys

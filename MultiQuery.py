@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from multiprocessing import Process,Lock,Manager,active_children
 from bs4 import BeautifulSoup
 import helper
@@ -12,7 +13,6 @@ import pandas as pd
 from pathlib import Path
 import os
 import copy
-
 
 class MultiQuery():
     def __init__(self):
@@ -42,8 +42,8 @@ class MultiQuery():
             headers.append(header.text)
 
         res = self.execute_query(database_description, qfields, verbose)
-        if res.status_code != 200:
-            return
+        if res == None:
+            pass
         # Handle HTML based query
         if (database_description[0]["type"] == "text/html"):
             # Handling Connection
@@ -83,7 +83,7 @@ class MultiQuery():
         elif (database_description[0]["type"] == "text/JSON"):
             # Return as a List of Dictionary
             if len(res.content) > 10:
-                self.result[db].setdefault(qfields[-1],json.loads(res.content))
+                self.result[db].setdefault(qfields[-1],json.loads(res.content.decode('utf-8')))
             #self.result[db].append([qfields[-1], json.loads(res.content)])
             if verbose: print(self.result[db])
         # Handle csv based DB
@@ -212,7 +212,7 @@ class MultiQuery():
                        "funricegene_geneinfo"]
         else:
             name_db = dbs
-        number_process = 100
+        number_process = (len(set_ids)+len(set_locs))*10;
         p =[None for i in range(number_process)]
         count=0
         for db in name_db:
