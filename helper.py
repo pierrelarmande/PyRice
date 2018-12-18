@@ -98,7 +98,8 @@ def connectionError(link, data=""):
         else:
             res = requests.get(link, allow_redirects=False)
         if res.status_code != 200:
-            raise Exception('Server Error: ' + str(res.status_code) + '\n' + 'For url:' + link)
+            print('Server Error: ' + str(res.status_code) + '\n' + 'For url:' + link)
+            #raise Exception('Server Error: ' + str(res.status_code) + '\n' + 'For url:' + link)
             # sys.exit(1)
         return res
     except requests.exceptions.RequestException:

@@ -1,0 +1,54 @@
+{
+	"Gramene": [
+		{
+			"_id": "Os01g0101850",
+			"name": "Os01g0101850",
+			"description": "Hypothetical protein. (Os01t0101850-00)",
+			"biotype": "protein_coding",
+			"taxon_id": 39947,
+			"system_name": "oryza_sativa",
+			"db_type": "core",
+			"gene_idx": 29,
+			"location": {
+				"region": "1",
+				"start": 86211,
+				"end": 88583,
+				"strand": -1,
+				"map": "GCA_001433935.1"
+			},
+			"xrefs": [
+				{
+					"db": "UniParc",
+					"ids": [
+						"UPI000393AE55"
+					]
+				},
+				{
+					"db": "Uniprot/SPTREMBL",
+					"ids": [
+						"A0A0P0UX22"
+					]
+				},
+				{
+					"db": "protein_id",
+					"ids": [
+						"BAS69928.1"
+					]
+				}
+			],
+			"annotations": {},
+			"species_idx": 5
+		}
+	],
+	"rapdb": {
+		"ID": "Os01g0101850",
+		"Description": "Hypothetical protein. (Os01t0101850-00)",
+		"Position": "chr01:86211..88583",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

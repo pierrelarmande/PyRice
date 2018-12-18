@@ -1,0 +1,54 @@
+{
+	"Gramene": [
+		{
+			"_id": "Os01g0102850",
+			"name": "Os01g0102850",
+			"description": "Similar to nitrilase 2. (Os01t0102850-00)",
+			"biotype": "protein_coding",
+			"taxon_id": 39947,
+			"system_name": "oryza_sativa",
+			"db_type": "core",
+			"gene_idx": 50,
+			"location": {
+				"region": "1",
+				"start": 164577,
+				"end": 168921,
+				"strand": 1,
+				"map": "GCA_001433935.1"
+			},
+			"xrefs": [
+				{
+					"db": "UniParc",
+					"ids": [
+						"UPI000393A85F"
+					]
+				},
+				{
+					"db": "Uniprot/SPTREMBL",
+					"ids": [
+						"A0A0P0UX53"
+					]
+				},
+				{
+					"db": "protein_id",
+					"ids": [
+						"BAS69938.1"
+					]
+				}
+			],
+			"annotations": {},
+			"species_idx": 5
+		}
+	],
+	"rapdb": {
+		"ID": "Os01g0102850",
+		"Description": "Similar to nitrilase 2. (Os01t0102850-00)",
+		"Position": "chr01:164577..168921",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

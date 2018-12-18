@@ -1,0 +1,456 @@
+{
+	"oryzabase": {
+		"CGSNL Gene Symbol": " NAC20 ",
+		"Gene symbol synonym(s)": " ONAC020 ONAC20 ",
+		"CGSNL Gene Name": " NAC DOMAIN-CONTAINING PROTEIN 20 ",
+		"Gene name synonym(s)": " NAC domain-containing protein 020 NAC domain-containing protein 20 ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " Other ",
+		"Gene Ontology": " GO:0006355 - regulation of transcription, DNA-dependent GO:0003677 - DNA binding ",
+		"Trait Ontology": " ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os01g0104500 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"Gramene": [
+		{
+			"_id": "Os01g0104500",
+			"name": "NAC DOMAIN-CONTAINING PROTEIN 20",
+			"description": "No apical meristem (NAM) protein domain containing protein. (Os01t0104500-01)",
+			"biotype": "protein_coding",
+			"taxon_id": 39947,
+			"system_name": "oryza_sativa",
+			"db_type": "core",
+			"gene_idx": 72,
+			"location": {
+				"region": "1",
+				"start": 241680,
+				"end": 243440,
+				"strand": 1,
+				"map": "GCA_001433935.1"
+			},
+			"xrefs": [
+				{
+					"db": "CGSNL",
+					"ids": [
+						"NAC20"
+					]
+				},
+				{
+					"db": "UniParc",
+					"ids": [
+						"UPI00000A8F83"
+					]
+				},
+				{
+					"db": "Uniprot/SPTREMBL",
+					"ids": [
+						"Q9FTY0"
+					]
+				},
+				{
+					"db": "STRING",
+					"ids": [
+						"39947.LOC_Os01g01470.1"
+					]
+				},
+				{
+					"db": "RefSeq_peptide",
+					"ids": [
+						"XP_015621005.1"
+					]
+				},
+				{
+					"db": "protein_id",
+					"ids": [
+						"BAF03679.1",
+						"BAB16335.1",
+						"BAS69958.1",
+						"EAZ10206.1"
+					]
+				},
+				{
+					"db": "EMBL",
+					"ids": [
+						"JN944365",
+						"GU120353",
+						"AK242268"
+					]
+				},
+				{
+					"db": "RefSeq_dna",
+					"ids": [
+						"XM_015765519.1"
+					]
+				},
+				{
+					"db": "EntrezGene",
+					"ids": [
+						"4326295"
+					]
+				},
+				{
+					"db": "Oryzabase",
+					"ids": [
+						"ONAC020, ONAC20"
+					]
+				}
+			],
+			"annotations": {
+				"domains": {
+					"entries": [
+						{
+							"id": "IPR003441",
+							"name": "NAC-dom",
+							"description": "NAC domain"
+						},
+						{
+							"id": "IPR036093",
+							"name": "NAC_dom_sf",
+							"description": "NAC domain superfamily"
+						}
+					]
+				},
+				"GO": {
+					"entries": [
+						{
+							"id": "GO:0006351",
+							"name": "transcription, DNA-templated",
+							"namespace": "biological_process",
+							"def": "The cellular synthesis of RNA on a template of DNA.",
+							"subset": [
+								"goslim_aspergillus",
+								"goslim_metagenomics",
+								"goslim_pir",
+								"goslim_pombe",
+								"gosubset_prok"
+							],
+							"evidence_code": "IEA"
+						},
+						{
+							"id": "GO:0005634",
+							"name": "nucleus",
+							"namespace": "cellular_component",
+							"def": "A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell's chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent.",
+							"subset": [
+								"goslim_agr",
+								"goslim_aspergillus",
+								"goslim_candida",
+								"goslim_chembl",
+								"goslim_generic",
+								"goslim_metagenomics",
+								"goslim_mouse",
+								"goslim_pir",
+								"goslim_plant",
+								"goslim_yeast"
+							],
+							"evidence_code": "IEA"
+						},
+						{
+							"id": "GO:0006355",
+							"name": "regulation of transcription, DNA-templated",
+							"namespace": "biological_process",
+							"def": "Any process that modulates the frequency, rate or extent of cellular DNA-templated transcription.",
+							"subset": [
+								"goslim_pombe",
+								"gosubset_prok"
+							],
+							"evidence_code": "IEA"
+						},
+						{
+							"id": "GO:0003677",
+							"name": "DNA binding",
+							"namespace": "molecular_function",
+							"def": "Any molecular function by which a gene product interacts selectively and non-covalently with DNA (deoxyribonucleic acid).",
+							"subset": [
+								"goslim_agr",
+								"goslim_aspergillus",
+								"goslim_candida",
+								"goslim_chembl",
+								"goslim_generic",
+								"goslim_mouse",
+								"goslim_plant",
+								"goslim_yeast",
+								"gosubset_prok"
+							],
+							"evidence_code": "IEA"
+						}
+					],
+					"ancestors": [
+						3674,
+						3676,
+						5488,
+						5575,
+						5622,
+						5623,
+						6139,
+						6725,
+						6807,
+						8150,
+						8152,
+						9058,
+						9059,
+						9889,
+						9987,
+						10467,
+						10468,
+						10556,
+						16070,
+						18130,
+						19219,
+						19222,
+						19438,
+						31323,
+						31326,
+						32774,
+						34641,
+						34645,
+						34654,
+						43170,
+						43226,
+						43227,
+						43229,
+						43231,
+						44237,
+						44238,
+						44249,
+						44260,
+						44271,
+						44424,
+						44464,
+						46483,
+						50789,
+						50794,
+						51171,
+						51252,
+						60255,
+						65007,
+						71704,
+						80090,
+						90304,
+						97159,
+						97659,
+						1901360,
+						1901362,
+						1901363,
+						1901576,
+						1903506,
+						2000112,
+						2001141
+					]
+				}
+			},
+			"homology": {
+				"homologous_genes": {
+					"ortholog_one2one": [
+						"ORUFI01G00320",
+						"BGIOSGA002597",
+						"OBART01G00360",
+						"KN538826.1_FG063",
+						"OMERI01G15210"
+					],
+					"syntenic_ortholog_one2one": [
+						"ONIVA01G00280",
+						"OGLUM01G00350"
+					],
+					"within_species_paralog": [
+						"Os01g0393100",
+						"Os11g0127000",
+						"Os12g0123800",
+						"Os03g0327100",
+						"Os07g0684800",
+						"Os04g0515900",
+						"Os12g0610600",
+						"Os10g0477600",
+						"Os06g0675600",
+						"Os03g0109000",
+						"Os02g0579000",
+						"Os02g0810900",
+						"Os08g0200600",
+						"Os04g0460600",
+						"Os03g0624600",
+						"Os09g0497900",
+						"Os06g0344900",
+						"Os08g0511200"
+					],
+					"ortholog_one2many": [
+						"OPUNC01G00320",
+						"OB01G10300",
+						"LPERR01G00270",
+						"Dr09181",
+						"CCACVL1_00708",
+						"A4A49_30240",
+						"PRUPE_7G001400",
+						"VIT_08s0007g07640",
+						"TCM_026028",
+						"Csa_4G193250"
+					],
+					"ortholog_many2many": [
+						"TraesCS7B01G100300",
+						"TraesCS3B01G092900",
+						"TraesCS3D01G078500",
+						"TraesCS7B01G094000",
+						"BRADI_1g20801v3",
+						"F775_24687",
+						"F775_32919",
+						"TraesCS7A01G152500",
+						"TraesCS7A01G569100",
+						"TRIUR3_00447",
+						"HORVU3Hr1G014100",
+						"BRADI_1g20805v3",
+						"TraesCS3B01G092800",
+						"TRIUR3_01582",
+						"HORVU7Hr1G031260",
+						"TraesCS7A01G189200",
+						"HORVU7Hr1G039700",
+						"F775_13622",
+						"TraesCS7D01G154200",
+						"TraesCS7D01G543400",
+						"HORVU3Hr1G014090",
+						"F775_25866",
+						"HORVU4Hr1G089450",
+						"TraesCS5A01G245900",
+						"TraesCS7B01G056300",
+						"TRIUR3_23644",
+						"HORVU7Hr1G122680",
+						"TraesCS3A01G077900",
+						"BRADI_2g03448v3",
+						"F775_25867",
+						"TraesCS7A01G569300",
+						"BRADI_5g13816v3",
+						"TRIUR3_25136",
+						"TRIUR3_11787",
+						"TraesCS7D01G189900",
+						"TraesCS5B01G243300",
+						"TRIUR3_00446",
+						"TraesCS7D01G543500",
+						"TraesCS7B01G489500",
+						"F775_16032",
+						"TraesCS7A01G194700",
+						"F775_29497",
+						"TraesCS7D01G196300",
+						"SORBI_3005G188000",
+						"SETIT_002003mg",
+						"SORBI_3003G105600",
+						"SORBI_3002G192600",
+						"SORBI_3003G101100",
+						"SETIT_030284mg",
+						"Zm00001d008403",
+						"SORBI_3009G086800",
+						"SETIT_002074mg",
+						"GSMUA_Achr7G18330_001",
+						"GSMUA_Achr10G05070_001",
+						"GSMUA_Achr8G21470_001",
+						"GSMUA_Achr5G07600_001",
+						"GSMUA_Achr6G32290_001",
+						"GSMUA_Achr3G18020_001",
+						"GSMUA_Achr9G16920_001",
+						"GSMUA_Achr3G09520_001",
+						"GSMUA_Achr6G08600_001",
+						"MTR_7g085260",
+						"MANES_08G148000",
+						"B456_007G267700",
+						"DCAR_016858",
+						"AT5G18270",
+						"GSBRNA2T00044503001",
+						"Bo2g015440",
+						"TanjilG_21191",
+						"TanjilG_03438",
+						"DCAR_009670",
+						"Bo9g157320",
+						"AT3G04060",
+						"Bra006449",
+						"GSBRNA2T00075630001",
+						"Bra023669",
+						"DCAR_019896",
+						"LR48_Vigan10g176300",
+						"PHAVU_001G100500g",
+						"Bra031950",
+						"Bra040153",
+						"fgenesh1_pm.C_scaffold_6001462",
+						"GLYMA_16G152100",
+						"MTR_6g032770",
+						"fgenesh2_kg.3__366__AT3G04060.1",
+						"LR48_Vigan03g189800",
+						"Tp57577_TGAC_v2_gene5898",
+						"GLYMA_19G109100",
+						"POPTR_013G054200v3",
+						"GSBRNA2T00010274001",
+						"PHAVU_004G076900g",
+						"GSBRNA2T00114768001",
+						"MANES_09G143800",
+						"B456_013G118000",
+						"HannXRQ_Chr01g0024891",
+						"GSBRNA2T00002998001",
+						"Bra002148",
+						"DCAR_013698",
+						"Bo5g148430",
+						"GLYMA_02G070600",
+						"POPTR_019G031600v3",
+						"HannXRQ_Chr02g0054381",
+						"GLYMA_16G042900",
+						"Bo1g152230",
+						"HannXRQ_Chr13g0397761",
+						"TanjilG_19906",
+						"Bo3g013050",
+						"GSBRNA2T00140686001",
+						"Tp57577_TGAC_v2_gene6053",
+						"GSBRNA2T00097708001",
+						"SELMODRAFT_71303",
+						"SELMODRAFT_67245",
+						"SELMODRAFT_104940",
+						"SELMODRAFT_125472",
+						"PHYPA_006066",
+						"PHYPA_004958",
+						"PHYPA_016427"
+					],
+					"syntenic_ortholog_many2many": [
+						"Zm00001d040189"
+					]
+				}
+			},
+			"species_idx": 5
+		}
+	],
+	"rapdb": {
+		"ID": "Os01g0104500",
+		"Description": "No apical meristem (NAM) protein domain containing protein. (Os01t0104500-01)",
+		"Position": "chr01:241680..243440",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "NAC20",
+		"CGSNL Gene Name": "NAC DOMAIN-CONTAINING PROTEIN 20",
+		"Oryzabase Gene Symbol Synonym(s)": "ONAC020, ONAC20",
+		"Oryzabase Gene Name Synonym(s)": "NAC domain-containing protein 020, NAC domain-containing protein 20"
+	},
+	"ic4r": {
+		"All": "",
+		"OS Gene ID": "Os01g0104500",
+		"LOC Gene ID": "LOC_Os01g01470",
+		"Symbol": "NAC20",
+		"Location": "Chr1:241641-243468 (+)",
+		"Description": "no apical meristem protein, putative, expressed",
+		"Box Plot": ""
+	},
+	"msu": {
+		"Genomic Sequence": " >LOC_Os01g01470 CCATCAATCTTAATTCGCTTCTACATTGGGGTGCTTGTTAATTTGCATGCGAGCTTGTTG AGGTATATATGTTCAATATATGAAGAGTACTATAGCTTAATTATGTTTGCACTATCTAGA AGTTGAGATTTTTGGCATTTACATACTACATCGATTTGCTAAATTAATTTGGTTAATGAT TTGCTTATATAGATAGATATATGTATTATTGGCTATATATGTCAGGTTGAAGCTAGCGAT CGTTGAGAGCAGTAGTAGGTGGTGAGCATGGGAGAGCAGCAACAGCAGGTGGAGCGGCAG CCGGACCTGCCTCCGGGCTTTAGGTTTCACCCAACGGACGAGGAGATTATCACCTTTTAC CTTGCACCCAAGGTTGTGGACAGCAGGGGCTTTTGCGTTGCTGCCATTGGAGAGGTGGAT CTCAACAAGTGCGAGCCATGGGATTTGCCAGGTAAACATTCTAGTATTATTTTGAATTGA GAGAAATTATATATATAATTAGGGAAATTTATATGATATGATATGATGCATGTGAAAAGT AAAAATAAATAAATGTAGGGAAGGCGAAGATGAATGGGGAGAAGGAGTGGTATTTCTACT GCCAGAAGGATCGGAAGTACCCGACGGGGATGAGGACGAACAGGGCGACGGAGGCTGGAT ACTGGAAGGCGACGGGGAAGGACAAGGAGATCTTCCGCGACCACCACATGCTCATCGGCA TGAAGAAGACGCTCGTCTTCTACAAGGGCAGGGCTCCCAAGGGCGACAAGACCAACTGGG TCATGCACGAGTACAGGCTCGCCGACGCCTCTCCGCCGCCGCCGCCATCCTCCGCAGAGC CCCCGAGGCAGGACGACTGGGCCGTCTGCAGGATCTTCCACAAGAGCTCCGGCATCAAGA AGCCGGTGCCGGTTGCTCCTCATCAGGTGCCCGCCGCCGCCAACTACCAGCAGCAGCAGC AGATGGCCATGGCCTCCGCCGGCATCATCCAAGTCCCCATGCAGATGCAGATGCCATCCA TGTCTGACCAGCTGCAGATGTTGGACGACTTCTCCACCACCGCTTCACTCTCACTCATGG CGCCGCCTTCCTACTCCACTCTGCCTGCAGGCTTCCCGCTTCAGATCAACAGCGGCGCCC ATCCCCAGCAGTTTGTTGGGAACCCGTCCATGTACTACCACCAGCAGCAGCAGATGGACA TGGCCGGCGGAGGGTTCGTGGTGAGCGAGCCGTCGTCGCTGGTGGTGTCGCCGCAGGATG CTGCCGACCAGAACAACAACGCCGCCGACATCTCGTCGATGGCATGCAACATGGACGCTG CCATCTGGAAGTACTGAAATACATACCATACATACATATATACATATGCATGCGCGAGCT TAATTAGTGTGATGACAGAGGGTGGTGGGTTAATTAGCTAGTATACTCCATTTTATGCAT CCATCATATGGCTTTTGCATTGCCTTTAATTTTGGCTTCTTGTGTGAGATCGATGTGAGT GAGATTTGCTGAGAGATTATTATTATTAGTTATTATAGATTGCATGGCTAGCTATATTGT ACTACTAATAATATGTGTCTGCCAGCAATACGTATGTGTGTGAGCGTGCACCGTATAGCA AGGTATAGTTACAGGTATATACATACAAGATATATATAGGTATACATGCATGCGTGATAG ATATATGTGTGTATTTGTGCGTGAGCCCAGCTTGATTTGTGTTGTACATAGCTAGCAGTG CATGCCTGCTATTCCTCTGTATGGATTGAATTATGTGAATTAATTATTTTGTTTAATTAC AACATGCATGGTGTATGGTGTACTTATT ",
+		"CDS": " >LOC_Os01g01470.1 ATGGGAGAGCAGCAACAGCAGGTGGAGCGGCAGCCGGACCTGCCTCCGGGCTTTAGGTTT CACCCAACGGACGAGGAGATTATCACCTTTTACCTTGCACCCAAGGTTGTGGACAGCAGG GGCTTTTGCGTTGCTGCCATTGGAGAGGTGGATCTCAACAAGTGCGAGCCATGGGATTTG CCAGGGAAGGCGAAGATGAATGGGGAGAAGGAGTGGTATTTCTACTGCCAGAAGGATCGG AAGTACCCGACGGGGATGAGGACGAACAGGGCGACGGAGGCTGGATACTGGAAGGCGACG GGGAAGGACAAGGAGATCTTCCGCGACCACCACATGCTCATCGGCATGAAGAAGACGCTC GTCTTCTACAAGGGCAGGGCTCCCAAGGGCGACAAGACCAACTGGGTCATGCACGAGTAC AGGCTCGCCGACGCCTCTCCGCCGCCGCCGCCATCCTCCGCAGAGCCCCCGAGGCAGGAC GACTGGGCCGTCTGCAGGATCTTCCACAAGAGCTCCGGCATCAAGAAGCCGGTGCCGGTT GCTCCTCATCAGGTGCCCGCCGCCGCCAACTACCAGCAGCAGCAGCAGATGGCCATGGCC TCCGCCGGCATCATCCAAGTCCCCATGCAGATGCAGATGCCATCCATGTCTGACCAGCTG CAGATGTTGGACGACTTCTCCACCACCGCTTCACTCTCACTCATGGCGCCGCCTTCCTAC TCCACTCTGCCTGCAGGCTTCCCGCTTCAGATCAACAGCGGCGCCCATCCCCAGCAGTTT GTTGGGAACCCGTCCATGTACTACCACCAGCAGCAGCAGATGGACATGGCCGGCGGAGGG TTCGTGGTGAGCGAGCCGTCGTCGCTGGTGGTGTCGCCGCAGGATGCTGCCGACCAGAAC AACAACGCCGCCGACATCTCGTCGATGGCATGCAACATGGACGCTGCCATCTGGAAGTAC TGA ",
+		"Protein": " >LOC_Os01g01470.1 MGEQQQQVERQPDLPPGFRFHPTDEEIITFYLAPKVVDSRGFCVAAIGEVDLNKCEPWDL PGKAKMNGEKEWYFYCQKDRKYPTGMRTNRATEAGYWKATGKDKEIFRDHHMLIGMKKTL VFYKGRAPKGDKTNWVMHEYRLADASPPPPPSSAEPPRQDDWAVCRIFHKSSGIKKPVPV APHQVPAAANYQQQQQMAMASAGIIQVPMQMQMPSMSDQLQMLDDFSTTASLSLMAPPSY STLPAGFPLQINSGAHPQQFVGNPSMYYHQQQQMDMAGGGFVVSEPSSLVVSPQDAADQN NNAADISSMACNMDAAIWKY* "
+	},
+	"funricegene_genekeywords": [
+		{
+			"Symbol": "ONAC020",
+			"RAPdb": "Os01g0104500",
+			"MSU": "LOC_Os01g01470",
+			"Keyword": "nucleus",
+			"Title": "Three Rice NAC Transcription Factors Heteromerize and Are Associated with Seed Size."
+		}
+	],
+	"funricegene_geneinfo": [
+		{
+			"Symbol": "ONAC020",
+			"RAPdb": "Os01g0104500",
+			"MSU": "LOC_Os01g01470"
+		}
+	]
+}

@@ -43,7 +43,7 @@ class MultiQuery():
 
         res = self.execute_query(database_description, qfields, verbose)
         if res == None:
-            pass
+            return
         # Handle HTML based query
         if (database_description[0]["type"] == "text/html"):
             # Handling Connection
@@ -224,6 +224,7 @@ class MultiQuery():
                     p[count] = Process(target=self.query, args=(self.result, db, [ident],))
                     count+=1
                     p[count-1].start()
+                    p[count - 1].join()
                 #     list_proccess.append(p)
                 # for p in list_proccess:
                 #     p.join();
@@ -232,6 +233,7 @@ class MultiQuery():
                     p[count] = Process(target=self.query, args=(self.result, db, [loc],))
                     count+=1
                     p[count-1].start()
+                    p[count - 1].join()
                 #     list_proccess.append(p)
                 # for p in list_proccess:
                 #     p.join();
@@ -241,6 +243,7 @@ class MultiQuery():
                         p[count] = Process(target=self.query, args=(self.result, db, [ident, loc],))
                         count+=1
                         p[count-1].start()
+                        p[count - 1].join()
                     #     list_proccess.append(p)
                     # for p in list_proccess:
                     #     p.join();
@@ -249,9 +252,10 @@ class MultiQuery():
                         p[count] = Process(target=self.query, args=(self.result, db, [ident, loc],))
                         count+=1
                         p[count-1].start()
+                        p[count - 1].join()
                     #     list_proccess.append(p)
-        for i in range(0,count):
-            p[i].join()
+        # for i in range(0,count):
+        #     p[i].join()
         new_result = dict()
         new_name_db=[]
         fun_db =[]
@@ -347,8 +351,9 @@ class MultiQuery():
             list_process[i] = Process(target=self.query,
                         args=(self.result, "snpseek", [str(chro), str(start_pos), str(end_pos), name_db[i] ],))
             list_process[i].start()
-        for process in list_process:
-            process.join()
+            list_process[i].join()
+        # for process in list_process:
+        #     process.join()
         return self.result
 
     def f(self, result, db, qfields=[], outputFormat="dict", outputFile=None, verbose=False):
