@@ -1,0 +1,328 @@
+{
+	"oryzabase": {
+		"CGSNL Gene Symbol": " LIR1 ",
+		"Gene symbol synonym(s)": " Lir1 OsLIR1 Os-LIR1 ",
+		"CGSNL Gene Name": " LIGHT-REGULATED GENE 1 ",
+		"Gene name synonym(s)": " light-regulated gene 1 LIGHT-INDUCED RICE1 LIGHT-INDUCED RICE 1 ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " Tolerance and resistance - Stress tolerance ",
+		"Gene Ontology": " GO:0009767 - photosynthetic electron transport chain GO:0009507 - chloroplast GO:0009535 - chloroplast thylakoid membrane GO:0009416 - response to light stimulus ",
+		"Trait Ontology": " TO:0000075 - light sensitivity ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os01g0102900 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"Gramene": {
+		"_id": "Os01g0102900",
+		"name": "LIGHT-REGULATED GENE 1",
+		"description": "Light-regulated protein, Regulation of light-dependent attachment of LEAF-TYPE FERREDOXIN-NADP+ OXIDOREDUCTASE (LFNR) to the thylakoid membrane (Os01t0102900-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 51,
+		"location": {
+			"region": "1",
+			"start": 169390,
+			"end": 170316,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "CGSNL",
+				"ids": [
+					"LIR1"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0000001114"
+				]
+			},
+			{
+				"db": "Uniprot/SWISSPROT",
+				"ids": [
+					"Q03200"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g01340.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015617278.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK067670",
+					"X68807",
+					"AK120535"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAB92145.1",
+					"BAF03667.1",
+					"EAZ10195.1",
+					"BAD45513.1",
+					"BAB16320.1",
+					"BAS69939.1"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015761792.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326442"
+				]
+			},
+			{
+				"db": "RAP-DB",
+				"ids": [
+					"LIR1, Lir1"
+				]
+			},
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"Lir1, OsLIR1, Os-LIR1"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR009856",
+						"name": "Lir1",
+						"description": "Light regulated Lir1"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0009941",
+						"name": "chloroplast envelope",
+						"namespace": "cellular_component",
+						"def": "The double lipid bilayer enclosing the chloroplast and separating its contents from the rest of the cytoplasm; includes the intermembrane space.",
+						"subset": null,
+						"evidence_code": "IDA"
+					},
+					{
+						"id": "GO:0098807",
+						"name": "chloroplast thylakoid membrane protein complex",
+						"namespace": "cellular_component",
+						"def": "A protein complex that is part of a chloroplast thylakoid membrane.",
+						"subset": null,
+						"evidence_code": "IDA"
+					},
+					{
+						"id": "GO:0071482",
+						"name": "cellular response to light stimulus",
+						"namespace": "biological_process",
+						"def": "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a light stimulus, electromagnetic radiation of wavelengths classified as infrared, visible or ultraviolet light.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEP"
+					},
+					{
+						"id": "GO:0007623",
+						"name": "circadian rhythm",
+						"namespace": "biological_process",
+						"def": "Any biological process in an organism that recurs with a regularity of approximately 24 hours.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEP"
+					},
+					{
+						"id": "GO:0009570",
+						"name": "chloroplast stroma",
+						"namespace": "cellular_component",
+						"def": "The space enclosed by the double membrane of a chloroplast but excluding the thylakoid space. It contains DNA, ribosomes and some temporary products of photosynthesis.",
+						"subset": null,
+						"evidence_code": "IDA"
+					},
+					{
+						"id": "GO:0005515",
+						"name": "protein binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with any protein or protein complex (a complex of two or more proteins that may include other nonprotein molecules).",
+						"subset": [
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_metagenomics",
+							"goslim_pir",
+							"goslim_plant",
+							"gosubset_prok"
+						],
+						"evidence_code": "IPI"
+					}
+				],
+				"ancestors": [
+					3674,
+					5488,
+					5575,
+					5622,
+					5623,
+					5737,
+					8150,
+					9314,
+					9416,
+					9507,
+					9526,
+					9532,
+					9534,
+					9535,
+					9536,
+					9579,
+					9628,
+					9987,
+					16020,
+					31967,
+					31975,
+					31976,
+					31984,
+					32991,
+					34357,
+					42651,
+					43226,
+					43227,
+					43229,
+					43231,
+					44422,
+					44424,
+					44425,
+					44434,
+					44435,
+					44436,
+					44444,
+					44446,
+					44464,
+					48511,
+					50896,
+					51716,
+					55035,
+					71214,
+					71478,
+					98796,
+					104004
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G00200",
+					"BGIOSGA002563",
+					"OBART01G00240",
+					"ORGLA01G0001800",
+					"KN538826.1_FG010",
+					"OPUNC01G00210",
+					"OB01G10220",
+					"LPERR01G00160",
+					"TraesCS3A01G081300",
+					"F775_32959",
+					"BRADI_2g03610v3",
+					"TraesCS3D01G081300",
+					"SETIT_003278mg",
+					"SORBI_3003G107300",
+					"GSMUA_Achr6G28670_001",
+					"Tp57577_TGAC_v2_gene10346",
+					"CCACVL1_10115",
+					"PGSC0003DMG400026417",
+					"AT3G26740",
+					"PRUPE_1G216700",
+					"Bra032945",
+					"HannXRQ_Chr16g0499601",
+					"BVRB_6g151890",
+					"MTR_7g084000",
+					"fgenesh2_kg.5__439__AT3G26740.1",
+					"LR48_Vigan03g170800",
+					"PHAVU_001G085200g",
+					"Solyc09g092110.2",
+					"MANES_09G187300",
+					"AMTR_s00016p00166750",
+					"SELMODRAFT_444139"
+				],
+				"syntenic_ortholog_one2one": [
+					"OGLUM01G00210"
+				],
+				"ortholog_one2many": [
+					"TraesCS3B01G096200",
+					"TraesCS3B01G096500",
+					"Zm00001d041784",
+					"Zm00001d003199",
+					"Zm00001d050774",
+					"Bo9g008010",
+					"Csa_6G091870",
+					"POPTR_003G163400v3",
+					"Csa_3G598910",
+					"GLYMA_16G049000",
+					"GSBRNA2T00109705001",
+					"Bo00285s430",
+					"B456_012G125000",
+					"B456_007G072700",
+					"GSBRNA2T00040451001",
+					"GLYMA_19G102400",
+					"POPTR_001G066400v3",
+					"VIT_14s0068g01160",
+					"TCM_017342",
+					"GSBRNA2T00092174001",
+					"TCM_008357",
+					"POPTR_014G145500v3",
+					"GSBRNA2T00148280001",
+					"VIT_01s0244g00170"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"msu": {
+		"Genomic Sequence": " >LOC_Os01g01340 GGAAGGATATCCCGGCCTTGTGGCACACTTGACTGGAGATGTATAAAGAGAGGAGGATGT GAAGAAAGAAGATATCTACCACCAAGCTAATTAAGCAAAAGAAGAAGAAGAAGAAAGAAG AAGAAGAAGATGCAGACCGCTGCTAGCAGTGTCGTTGGATTGTCGGCCGTGTTGCCCGCT GCTGTGAAGGGGCGCAGCCTGCAGATTCAGGCTCCTCGCCGTGTTGCGTTGCGCGTTCGT GCGGCGGCGGCGGCGGTGGCAGTGGAGGCTGCGGAGGTGGACTACAGCTCTAACATCTCG TAAGTACTACAATTGTCTGTCTATACATGATGCATCTATCGATTGATCCTAGCCTAGGCA CCAATTATGTTTGTACCAAACTCACCATTGCATTGTGCACTGCAATGCAACTCATCATAC CATTACTAGTAGTATATAGTACAGTATATGCCATGAAGTGAAATTGACTACTGCGCGCAG GGTGTTTCCGATGGAGGCGTGCGACCTCATCGGCGGCGAGGCGTGCAACGTGCAGATGTA CCCAGAGGCCAAGCTCTCATCATCGGCTGCTGTTGCTGTTTCTCGTGCGGCGGCGGAGGA AGTCGACAGGGACTACCTATCCTACGACGAGCCCACCACGTAATTAATTAAGCTCTACTA CTATACTACCCAACTGATGAAATCTAGTGTAACTAACTGGAACTGAAATCGGAAAACACA AAATTGCACGCAGGGTGTTCCCCGAGGAGGCGTGCGACGATCTGGGCGGAGAGTTCTGCA AGGCCACCTGATCCCATTCCCATCCATGGAGAATTGGAGTCTTCTATCATCCTTCCTCCT CTGCTCCACTACCTTAATTCCATGTAGCTACAGATTTATATGTTAATCATCATGTAATGG TACATATCTCCTTGTTAATAAGGCACGCTAGTCTAGCTCCTCAAAATGATTTACAATAAT ATAATATTTACATACATATAATACACTTACTCCATCGAACAATACCTCTGTTATCTCATG GTTACTTCCCATGATCCCATCATCAACACCAACATTCATCACACTTTGCTGCGTTAGAGC AGGTACAATGGCAGGCTATAAGCCAGCTACAAACATATTTTACGAAGATAAATCAAGAGA GAGAAGAGCAACGGGCTACAGATTTGTAGCCAGCTGTAGCACGGACTCCAAGACGCAGTG TGTCTATGACAGGTGGGACTAGATATTAATAGTGTAGTATGTAACTATTGTATGAATGGG CTATTAGATTGACTATAGATGAATTGGAGCTAGTAGTTGGCTATACTATTGAACTTGCTC TTATATAGCAACAGGTACAGTATATGAATTAATTATCTCACAACTATTGGAAAGTTGGCG CCAGAAAACTGAGGGAGCACTGAAACAAATTTGTTGTGCGGAAACATTTATATTAAAAAA AACATATATTATGGACATATGTGATTACCTATAGATCAGCTCTAATCTGCGCCGGCCTCT CCGTCGTACTTGGGACCTGCCAATCCAGATACCTGTCAATGTTATCAAAACTACCTCCAG GGCAGACAACAGTGTCCAGAGAAGGCTATTCACCTAGACCAGGAGCAAATACATCATCCG GATACTTCCTCCGGTTATTCACCTAAAGCATTTCCCCTCGCTTGTTGTCATGGAGGCAAT ATGACAATATGAGTCATGGACGCTTTGCCAAACTTACCTGGAATCAATCAGCAACGGGCC GGAGCACAATATATGTCGATACCTGCTGCATAGTGCATACACTAGTGAGTACTATATGAC AAAGAAATTGAAGTGTGACGCCAACACTATAACTCGTGACATTATATAGGCTGGAGATAA ATATTTATGCATGTCTTTCCGAACGCAATAACTATATTCACGAATTTTTGTGTGTAACAA ",
+		"CDS": " >LOC_Os01g01340.1 ATGCAGACCGCTGCTAGCAGTGTCGTTGGATTGTCGGCCGTGTTGCCCGCTGCTGTGAAG GGGCGCAGCCTGCAGATTCAGGCTCCTCGCCGTGTTGCGTTGCGCGTTCGTGCGGCGGCG GCGGCGGTGGCAGTGGAGGCTGCGGAGGTGGACTACAGCTCTAACATCTCGGTGTTTCCG ATGGAGGCGTGCGACCTCATCGGCGGCGAGGCGTGCAACGTGCAGATGTACCCAGAGGCC AAGCTCTCATCATCGGCTGCTGTTGCTGTTTCTCGTGCGGCGGCGGAGGAAGTCGACAGG GACTACCTATCCTACGACGAGCCCACCACGGTGTTCCCCGAGGAGGCGTGCGACGATCTG GGCGGAGAGTTCTGCAAGGCCACCTGA ",
+		"Protein": " >LOC_Os01g01340.1 MQTAASSVVGLSAVLPAAVKGRSLQIQAPRRVALRVRAAAAAVAVEAAEVDYSSNISVFP MEACDLIGGEACNVQMYPEAKLSSSAAVAVSRAAAEEVDRDYLSYDEPTTVFPEEACDDL GGEFCKAT* "
+	},
+	"rapdb": {
+		"ID": "Os01g0102900",
+		"Description": "Light-regulated protein, Regulation of light-dependent attachment of LEAF-TYPE FERREDOXIN-NADP+ OXIDOREDUCTASE (LFNR) to the thylakoid membrane (Os01t0102900-01)",
+		"Position": "chr01:169390..170316",
+		"RAP-DB Gene Symbol Synonym(s)": "LIR1, Lir1",
+		"RAP-DB Gene Name Synonym(s)": "LIGHT-REGULATED GENE 1, light-regulated gene 1, LIGHT-INDUCED RICE1",
+		"CGSNL Gene Symbol": "LIR1",
+		"CGSNL Gene Name": "LIGHT-REGULATED GENE 1",
+		"Oryzabase Gene Symbol Synonym(s)": "Lir1, OsLIR1, Os-LIR1",
+		"Oryzabase Gene Name Synonym(s)": "light-regulated gene 1, LIGHT-INDUCED RICE1, LIGHT-INDUCED RICE 1"
+	},
+	"ic4r": {
+		"All": "",
+		"OS Gene ID": "Os01g0102900",
+		"LOC Gene ID": "LOC_Os01g01340",
+		"Symbol": "LIR1",
+		"Location": "Chr1:168470-170389 (-)",
+		"Description": "light-induced protein 1-like, putative, expressed",
+		"Box Plot": ""
+	},
+	"funricegene_geneinfo": {
+		"Symbol": "{'Lir1|OsLIR1'}",
+		"RAPdb": "{'Os01g0102900'}",
+		"MSU": "{'LOC_Os01g01340'}"
+	}
+}

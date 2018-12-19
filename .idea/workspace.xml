@@ -2,10 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3ee6667-1ce7-4f35-8494-c9a711eca489" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/MultiQuery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/data/db.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0100100-LOC_Os01g01010.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0100200-LOC_Os01g01019.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0100300-None.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0100400-LOC_Os01g01030.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0100466-None.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0100500-LOC_Os01g01040.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0100600-LOC_Os01g01050.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0100650-None.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0100700-LOC_Os01g01060.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0100800-LOC_Os01g01070.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0100900-LOC_Os01g01080.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0101150-LOC_Os01g01115.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0101175-None.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0101200-LOC_Os01g01120.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0101300-LOC_Os01g01130.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0101500-LOC_Os01g01140.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0101600-LOC_Os01g01150.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0101700-LOC_Os01g01160.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0101800-LOC_Os01g01170.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0101850-None.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0101900-LOC_Os01g01180.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0102000-LOC_Os01g01190.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0102300-LOC_Os01g01280.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0102400-LOC_Os01g01290.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0102500-LOC_Os01g01295.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0102600-LOC_Os01g01302.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0102700-LOC_Os01g01307.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0102800-LOC_Os01g01312.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0102850-None.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0102900-LOC_Os01g01340.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0103000-LOC_Os01g01350.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0103050-None.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0103075-None.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0103100-LOC_Os01g01360.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0103400-None.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0103600-LOC_Os01g01369.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0103650-None.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0103700-LOC_Os01g01380.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0103800-LOC_Os01g01390.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0103900-LOC_Os01g01400.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0104000-LOC_Os01g01410.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0104100-LOC_Os01g01420.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0104200-LOC_Os01g01430.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0104300-LOC_Os01g01440.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0104350-None.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0104400-LOC_Os01g01450.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0104500-LOC_Os01g01470.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0104600-LOC_Os01g01484.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0104800-LOC_Os01g01510.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0104900-LOC_Os01g01520.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0105300-LOC_Os01g01560.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0105400-LOC_Os01g01570.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene/Os01g0105450-None.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/support/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/support/data.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,41 +71,46 @@
     <session id="-1663692191">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="csv" value="3" />
           <entry key="py" value="5" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="Python" value="5" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="200" />
+          <entry key="py" value="2913" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="200" />
+          <entry key="Python" value="2913" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+            <state relative-caret-position="90">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding>
                 <element signature="e#24#57#0" expanded="true" />
               </folding>
@@ -60,11 +118,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MultiQuery.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="944">
-              <caret line="354" column="38" selection-start-line="354" selection-start-column="38" selection-end-line="354" selection-end-column="38" />
+            <state relative-caret-position="90">
+              <caret line="464" column="18" selection-start-line="464" selection-start-column="18" selection-end-line="464" selection-end-column="18" />
+              <folding>
+                <element signature="e#24#88#0" expanded="true" />
+                <element signature="e#12606#17091#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database-description.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="97" column="73" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -72,7 +143,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
+            <state relative-caret-position="1500">
               <caret line="104" column="48" selection-start-line="104" selection-start-column="48" selection-end-line="104" selection-end-column="48" />
             </state>
           </provider>
@@ -83,6 +154,20 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>connectionError</find>
+      <find>Os01g0100100</find>
+      <find>osnip</find>
+      <find>query_all</find>
+      <find>snpseek</find>
+      <find>search_gene</find>
+      <find>verbose</find>
+      <find>Gramene</find>
+      <find>save</find>
+      <find>OsNippo01g010100</find>
+      <find>save_file</find>
+      <find>OsNippo01g013600</find>
+      <find>dict_2</find>
+      <find>fun</find>
+      <find>query_iric</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -98,9 +183,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="100" />
+    <option name="x" value="290" />
     <option name="y" value="29" />
-    <option name="width" value="1260" />
+    <option name="width" value="887" />
     <option name="height" value="721" />
   </component>
   <component name="ProjectView">
@@ -108,7 +193,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,6 +204,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -180,22 +265,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="100" y="29" width="1260" height="721" extended-state="0" />
+    <frame x="290" y="29" width="887" height="721" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24939467" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6343402" visible="true" weight="0.24133949" />
+      <window_info id="Structure" order="1" sideWeight="0.36565977" side_tool="true" visible="true" weight="0.24133949" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3290938" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3688394" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990461" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -205,11 +291,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database-description.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2998" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/multiprocessing/connection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-759">
@@ -226,25 +307,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/helper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
+        <state relative-caret-position="1500">
           <caret line="104" column="48" selection-start-line="104" selection-start-column="48" selection-end-line="104" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/result/items.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-          <folding>
-            <element signature="e#24#57#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/data/db.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database-description.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="97" column="73" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MultiQuery.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="944">
-          <caret line="354" column="38" selection-start-line="354" selection-start-column="38" selection-end-line="354" selection-end-column="38" />
+        <state relative-caret-position="90">
+          <caret line="464" column="18" selection-start-line="464" selection-start-column="18" selection-end-line="464" selection-end-column="18" />
+          <folding>
+            <element signature="e#24#88#0" expanded="true" />
+            <element signature="e#12606#17091#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="e#24#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,225 @@
+{
+	"Gramene": {
+		"_id": "Os01g0102300",
+		"name": "OsTLP27",
+		"description": "Thylakoid lumen protein, Photosynthesis and chloroplast development (Os01t0102300-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 40,
+		"location": {
+			"region": "1",
+			"start": 134300,
+			"end": 135439,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "RAP-DB",
+				"ids": [
+					"OsTLP27"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI00000ABC71"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q94CX1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAB92138.1",
+					"BAB62636.1",
+					"BAD45508.1",
+					"BAS69931.1",
+					"EAZ10191.1",
+					"BAF03661.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015631379.1"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g01280.1"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015775893.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326466"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR037734",
+						"name": "Thylakoid_lumenal_17.9",
+						"description": "Thylakoid lumenal 17.9kDa protein"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0009507",
+						"name": "chloroplast",
+						"namespace": "cellular_component",
+						"def": "A chlorophyll-containing plastid with thylakoids organized into grana and frets, or stroma thylakoids, and embedded in a stroma.",
+						"subset": null,
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0031977",
+						"name": "thylakoid lumen",
+						"namespace": "cellular_component",
+						"def": "The volume enclosed by a thylakoid membrane.",
+						"subset": null,
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					5575,
+					5622,
+					5623,
+					5737,
+					9536,
+					9579,
+					43226,
+					43227,
+					43229,
+					43231,
+					44424,
+					44436,
+					44444,
+					44464
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G00160",
+					"BGIOSGA002584",
+					"ORGLA01G0001200",
+					"OBART01G00190",
+					"KN538826.1_FG009",
+					"OPUNC01G00160",
+					"LPERR01G00130",
+					"TraesCS3D01G083100",
+					"TRIUR3_06281",
+					"BRADI_1g26880v3",
+					"TraesCS3B01G098000",
+					"F775_08108",
+					"TraesCS3A01G083000",
+					"HORVU3Hr1G014790",
+					"Zm00001d008394",
+					"SETIT_002757mg",
+					"SORBI_3003G107800",
+					"GSMUA_Achr3G02560_001",
+					"B456_007G042800",
+					"Solyc03g019660.2",
+					"Tp57577_TGAC_v2_gene14207",
+					"Bra013847",
+					"DCAR_007496",
+					"A4A49_10499",
+					"PRUPE_5G150000",
+					"HannXRQ_Chr02g0034681",
+					"MANES_14G050500",
+					"VIT_17s0000g01170",
+					"LR48_Vigan04g080500",
+					"AT4G24930",
+					"BVRB_5g124510",
+					"TCM_014654",
+					"POPTR_015G097700v3",
+					"PGSC0003DMG400015264",
+					"Csa_1G050570",
+					"CCACVL1_10987",
+					"PHAVU_009G165800g",
+					"Bo1g039440",
+					"MTR_3g099140",
+					"PHYPA_009357",
+					"CHLRE_17g714900v5",
+					"OSTLU_33443"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA09G12730",
+					"OGLUM01G00180"
+				],
+				"ortholog_one2many": [
+					"GLYMA_06G169300",
+					"GLYMA_04G196500",
+					"Al_scaffold_0005_2811",
+					"Al_scaffold_0006_3399",
+					"GSBRNA2T00056365001",
+					"Al_scaffold_0001_3970",
+					"scaffold_701835.1",
+					"GSBRNA2T00116051001",
+					"AMTR_s00278p00013150",
+					"AMTR_s03074p00007770",
+					"SELMODRAFT_405808",
+					"SELMODRAFT_430257"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"funricegene_genekeywords": {
+		"Symbol": "{'OsTLP27'}",
+		"RAPdb": "{'Os01g0102300'}",
+		"MSU": "{'LOC_Os01g01280'}",
+		"Keyword": "{'sheath', 'chloroplast', 'photosynthesis', 'leaf'}",
+		"Title": "{'Overexpression of OsTLP27 in rice improves chloroplast function and photochemical efficiency'}"
+	},
+	"msu": {
+		"Genomic Sequence": " >LOC_Os01g01280 AGCAGAATCGTACGTTTGTAATGACGTCATCATTATCATCATCCACAGCCTCTGCTGCTG CTTGTTGCAAGAGTAGAAGTCGTAATCCTCCTCCGGCGCCGGCGCCACACACTAGTACTG CACGAGTAGTTCGCAGCAGCAGGCGGAGGCTTCTCTTAGTATTCTTCTCCGCAGAGGCGG CGGCGGCTGCGACGAGCGGTCTCATCCAGACCCCGTGTGGGCAAGCCTACCCTTTCGCTG GCACCAACGTGAAGAAGCCGCAGCCGCCGTCCACCCCTTACTCCCAATCCCAATCGCAGC AGCAGTTTGGCCTCGACGCCAAAGGGTAATTAACTAAACCGGCCGCCACAGATCTGGATG GATCGATCTTAAAATTAAGAAAGAGATTATATATATTATGGATGCAGGAGGATTAGGGCG TGCCCGTCGACGAACCCCGGATGCGTGTCCACAAACCCCACGGTGGGCGCATCTTGCTCC TTGGCCTCCCCGCTCATCGTCCCCGCTAATACACCAACGGACAAGGCCGCCGCTGTAAGT GTACGCACGCACGCATTTGTTATTCATTTAATATAGCAGTATTTGTTTCTGAATTAGTAA TTCGATGTGAATGAATGACAGTCGCTGCGCGAGGCTATCCTCAAGACGCAGAGGAATGCG GTGATCAAAGCCGACGAGGAGACGGCGTACGGGCACTACATCCAGGCGGAGGTCGACGGC GGCGCAGGCCGCGACGTGATGGAGTTCCTCCTCAAGGAATCCCAGTCCCAGTCCCAGGAG GTGGTGGCCGCGTACCGATGCGTCGCCACCAAGGTCATCTTCGTCTACCCCTTCACCACT GCCGTCGGCGATTCAAGAGGGCAGAGCCAGAGGATCGCCGCCGTCGCCCAGGAGCTCGGA TGGTACGCCCCGGACCTACTCAACGCCGCCACCGCCGACGACCACTCTATCCTCGACTAT TAACCAAGGCCATACATATGCTTGCTTCATTATCTCTAGTCTGTACAAGTACAACTCGTC CAAATTCATTCATCCATCCATCCATCCACGACACATATACAAATACTAATCTATTATTAC TACTAAGTAGTACTAGTAGCCACCGATATATATACACAACAAATGTATTAATCAAAATGC TAATTTATTTCTACGCCGGCCGGCGTCCTTGCACTTTTGGATGATATTGGGCCTTAATTT TCATCGTAGGTCACCGAGTTAGCCCATGCACTGTTTACTGTGTCATGAAATAAGCATGTG GGCCTCACAGGTATTTTTAATTTTTTTAACTAACACCAGCTGACAGACATGTAGGGTGCT TTTGAATTTTTTGTCCCATGTAAACATCATATGGGACCAGGGCGGATCCAGAAAAAAAAA TTGAGGGGCTTAATT ",
+		"CDS": " >LOC_Os01g01280.1 ATGACGTCATCATTATCATCATCCACAGCCTCTGCTGCTGCTTGTTGCAAGAGTAGAAGT CGTAATCCTCCTCCGGCGCCGGCGCCACACACTAGTACTGCACGAGTAGTTCGCAGCAGC AGGCGGAGGCTTCTCTTAGTATTCTTCTCCGCAGAGGCGGCGGCGGCTGCGACGAGCGGT CTCATCCAGACCCCGTGTGGGCAAGCCTACCCTTTCGCTGGCACCAACGTGAAGAAGCCG CAGCCGCCGTCCACCCCTTACTCCCAATCCCAATCGCAGCAGCAGTTTGGCCTCGACGCC AAAGGGAGGATTAGGGCGTGCCCGTCGACGAACCCCGGATGCGTGTCCACAAACCCCACG GTGGGCGCATCTTGCTCCTTGGCCTCCCCGCTCATCGTCCCCGCTAATACACCAACGGAC AAGGCCGCCGCTTCGCTGCGCGAGGCTATCCTCAAGACGCAGAGGAATGCGGTGATCAAA GCCGACGAGGAGACGGCGTACGGGCACTACATCCAGGCGGAGGTCGACGGCGGCGCAGGC CGCGACGTGATGGAGTTCCTCCTCAAGGAATCCCAGTCCCAGTCCCAGGAGGTGGTGGCC GCGTACCGATGCGTCGCCACCAAGGTCATCTTCGTCTACCCCTTCACCACTGCCGTCGGC GATTCAAGAGGGCAGAGCCAGAGGATCGCCGCCGTCGCCCAGGAGCTCGGATGGTACGCC CCGGACCTACTCAACGCCGCCACCGCCGACGACCACTCTATCCTCGACTATTAA ",
+		"Protein": " >LOC_Os01g01280.1 MTSSLSSSTASAAACCKSRSRNPPPAPAPHTSTARVVRSSRRRLLLVFFSAEAAAAATSG LIQTPCGQAYPFAGTNVKKPQPPSTPYSQSQSQQQFGLDAKGRIRACPSTNPGCVSTNPT VGASCSLASPLIVPANTPTDKAAASLREAILKTQRNAVIKADEETAYGHYIQAEVDGGAG RDVMEFLLKESQSQSQEVVAAYRCVATKVIFVYPFTTAVGDSRGQSQRIAAVAQELGWYA PDLLNAATADDHSILDY* "
+	},
+	"rapdb": {
+		"ID": "Os01g0102300",
+		"Description": "Thylakoid lumen protein, Photosynthesis and chloroplast development (Os01t0102300-01)",
+		"Position": "chr01:134300..135439",
+		"RAP-DB Gene Symbol Synonym(s)": "OsTLP27",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	},
+	"ic4r": {
+		"All": "",
+		"OS Gene ID": "Os01g0102300",
+		"LOC Gene ID": "LOC_Os01g01280",
+		"Symbol": "-",
+		"Location": "Chr1:134291-135685 (+)",
+		"Description": "expressed protein",
+		"Box Plot": ""
+	},
+	"funricegene_geneinfo": {
+		"Symbol": "{'OsTLP27'}",
+		"RAPdb": "{'Os01g0102300'}",
+		"MSU": "{'LOC_Os01g01280'}"
+	}
+}
