@@ -48,11 +48,11 @@ Return a dictionary in databases follow iricname
 
 ```bash
 t = time.time()
-    test = MultiQuery()
-    file_id = test.search_gene(chro="chr01", start_pos="1",
+test = MultiQuery()
+file_id = test.search_gene(chro="chr01", start_pos="1",
                             end_pos="10000",dbs="all",save_path="./result/")
-    print("Time for search gene:",time.time() - t)
-    print("Ouput file",file_id)
+print("Time for search gene:",time.time() - t)
+print("Ouput file",file_id)
 ```
 ```bash
 Time for search gene: 5.135738134384155
@@ -62,18 +62,18 @@ Ouput file {'OsNippo01g010050': {'msu7Name': {'LOC_Os01g01010'}, 'raprepName': {
 ### Example of system query_iric
 
 ```bash
-    #Search gene and query
-    t = time.time()
-    test = MultiQuery()
-    file_id = test.search_gene(chro="chr01", start_pos="1",
-                            end_pos="10000",dbs="all",save_path="./result/")
-    print("Time for search gene:",time.time() - t)
-    print("Ouput file",file_id)
-    #Query iric name
-    t = time.time()
-    db = test.query_iric(file_id,dbs="all",save_path="./result/")
-    print("Time for query:", time.time() - t)
-    print("Output database",db)
+#Search gene and query
+t = time.time()
+test = MultiQuery()
+file_id = test.search_gene(chro="chr01", start_pos="1",
+                        end_pos="10000",dbs="all",save_path="./result/")
+print("Time for search gene:",time.time() - t)
+print("Ouput file",file_id)
+#Query iric name
+t = time.time()
+db = test.query_iric(file_id,dbs="all",save_path="./result/")
+print("Time for query:", time.time() - t)
+print("Output database",db)
 ```
 ```bash
 Time for search gene: 5.135738134384155
