@@ -16,6 +16,7 @@ Note:
      ```
       conda env create -f envs.yml 
      ```
+     You could edit the prefix in the last line of `.yml` file to link the destination of environment
  - To run project in Jupyter notebook, just run the `test.ipynb`
 
 ## Function
@@ -28,6 +29,8 @@ MultiQuery().search_gene(chro="", start_pos="",end_pos="",dbs='all',save_path=No
 Return a dictionary in snpseek database
 1. dbs : list of database,default is search gene in all: "msu7","rap","iric"
 2. save_path: link folder save output function, default is None => don't save 
+
+Note: the computation time depend on the length of position you decide.
 
 ```py
 test = MultiQuery()
