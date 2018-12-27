@@ -96,7 +96,7 @@ def connectionError(link, data=""):
         if data!= "":
             res = requests.post(link, data=data, headers=headers)
         else:
-            res = requests.get(link, allow_redirects=False)
+            res = requests.get(link, allow_redirects=False,timeout=5)
         if res.status_code != 200:
             print('Server Error: ' + str(res.status_code) + '\n' + 'For url:' + link)
             #raise Exception('Server Error: ' + str(res.status_code) + '\n' + 'For url:' + link)
@@ -104,5 +104,6 @@ def connectionError(link, data=""):
         return res
     except requests.exceptions.RequestException:
         print("Can't connect:",link)
+        return
         #raise Exception("Internet Connection error")
         # sys.exit(1)

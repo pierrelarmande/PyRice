@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from multiprocessing import Process,Lock,Manager,active_children
+from multiprocessing import Process,Lock,Manager,active_children,Pool
 from bs4 import BeautifulSoup
 import helper
 import json
@@ -32,7 +32,7 @@ class MultiQuery():
             raise ValueError('Database Not Found')
         return database_description
 
-    def query(self, result, iricname, db, qfields=[], outputFormat="dict", outputFile=None, verbose=False):
+    def query(self, iricname, db, qfields=[], outputFormat="dict", outputFile=None, verbose=False):
         #         self.lock.acquire()
         # Fetch database description
         database_description = self.fetch_description(db)
@@ -133,7 +133,6 @@ class MultiQuery():
                 self.result[iricname].setdefault(db,dict_2)
             # for t in tmp:
                 #self.result[db].append([(qfields[0], qfields[1]), t])
-        return self.result
 
     def save_file(self,folder_path):
         data_folder = folder_path+"data/"
@@ -234,14 +233,15 @@ class MultiQuery():
         #                 set_ids.add(i)
         manager = Manager()
         self.result = manager.dict()
+        #self.result = dict()
+        #p = Pool()
         if dbs == 'all':
             name_db = ["oryzabase", "Gramene", "funricegene_genekeywords",
                        "funricegene_faminfo", "msu", "rapdb","ic4r",
                        "funricegene_geneinfo"]
         else:
             name_db = dbs
-        number_process = len(file_id) * 20;
-        p = [None for i in range(number_process)]
+        list_process = []
         count = 0
         #Query in multi_database
         for key, value in file_id.items():
@@ -254,19 +254,20 @@ class MultiQuery():
                         # p[count].start()
                         # p[count].join()
                         # count += 1
-                        p = Process(target=self.query, args=(self.result,key,db,[ident],))
+                        p = Process(target=self.query, args=(key,db,[ident],))
                         p.start()
-                        p.join()
+                        list_process.append(p)
+                        #p.apply_async(self.query,args=(key,db,[ident],))
                 elif db == "msu":
                     for loc in value["msu7Name"]:
                         # p[count] = Process(target=self.query, args=(self.result,key,db, [loc],))
                         # p[count].start()
                         # p[count].join()
                         # count += 1
-                        p = Process(target=self.query, args=(self.result,key,db, [loc],))
+                        p = Process(target=self.query, args=(key,db, [loc],))
                         p.start()
-                        p.join()
-                        count += 1
+                        list_process.append(p)
+                        #p.apply_async(self.query, args=(key, db, [loc],))
                 elif db == "funricegene_genekeywords" or db == "funricegene_faminfo" or db == "funricegene_geneinfo":
                     if len(value["raprepName"]) >0:
                         for ident in value["raprepName"]:
@@ -275,20 +276,25 @@ class MultiQuery():
                                 # p[count].start()
                                 # p[count].join()
                                 # count += 1
-                                p = Process(target=self.query, args=(self.result,key, db, [ident, loc],))
+                                p = Process(target=self.query, args=(key, db, [ident, loc],))
                                 p.start()
-                                p.join()
+                                list_process.append(p)
+                                #p.apply_async(self.query, args=(key, db, [ident,loc],))
                     else:
                         for loc in value["msu7Name"]:
                             # p[count] = Process(target=self.query, args=(self.result, key, db, ["", loc],))
                             # p[count].start()
                             # p[count].join()
                             # count += 1
-                            p = Process(target=self.query, args=(self.result, key, db, ["", loc],))
+                            p = Process(target=self.query, args=(key, db, ["", loc],))
                             p.start()
-                            p.join()
-
-
+                            list_process.append(p)
+                            #p.apply_async(self.query, args=(key, db, ["",loc],))
+        for process in list_process:
+            process.join()
+        # p.close()
+        # p.join()
+        # p.terminate()
         #change format
         demo = dict()
         for key, value in self.result.items():
@@ -497,15 +503,20 @@ class MultiQuery():
             name_db = dbs
         #self.result.setdefault('snpseek', manager.list())
         self.result.setdefault('snpseek', manager.dict())
-        number_process = len(name_db)
-        list_process = [None for i in range(number_process)]
-        for i in range(number_process):
-            list_process[i] = Process(target=self.query,
-                        args=(self.result,"snpseek","snpseek",[str(chro), str(start_pos), str(end_pos), name_db[i]],))
-            list_process[i].start()
-            list_process[i].join()
-        # for process in list_process:
-        #     process.join()
+        #number_process = len(name_db)
+        list_process = []
+        # p =  Pool(processes=10)
+        for i in range(len(dbs)):
+            p = Process(target=self.query,
+                        args=("snpseek","snpseek",[str(chro), str(start_pos), str(end_pos), name_db[i]],))
+            p.start()
+            list_process.append(p)
+            #p.apply_async(self.query,args=("snpseek","snpseek",[str(chro), str(start_pos), str(end_pos), name_db[i]],))
+        # p.close()
+        # p.join()
+        # p.terminate()
+        for process in list_process:
+            process.join()
         item_dict = dict()
         test = copy.deepcopy(self.result)
         # for i in test.keys():
