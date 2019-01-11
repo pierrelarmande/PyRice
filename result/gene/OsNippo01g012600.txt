@@ -1,13 +1,4 @@
 {
-	"ic4r": {
-		"All": "",
-		"OS Gene ID": "Os01g0103700",
-		"LOC Gene ID": "LOC_Os01g01380",
-		"Symbol": "-",
-		"Location": "Chr1:191036-196287 (+)",
-		"Description": "expressed protein",
-		"Box Plot": ""
-	},
 	"Gramene": {
 		"_id": "Os01g0103700",
 		"name": "Os01g0103700",
@@ -211,6 +202,15 @@
 			}
 		},
 		"species_idx": 5
+	},
+	"ic4r": {
+		"All": "",
+		"OS Gene ID": "Os01g0103700",
+		"LOC Gene ID": "LOC_Os01g01380",
+		"Symbol": "-",
+		"Location": "Chr1:191036-196287 (+)",
+		"Description": "expressed protein",
+		"Box Plot": ""
 	},
 	"rapdb": {
 		"ID": "Os01g0103700",

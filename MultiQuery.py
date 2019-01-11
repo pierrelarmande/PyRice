@@ -242,7 +242,6 @@ class MultiQuery():
         else:
             name_db = dbs
         list_process = []
-        count = 0
         #Query in multi_database
         for key, value in file_id.items():
             print("Query iricname: ",key)
@@ -362,7 +361,7 @@ class MultiQuery():
         self.result = demo
         return self.result
 
-    def query_ids_locs(self,idents, locs, dbs='all'):
+    def query_ids_locs(self,idents, locs, dbs='all',save_path = None):
         set_ids,set_locs,idents,locs = self.check_gene(idents, locs)
         manager = Manager()
         self.result = manager.dict()
@@ -372,94 +371,154 @@ class MultiQuery():
                        "funricegene_geneinfo"]
         else:
             name_db = dbs
-        number_process = (len(set_ids)+len(set_locs))*10;
-        p =[None for i in range(number_process)]
-        count=0
-        for db in name_db:
-            if db not in self.result.keys():
-                #self.result.setdefault(db, manager.list())
-                self.result.setdefault(db, manager.dict())
-            if db == "rapdb" or db == 'oryzabase' or db == "Gramene" or db =="ic4r":
-                for ident in set_ids:
-                    p[count] = Process(target=self.query, args=(self.result, db, [ident],))
-                    count+=1
-                    p[count-1].start()
-                    p[count - 1].join()
-                #     list_proccess.append(p)
-                # for p in list_proccess:
-                #     p.join();
-            elif db == "msu":
-                for loc in set_locs:
-                    p[count] = Process(target=self.query, args=(self.result, db, [loc],))
-                    count+=1
-                    p[count-1].start()
-                    p[count - 1].join()
-                #     list_proccess.append(p)
-                # for p in list_proccess:
-                #     p.join();
-            elif db == "funricegene_genekeywords" or db == "funricegene_faminfo" or db =="funricegene_geneinfo":
-                for ident in idents.keys():
-                    for loc in idents[ident]:
-                        p[count] = Process(target=self.query, args=(self.result, db, [ident, loc],))
-                        count+=1
-                        p[count-1].start()
-                        p[count - 1].join()
-                    #     list_proccess.append(p)
-                    # for p in list_proccess:
-                    #     p.join();
-                for loc in locs.keys():
-                    for ident in locs[loc]:
-                        p[count] = Process(target=self.query, args=(self.result, db, [ident, loc],))
-                        count+=1
-                        p[count-1].start()
-                        p[count - 1].join()
-                    #     list_proccess.append(p)
-        new_result = dict()
-        new_name_db=[]
-        fun_db =[]
-        if dbs == 'all':
-            new_name_db = ["oryzabase", "Gramene", "rapdb", "ic4r"]
-            fun_db = ["funricegene_genekeywords", "funricegene_faminfo", "funricegene_geneinfo"]
-        else:
+        list_process = []
+        for key, value in idents.items():
+            print("Query id: ",key)
+            self.result.setdefault(key,manager.dict())
             for db in name_db:
                 if db == "rapdb" or db == 'oryzabase' or db == "Gramene" or db == "ic4r":
-                    new_name_db.append(db)
-                else:
-                    fun_db.append(db)
-        for ident in idents.keys():
-            id_data = dict()
-            for db in new_name_db:
-                #check ident in {db:{id:data}}
-                if ident in self.result[db].keys():
-                    #get data
-                    id_data.setdefault(db,self.result[db][ident])
-            #create dict with new_key : id-loc
-            new_key = ident
-            loc_data = dict()
-            #get locs for create new_key
-            for loc in idents[ident]:
-                # search id-loc in fun
-                new_key += "-" + loc
-                # search loc in msu
-                if "msu" in name_db:
-                    if loc in self.result["msu"].keys():
-                        loc_data.setdefault("msu",self.result["msu"][loc])
-                        id_data.update(loc_data)
-                fun_data = dict()
-                for fun in fun_db:
-                    if (ident,loc) in self.result[fun].keys():
-                        fun_data.setdefault(fun,self.result[fun][ident,loc])
-                        id_data.update(fun_data)
-            new_result.setdefault(new_key,id_data)
+                    p = Process(target=self.query, args=(key,db,[key],))
+                    p.start()
+                    list_process.append(p)
+                elif db == "msu":
+                    for loc in value:
+                        p = Process(target=self.query, args=(key,db, [loc],))
+                        p.start()
+                        list_process.append(p)
+                        #p.apply_async(self.query, args=(key, db, [loc],))
+                elif db == "funricegene_genekeywords" or db == "funricegene_faminfo" or db == "funricegene_geneinfo":
+                    if len(value) >0:
+                        for loc in value:
+                            p = Process(target=self.query, args=(key, db, [key,loc],))
+                            p.start()
+                            list_process.append(p)
+                                #p.apply_async(self.query, args=(key, db, [ident,loc],))
+                    else:
+                        for loc in value:
+                            p = Process(target=self.query, args=(key, db, ["", loc],))
+                            p.start()
+                            list_process.append(p)
+                            #p.apply_async(self.query, args=(key, db, ["",loc],))
         for loc in locs.keys():
-            if loc in self.result["msu"].keys():
-                new_result.setdefault(loc,self.result["msu"][loc])
-        #print("new_result",new_result)
-        with open('./support/data.json', 'w') as fp:
-            json.dump(new_result, fp)
-        self.result = new_result
-        #self.save_file("./data/")
+            self.result.setdefault(loc,manager.dict())
+            p = Process(target=self.query, args=(loc, "msu", [loc],))
+            p.start()
+            list_process.append(p)
+        for process in list_process:
+            process.join()
+        # change format
+        demo = dict()
+        for key, value in self.result.items():
+            demo.setdefault(key, dict())
+            for subdb, data in value.items():
+                demo[key].setdefault(subdb, data)
+        if save_path != None:
+            data_folder = save_path + "data/"
+            gene_folder = save_path + "gene/"
+            if not os.path.exists(data_folder):
+                os.makedirs(data_folder)
+            if not os.path.exists(gene_folder):
+                os.makedirs(gene_folder)
+            # ouput data/db.csv
+            test = copy.deepcopy(demo)
+            # filter allow attributes
+            filter_ = ["db_type", "gene_idx", "location", "xrefs", "gene_structure", "bins", "annotations",
+                       "homology"]
+            for i in test.keys():
+                for k, v in test[i].items():
+                    if k == "Gramene":
+                        for att in filter_:
+                            v.pop(att, None)
+            my_db = data_folder + "db" + '.csv'
+            # Convert output db.csv
+            total_dict = dict()
+            for iricname, databases in test.items():
+                new_dict = dict()
+                for db, data in databases.items():
+                    new_data = dict()
+                    for att, value in data.items():
+                        if value != "":
+                            new_data.setdefault(db + "." + att, value)
+                    new_dict.update(new_data)
+                total_dict.setdefault(iricname, new_dict)
+            df = pd.DataFrame.from_dict(total_dict, orient='index')
+            with open(my_db, 'w') as f:
+                df.to_csv(f, header=True)
+                f.close()
+            # output gene/iricname.txt
+            test = copy.deepcopy(demo)
+            # filter allow attributes
+            filter_ = ["gene_structure", "bins", ]
+            annotations = ["taxonomy", "familyRoot"]
+            homology = ["gene_tree"]
+            homologous_genes = ["syntenic_ortholog_one2one", "ortholog_one2many"]
+            for i in test.keys():
+                for k, v in test[i].items():
+                    if k == "Gramene":
+                        for att in filter_:
+                            v.pop(att, None)
+                        if "annotations" in v.keys():
+                            for att in annotations:
+                                v["annotations"].pop(att, None)
+                        if "homology" in v.keys():
+                            for att in homology:
+                                v["homology"].pop(att, None)
+                            if "homologous_genes" in v.keys():
+                                for att in homologous_genes:
+                                    v["homology"]["homologous_genes"].pop(att, None)
+            for iricname, databases in test.items():
+                my_gene = gene_folder + iricname + '.txt'
+                with open(my_gene, 'w') as f:
+                    f.write(json.dumps(test[iricname], indent="\t"))
+                    f.close()
+        self.result = demo
         return self.result
+        # new_result = dict()
+        # new_name_db=[]
+        # fun_db =[]
+        # if dbs == 'all':
+        #     new_name_db = ["oryzabase", "Gramene", "rapdb", "ic4r"]
+        #     fun_db = ["funricegene_genekeywords", "funricegene_faminfo", "funricegene_geneinfo"]
+        # else:
+        #     for db in name_db:
+        #         if db == "rapdb" or db == 'oryzabase' or db == "Gramene" or db == "ic4r":
+        #             new_name_db.append(db)
+        #         else:
+        #             fun_db.append(db)
+        # for ident in idents.keys():
+        #     id_data = dict()
+        #     for db in new_name_db:
+        #         #check ident in {db:{id:data}}
+        #         if ident in self.result[db].keys():
+        #             #get data
+        #             id_data.setdefault(db,self.result[db][ident])
+        #     #create dict with new_key : id-loc
+        #     new_key = ident
+        #     loc_data = dict()
+        #     #get locs for create new_key
+        #     for loc in idents[ident]:
+        #         # search id-loc in fun
+        #         new_key += "-" + loc
+        #         # search loc in msu
+        #         if "msu" in name_db:
+        #             if loc in self.result["msu"].keys():
+        #                 loc_data.setdefault("msu",self.result["msu"][loc])
+        #                 id_data.update(loc_data)
+        #         fun_data = dict()
+        #         for fun in fun_db:
+        #             if (ident,loc) in self.result[fun].keys():
+        #                 fun_data.setdefault(fun,self.result[fun][ident,loc])
+        #                 id_data.update(fun_data)
+        #     new_result.setdefault(new_key,id_data)
+        # for loc in locs.keys():
+        #     if loc in self.result["msu"].keys():
+        #         new_result.setdefault(loc,self.result["msu"][loc])
+        # #print("new_result",new_result)
+        # with open('./support/data.json', 'w') as fp:
+        #     json.dump(new_result, fp)
+        # self.result = new_result
+        # #self.save_file("./data/")
+        # return self.result
 
     def check_gene(self, idents, locs):
         true_ids = dict()

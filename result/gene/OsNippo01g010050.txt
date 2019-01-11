@@ -1,4 +1,13 @@
 {
+	"ic4r": {
+		"All": "",
+		"OS Gene ID": "Os01g0100100",
+		"LOC Gene ID": "LOC_Os01g01010",
+		"Symbol": "-",
+		"Location": "Chr1:2903-10817 (+)",
+		"Description": "TBC domain containing protein, expressed",
+		"Box Plot": ""
+	},
 	"Gramene": {
 		"_id": "Os01g0100100",
 		"name": "Os01g0100100",
@@ -284,15 +293,6 @@
 			}
 		},
 		"species_idx": 5
-	},
-	"ic4r": {
-		"All": "",
-		"OS Gene ID": "Os01g0100100",
-		"LOC Gene ID": "LOC_Os01g01010",
-		"Symbol": "-",
-		"Location": "Chr1:2903-10817 (+)",
-		"Description": "TBC domain containing protein, expressed",
-		"Box Plot": ""
 	},
 	"rapdb": {
 		"ID": "Os01g0100100",
