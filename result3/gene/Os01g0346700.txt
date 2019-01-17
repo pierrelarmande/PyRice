@@ -1,0 +1,92 @@
+{
+	"Gramene": {
+		"_id": "Os01g0346700",
+		"name": "Os01g0346700",
+		"description": "Conserved hypothetical protein. (Os01t0346700-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 3569,
+		"location": {
+			"region": "1",
+			"start": 13778764,
+			"end": 13779786,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0000446B36"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q5ZCT6"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015635462.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAD52741.1",
+					"BAS72002.1",
+					"EAZ11791.1",
+					"BAF04878.1"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015779976.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326494"
+				]
+			}
+		],
+		"annotations": {},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G16180",
+					"BGIOSGA001706",
+					"ORGLA01G0119500",
+					"ONIVA05G23930",
+					"OGLUM01G16400",
+					"OMERI01G13200",
+					"LPERR01G13190",
+					"TraesCS1A01G250400",
+					"TraesCS1B01G261000",
+					"BRADI_2g12610v3",
+					"TraesCS1D01G250000",
+					"SORBI_3003G157900",
+					"Zm00001d040783"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0346700",
+		"Description": "Conserved hypothetical protein. (Os01t0346700-01)",
+		"Position": "chr01:13778764..13779786",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

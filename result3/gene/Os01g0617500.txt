@@ -1,0 +1,403 @@
+{
+	"Gramene": {
+		"_id": "Os01g0617500",
+		"name": "Os01g0617500",
+		"description": "Tetratricopeptide-like helical domain containing protein. (Os01t0617500-01);Similar to predicted protein. (Os01t0617500-02)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 5893,
+		"location": {
+			"region": "1",
+			"start": 24534886,
+			"end": 24546684,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0000450505"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q5ZDJ3"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g43030.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015620922.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAF05496.1",
+					"BAS73177.1",
+					"BAD61289.1"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015765436.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326606"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR011990",
+						"name": "TPR-like_helical_dom_sf",
+						"description": "Tetratricopeptide-like helical domain superfamily"
+					},
+					{
+						"id": "IPR013026",
+						"name": "TPR-contain_dom",
+						"description": "Tetratricopeptide repeat-containing domain"
+					},
+					{
+						"id": "IPR019734",
+						"name": "TPR_repeat",
+						"description": "Tetratricopeptide repeat"
+					},
+					{
+						"id": "IPR021183",
+						"name": "NatA_aux_su",
+						"description": "N-terminal acetyltransferase A, auxiliary subunit"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0017196",
+						"name": "N-terminal peptidyl-methionine acetylation",
+						"namespace": "biological_process",
+						"def": "The acetylation of the N-terminal methionine of proteins to form the derivative N-acetyl-L-methionine.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0004596",
+						"name": "peptide alpha-N-acetyltransferase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the reaction: acetyl-CoA + peptide = CoA + N-alpha-acetylpeptide. This reaction is the acetylation of the N-terminal amino acid residue of a peptide or protein.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0005515",
+						"name": "protein binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with any protein or protein complex (a complex of two or more proteins that may include other nonprotein molecules).",
+						"subset": [
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_metagenomics",
+							"goslim_pir",
+							"goslim_plant",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0009414",
+						"name": "response to water deprivation",
+						"namespace": "biological_process",
+						"def": "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a water deprivation stimulus, prolonged deprivation of water.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0009793",
+						"name": "embryo development ending in seed dormancy",
+						"namespace": "biological_process",
+						"def": "The process whose specific outcome is the progression of the embryo over time, from zygote formation to the end of seed dormancy. An example of this process is found in Arabidopsis thaliana.",
+						"subset": null,
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0005829",
+						"name": "cytosol",
+						"namespace": "cellular_component",
+						"def": "The part of the cytoplasm that does not contain organelles but which does contain other particulate matter, such as protein complexes.",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_mouse",
+							"goslim_plant",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0009506",
+						"name": "plasmodesma",
+						"namespace": "cellular_component",
+						"def": "A fine cytoplasmic channel, found in all higher plants, that connects the cytoplasm of one cell to that of an adjacent cell.",
+						"subset": null,
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0016020",
+						"name": "membrane",
+						"namespace": "cellular_component",
+						"def": "A lipid bilayer along with all the proteins and protein complexes embedded in it an attached to it.",
+						"subset": [
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_metagenomics",
+							"goslim_pir",
+							"goslim_plant",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0031415",
+						"name": "NatA complex",
+						"namespace": "cellular_component",
+						"def": "A conserved complex that catalyzes the transfer of an acetyl group to an N-terminal Ser, Ala, Gly, or Thr residue of a protein acceptor molecule. In Saccharomyces the complex includes Nat1p and Ard1p, and may contain additional proteins.",
+						"subset": null,
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					3,
+					1101,
+					3006,
+					3674,
+					3824,
+					5488,
+					5575,
+					5622,
+					5623,
+					5737,
+					5911,
+					6464,
+					6473,
+					6474,
+					6807,
+					6950,
+					7275,
+					8080,
+					8150,
+					8152,
+					9415,
+					9628,
+					9790,
+					9791,
+					9987,
+					10035,
+					10154,
+					10467,
+					16407,
+					16410,
+					16740,
+					16746,
+					16747,
+					18193,
+					18206,
+					19538,
+					22414,
+					30054,
+					31248,
+					31365,
+					31414,
+					32501,
+					32502,
+					32991,
+					34212,
+					36211,
+					42221,
+					43170,
+					43412,
+					43543,
+					44237,
+					44238,
+					44260,
+					44267,
+					44424,
+					44444,
+					44464,
+					48316,
+					48608,
+					48731,
+					48856,
+					50896,
+					51604,
+					55044,
+					61458,
+					71704,
+					1901564,
+					1901700,
+					1902493,
+					1902494,
+					1990234
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G25610",
+					"BGIOSGA001202",
+					"OBART01G22810",
+					"AMDW01040855.1_FG001",
+					"ORGLA01G0183300",
+					"OGLUM01G26550",
+					"OMERI01G20910",
+					"OPUNC01G23010",
+					"OB01G32310",
+					"LPERR01G19550",
+					"TraesCS3B01G252100",
+					"F775_32263",
+					"TRIUR3_30791",
+					"HORVU3Hr1G054490",
+					"BRADI_2g43650v3",
+					"TraesCS3D01G230900",
+					"TraesCS3A01G223400",
+					"SETIT_000281mg",
+					"SORBI_3003G221400",
+					"Dr04492",
+					"TCM_028610",
+					"A4A49_00044",
+					"VIT_09s0002g05110",
+					"PRUPE_3G074300",
+					"CCACVL1_27988",
+					"AT1G80410",
+					"BVRB_9g220530",
+					"fgenesh2_kg.2__2342__AT1G80410.1",
+					"KK1_049496",
+					"PGSC0003DMG400002639",
+					"AMTR_s00142p00102260",
+					"OSTLU_48350",
+					"CHLRE_06g278225v5",
+					"CMT018C",
+					"Gasu_47580",
+					"CHC_T00007027001",
+					"ENSCSAVG00000000732",
+					"FBgn0031020",
+					"YDL040C",
+					"WBGene00021754"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G25970"
+				],
+				"ortholog_one2many": [
+					"Zm00001d044222",
+					"Zm00001d014434",
+					"GSMUA_Achr9G02970_001",
+					"GSMUA_AchrUn_randomG02050_001",
+					"GLYMA_08G207800",
+					"MTR_2g102435",
+					"TanjilG_27285",
+					"PHAVU_010G151600g",
+					"DCAR_021318",
+					"GLYMA_13G360900",
+					"HannXRQ_Chr16g0501061",
+					"Tp57577_TGAC_v2_gene18924",
+					"Csa_7G440577",
+					"B456_004G141700",
+					"POPTR_001G178000v3",
+					"POPTR_001G177800v3",
+					"B456_009G132500",
+					"GLYMA_05G083200",
+					"DCAR_016229",
+					"TanjilG_18180",
+					"B456_011G078200",
+					"B456_010G1480001",
+					"HannXRQ_Chr14g0455941",
+					"GLYMA_06G250800",
+					"GSBRNA2T00146273001",
+					"Csa_7G440572",
+					"LR48_Vigan05g215700",
+					"GSBRNA2T00132093001",
+					"DCAR_021319",
+					"GLYMA_15G013000",
+					"HannXRQ_Chr10g0314931",
+					"Bra008474",
+					"Solyc06g066790.2",
+					"MANES_04G121200",
+					"TanjilG_16312",
+					"MANES_11G052000",
+					"Bra003565",
+					"B456_002G058200",
+					"LR48_Vigan406s014400",
+					"Solyc03g120350.2",
+					"POPTR_003G056700v3",
+					"Bo6g080380",
+					"B456_005G132600",
+					"MTR_4g011890",
+					"DCAR_029021",
+					"GLYMA_06G252300",
+					"GSBRNA2T00099157001",
+					"Tp57577_TGAC_v2_gene24164",
+					"Csa_7G440575",
+					"POPTR_001G177700v3",
+					"GLYMA_06G252700",
+					"PHAVU_005G172700g",
+					"GLYMA_06G252800",
+					"GLYMA_07G034300",
+					"GSBRNA2T00068870001",
+					"Tp57577_TGAC_v2_gene37235",
+					"Bo6g125580",
+					"GSBRNA2T00064229001",
+					"GSBRNA2T00064230001",
+					"GSBRNA2T00066391001",
+					"Bo2g096000",
+					"Bra035184",
+					"SELMODRAFT_94950",
+					"SELMODRAFT_164833",
+					"PHYPA_004883",
+					"PHYPA_006509",
+					"PHYPA_014176",
+					"ENSG00000164134",
+					"ENSG00000172766"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0617500",
+		"Description": "Tetratricopeptide-like helical domain containing protein. (Os01t0617500-01);Similar to predicted protein. (Os01t0617500-02)",
+		"Position": "chr01:24534886..24546684",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

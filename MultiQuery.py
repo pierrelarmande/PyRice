@@ -24,24 +24,62 @@ class MultiQuery():
             self.id_dict = pickle.load(f)
             f.close()
 
-    def fetch_description(self, db):
-        # Fetch database description
-        database_description = BeautifulSoup(open(
-            "database-description.xml").read(), "xml").findAll("database", dbname=db.lower())
-        if not database_description:
-            raise ValueError('Database Not Found')
-        return database_description
 
-    def query(self, iricname, db, qfields=[], outputFormat="dict", outputFile=None, verbose=False):
+    # def fetch_description(self,db):
+    #     # Fetch database description
+    #     database_description = BeautifulSoup(open(
+    #         "database-description.xml").read(), "xml").findAll("database", dbname=db.lower())
+    #     if not database_description:
+    #         raise ValueError('Database Not Found')
+    #     return database_description
+    #
+    # def execute_query(self, db, qfields=[], verbose=False):
+    #     #Get query qfields list
+    #     fields = db[0].find_all("field")
+    #     # Prepare URL
+    #     link = db[0].find_all("link")[0]["stern"]
+    #     # Compile URL
+    #     if link[:4] == 'http':
+    #         if db[0]["method"] == "POST":
+    #             i = 0
+    #             for field in fields:
+    #                 data = {field.text: qfields[i]}
+    #                 i += 1
+    #             return helper.connectionError(link, data)
+    #         elif db[0]["method"] == "GET":
+    #             query_string = ""
+    #             if db[0]["type"] != "text/csv":
+    #                 i = 0
+    #                 for field in fields:
+    #                     # Detect controller field (always first field)
+    #                     if "lowercase" in field:
+    #                         print(qfields[i].lower())
+    #                     if field.text == "":
+    #                         query_string += qfields[i] + "?"
+    #                     # All other fields are query fields
+    #                     else:
+    #                         query_string += field.text + field["op"] + qfields[i] + "&"
+    #                     i += 1
+    #                 query_string = query_string[:-1]
+    #                 link += query_string + \
+    #                         db[0].find_all("link")[0]["aft"]
+    #                 if verbose: print(link)
+    #             return helper.connectionError(link)
+    #     else:
+    #         return open(link)
+
+    def query(self,iricname, db, qfields=[], outputFormat="dict", outputFile=None, verbose=False):
         #         self.lock.acquire()
         # Fetch database description
-        database_description = self.fetch_description(db)
+        # database_description = self.fetch_description(db)
+        database_description = helper.fetch_description(db)
         # Get Headers list
         headers = []
         for header in database_description[0].find_all("header"):
             headers.append(header.text)
 
-        res = self.execute_query(database_description, qfields, verbose)
+        #res = self.execute_query(database_description, qfields, verbose)
+        res = helper.execute_query(database_description, qfields, verbose)
         if res == None:
             return
         # Handle HTML based query
@@ -78,7 +116,8 @@ class MultiQuery():
                     if verbose:
                         print(dict_)
                     #self.result[db].setdefault(qfields[-1], dict_)
-                    self.result[iricname].setdefault(db, dict_)
+                    if len(dict_) >0:
+                        self.result[iricname].setdefault(db,dict_)
                     #self.result[db].append([qfields[-1], dict_])
         # Handle JSON based query
         elif (database_description[0]["type"] == "text/JSON"):
@@ -180,41 +219,6 @@ class MultiQuery():
                 f.write(json.dumps(test[key],indent="\t"))
                 f.close()
 
-    def execute_query(self, db, qfields=[], verbose=False):
-        #Get query qfields list
-        fields = db[0].find_all("field")
-        # Prepare URL
-        link = db[0].find_all("link")[0]["stern"]
-        # Compile URL
-        if link[:4] == 'http':
-            if db[0]["method"] == "POST":
-                i = 0
-                for field in fields:
-                    data = {field.text: qfields[i]}
-                    i += 1
-                return helper.connectionError(link, data)
-            elif db[0]["method"] == "GET":
-                query_string = ""
-                if db[0]["type"] != "text/csv":
-                    i = 0
-                    for field in fields:
-                        # Detect controller field (always first field)
-                        if "lowercase" in field:
-                            print(qfields[i].lower())
-                        if field.text == "":
-                            query_string += qfields[i] + "?"
-                        # All other fields are query fields
-                        else:
-                            query_string += field.text + field["op"] + qfields[i] + "&"
-                        i += 1
-                    query_string = query_string[:-1]
-                    link += query_string + \
-                            db[0].find_all("link")[0]["aft"]
-                    if verbose: print(link)
-                return helper.connectionError(link)
-        else:
-            return open(link)
-
     def query_iric(self,file_id,dbs='all',save_path =None):
         set_ids = set()
         set_locs = set()
@@ -235,64 +239,76 @@ class MultiQuery():
         self.result = manager.dict()
         #self.result = dict()
         #p = Pool()
+        support_db = ["oryzabase", "Gramene", "funricegene_genekeywords",
+                   "funricegene_faminfo", "msu", "rapdb", "ic4r",
+                   "funricegene_geneinfo"]
         if dbs == 'all':
-            name_db = ["oryzabase", "Gramene", "funricegene_genekeywords",
-                       "funricegene_faminfo", "msu", "rapdb","ic4r",
-                       "funricegene_geneinfo"]
+            name_db = support_db
         else:
-            name_db = dbs
+            name_db=[]
+            for db in dbs:
+                if db not in support_db:
+                    print("Don't support databse: ", db)
+                else:
+                    name_db.append(db)
         list_process = []
         #Query in multi_database
-        for key, value in file_id.items():
-            print("Query iricname: ",key)
-            self.result.setdefault(key,manager.dict())
-            for db in name_db:
-                if db == "rapdb" or db == 'oryzabase' or db == "Gramene" or db == "ic4r":
-                    for ident in value["raprepName"]:
-                        # p[count] = Process(target=self.query, args=(self.result,key,db,[ident],))
-                        # p[count].start()
-                        # p[count].join()
-                        # count += 1
-                        p = Process(target=self.query, args=(key,db,[ident],))
-                        p.start()
-                        list_process.append(p)
-                        #p.apply_async(self.query,args=(key,db,[ident],))
-                elif db == "msu":
-                    for loc in value["msu7Name"]:
-                        # p[count] = Process(target=self.query, args=(self.result,key,db, [loc],))
-                        # p[count].start()
-                        # p[count].join()
-                        # count += 1
-                        p = Process(target=self.query, args=(key,db, [loc],))
-                        p.start()
-                        list_process.append(p)
-                        #p.apply_async(self.query, args=(key, db, [loc],))
-                elif db == "funricegene_genekeywords" or db == "funricegene_faminfo" or db == "funricegene_geneinfo":
-                    if len(value["raprepName"]) >0:
+        i=1
+        number_query = len(file_id)
+        try:
+            p = Pool(processes=8)
+            for key, value in file_id.items():
+                print("Query iricname: {} --- Step {}/{}".format(key, i, number_query))
+                i+=1
+                self.result.setdefault(key,manager.dict())
+                for db in name_db:
+                    if db == "rapdb" or db == 'oryzabase' or db == "Gramene" or db == "ic4r":
                         for ident in value["raprepName"]:
-                            for loc in value["msu7Name"]:
-                                # p[count] = Process(target=self.query, args=(self.result,key, db, [ident, loc],))
-                                # p[count].start()
-                                # p[count].join()
-                                # count += 1
-                                p = Process(target=self.query, args=(key, db, [ident, loc],))
-                                p.start()
-                                list_process.append(p)
-                                #p.apply_async(self.query, args=(key, db, [ident,loc],))
-                    else:
-                        for loc in value["msu7Name"]:
-                            # p[count] = Process(target=self.query, args=(self.result, key, db, ["", loc],))
+                            # p[count] = Process(target=self.query, args=(self.result,key,db,[ident],))
                             # p[count].start()
                             # p[count].join()
                             # count += 1
-                            p = Process(target=self.query, args=(key, db, ["", loc],))
-                            p.start()
-                            list_process.append(p)
-                            #p.apply_async(self.query, args=(key, db, ["",loc],))
-        for process in list_process:
-            process.join()
-        # p.close()
-        # p.join()
+                            # p = Process(target=self.query, args=(key,db,[ident],))
+                            # p.start()
+                            # list_process.append(p)
+                            p.apply_async(self.query,args=(key,db,[ident],))
+                    elif db == "msu":
+                        for loc in value["msu7Name"]:
+                            # p[count] = Process(target=self.query, args=(self.result,key,db, [loc],))
+                            # p[count].start()
+                            # p[count].join()
+                            # count += 1
+                            # p = Process(target=self.query, args=(key,db, [loc],))
+                            # p.start()
+                            # list_process.append(p)
+                            p.apply_async(self.query, args=(key,db, [loc],))
+                    elif db == "funricegene_genekeywords" or db == "funricegene_faminfo" or db == "funricegene_geneinfo":
+                        if len(value["raprepName"]) >0:
+                            for ident in value["raprepName"]:
+                                for loc in value["msu7Name"]:
+                                    # p[count] = Process(target=self.query, args=(self.result,key, db, [ident, loc],))
+                                    # p[count].start()
+                                    # p[count].join()
+                                    # count += 1
+                                    # p = Process(target=self.query, args=(key, db, [ident, loc],))
+                                    # p.start()
+                                    # list_process.append(p)
+                                    p.apply_async(self.query, args=(key, db, [ident,loc],))
+                        else:
+                            for loc in value["msu7Name"]:
+                                # p[count] = Process(target=self.query, args=(self.result, key, db, ["", loc],))
+                                # p[count].start()
+                                # p[count].join()
+                                # count += 1
+                                # p = Process(target=self.query, args=(key, db, ["", loc],))
+                                # p.start()
+                                # list_process.append(p)
+                                p.apply_async(self.query, args=(key, db, ["",loc],))
+            # for process in list_process:
+            #     process.join()
+        finally:
+            p.close()
+            p.join()
         # p.terminate()
         #change format
         demo = dict()
@@ -365,47 +381,71 @@ class MultiQuery():
         set_ids,set_locs,idents,locs = self.check_gene(idents, locs)
         manager = Manager()
         self.result = manager.dict()
+        support_db = ["oryzabase", "Gramene", "funricegene_genekeywords",
+                   "funricegene_faminfo", "msu", "rapdb", "ic4r",
+                   "funricegene_geneinfo"]
         if dbs == 'all':
-            name_db = ["oryzabase", "Gramene", "funricegene_genekeywords",
-                       "funricegene_faminfo", "msu", "rapdb","ic4r",
-                       "funricegene_geneinfo"]
+            name_db = support_db
         else:
-            name_db = dbs
+            name_db=[]
+            for db in dbs:
+                if db not in support_db:
+                    print("Don't support databse: ", db)
+                else:
+                    name_db.append(db)
         list_process = []
-        for key, value in idents.items():
-            print("Query id: ",key)
-            self.result.setdefault(key,manager.dict())
-            for db in name_db:
-                if db == "rapdb" or db == 'oryzabase' or db == "Gramene" or db == "ic4r":
-                    p = Process(target=self.query, args=(key,db,[key],))
-                    p.start()
-                    list_process.append(p)
-                elif db == "msu":
-                    for loc in value:
-                        p = Process(target=self.query, args=(key,db, [loc],))
-                        p.start()
-                        list_process.append(p)
-                        #p.apply_async(self.query, args=(key, db, [loc],))
-                elif db == "funricegene_genekeywords" or db == "funricegene_faminfo" or db == "funricegene_geneinfo":
-                    if len(value) >0:
+        i = 1;
+        number_query = len(idents)
+        try:
+            p = Pool(processes=8)
+            for key, value in idents.items():
+                print("Query ID: {} --- Step {}/{}".format(key,i,number_query))
+                i+=1
+                self.result.setdefault(key,manager.dict())
+                for db in name_db:
+                    if db == "rapdb" or db == 'oryzabase' or db == "Gramene" or db == "ic4r":
+                        #p = Process(target=self.query, args=(self.result,key,db,[key],))
+                        #p.start()
+                        #list_process.append(p)
+                        p.apply_async(self.query, args=(key,db,[key],))
+                    elif db == "msu":
                         for loc in value:
-                            p = Process(target=self.query, args=(key, db, [key,loc],))
-                            p.start()
-                            list_process.append(p)
-                                #p.apply_async(self.query, args=(key, db, [ident,loc],))
-                    else:
-                        for loc in value:
-                            p = Process(target=self.query, args=(key, db, ["", loc],))
-                            p.start()
-                            list_process.append(p)
-                            #p.apply_async(self.query, args=(key, db, ["",loc],))
-        for loc in locs.keys():
-            self.result.setdefault(loc,manager.dict())
-            p = Process(target=self.query, args=(loc, "msu", [loc],))
-            p.start()
-            list_process.append(p)
-        for process in list_process:
-            process.join()
+                            #p = Process(target=self.query, args=(self.result,key,db, [loc],))
+                            #p.start()
+                            #list_process.append(p)
+                            p.apply_async(self.query, args=(key,db, [loc],))
+                    elif db == "funricegene_genekeywords" or db == "funricegene_faminfo" or db == "funricegene_geneinfo":
+                        if len(value) >0:
+                            for loc in value:
+                                #p = Process(target=self.query, args=(self.result,key, db, [key,loc],))
+                                #p.start()
+                                #list_process.append(p)
+                                p.apply_async(self.query, args=(key, db, [key,loc],))
+                        else:
+                            for loc in value:
+                                #p = Process(target=self.query, args=(self.result,key, db, ["", loc],))
+                                #p.start()
+                                #list_process.append(p)
+                                p.apply_async(self.query, args=(key, db, [key,loc],))
+            if "msu" in name_db:
+                print("Query LOC with out ID")
+                i=1;
+                number_query = len(locs)
+                for loc in locs.keys():
+                    self.result.setdefault(loc,manager.dict())
+                    print("Query LOC: {} --- Step {}/{} ".format(loc,i,number_query))
+                    i+=1;
+                    #p = Process(target=self.query, args=(self.result,loc, "msu", [loc],))
+                    #p.start()
+                    #list_process.append(p)
+                    p.apply_async(self.query, args=(loc, "msu", [loc],))
+        finally:
+            p.close()
+            p.join()
+        # for process in list_process:
+        #     process.start()
+        # for process in list_process:
+        #     process.join()
         # change format
         demo = dict()
         for key, value in self.result.items():
@@ -525,15 +565,16 @@ class MultiQuery():
         true_locs = dict()
         set_locs = set() #check locs
         set_ids = set() #check_ids
-        for ident in idents:
-            if ident in self.id_dict.keys():
-                set_ids.add(ident)
-                true_ids.setdefault(ident, self.id_dict[ident])
-                for loc in self.id_dict[ident]:
-                    set_locs.add(loc)
-            #print("{} : {}".format(ident,self.id_dict[ident]))
-            else:
-                print("Can't find Id: ", ident)
+        if len(idents) > 1:
+            for ident in idents:
+                if ident in self.id_dict.keys():
+                    set_ids.add(ident)
+                    true_ids.setdefault(ident, self.id_dict[ident])
+                    for loc in self.id_dict[ident]:
+                        set_locs.add(loc)
+                #print("{} : {}".format(ident,self.id_dict[ident]))
+                else:
+                    print("Can't find ID: ", ident)
         for loc in locs:
             if loc not in set_locs:
                 if loc in self.loc_dict.keys():
@@ -548,7 +589,7 @@ class MultiQuery():
                                 true_locs.pop(loc,None)
                     #print("{}:{}".format(loc,self.loc_dict[loc]))
                 else:
-                    print("Can't find Loc: ", loc)
+                    print("Can't find LOC: ", loc)
         #print(set_locs,set_ids)
         #print(true_ids,true_locs)
         return set_ids,set_locs,true_ids, true_locs
@@ -564,18 +605,20 @@ class MultiQuery():
         self.result.setdefault('snpseek', manager.dict())
         #number_process = len(name_db)
         list_process = []
-        # p =  Pool(processes=10)
-        for i in range(len(dbs)):
-            p = Process(target=self.query,
-                        args=("snpseek","snpseek",[str(chro), str(start_pos), str(end_pos), name_db[i]],))
-            p.start()
-            list_process.append(p)
-            #p.apply_async(self.query,args=("snpseek","snpseek",[str(chro), str(start_pos), str(end_pos), name_db[i]],))
-        # p.close()
-        # p.join()
+        try:
+            p = Pool(processes=8)
+            for i in range(len(dbs)):
+                # p = Process(target=self.query,
+                #             args=("snpseek","snpseek",[str(chro), str(start_pos), str(end_pos), name_db[i]],))
+                # p.start()
+                # list_process.append(p)
+                p.apply_async(self.query,args=("snpseek","snpseek",[str(chro), str(start_pos), str(end_pos), name_db[i]],))
+        finally:
+            p.close()
+            p.join()
         # p.terminate()
-        for process in list_process:
-            process.join()
+        # for process in list_process:
+        #     process.join()
         item_dict = dict()
         test = copy.deepcopy(self.result)
         # for i in test.keys():

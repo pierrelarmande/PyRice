@@ -1,0 +1,349 @@
+{
+	"Gramene": {
+		"_id": "Os01g0311100",
+		"name": "RING finger protein OsRFPH2-4, RING-H2 protein 4",
+		"description": "Similar to RING-H2 finger protein ATL2L. (Os01t0311100-00)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 3121,
+		"location": {
+			"region": "1",
+			"start": 11686442,
+			"end": 11687191,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"OsRFPH2-4"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI00000A7159"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"A0A0P0V1P8"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g20910.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015649091.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS71780.1"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015793605.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"107277552"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR001841",
+						"name": "Znf_RING",
+						"description": "Zinc finger, RING-type"
+					},
+					{
+						"id": "IPR013083",
+						"name": "Znf_RING/FYVE/PHD",
+						"description": "Zinc finger, RING/FYVE/PHD-type"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0016021",
+						"name": "integral component of membrane",
+						"namespace": "cellular_component",
+						"def": "The component of a membrane consisting of the gene products and protein complexes having at least some part of their peptide sequence embedded in the hydrophobic region of the membrane.",
+						"subset": [
+							"goslim_chembl",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0004672",
+						"name": "protein kinase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the phosphorylation of an amino acid residue in a protein, usually according to the reaction: a protein + ATP = a phosphoprotein + ADP.",
+						"subset": [
+							"goslim_aspergillus",
+							"goslim_candida",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0005524",
+						"name": "ATP binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with ATP, adenosine 5'-triphosphate, a universally important coenzyme and enzyme regulator.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0061630",
+						"name": "ubiquitin protein ligase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the transfer of ubiquitin to a substrate protein via the reaction X-ubiquitin + S -> X + S-ubiquitin, where X is either an E2 or E3 enzyme, the X-ubiquitin linkage is a thioester bond, and the S-ubiquitin linkage is an amide bond: an isopeptide bond between the C-terminal glycine of ubiquitin and the epsilon-amino group of lysine residues in the substrate or, in the linear extension of ubiquitin chains, a peptide bond the between the C-terminal glycine and N-terminal methionine of ubiquitin residues.",
+						"subset": null,
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0043161",
+						"name": "proteasome-mediated ubiquitin-dependent protein catabolic process",
+						"namespace": "biological_process",
+						"def": "The chemical reactions and pathways resulting in the breakdown of a protein or peptide by hydrolysis of its peptide bonds, initiated by the covalent attachment of ubiquitin, and mediated by the proteasome.",
+						"subset": null,
+						"evidence_code": "IBA"
+					}
+				],
+				"ancestors": [
+					166,
+					3674,
+					3824,
+					4842,
+					5488,
+					5575,
+					6464,
+					6468,
+					6508,
+					6511,
+					6793,
+					6796,
+					6807,
+					8144,
+					8150,
+					8152,
+					9056,
+					9057,
+					9987,
+					10498,
+					16020,
+					16301,
+					16310,
+					16567,
+					16740,
+					16772,
+					16773,
+					17076,
+					19538,
+					19787,
+					19941,
+					30163,
+					30554,
+					31224,
+					32446,
+					32553,
+					32555,
+					32559,
+					35639,
+					36094,
+					36211,
+					43167,
+					43168,
+					43170,
+					43412,
+					43632,
+					44237,
+					44238,
+					44248,
+					44257,
+					44260,
+					44265,
+					44267,
+					44425,
+					51603,
+					61659,
+					70647,
+					71704,
+					97159,
+					97367,
+					140096,
+					1901265,
+					1901363,
+					1901564,
+					1901565,
+					1901575
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"gene_split": [
+					"Os01g0311400"
+				],
+				"ortholog_one2many": [
+					"ORUFI01G14220",
+					"BGIOSGA003357",
+					"ORGLA01G0107300",
+					"OGLUM01G14640",
+					"OMERI01G12100",
+					"LPERR01G11920",
+					"TraesCS3B01G103300",
+					"TraesCSU01G121400",
+					"SORBI_3003G147301",
+					"SETIT_002663mg",
+					"Dr02025",
+					"TanjilG_29263",
+					"VIT_09s0002g00220",
+					"CCACVL1_18842",
+					"PRUPE_3G030500",
+					"BVRB_7g169030",
+					"TCM_029257"
+				],
+				"syntenic_ortholog_one2many": [
+					"ONIVA01G15710"
+				],
+				"ortholog_many2many": [
+					"TraesCS3A01G087900",
+					"HORVU3Hr1G015770",
+					"HORVU6Hr1G011010",
+					"TraesCS6A01G055100",
+					"HORVU3Hr1G015780",
+					"TraesCS3D01G088200",
+					"TraesCS3D01G088100",
+					"Zm00001d040638",
+					"Zm00001d009106",
+					"A4A49_59916",
+					"A4A49_01695",
+					"B456_009G148100",
+					"GLYMA_07G046400",
+					"scaffold_105224.1",
+					"DCAR_016088",
+					"LR48_Vigan07g156600",
+					"Bra016067",
+					"PHAVU_009G261400g",
+					"POPTR_003G073300v3",
+					"HannXRQ_Chr04g0094211",
+					"A4A49_42386",
+					"PGSC0003DMG400004900",
+					"MTR_7g117540",
+					"GLYMA_16G014600",
+					"POPTR_001G162000v3",
+					"Bra008028",
+					"MANES_11G011900",
+					"LR48_Vigan11g002000",
+					"PHAVU_010G122600g",
+					"Bra040564",
+					"HannXRQ_Chr15g0497291",
+					"PGSC0003DMG400047336",
+					"Solyc12g055710.1",
+					"Solyc06g063110.1",
+					"AT1G53820",
+					"fgenesh2_kg.2__1489__AT1G72310.1",
+					"Tp57577_TGAC_v2_gene29472",
+					"PGSC0003DMG400028846",
+					"DCAR_007663",
+					"Csa_7G447970",
+					"AT1G72310",
+					"B456_011G054800",
+					"Tp57577_TGAC_v2_gene28868",
+					"GLYMA_03G263000",
+					"Csa_3G646670",
+					"DCAR_022640",
+					"MANES_04G151500",
+					"MTR_8g023400",
+					"LR48_Vigan635s003000",
+					"Solyc03g123680.1",
+					"A4A49_59878",
+					"AMTR_s00003p00240920",
+					"AMTR_s00129p00065710",
+					"SELMODRAFT_103814",
+					"SELMODRAFT_59340",
+					"SELMODRAFT_72924",
+					"SELMODRAFT_69585",
+					"PHYPA_030532",
+					"PHYPA_016985",
+					"PHYPA_000440",
+					"PHYPA_006939"
+				],
+				"within_species_paralog": [
+					"Os05g0164200",
+					"Os02g0561400",
+					"Os02g0561800",
+					"Os02g0559800",
+					"Os02g0560600",
+					"Os02g0561900",
+					"Os02g0560200",
+					"Os02g0561000",
+					"Os11g0649801",
+					"Os01g0213400",
+					"Os03g0398600",
+					"Os05g0360400",
+					"Os05g0359833",
+					"Os05g0359500",
+					"Os04g0453950",
+					"Os03g0340100",
+					"Os06g0192800",
+					"Os01g0755700"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"oryzabase": {
+		"CGSNL Gene Symbol": " _ ",
+		"Gene symbol synonym(s)": " OsRFPH2-4 ",
+		"CGSNL Gene Name": " _ ",
+		"Gene name synonym(s)": " RING finger protein OsRFPH2-4 RING-H2 protein 4 ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " ",
+		"Gene Ontology": " ",
+		"Trait Ontology": " ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os01g0311100 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"rapdb": {
+		"ID": "Os01g0311100",
+		"Description": "Similar to RING-H2 finger protein ATL2L. (Os01t0311100-00)",
+		"Position": "chr01:11686442..11687191",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "OsRFPH2-4",
+		"Oryzabase Gene Name Synonym(s)": "RING finger protein OsRFPH2-4, RING-H2 protein 4"
+	},
+	"funricegene_faminfo": {
+		"Symbol": "{'OsRFPH2-4'}",
+		"RAPdb": "{'Os01g0311100'}",
+		"MSU": "{'LOC_Os01g20910'}",
+		"Name": "{'OSRFPH2'}"
+	}
+}

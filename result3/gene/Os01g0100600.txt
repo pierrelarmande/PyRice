@@ -1,0 +1,179 @@
+{
+	"Gramene": {
+		"_id": "Os01g0100600",
+		"name": "Os01g0100600",
+		"description": "Single-stranded nucleic acid binding R3H domain containing protein. (Os01t0100600-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 10,
+		"location": {
+			"region": "1",
+			"start": 22841,
+			"end": 26892,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI000043A2ED"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q655L7"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015621156.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAE79750.1",
+					"BAS69914.1",
+					"BAF03651.1",
+					"BAD45495.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK121362"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015765670.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326456"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR001374",
+						"name": "R3H_dom",
+						"description": "R3H domain"
+					},
+					{
+						"id": "IPR024771",
+						"name": "SUZ",
+						"description": "SUZ domain"
+					},
+					{
+						"id": "IPR036867",
+						"name": "R3H_dom_sf",
+						"description": "R3H domain superfamily"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0003676",
+						"name": "nucleic acid binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with any nucleic acid.",
+						"subset": [
+							"goslim_chembl",
+							"goslim_metagenomics",
+							"goslim_pir",
+							"goslim_plant",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					3674,
+					5488,
+					97159,
+					1901363
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G00060",
+					"BGIOSGA002573",
+					"KN538826.1_FG013",
+					"OBART01G00060",
+					"OPUNC01G00040",
+					"OB01G10040",
+					"LPERR01G00040",
+					"TRIUR3_04636",
+					"TraesCS3A01G086400",
+					"F775_05093",
+					"BRADI_3g01330v3",
+					"TraesCS3B01G101900",
+					"HORVU3Hr1G015540",
+					"TraesCS3D01G086700",
+					"SETIT_036564mg",
+					"SORBI_3001G370100",
+					"PRUPE_6G359200",
+					"Dr07620",
+					"TanjilG_10159",
+					"POPTR_013G087300v3",
+					"PHAVU_007G119000g",
+					"B456_004G260400",
+					"VIT_04s0023g00170",
+					"MTR_1g078380",
+					"PGSC0003DMG400023471",
+					"GSMUA_Achr9G07410_001",
+					"MANES_09G184300",
+					"Solyc05g055830.2",
+					"Csa_2G074070",
+					"LR48_Vigan845s005800",
+					"TCM_025347",
+					"BVRB_4g075480",
+					"CCACVL1_06734",
+					"A4A49_36655",
+					"HannXRQ_Chr07g0190091",
+					"AMTR_s00020p00156350",
+					"SELMODRAFT_422523",
+					"PHYPA_010982"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G00140",
+					"OGLUM01G00060"
+				],
+				"ortholog_one2many": [
+					"Zm00001d047466",
+					"Zm00001d029189",
+					"GLYMA_20G219700",
+					"Tp57577_TGAC_v2_gene14653",
+					"Tp57577_TGAC_v2_gene14659",
+					"GLYMA_10G170300"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0100600",
+		"Description": "Single-stranded nucleic acid binding R3H domain containing protein. (Os01t0100600-01)",
+		"Position": "chr01:22841..26892",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

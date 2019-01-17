@@ -1,0 +1,250 @@
+{
+	"Gramene": {
+		"_id": "Os01g0224500",
+		"name": "Os01g0224500",
+		"description": "Conserved hypothetical protein. (Os01t0224500-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 1901,
+		"location": {
+			"region": "1",
+			"start": 6841600,
+			"end": 6843524,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI000049E78E"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q5NAG6"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g12480.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015621680.1",
+					"XP_015621679.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAD81540.1",
+					"BAF04368.1",
+					"BAD81467.1",
+					"BAS71103.1",
+					"EAZ11096.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK109225"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015766194.1",
+					"XM_015766193.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326733"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR027973",
+						"name": "DUF4602",
+						"description": "Protein of unknown function DUF4602"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0005730",
+						"name": "nucleolus",
+						"namespace": "cellular_component",
+						"def": "A small, dense body one or more of which are present in the nucleus of eukaryotic cells. It is rich in RNA and protein, is not bounded by a limiting membrane, and is not seen during mitosis. Its prime function is the transcription of the nucleolar DNA into 45S ribosomal-precursor RNA, the processing of this RNA into 5.8S, 18S, and 28S components of ribosomal RNA, and the association of these components with 5S RNA and proteins synthesized outside the nucleolus. This association results in the formation of ribonucleoprotein precursors; these pass into the cytoplasm and mature into the 40S and 60S subunits of the ribosome.",
+						"subset": [
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_pir",
+							"goslim_plant",
+							"goslim_yeast"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0000462",
+						"name": "maturation of SSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)",
+						"namespace": "biological_process",
+						"def": "Any process involved in the maturation of a precursor Small SubUnit (SSU) ribosomal RNA (rRNA) molecule into a mature SSU-rRNA molecule from the pre-rRNA molecule originally produced as a tricistronic rRNA transcript that contains the Small Subunit (SSU) rRNA, 5.8S rRNA, and the Large Subunit (LSU) in that order from 5' to 3' along the primary transcript.",
+						"subset": null,
+						"evidence_code": "IBA"
+					}
+				],
+				"ancestors": [
+					5575,
+					5622,
+					5623,
+					5634,
+					6139,
+					6364,
+					6396,
+					6725,
+					6807,
+					8150,
+					8152,
+					9987,
+					10467,
+					16070,
+					16072,
+					22613,
+					30490,
+					31974,
+					31981,
+					34470,
+					34641,
+					34660,
+					42254,
+					42274,
+					43170,
+					43226,
+					43227,
+					43228,
+					43229,
+					43231,
+					43232,
+					43233,
+					44085,
+					44237,
+					44238,
+					44422,
+					44424,
+					44428,
+					44446,
+					44464,
+					46483,
+					70013,
+					71704,
+					71840,
+					90304,
+					1901360
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G08570",
+					"BGIOSGA002094",
+					"ORGLA01G0069800",
+					"OBART01G07800",
+					"OGLUM01G08950",
+					"KN538689.1_FG081",
+					"OMERI01G07810",
+					"OPUNC01G07640",
+					"OB01G18050",
+					"LPERR01G07380",
+					"TraesCS3B01G176700",
+					"TRIUR3_17522",
+					"F775_26058",
+					"BRADI_2g07400v3",
+					"TraesCS3D01G157500",
+					"HORVU3Hr1G030330",
+					"TraesCS3A01G149400",
+					"SETIT_002898mg",
+					"SORBI_3003G012500",
+					"GSMUA_Achr10G30020_001",
+					"Dr07344",
+					"B456_006G122300",
+					"PHAVU_002G255800g",
+					"POPTR_013G075500v3",
+					"VIT_06s0009g02530",
+					"CCACVL1_28699",
+					"Csa_6G429080",
+					"AT2G44820",
+					"Solyc11g005570.1",
+					"BVRB_4g074020",
+					"PGSC0003DMG400003977",
+					"DCAR_030961",
+					"Bo4g024120",
+					"LR48_Vigan01g026500",
+					"MTR_7g096840",
+					"PHYPA_027713"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G10060"
+				],
+				"ortholog_one2many": [
+					"Zm00001d052074",
+					"Zm00001d014172",
+					"Zm00001d024684",
+					"Zm00001d037458",
+					"Zm00001d036908",
+					"GLYMA_01G027700",
+					"GSBRNA2T00116645001",
+					"HannXRQ_Chr17g0569331",
+					"MANES_09G068000",
+					"PRUPE_7G012800",
+					"MANES_S021900",
+					"Al_scaffold_0007_3053",
+					"Tp57577_TGAC_v2_gene29301",
+					"HannXRQ_Chr10g0315331",
+					"Tp57577_TGAC_v2_gene14060",
+					"PRUPE_4G268800",
+					"GSBRNA2T00095176001",
+					"HannXRQ_Chr08g0217181",
+					"GLYMA_08G136100",
+					"Bra004871",
+					"fgenesh2_kg.4__2670__AT2G44820.2",
+					"Tp57577_TGAC_v2_gene26917",
+					"Bra005538",
+					"MANES_S099300",
+					"AMTR_s00002p00091570",
+					"AMTR_s00017p00143410"
+				],
+				"syntenic_ortholog_one2many": [
+					"Zm00001d008971"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0224500",
+		"Description": "Conserved hypothetical protein. (Os01t0224500-01)",
+		"Position": "chr01:6841600..6843524",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

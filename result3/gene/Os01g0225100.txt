@@ -1,0 +1,128 @@
+{
+	"Gramene": {
+		"_id": "Os01g0225100",
+		"name": "Os01g0225100",
+		"description": "Conserved hypothetical protein. (Os01t0225100-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 1911,
+		"location": {
+			"region": "1",
+			"start": 6889444,
+			"end": 6896387,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0003938A1C"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"A0A0P0UZU1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS71107.1"
+				]
+			}
+		],
+		"annotations": {},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G08610",
+					"BGIOSGA003036",
+					"ORGLA01G0070200",
+					"OBART01G07830",
+					"OGLUM01G09000",
+					"OMERI01G07840",
+					"OPUNC01G07670",
+					"OB01G18080",
+					"LPERR01G07420",
+					"TraesCS3D01G158200",
+					"TraesCS3B01G177300",
+					"F775_06276",
+					"BRADI_2g07430v3",
+					"TraesCS3A01G150300",
+					"HORVU3Hr1G030600",
+					"SORBI_3003G012100",
+					"SETIT_000801mg",
+					"Dr06222",
+					"CCACVL1_10879",
+					"Solyc06g007110.2",
+					"PHAVU_006G068100g",
+					"AT5G58720",
+					"VIT_06s0004g06590",
+					"TCM_041623",
+					"HannXRQ_Chr08g0229401",
+					"Csa_6G185310",
+					"PRUPE_6G057400",
+					"DCAR_007376",
+					"POPTR_009G046300v3",
+					"scaffold_802477.1",
+					"BVRB_7g172170",
+					"Tp57577_TGAC_v2_gene21171",
+					"MTR_3g463770",
+					"MANES_01G161500",
+					"LR48_Vigan09g124800",
+					"PGSC0003DMG400004159",
+					"A4A49_31187",
+					"TanjilG_02909",
+					"AMTR_s00029p00245320"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G10100"
+				],
+				"ortholog_one2many": [
+					"KN538689.1_FG056",
+					"KN538689.1_FG078",
+					"Zm00001d017254",
+					"Zm00001d039321",
+					"GSMUA_Achr7G14320_001",
+					"GSMUA_Achr7G14310_001",
+					"B456_001G116100",
+					"B456_011G1101001",
+					"GSBRNA2T00030455001",
+					"GSBRNA2T00052731001",
+					"GSBRNA2T00141121001",
+					"Bo2g028400",
+					"Bra006747",
+					"Bra020357",
+					"B456_009G278500",
+					"Bo3g018510",
+					"GLYMA_18G063000",
+					"GLYMA_11G175400",
+					"GSBRNA2T00115023001"
+				],
+				"within_species_paralog": [
+					"Os02g0639700"
+				],
+				"ortholog_many2many": [
+					"PHYPA_011778",
+					"PHYPA_019786"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0225100",
+		"Description": "Conserved hypothetical protein. (Os01t0225100-01)",
+		"Position": "chr01:6889444..6896387",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

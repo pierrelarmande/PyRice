@@ -1,0 +1,291 @@
+{
+	"Gramene": {
+		"_id": "Os01g0297700",
+		"name": "USUALLY MULTIPLE ACIDS MOVE IN AND OUT TRANSPORTER 5",
+		"description": "Protein of unknown function DUF6, transmembrane domain containing protein. (Os01t0297700-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 2945,
+		"location": {
+			"region": "1",
+			"start": 10911297,
+			"end": 10914638,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "CGSNL",
+				"ids": [
+					"UMAMIT5"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI00004C27E7"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q5JNG4"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015632176.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAD86902.1",
+					"BAF04723.1",
+					"BAD86994.1",
+					"EAZ11555.1",
+					"BAS71693.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK106554"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015776690.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326725"
+				]
+			},
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"OsUMAMIT5"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR000620",
+						"name": "EamA_dom",
+						"description": "EamA domain"
+					},
+					{
+						"id": "IPR030184",
+						"name": "WAT1-related",
+						"description": "WAT1-related protein"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0022857",
+						"name": "transmembrane transporter activity",
+						"namespace": "molecular_function",
+						"def": "Enables the transfer of a substance, usually a specific substance or a group of related substances, from one side of a membrane to the other.",
+						"subset": [
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0016021",
+						"name": "integral component of membrane",
+						"namespace": "cellular_component",
+						"def": "The component of a membrane consisting of the gene products and protein complexes having at least some part of their peptide sequence embedded in the hydrophobic region of the membrane.",
+						"subset": [
+							"goslim_chembl",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0005886",
+						"name": "plasma membrane",
+						"namespace": "cellular_component",
+						"def": "The membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins.",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_mouse",
+							"goslim_plant",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					}
+				],
+				"ancestors": [
+					3674,
+					5215,
+					5575,
+					5623,
+					6810,
+					8150,
+					16020,
+					31224,
+					44425,
+					44464,
+					51179,
+					51234,
+					55085,
+					71944
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G13430",
+					"BGIOSGA003321",
+					"OBART01G12470",
+					"ORGLA01G0104700",
+					"OGLUM01G13960",
+					"KN539950.1_FG002",
+					"OPUNC01G12240",
+					"OB01G22220",
+					"LPERR01G11420",
+					"HORVU3Hr1G040230",
+					"SORBI_3003G142200",
+					"SETIT_001778mg",
+					"B456_013G208700",
+					"AT1G09380",
+					"POPTR_005G006600v3",
+					"PHAVU_001G223600g",
+					"PRUPE_6G308500",
+					"CCACVL1_09702",
+					"DCAR_029325",
+					"TCM_026803",
+					"BVRB_4g079930",
+					"A4A49_27792",
+					"Tp57577_TGAC_v2_gene1611",
+					"scaffold_100974.1"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G14850"
+				],
+				"ortholog_one2many": [
+					"BRADI_3g36040v3",
+					"BRADI_2g11420v3",
+					"TRIUR3_25469",
+					"TRIUR3_17563",
+					"TraesCS7B01G388500",
+					"F775_16731",
+					"TraesCS3A01G196000",
+					"F775_08886",
+					"TraesCS7A01G526900",
+					"F775_18000",
+					"TraesCS7D01G472200",
+					"BRADI_3g36057v3",
+					"TraesCS3B01G227600",
+					"TraesCS3D01G199100",
+					"Zm00001d040593",
+					"GSMUA_Achr9G16660_001",
+					"GSMUA_AchrUn_randomG18310_001",
+					"Solyc12g096850.1",
+					"GLYMA_03G229700",
+					"Solyc01g100910.2",
+					"GSBRNA2T00100465001",
+					"LR48_Vigan02g158900",
+					"GSBRNA2T00100467001",
+					"Solyc01g100900.2",
+					"MANES_09G179300",
+					"HannXRQ_Chr11g0328681",
+					"PGSC0003DMG400002752",
+					"MANES_08G109200",
+					"GLYMA_20G094100",
+					"GLYMA_19G227000",
+					"Bra020026",
+					"Solyc01g100880.2",
+					"HannXRQ_Chr11g0328701",
+					"GLYMA_10G145000",
+					"Csa_2G034730",
+					"Solyc01g100890.2",
+					"GSBRNA2T00093404001",
+					"Bo5g009790",
+					"GSBRNA2T00122292001",
+					"Solyc12g035400.1",
+					"Bo01087s080",
+					"Bra031664",
+					"PGSC0003DMG400029254",
+					"LR48_Vigan03g267200",
+					"Solyc01g100920.2",
+					"MTR_7g111830",
+					"PGSC0003DMG400004233",
+					"MTR_1g030400",
+					"Csa_1G181350",
+					"GSBRNA2T00042704001",
+					"GLYMA_19G227900",
+					"SELMODRAFT_59586"
+				],
+				"syntenic_ortholog_one2many": [
+					"Zm00001d009063"
+				],
+				"within_species_paralog": [
+					"Os12g0288000",
+					"Os10g0198900",
+					"Os04g0422300",
+					"Os08g0402800",
+					"Os10g0199500",
+					"Os06g0109200",
+					"Os06g0107600",
+					"Os10g0197700",
+					"Os10g0163130",
+					"Os05g0357500",
+					"Os02g0103500",
+					"Os06g0109300",
+					"Os04g0687800"
+				],
+				"gene_split": [
+					"Os02g0103700"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"oryzabase": {
+		"CGSNL Gene Symbol": " UMAMIT5 ",
+		"Gene symbol synonym(s)": " OsUMAMIT5 ",
+		"CGSNL Gene Name": " USUALLY MULTIPLE ACIDS MOVE IN AND OUT TRANSPORTER 5 ",
+		"Gene name synonym(s)": " Usually Multiple Acids Move In and out Transporter 5 ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " Biochemical character ",
+		"Gene Ontology": " GO:0022857 - transmembrane transporter activity GO:0005886 - plasma membrane GO:0006810 - transport GO:0016021 - integral to membrane ",
+		"Trait Ontology": " ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os01g0297700 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"rapdb": {
+		"ID": "Os01g0297700",
+		"Description": "Protein of unknown function DUF6, transmembrane domain containing protein. (Os01t0297700-01)",
+		"Position": "chr01:10911297..10914638",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "UMAMIT5",
+		"CGSNL Gene Name": "USUALLY MULTIPLE ACIDS MOVE IN AND OUT TRANSPORTER 5",
+		"Oryzabase Gene Symbol Synonym(s)": "OsUMAMIT5",
+		"Oryzabase Gene Name Synonym(s)": "Usually Multiple Acids Move In and out Transporter 5"
+	}
+}

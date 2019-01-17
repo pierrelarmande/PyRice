@@ -1,0 +1,330 @@
+{
+	"oryzabase": {
+		"CGSNL Gene Symbol": " _ ",
+		"Gene symbol synonym(s)": " Osppc-b OsSTA1 ppc-b STA1 BTPC OsBTPC ",
+		"CGSNL Gene Name": " _ ",
+		"Gene name synonym(s)": " phosphoenolpyruvate carboxylase b PEPCase b bacterial-type PEPC bacterial-type Phosphoenolpyruvate carboxylase ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " Biochemical character Reproductive organ - Spikelet, flower, glume, awn ",
+		"Gene Ontology": " GO:0005737 - cytoplasm GO:0006099 - tricarboxylic acid cycle GO:0008964 - phosphoenolpyruvate carboxylase activity GO:0015977 - carbon utilization by fixation of carbon dioxide ",
+		"Trait Ontology": " ",
+		"Plant Ontology": " PO:0009066 - anther PO:0025281 - pollen ",
+		"RAP ID": " Os01g0110700 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"Gramene": {
+		"_id": "Os01g0110700",
+		"name": "phosphoenolpyruvate carboxylase b, PEPCase b",
+		"description": "Similar to Phosphoenolpyruvate carboxylase (EC 4.1.1.31). (Os01t0110700-01);Similar to Phosphoenolpyruvate carboxylase. (Os01t0110700-02)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 150,
+		"location": {
+			"region": "1",
+			"start": 562088,
+			"end": 572092,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"Osppc-b, OsSTA1, ppc-b"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI000043A127"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q657S3"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS70012.1",
+					"BAF03713.1",
+					"BAS70011.1",
+					"BAD44938.1"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g02050.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015629845.1"
+				]
+			},
+			{
+				"db": "KEGG_Enzyme",
+				"ids": [
+					"00680+4.1.1.31",
+					"00620+4.1.1.31",
+					"00720+4.1.1.31",
+					"00710+4.1.1.31"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015774359.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326138"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR015813",
+						"name": "Pyrv/PenolPyrv_Kinase-like_dom",
+						"description": "Pyruvate/Phosphoenolpyruvate kinase-like domain superfamily"
+					},
+					{
+						"id": "IPR018129",
+						"name": "PEP_COase_Lys_AS",
+						"description": "Phosphoenolpyruvate carboxylase, Lys active site"
+					},
+					{
+						"id": "IPR022805",
+						"name": "PEP_COase_bac/pln-type",
+						"description": "Phosphoenolpyruvate carboxylase, bacterial/plant-type"
+					},
+					{
+						"id": "IPR033129",
+						"name": "PEPCASE_His_AS",
+						"description": "Phosphoenolpyruvate carboxylase, His active site"
+					}
+				],
+				"ancestors": [
+					21135
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0005829",
+						"name": "cytosol",
+						"namespace": "cellular_component",
+						"def": "The part of the cytoplasm that does not contain organelles but which does contain other particulate matter, such as protein complexes.",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_mouse",
+							"goslim_plant",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0008964",
+						"name": "phosphoenolpyruvate carboxylase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the reaction: phosphate + oxaloacetate = phosphoenolpyruvate + HCO3-.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0006099",
+						"name": "tricarboxylic acid cycle",
+						"namespace": "biological_process",
+						"def": "A nearly universal metabolic pathway in which the acetyl group of acetyl coenzyme A is effectively oxidized to two CO2 and four pairs of electrons are transferred to coenzymes. The acetyl group combines with oxaloacetate to form citrate, which undergoes successive transformations to isocitrate, 2-oxoglutarate, succinyl-CoA, succinate, fumarate, malate, and oxaloacetate again, thus completing the cycle. In eukaryotes the tricarboxylic acid is confined to the mitochondria. See also glyoxylate cycle.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0015977",
+						"name": "carbon fixation",
+						"namespace": "biological_process",
+						"def": "A metabolic process in which carbon (usually derived from carbon dioxide) is incorporated into organic compounds (usually carbohydrates).",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					3674,
+					3824,
+					4611,
+					5575,
+					5622,
+					5623,
+					5737,
+					6082,
+					6091,
+					6101,
+					8150,
+					8152,
+					9060,
+					9987,
+					15980,
+					16829,
+					16830,
+					16831,
+					16999,
+					17144,
+					19752,
+					43436,
+					44237,
+					44238,
+					44281,
+					44424,
+					44444,
+					44464,
+					45333,
+					55114,
+					71704,
+					72350
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G00770",
+					"OBART01G00790",
+					"ORGLA01G0006700",
+					"BGIOSGA002537",
+					"OMERI01G00210",
+					"OPUNC01G00640",
+					"OB01G10750",
+					"LPERR01G00630",
+					"TraesCS3D01G005000",
+					"HORVU3Hr1G000940",
+					"F775_21741",
+					"BRADI_2g00910v3",
+					"TRIUR3_03888",
+					"SORBI_3003G100600",
+					"SETIT_004557mg",
+					"GSMUA_Achr1G20720_001",
+					"Dr06984",
+					"PRUPE_1G302700",
+					"AT1G68750",
+					"TCM_011892",
+					"CCACVL1_07490",
+					"VIT_01s0011g02740",
+					"Csa_5G577360",
+					"A4A49_00587",
+					"TanjilG_31638",
+					"BVRB_6g141100",
+					"DCAR_030097",
+					"B456_008G187900",
+					"Solyc04g006970.2",
+					"PGSC0003DMG400007466",
+					"AMTR_s00024p00252690",
+					"CHLRE_03g171950v5",
+					"PHYPA_016075"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G00710",
+					"OGLUM01G00780",
+					"Zm00001d040129"
+				],
+				"ortholog_one2many": [
+					"KN539550.1_FG010",
+					"AMDW01040739.1_FG001",
+					"TraesCS3B01G008500",
+					"TraesCS3B01G011200",
+					"GLYMA_02G117900",
+					"GLYMA_02G130700",
+					"HannXRQ_Chr08g0214471",
+					"GLYMA_02G118200",
+					"Tp57577_TGAC_v2_gene27416",
+					"MANES_14G095900",
+					"fgenesh1_pm.C_scaffold_2000927",
+					"Bra024730",
+					"Tp57577_TGAC_v2_gene30471",
+					"GLYMA_01G091000",
+					"PHAVU_007G101300g",
+					"MTR_1g094000",
+					"LR48_Vigan06g159500",
+					"POPTR_010G131800v3",
+					"MTR_7g060030",
+					"fgenesh1_pm.C_scaffold_1002149",
+					"HannXRQ_Chr17g0568111",
+					"PHAVU_003G024800g",
+					"LR48_Vigan06g159600",
+					"Tp57577_TGAC_v2_gene2687",
+					"GLYMA_10G205500",
+					"GLYMA_02G117500",
+					"POPTR_008G114200v3",
+					"GSBRNA2T00090574001",
+					"GSBRNA2T00117989001",
+					"Tp57577_TGAC_v2_gene9800",
+					"MTR_1g094010",
+					"MANES_06G074600",
+					"GLYMA_02G118400",
+					"Bo5g043080",
+					"GLYMA_02G117700",
+					"GSBRNA2T00039034001",
+					"Tp57577_TGAC_v2_gene39957",
+					"MTR_0002s0890",
+					"LR48_Vigan02g183300",
+					"GLYMA_02G117600",
+					"Bo7g034290",
+					"Bo6g018460",
+					"Bo6g095900",
+					"Bra004016",
+					"GSBRNA2T00124332001",
+					"GSBRNA2T00142427001",
+					"SELMODRAFT_115610",
+					"SELMODRAFT_148941",
+					"SELMODRAFT_117085",
+					"SELMODRAFT_443218",
+					"Gasu_26370",
+					"CHC_T00008437001",
+					"CME095C"
+				],
+				"within_species_paralog": [
+					"Os01g0758300",
+					"Os01g0208700",
+					"Os02g0244700",
+					"Os08g0366000"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"funricegene_faminfo": {
+		"Symbol": "{'OsSTA1'}",
+		"RAPdb": "{'Os01g0110700'}",
+		"MSU": "{'LOC_Os01g02050'}",
+		"Name": "{'mature_anther-preferentially_expressed_genes'}"
+	},
+	"rapdb": {
+		"ID": "Os01g0110700",
+		"Description": "Similar to Phosphoenolpyruvate carboxylase (EC 4.1.1.31). (Os01t0110700-01);Similar to Phosphoenolpyruvate carboxylase. (Os01t0110700-02)",
+		"Position": "chr01:562088..572092",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "Osppc-b, OsSTA1, ppc-b, STA1, BTPC, OsBTPC",
+		"Oryzabase Gene Name Synonym(s)": "phosphoenolpyruvate carboxylase b, PEPCase b, bacterial-type PEPC, bacterial-type Phosphoenolpyruvate carboxylase"
+	}
+}

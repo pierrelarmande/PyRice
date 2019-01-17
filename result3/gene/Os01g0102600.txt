@@ -1,0 +1,276 @@
+{
+	"Gramene": {
+		"_id": "Os01g0102600",
+		"name": "Shikimate kinase 4",
+		"description": "Shikimate kinase domain containing protein. (Os01t0102600-01);Similar to shikimate kinase family protein. (Os01t0102600-02)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 45,
+		"location": {
+			"region": "1",
+			"start": 145603,
+			"end": 147847,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"OsSK4, OsSKL1"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0000DD88F9"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q0JRG4"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g01302.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015621730.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS69934.1",
+					"BAF03664.1",
+					"EEE53699.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK064812"
+				]
+			},
+			{
+				"db": "KEGG_Enzyme",
+				"ids": [
+					"00400+2.7.1.71"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015766244.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326439"
+				]
+			},
+			{
+				"db": "notGramene_Plant_Reactome",
+				"ids": [
+					"R-OSA-1119430.1"
+				]
+			}
+		],
+		"annotations": {
+			"pathways": {
+				"ancestors": [
+					2744345,
+					2744343,
+					5655122,
+					1119430
+				],
+				"entries": [
+					{
+						"id": "R-OSA-1120248",
+						"link": "http://plantreactome.gramene.org/PathwayBrowser/#/R-OSA-1120248",
+						"name": "shikimate-kinase"
+					}
+				]
+			},
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR027417",
+						"name": "P-loop_NTPase",
+						"description": "P-loop containing nucleoside triphosphate hydrolase"
+					},
+					{
+						"id": "IPR031322",
+						"name": "Shikimate/glucono_kinase",
+						"description": "Shikimate kinase/gluconokinase"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0009658",
+						"name": "chloroplast organization",
+						"namespace": "biological_process",
+						"def": "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of the chloroplast.",
+						"subset": null,
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0010027",
+						"name": "thylakoid membrane organization",
+						"namespace": "biological_process",
+						"def": "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of the thylakoid membrane.",
+						"subset": null,
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0009570",
+						"name": "chloroplast stroma",
+						"namespace": "cellular_component",
+						"def": "The space enclosed by the double membrane of a chloroplast but excluding the thylakoid space. It contains DNA, ribosomes and some temporary products of photosynthesis.",
+						"subset": null,
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					5575,
+					5622,
+					5623,
+					5737,
+					6996,
+					8150,
+					9507,
+					9532,
+					9536,
+					9657,
+					9668,
+					9987,
+					16043,
+					43226,
+					43227,
+					43229,
+					43231,
+					44422,
+					44424,
+					44434,
+					44435,
+					44444,
+					44446,
+					44464,
+					61024,
+					71840
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"BGIOSGA002587",
+					"OBART01G00220",
+					"ORGLA01G0001500",
+					"OPUNC01G00180",
+					"OB01G10190",
+					"BRADI_2g03680v3",
+					"TraesCS3D01G083400",
+					"TraesCS3B01G097800",
+					"HORVU3Hr1G014780",
+					"F775_09939",
+					"TraesCS3A01G082700",
+					"TRIUR3_05441",
+					"Zm00001d030688",
+					"SETIT_022939mg",
+					"SORBI_3008G134800",
+					"GSMUA_Achr6G10980_001",
+					"Dr09834",
+					"fgenesh2_kg.5__464__AT3G26900.2",
+					"BVRB_6g130930",
+					"PRUPE_3G310900",
+					"TCM_017289",
+					"MTR_6g033510",
+					"LR48_Vigan10g163800",
+					"Csa_3G509960",
+					"DCAR_002948",
+					"Bo7g084000",
+					"PHAVU_004G081400g",
+					"POPTR_017G062800v3",
+					"CCACVL1_10160",
+					"MANES_11G079700",
+					"Tp57577_TGAC_v2_gene36708",
+					"Solyc02g094420.2",
+					"HannXRQ_Chr14g0451291",
+					"AT3G26900",
+					"Bra025234",
+					"PGSC0003DMG401020240",
+					"A4A49_07717",
+					"AMTR_s00016p00187060",
+					"PHYPA_009358"
+				],
+				"ortholog_one2many": [
+					"B456_012G083400",
+					"GSBRNA2T00078088001",
+					"VIT_16s0039g01380",
+					"GLYMA_02G073000",
+					"GLYMA_16G154300",
+					"VIT_14s0068g01460",
+					"TanjilG_19597",
+					"GSBRNA2T00139353001",
+					"TanjilG_23954",
+					"B456_001G128000",
+					"B456_013G051300",
+					"CHLRE_10g436350v5",
+					"OSTLU_10503",
+					"CMT093C"
+				],
+				"within_species_paralog": [
+					"Os04g0640600",
+					"Os02g0749300",
+					"Os06g0225800"
+				],
+				"ortholog_many2many": [
+					"Gasu_30830",
+					"Gasu_49560"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"oryzabase": {
+		"CGSNL Gene Symbol": " _ ",
+		"Gene symbol synonym(s)": " OsSK4 OsSKL1 ",
+		"CGSNL Gene Name": " _ ",
+		"Gene name synonym(s)": " Shikimate kinase 4 ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " Biochemical character ",
+		"Gene Ontology": " GO:0005524 - ATP binding GO:0004765 - shikimate kinase activity ",
+		"Trait Ontology": " ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os01g0102600 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"rapdb": {
+		"ID": "Os01g0102600",
+		"Description": "Shikimate kinase domain containing protein. (Os01t0102600-01);Similar to shikimate kinase family protein. (Os01t0102600-02)",
+		"Position": "chr01:145603..147847",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "OsSK4, OsSKL1",
+		"Oryzabase Gene Name Synonym(s)": "Shikimate kinase 4"
+	},
+	"funricegene_geneinfo": {
+		"Symbol": "{'OsSK4|OsSKL1'}",
+		"RAPdb": "{'Os01g0102600'}",
+		"MSU": "{'LOC_Os01g01302'}"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"rapdb": {
+		"ID": "Os01g0141300",
+		"Description": "Similar to vacuolar sorting protein 4b. (Os01t0141300-00)",
+		"Position": "chr01:2226409..2229526",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

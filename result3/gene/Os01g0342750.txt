@@ -1,0 +1,348 @@
+{
+	"Gramene": {
+		"_id": "Os01g0342750",
+		"name": "Os01g0342750",
+		"description": "Hypothetical conserved gene. (Os01t0342750-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 3512,
+		"location": {
+			"region": "1",
+			"start": 13524554,
+			"end": 13528480,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0003939E0F"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"A0A0P0V2F0"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS71981.1"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR003593",
+						"name": "AAA+_ATPase",
+						"description": "AAA+ ATPase domain"
+					},
+					{
+						"id": "IPR013525",
+						"name": "ABC_2_trans",
+						"description": "ABC-2 type transporter"
+					},
+					{
+						"id": "IPR013581",
+						"name": "PDR_assoc",
+						"description": "Plant PDR ABC transporter associated"
+					},
+					{
+						"id": "IPR027417",
+						"name": "P-loop_NTPase",
+						"description": "P-loop containing nucleoside triphosphate hydrolase"
+					},
+					{
+						"id": "IPR034003",
+						"name": "ABCG_PDR_2",
+						"description": "ATP-binding cassette transporter, PDR-like subfamily G, domain 2"
+					}
+				],
+				"ancestors": [
+					3439
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0005524",
+						"name": "ATP binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with ATP, adenosine 5'-triphosphate, a universally important coenzyme and enzyme regulator.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0016021",
+						"name": "integral component of membrane",
+						"namespace": "cellular_component",
+						"def": "The component of a membrane consisting of the gene products and protein complexes having at least some part of their peptide sequence embedded in the hydrophobic region of the membrane.",
+						"subset": [
+							"goslim_chembl",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0016887",
+						"name": "ATPase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the reaction: ATP + H2O = ADP + phosphate + 2 H+. May or may not be coupled to another reaction.",
+						"subset": [
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					166,
+					3674,
+					3824,
+					5488,
+					5575,
+					8144,
+					16020,
+					16462,
+					16787,
+					16817,
+					16818,
+					17076,
+					17111,
+					30554,
+					31224,
+					32553,
+					32555,
+					32559,
+					35639,
+					36094,
+					43167,
+					43168,
+					44425,
+					97159,
+					97367,
+					1901265,
+					1901363
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"BGIOSGA003449",
+					"ONIVA10G11730",
+					"KN540192.1_FG002",
+					"OPUNC01G14020",
+					"TRIUR3_11032",
+					"F775_17215",
+					"BRADI_2g10110v3",
+					"HORVU3Hr1G071470",
+					"TraesCS3B01G306400",
+					"TraesCS3A01G272800",
+					"TraesCS3D01G272200",
+					"SORBI_3003G216300"
+				],
+				"ortholog_one2many": [
+					"Zm00001d011319",
+					"Zm00001d044443",
+					"AT1G15520",
+					"BVRB_9g220300",
+					"fgenesh2_kg.1__1707__AT1G15520.1",
+					"Bo5g021040",
+					"Bra026124",
+					"PHYPA_020727",
+					"OSTLU_35308"
+				],
+				"within_species_paralog": [
+					"Os01g0609900",
+					"Os01g0609200",
+					"Os01g0609000",
+					"Os01g0609300",
+					"Os09g0333000",
+					"Os09g0332300",
+					"Os08g0384500",
+					"Os01g0516900",
+					"Os01g0177900",
+					"Os01g0724500",
+					"Os07g0522500",
+					"Os08g0544400",
+					"Os06g0554800",
+					"Os12g0512700",
+					"Os12g0239900"
+				],
+				"ortholog_many2many": [
+					"GSMUA_Achr1G14530_001",
+					"GSMUA_Achr6G34530_001",
+					"GSMUA_Achr9G02950_001",
+					"GLYMA_14G127800",
+					"A4A49_10347",
+					"MTR_2g102660",
+					"MTR_4g011620",
+					"VIT_04s0008g04790",
+					"A4A49_23886",
+					"MANES_04G106000",
+					"DCAR_016246",
+					"TanjilG_27281",
+					"PRUPE_3G076600",
+					"PGSC0003DMG402002262",
+					"B456_011G079200",
+					"POPTR_003G183200v3",
+					"VIT_04s0008g04840",
+					"B456_001G057200",
+					"MTR_2g102640",
+					"PRUPE_8G214400",
+					"PHAVU_001G165700g",
+					"PRUPE_8G214000",
+					"GLYMA_19G169200",
+					"HannXRQ_Chr16g0504251",
+					"GLYMA_17G206300",
+					"HannXRQ_Chr09g0253191",
+					"PHAVU_001G1659001g",
+					"Csa_3G752490",
+					"POPTR_003G178900v3",
+					"GLYMA_15G011800",
+					"Solyc12g019640.1",
+					"MTR_1g011650",
+					"Csa_3G550680",
+					"LR48_Vigan04g215000",
+					"PHAVU_001G165800g",
+					"Solyc12g098210.1",
+					"LR48_Vigan187s002300",
+					"MANES_11G063500",
+					"A4A49_38659",
+					"Solyc12g100180.1",
+					"PGSC0003DMG401002262",
+					"LR48_Vigan406s013600",
+					"Csa_2G433930",
+					"POPTR_001G175700v3",
+					"LR48_Vigan187s002400",
+					"HannXRQ_Chr10g0302191",
+					"VIT_09s0002g05370",
+					"GLYMA_19G169400",
+					"DCAR_015856",
+					"MTR_4g011640",
+					"DCAR_031692",
+					"MANES_11G063400",
+					"DCAR_026297",
+					"LR48_Vigan05g216700",
+					"GLYMA_15G012000",
+					"B456_N013800",
+					"POPTR_006G248500v3",
+					"DCAR_001031",
+					"PRUPE_8G213800",
+					"Solyc05g053590.2",
+					"GSBRNA2T00068232001",
+					"Solyc09g091660.2",
+					"PHAVU_005G173700g",
+					"GLYMA_13G361900",
+					"GLYMA_06G071800",
+					"Solyc12g019620.1",
+					"HannXRQ_Chr10g0302131",
+					"HannXRQ_Chr16g0500781",
+					"Csa_3G751990",
+					"B456_009G128700",
+					"PHAVU_001G054400g",
+					"TanjilG_16308",
+					"MTR_7g098760",
+					"PRUPE_1G471400",
+					"MTR_7g098370",
+					"HannXRQ_Chr04g0096631",
+					"PGSC0003DMG402029631",
+					"Csa_7G433950",
+					"PGSC0003DMG400023849",
+					"DCAR_029797",
+					"LR48_Vigan967s005400",
+					"MTR_7g407080",
+					"LR48_Vigan967s005300",
+					"GLYMA_04G069800",
+					"POPTR_001G048900v3",
+					"HannXRQ_Chr10g0302161",
+					"Csa_2G379370",
+					"HannXRQ_Chr09g0275081",
+					"PHAVU_005G173600g",
+					"LR48_Vigan05g216800",
+					"PRUPE_3G076500",
+					"MTR_7g098750",
+					"PHAVU_001G166300g",
+					"POPTR_018G032900v3",
+					"TanjilG_27251",
+					"MANES_03G018700",
+					"GLYMA_07G016200",
+					"TCM_046927",
+					"DCAR_007546",
+					"TanjilG_13990",
+					"TCM_038349",
+					"GLYMA_03G168000",
+					"MANES_04G106100",
+					"DCAR_016237",
+					"TCM_028448",
+					"MTR_4g011630",
+					"PHAVU_009G096200g",
+					"PGSC0003DMG402013112",
+					"HannXRQ_Chr09g0275121",
+					"B456_002G0578001",
+					"PHAVU_010G152500g",
+					"PHAVU_001G166400g",
+					"DCAR_015854",
+					"PGSC0003DMG400018818",
+					"MANES_11G063300",
+					"Solyc08g067620.2",
+					"MANES_04G105800",
+					"VIT_09s0002g05560",
+					"B456_013G110000",
+					"HannXRQ_Chr13g0402091",
+					"GLYMA_07G033500",
+					"DCAR_007543",
+					"HannXRQ_Chr02g0032591",
+					"B456_004G111000",
+					"LR48_Vigan01g199700",
+					"HannXRQ_Chr09g0275091",
+					"PGSC0003DMG401029631",
+					"PGSC0003DMG400016860",
+					"HannXRQ_Chr02g0032581",
+					"MTR_2g102670",
+					"GSBRNA2T00062259001",
+					"AMTR_s00068p00162220",
+					"AMTR_s00013p00097650",
+					"AMTR_s00122p00119310",
+					"SELMODRAFT_424639",
+					"SELMODRAFT_267739",
+					"SELMODRAFT_181854",
+					"SELMODRAFT_101338",
+					"CHLRE_04g224500v5",
+					"CHLRE_12g540650v5",
+					"CHLRE_04g224400v5",
+					"CHLRE_17g723500v5"
+				],
+				"gene_split": [
+					"Os11g0587600",
+					"Os07g0522600",
+					"Os02g0318500",
+					"Os02g0528900"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0342750",
+		"Description": "Hypothetical conserved gene. (Os01t0342750-01)",
+		"Position": "chr01:13524554..13528480",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

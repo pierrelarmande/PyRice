@@ -1,0 +1,139 @@
+{
+	"Gramene": {
+		"_id": "Os01g0342800",
+		"name": "Os01g0342800",
+		"description": "Similar to UPF0631 protein. (Os01t0342800-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 3514,
+		"location": {
+			"region": "1",
+			"start": 13531040,
+			"end": 13531777,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI00000A5D73"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q8LQX1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015622302.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"EAZ11776.1",
+					"BAS71982.1",
+					"BAB93293.1",
+					"BAF04870.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK241039"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015766816.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326486"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR008011",
+						"name": "Complex1_LYR",
+						"description": "Complex 1 LYR protein"
+					}
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G16020",
+					"BGIOSGA001712",
+					"ONIVA10G11740",
+					"OBART01G14340",
+					"OGLUM01G16140",
+					"OPUNC01G14030",
+					"OB01G24050",
+					"LPERR01G13050",
+					"HORVU6Hr1G026300",
+					"BRADI_1g28560v3",
+					"TraesCS6A01G136800",
+					"TRIUR3_23899",
+					"TraesCS6D01G125700",
+					"SORBI_3002G136600",
+					"Zm00001d019816",
+					"SETIT_032418mg",
+					"Dr02794",
+					"Solyc01g107470.2",
+					"B456_013G048100",
+					"scaffold_302300.1",
+					"PGSC0003DMG400025763",
+					"AT3G19508",
+					"DCAR_029091",
+					"MTR_5g004970",
+					"Csa_3G199560",
+					"Tp57577_TGAC_v2_gene21608",
+					"TCM_007162",
+					"Bo1g114640",
+					"GLYMA_01G243800",
+					"PHAVU_002G053100g",
+					"CCACVL1_17044",
+					"HannXRQ_Chr03g0068751",
+					"VIT_03s0091g00220",
+					"PRUPE_8G136900",
+					"BVRB_9g223660",
+					"Bra038212",
+					"PHYPA_022104"
+				],
+				"ortholog_one2many": [
+					"POPTR_001G299200v3",
+					"GSBRNA2T00096060001",
+					"GSBRNA2T00107423001",
+					"POPTR_009G094200v3",
+					"GSBRNA2T00101202001"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0342800",
+		"Description": "Similar to UPF0631 protein. (Os01t0342800-01)",
+		"Position": "chr01:13531040..13531777",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

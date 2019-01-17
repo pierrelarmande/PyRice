@@ -1,0 +1,161 @@
+{
+	"Gramene": {
+		"_id": "Os01g0672800",
+		"name": "Os01g0672800",
+		"description": "Protein of unknown function DUF1421 domain containing protein. (Os01t0672800-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 6646,
+		"location": {
+			"region": "1",
+			"start": 27631023,
+			"end": 27633082,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0000DD8C64"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"A0A0N7KDH4"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS73625.1"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR010820",
+						"name": "DUF1421",
+						"description": "UBA-like domain DUF1421"
+					}
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"BGIOSGA001041",
+					"KN540788.1_FG004",
+					"ORGLA01G0213500",
+					"OBART04G24350",
+					"ORUFI01G29100",
+					"OGLUM01G29960",
+					"OMERI01G23800",
+					"OPUNC01G26040",
+					"OB01G35300",
+					"LPERR01G22370",
+					"TraesCS3D01G271600",
+					"TraesCS3A01G272000",
+					"BRADI_2g46270v3",
+					"TraesCS3B01G305700",
+					"F775_12170",
+					"SETIT_004042mg",
+					"SORBI_3003G252700"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G27840"
+				],
+				"ortholog_one2many": [
+					"Zm00001d011562",
+					"Zm00001d043906",
+					"TCM_008105",
+					"AT4G28300",
+					"PRUPE_3G137800",
+					"A4A49_00184",
+					"LR48_Vigan08g113500",
+					"Tp57577_TGAC_v2_gene9833",
+					"BVRB_9g204840",
+					"fgenesh2_kg.7__1375__AT4G28300.1",
+					"AMTR_s00058p00125550"
+				],
+				"within_species_paralog": [
+					"Os05g0561600",
+					"Os01g0754500",
+					"Os01g0169900",
+					"Os05g0169400"
+				],
+				"ortholog_many2many": [
+					"GSMUA_Achr4G07980_001",
+					"GSMUA_Achr4G15050_001",
+					"DCAR_009747",
+					"Bo7g112030",
+					"GSBRNA2T00006221001",
+					"Csa_7G048000",
+					"VIT_12s0028g03740",
+					"POPTR_013G131600v3",
+					"PHAVU_005G103700g",
+					"MTR_0004s0130",
+					"HannXRQ_Chr17g0555161",
+					"GSBRNA2T00104586001",
+					"GSBRNA2T00149358001",
+					"HannXRQ_Chr17g0555151",
+					"Bra024211",
+					"MANES_13G146700",
+					"TanjilG_20431",
+					"TanjilG_11706",
+					"MTR_2g090360",
+					"DCAR_013008",
+					"GLYMA_06G2928002",
+					"Solyc07g053990.2",
+					"MANES_S000400",
+					"Solyc10g008340.2",
+					"Bra010376",
+					"DCAR_021243",
+					"VIT_12s0028g03730",
+					"Bo1g051380",
+					"GLYMA_06G2928001",
+					"CCACVL1_04779",
+					"PGSC0003DMG400013142",
+					"CCACVL1_04778",
+					"TanjilG_16140",
+					"Bo8g054230",
+					"PHAVU_011G113900g",
+					"B456_005G201600",
+					"PGSC0003DMG400018344",
+					"GSBRNA2T00067611001",
+					"GSBRNA2T00078830001",
+					"GLYMA_12G113200",
+					"Csa_7G047990",
+					"GSBRNA2T00044354001",
+					"Bra026268",
+					"GLYMA_12G204300",
+					"POPTR_019G095400v3",
+					"TanjilG_06547",
+					"B456_012G128800",
+					"GLYMA_13G297200",
+					"GSBRNA2T00029287001",
+					"POPTR_019G111600v3",
+					"PHYPA_029032",
+					"PHYPA_011820"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0672800",
+		"Description": "Protein of unknown function DUF1421 domain containing protein. (Os01t0672800-01)",
+		"Position": "chr01:27631023..27633082",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

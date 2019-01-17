@@ -1,0 +1,275 @@
+{
+	"Gramene": {
+		"_id": "Os01g0310500",
+		"name": "RECEPTOR-LIKE CYTOPLASMIC KINASE 31",
+		"description": "Protein kinase, catalytic domain domain containing protein. (Os01t0310500-01);Conserved hypothetical protein. (Os01t0310500-02)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 3111,
+		"location": {
+			"region": "1",
+			"start": 11655138,
+			"end": 11666398,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "CGSNL",
+				"ids": [
+					"RLCK31"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI000393B467"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"A0A0N7KCU3"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS71777.1"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g20880.1"
+				]
+			},
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"OsRLCK31"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR001245",
+						"name": "Ser-Thr/Tyr_kinase_cat_dom",
+						"description": "Serine-threonine/tyrosine-protein kinase, catalytic domain"
+					},
+					{
+						"id": "IPR008271",
+						"name": "Ser/Thr_kinase_AS",
+						"description": "Serine/threonine-protein kinase, active site"
+					},
+					{
+						"id": "IPR011009",
+						"name": "Kinase-like_dom_sf",
+						"description": "Protein kinase-like domain superfamily"
+					},
+					{
+						"id": "IPR017441",
+						"name": "Protein_kinase_ATP_BS",
+						"description": "Protein kinase, ATP binding site"
+					}
+				],
+				"ancestors": [
+					719
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0005524",
+						"name": "ATP binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with ATP, adenosine 5'-triphosphate, a universally important coenzyme and enzyme regulator.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0004674",
+						"name": "protein serine/threonine kinase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the reactions: ATP + protein serine = ADP + protein serine phosphate, and ATP + protein threonine = ADP + protein threonine phosphate.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0007166",
+						"name": "cell surface receptor signaling pathway",
+						"namespace": "biological_process",
+						"def": "A series of molecular signals initiated by activation of a receptor on the surface of a cell. The pathway begins with binding of an extracellular ligand to a cell surface receptor, or for receptors that signal in the absence of a ligand, by ligand-withdrawal or the activity of a constitutively active receptor. The pathway ends with regulation of a downstream cellular process, e.g. transcription.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0005886",
+						"name": "plasma membrane",
+						"namespace": "cellular_component",
+						"def": "The membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins.",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_mouse",
+							"goslim_plant",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					}
+				],
+				"ancestors": [
+					166,
+					3674,
+					3824,
+					4672,
+					5488,
+					5575,
+					5623,
+					6464,
+					6468,
+					6793,
+					6796,
+					6807,
+					7154,
+					7165,
+					8144,
+					8150,
+					8152,
+					9987,
+					16020,
+					16301,
+					16310,
+					16740,
+					16772,
+					16773,
+					17076,
+					19538,
+					23052,
+					30554,
+					32553,
+					32555,
+					32559,
+					35639,
+					36094,
+					36211,
+					43167,
+					43168,
+					43170,
+					43412,
+					44237,
+					44238,
+					44260,
+					44267,
+					44464,
+					50789,
+					50794,
+					50896,
+					51716,
+					65007,
+					71704,
+					71944,
+					97159,
+					97367,
+					140096,
+					1901265,
+					1901363,
+					1901564
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"BGIOSGA003354",
+					"ORUFI01G14190",
+					"OMERI01G12080",
+					"KN538776.1_FG046",
+					"OB01G28110"
+				],
+				"within_species_paralog": [
+					"Os01g0310800",
+					"Os07g0493200",
+					"Os07g0494800",
+					"Os07g0493800",
+					"Os07g0494300",
+					"Os11g0555600",
+					"Os11g0556400",
+					"Os11g0553500",
+					"Os10g0112700",
+					"Os10g0141200",
+					"Os10g0141300",
+					"Os10g0142600",
+					"Os10g0143866"
+				],
+				"ortholog_one2many": [
+					"LPERR01G12970",
+					"Zm00001d024744",
+					"SORBI_3009G033100",
+					"SETIT_004820mg",
+					"HORVU6Hr1G003940",
+					"BRADI_2g38370v3",
+					"OPUNC01G12790",
+					"TraesCSU01G194300"
+				],
+				"ortholog_many2many": [
+					"F775_18549",
+					"TraesCS6B01G029600",
+					"TraesCS1B01G079900",
+					"TraesCS1A01G061500",
+					"F775_20595",
+					"TraesCS6A01G020100",
+					"F775_03665",
+					"TRIUR3_02126",
+					"TraesCS1D01G062300",
+					"TRIUR3_02129",
+					"TraesCS6D01G025700",
+					"TRIUR3_17776",
+					"ENSCSAVG00000004952",
+					"ENSCSAVG00000006173",
+					"ENSCSAVG00000009855"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"oryzabase": {
+		"CGSNL Gene Symbol": " RLCK31 ",
+		"Gene symbol synonym(s)": " OsRLCK31 ",
+		"CGSNL Gene Name": " RECEPTOR-LIKE CYTOPLASMIC KINASE 31 ",
+		"Gene name synonym(s)": " Receptor-like Cytoplasmic Kinase 31 ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " ",
+		"Gene Ontology": " ",
+		"Trait Ontology": " ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os01g0310500 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"rapdb": {
+		"ID": "Os01g0310500",
+		"Description": "Protein kinase, catalytic domain domain containing protein. (Os01t0310500-01);Conserved hypothetical protein. (Os01t0310500-02)",
+		"Position": "chr01:11655138..11666398",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "RLCK31",
+		"CGSNL Gene Name": "RECEPTOR-LIKE CYTOPLASMIC KINASE 31",
+		"Oryzabase Gene Symbol Synonym(s)": "OsRLCK31",
+		"Oryzabase Gene Name Synonym(s)": "Receptor-like Cytoplasmic Kinase 31"
+	}
+}

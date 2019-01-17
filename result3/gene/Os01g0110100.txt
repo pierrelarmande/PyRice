@@ -1,0 +1,325 @@
+{
+	"oryzabase": {
+		"CGSNL Gene Symbol": " PHO1;1 ",
+		"Gene symbol synonym(s)": " OsPHO1;1 ",
+		"CGSNL Gene Name": " PHOSPHATE TRANSPORTER 1;1 ",
+		"Gene name synonym(s)": " ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " Biochemical character Tolerance and resistance - Stress tolerance ",
+		"Gene Ontology": " GO:0034224 - cellular response to zinc ion starvation GO:0010106 - cellular response to iron ion starvation GO:0034756 - regulation of iron ion transport GO:0016036 - cellular response to phosphate starvation ",
+		"Trait Ontology": " TO:0000102 - phosphorus sensitivity ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os01g0110100 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"Gramene": {
+		"_id": "Os01g0110100",
+		"name": "PHOSPHATE TRANSPORTER 1;1",
+		"description": "Phosphate (Pi) transporter, Pi homeostasis (Os01t0110100-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 143,
+		"location": {
+			"region": "1",
+			"start": 537710,
+			"end": 543354,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "CGSNL",
+				"ids": [
+					"PHO1;1"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0001C7EF0D"
+				]
+			},
+			{
+				"db": "Uniprot/SWISSPROT",
+				"ids": [
+					"Q657S5"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g02000.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015623371.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS70005.1",
+					"BAD44869.1",
+					"BAD44936.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK242852"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015767885.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"9270401"
+				]
+			},
+			{
+				"db": "RAP-DB",
+				"ids": [
+					"PHO1;1, OsPHO1;1"
+				]
+			},
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"OsPHO1;1"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR004342",
+						"name": "EXS_C",
+						"description": "EXS, C-terminal"
+					},
+					{
+						"id": "IPR034092",
+						"name": "PHO1_SPX",
+						"description": "PHO1, SPX domain"
+					}
+				],
+				"ancestors": [
+					4331
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0016021",
+						"name": "integral component of membrane",
+						"namespace": "cellular_component",
+						"def": "The component of a membrane consisting of the gene products and protein complexes having at least some part of their peptide sequence embedded in the hydrophobic region of the membrane.",
+						"subset": [
+							"goslim_chembl",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0006817",
+						"name": "phosphate ion transport",
+						"namespace": "biological_process",
+						"def": "The directed movement of phosphate into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0005886",
+						"name": "plasma membrane",
+						"namespace": "cellular_component",
+						"def": "The membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins.",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_mouse",
+							"goslim_plant",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0005802",
+						"name": "trans-Golgi network",
+						"namespace": "cellular_component",
+						"def": "The network of interconnected tubular and cisternal structures located within the Golgi apparatus on the side distal to the endoplasmic reticulum, from which secretory vesicles emerge. The trans-Golgi network is important in the later stages of protein secretion where it is thought to play a key role in the sorting and targeting of secreted proteins to the correct destination.",
+						"subset": null,
+						"evidence_code": "IBA"
+					}
+				],
+				"ancestors": [
+					5575,
+					5622,
+					5623,
+					5737,
+					5794,
+					6810,
+					6811,
+					6820,
+					8150,
+					12505,
+					15698,
+					16020,
+					31224,
+					31984,
+					43226,
+					43227,
+					43229,
+					43231,
+					44422,
+					44424,
+					44425,
+					44431,
+					44444,
+					44446,
+					44464,
+					51179,
+					51234,
+					71944,
+					98791
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G00730",
+					"BGIOSGA002626",
+					"ORGLA01G0006300",
+					"OBART01G00740",
+					"KN538831.1_FG024",
+					"OPUNC01G00600",
+					"OB01G10690",
+					"LPERR01G00580",
+					"SETIT_000294mg",
+					"SORBI_3003G101000"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G00670",
+					"OGLUM01G00720",
+					"Zm00001d040125"
+				],
+				"within_species_paralog": [
+					"Os06g0493600",
+					"Os02g0809800",
+					"Os12g0595000"
+				],
+				"ortholog_one2many": [
+					"GSMUA_Achr1G20650_001",
+					"AT1G68740",
+					"PRUPE_1G301900",
+					"Csa_5G608190",
+					"MANES_06G075400",
+					"TCM_011897",
+					"VIT_01s0011g02520",
+					"PGSC0003DMG400025127",
+					"PHAVU_003G024600g",
+					"Solyc05g010060.2",
+					"CCACVL1_11592",
+					"MTR_8g069955",
+					"Tp57577_TGAC_v2_gene24783",
+					"B456_008G188200",
+					"LR48_Vigan06g159900",
+					"BVRB_6g140970",
+					"AMTR_s00024p00253180",
+					"SELMODRAFT_449028",
+					"WBGene00012659",
+					"ENSCSAVG00000001496",
+					"YIL047C",
+					"ENSG00000143324"
+				],
+				"ortholog_many2many": [
+					"Dr06965",
+					"Dr06964",
+					"POPTR_010G132300v3",
+					"HannXRQ_Chr16g0528331",
+					"TanjilG_07779",
+					"GSBRNA2T00117984001",
+					"GSBRNA2T00066303001",
+					"Bo6g107200",
+					"GLYMA_01G091800",
+					"POPTR_008G110800v3",
+					"Bra038357",
+					"GSBRNA2T00007858001",
+					"DCAR_030098",
+					"Bra004017",
+					"TanjilG_15126",
+					"DCAR_007216",
+					"GLYMA_02G130200",
+					"Bo2g061160",
+					"Bo6g095920",
+					"Bo2g041910",
+					"HannXRQ_Chr17g0568541",
+					"GSBRNA2T00124336001",
+					"GSBRNA2T00117982001",
+					"TanjilG_07781",
+					"Bra004334",
+					"GSBRNA2T00102018001",
+					"GSBRNA2T00135224001",
+					"GSBRNA2T00014229001",
+					"PHYPA_004221",
+					"PHYPA_024154",
+					"PHYPA_025917",
+					"PHYPA_028319",
+					"PHYPA_011774",
+					"PHYPA_006892",
+					"PHYPA_024876",
+					"FBgn0032827",
+					"FBgn0029679",
+					"FBgn0035649",
+					"FBgn0030890"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"funricegene_genekeywords": {
+		"Symbol": "{'OsPHO1;1'}",
+		"RAPdb": "{'Os01g0110100'}",
+		"MSU": "{'LOC_Os01g02000'}",
+		"Keyword": "{'phosphate', 'zinc', 'iron'}",
+		"Title": "{'The Involvement of OsPHO1;1 in the Regulation of Iron Transport Through Integration of Phosphate and Zinc Deficiency Signaling.'}"
+	},
+	"rapdb": {
+		"ID": "Os01g0110100",
+		"Description": "Phosphate (Pi) transporter, Pi homeostasis (Os01t0110100-01)",
+		"Position": "chr01:537710..543354",
+		"RAP-DB Gene Symbol Synonym(s)": "PHO1;1, OsPHO1;1",
+		"RAP-DB Gene Name Synonym(s)": "PHOSPHATE TRANSPORTER 1;1",
+		"CGSNL Gene Symbol": "PHO1;1",
+		"CGSNL Gene Name": "PHOSPHATE TRANSPORTER 1;1",
+		"Oryzabase Gene Symbol Synonym(s)": "OsPHO1;1",
+		"Oryzabase Gene Name Synonym(s)": ""
+	},
+	"funricegene_faminfo": {
+		"Symbol": "{'PHO1;1'}",
+		"RAPdb": "{'Os01g0110100'}",
+		"MSU": "{'LOC_Os01g02000'}",
+		"Name": "{'PHO1'}"
+	},
+	"funricegene_geneinfo": {
+		"Symbol": "{'OsPHO1;1'}",
+		"RAPdb": "{'Os01g0110100'}",
+		"MSU": "{'LOC_Os01g02000'}"
+	}
+}

@@ -1,0 +1,377 @@
+{
+	"Gramene": {
+		"_id": "Os01g0347000",
+		"name": "Protein phosphatase 4",
+		"description": "Similar to PROPYZAMIDE-HTPERSENSITIVE 1. (Os01t0347000-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 3571,
+		"location": {
+			"region": "1",
+			"start": 13794854,
+			"end": 13799906,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"OsPHS1b, OsPP4, OsSTA14"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0000446B3A"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q5Z8E0"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g24470.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015636116.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAD52745.1",
+					"BAD53939.1",
+					"EEE54520.1",
+					"BAS72004.1",
+					"BAF04880.1"
+				]
+			},
+			{
+				"db": "KEGG_Enzyme",
+				"ids": [
+					"04660+3.1.3.16",
+					"04658+3.1.3.16"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015780630.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326496"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR000340",
+						"name": "Dual-sp_phosphatase_cat-dom",
+						"description": "Dual specificity phosphatase, catalytic domain"
+					},
+					{
+						"id": "IPR011009",
+						"name": "Kinase-like_dom_sf",
+						"description": "Protein kinase-like domain superfamily"
+					},
+					{
+						"id": "IPR015275",
+						"name": "Actin-fragmin_kin_cat_dom",
+						"description": "Actin-fragmin kinase, catalytic domain"
+					},
+					{
+						"id": "IPR016130",
+						"name": "Tyr_Pase_AS",
+						"description": "Protein-tyrosine phosphatase, active site"
+					},
+					{
+						"id": "IPR020422",
+						"name": "TYR_PHOSPHATASE_DUAL_dom",
+						"description": "Dual specificity protein phosphatase domain"
+					},
+					{
+						"id": "IPR029021",
+						"name": "Prot-tyrosine_phosphatase-like",
+						"description": "Protein-tyrosine phosphatase-like"
+					},
+					{
+						"id": "IPR035010",
+						"name": "PHS1",
+						"description": "Dual specificity protein phosphatase PHS1"
+					}
+				],
+				"ancestors": [
+					387,
+					24950
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0004725",
+						"name": "protein tyrosine phosphatase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the reaction: protein tyrosine phosphate + H2O = protein tyrosine + phosphate.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0008138",
+						"name": "protein tyrosine/serine/threonine phosphatase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the reactions: protein serine + H2O = protein serine + phosphate; protein threonine phosphate + H2O = protein threonine + phosphate; and protein tyrosine phosphate + H2O = protein tyrosine + phosphate.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0009737",
+						"name": "response to abscisic acid",
+						"namespace": "biological_process",
+						"def": "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an abscisic acid stimulus.",
+						"subset": null,
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0043622",
+						"name": "cortical microtubule organization",
+						"namespace": "biological_process",
+						"def": "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of structures formed of microtubules and associated proteins in the cell cortex, i.e. just beneath the plasma membrane of a cell.",
+						"subset": null,
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0005737",
+						"name": "cytoplasm",
+						"namespace": "cellular_component",
+						"def": "All of the contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures.",
+						"subset": [
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_pir",
+							"goslim_plant",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0016301",
+						"name": "kinase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the transfer of a phosphate group, usually from ATP, to a substrate molecule.",
+						"subset": [
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_plant",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					226,
+					1101,
+					3674,
+					3824,
+					4721,
+					5575,
+					5622,
+					5623,
+					6464,
+					6470,
+					6793,
+					6796,
+					6807,
+					6996,
+					7010,
+					7017,
+					8150,
+					8152,
+					9719,
+					9725,
+					9987,
+					10033,
+					16043,
+					16310,
+					16311,
+					16740,
+					16772,
+					16787,
+					16788,
+					16791,
+					19538,
+					30865,
+					31122,
+					33993,
+					35335,
+					36211,
+					42221,
+					42578,
+					43170,
+					43412,
+					44237,
+					44238,
+					44260,
+					44267,
+					44424,
+					44464,
+					50896,
+					71704,
+					71840,
+					97305,
+					97435,
+					140096,
+					1901564,
+					1901700
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G16210",
+					"ONIVA05G23950",
+					"BGIOSGA003462",
+					"ORGLA01G0119800",
+					"OBART01G14520",
+					"OMERI01G13220",
+					"OGLUM01G16420",
+					"KN539336.1_FG009",
+					"OPUNC01G14350",
+					"OB01G24350",
+					"LPERR01G13200",
+					"HORVU7Hr1G117420",
+					"TraesCS7D01G521000",
+					"BRADI_2g12627v3",
+					"F775_16675",
+					"TraesCS7B01G450800",
+					"TraesCS7A01G533600",
+					"TRIUR3_12208",
+					"SORBI_3003G158000",
+					"SETIT_000271mg",
+					"Dr02026"
+				],
+				"syntenic_ortholog_one2one": [
+					"Zm00001d009183"
+				],
+				"ortholog_one2many": [
+					"GSMUA_Achr9G31030_001",
+					"GSMUA_Achr11G18060_001",
+					"A4A49_16356",
+					"AT5G23720",
+					"BVRB_5g113330",
+					"Solyc03g118350.2",
+					"Csa_1G000610",
+					"VIT_17s0000g00360",
+					"PRUPE_5G143400",
+					"Bo7g097460",
+					"TCM_014738",
+					"MANES_06G125700",
+					"fgenesh2_kg.6__2366__AT5G23720.1",
+					"B456_006G273300",
+					"Bra009705",
+					"CCACVL1_05877",
+					"AMTR_s00003p00241010",
+					"PHYPA_012107",
+					"CHLRE_08g375000v5",
+					"ENSG00000188542",
+					"Gasu_49380",
+					"CHC_T00006530001",
+					"CMN326C"
+				],
+				"within_species_paralog": [
+					"Os01g0311500",
+					"Os01g0390900",
+					"Os02g0720300",
+					"Os06g0308100",
+					"Os05g0115800"
+				],
+				"ortholog_many2many": [
+					"PHAVU_009G164700g",
+					"GSBRNA2T00147458001",
+					"LR48_Vigan01g003100",
+					"DCAR_021407",
+					"Tp57577_TGAC_v2_gene30827",
+					"GLYMA_08G008600",
+					"GLYMA_04G200300",
+					"GLYMA_05G201200",
+					"MTR_8g100000",
+					"POPTR_012G105800v3",
+					"TanjilG_06477",
+					"PHAVU_002G282600g",
+					"HannXRQ_Chr09g0273931",
+					"Tp57577_TGAC_v2_gene12812",
+					"LR48_Vigan04g146900",
+					"Tp57577_TGAC_v2_gene21586",
+					"MTR_3g498735",
+					"DCAR_031844",
+					"TanjilG_20314",
+					"HannXRQ_Chr16g0498871",
+					"GSBRNA2T00133448001",
+					"POPTR_015G105000v3",
+					"GLYMA_06G165300",
+					"DCAR_025658",
+					"PGSC0003DMG402014249",
+					"TanjilG_20287",
+					"PGSC0003DMG401014249",
+					"SELMODRAFT_92881",
+					"SELMODRAFT_121680"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"oryzabase": {
+		"CGSNL Gene Symbol": " _ ",
+		"Gene symbol synonym(s)": " OsPHS1b OsPP4 OsSTA14 ",
+		"CGSNL Gene Name": " _ ",
+		"Gene name synonym(s)": " Protein phosphatase 4 ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " Biochemical character Reproductive organ - Spikelet, flower, glume, awn ",
+		"Gene Ontology": " GO:0033549 - MAP kinase phosphatase activity GO:0035335 - peptidyl-tyrosine dephosphorylation GO:0008138 - protein tyrosine/serine/threonine phosphatase activity GO:0008270 - zinc ion binding GO:0016773 - phosphotransferase activity, alcohol group as acceptor GO:0004725 - protein tyrosine phosphatase activity GO:0005737 - cytoplasm ",
+		"Trait Ontology": " ",
+		"Plant Ontology": " PO:0009066 - anther ",
+		"RAP ID": " Os01g0347000 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"rapdb": {
+		"ID": "Os01g0347000",
+		"Description": "Similar to PROPYZAMIDE-HTPERSENSITIVE 1. (Os01t0347000-01)",
+		"Position": "chr01:13794854..13799906",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "OsPHS1b, OsPP4, OsSTA14",
+		"Oryzabase Gene Name Synonym(s)": "Protein phosphatase 4"
+	},
+	"funricegene_faminfo": {
+		"Symbol": "{'OsSTA14', 'OsPHS1b'}",
+		"RAPdb": "{'Os01g0347000'}",
+		"MSU": "{'LOC_Os01g24470'}",
+		"Name": "{'mature_anther-preferentially_expressed_genes', 'OSPHS'}"
+	}
+}

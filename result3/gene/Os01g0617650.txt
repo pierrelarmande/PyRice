@@ -1,0 +1,118 @@
+{
+	"Gramene": {
+		"_id": "Os01g0617650",
+		"name": "Os01g0617650",
+		"description": "Similar to AAP4; acidic amino acid transmembrane transporter/ amino acid transmembrane transporter/ neutral amino acid transmembrane transporter/ primary active transmembrane transporter. (Os01t0617650-00)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 5900,
+		"location": {
+			"region": "1",
+			"start": 24554321,
+			"end": 24555469,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0003939D7E"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"A0A0P0V5A3"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS73180.1"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR013057",
+						"name": "AA_transpt_TM",
+						"description": "Amino acid transporter, transmembrane domain"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0016021",
+						"name": "integral component of membrane",
+						"namespace": "cellular_component",
+						"def": "The component of a membrane consisting of the gene products and protein complexes having at least some part of their peptide sequence embedded in the hydrophobic region of the membrane.",
+						"subset": [
+							"goslim_chembl",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					5575,
+					16020,
+					31224,
+					44425
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORGLA08G0128500"
+				],
+				"within_species_paralog": [
+					"Os09g0427300",
+					"Os08g0415900",
+					"Os04g0490900"
+				],
+				"ortholog_one2many": [
+					"OGLUM08G15400",
+					"OMERI03G10410",
+					"HORVU5Hr1G037030",
+					"SETIT_028057mg",
+					"LR48_Vigan07g284700",
+					"Tp57577_TGAC_v2_gene2339",
+					"VIT_04s0008g00260",
+					"PHAVU_001G076500g",
+					"KN538722.1_FG042",
+					"Zm00001d052995",
+					"GLYMA_14G144400"
+				],
+				"ortholog_many2many": [
+					"AMTR_s00004p00260330",
+					"AMTR_s00055p00034490",
+					"HannXRQ_Chr16g0505871",
+					"HannXRQ_Chr15g0495641",
+					"HannXRQ_Chr05g0147091",
+					"HannXRQ_Chr13g0393361",
+					"HannXRQ_Chr06g0168161",
+					"HannXRQ_Chr08g0232721"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0617650",
+		"Description": "Similar to AAP4; acidic amino acid transmembrane transporter/ amino acid transmembrane transporter/ neutral amino acid transmembrane transporter/ primary active transmembrane transporter. (Os01t0617650-00)",
+		"Position": "chr01:24554321..24555469",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

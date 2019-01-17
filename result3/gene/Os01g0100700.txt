@@ -1,0 +1,427 @@
+{
+	"Gramene": {
+		"_id": "Os01g0100700",
+		"name": "Os01g0100700",
+		"description": "Similar to 40S ribosomal protein S5-1. (Os01t0100700-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 12,
+		"location": {
+			"region": "1",
+			"start": 27143,
+			"end": 28644,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI00000A5336"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q93VC6"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g01060.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015621158.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS69916.1",
+					"BAE79751.1",
+					"BAB62621.1",
+					"BAB64234.1",
+					"BAF03652.1",
+					"EAZ10181.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK121523",
+					"AK059844"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015765672.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326457"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR005716",
+						"name": "Ribosomal_S5/S7_euk/arc",
+						"description": "Ribosomal protein S5/S7, eukaryotic/archaeal"
+					},
+					{
+						"id": "IPR020606",
+						"name": "Ribosomal_S7_CS",
+						"description": "Ribosomal protein S7, conserved site"
+					},
+					{
+						"id": "IPR023798",
+						"name": "Ribosomal_S7_dom",
+						"description": "Ribosomal protein S7 domain"
+					},
+					{
+						"id": "IPR036823",
+						"name": "Ribosomal_S7_dom_sf",
+						"description": "Ribosomal protein S7 domain superfamily"
+					}
+				],
+				"ancestors": [
+					235
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0006412",
+						"name": "translation",
+						"namespace": "biological_process",
+						"def": "The cellular metabolic process in which a protein is formed, using the sequence of a mature mRNA or circRNA molecule to specify the sequence of amino acids in a polypeptide chain. Translation is mediated by the ribosome, and begins with the formation of a ternary complex between aminoacylated initiator methionine tRNA, GTP, and initiation factor 2, which subsequently associates with the small subunit of the ribosome and an mRNA or circRNA. Translation ends with the release of a polypeptide chain from the ribosome.",
+						"subset": [
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_pir",
+							"goslim_plant",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0019843",
+						"name": "rRNA binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with ribosomal RNA.",
+						"subset": [
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0000028",
+						"name": "ribosomal small subunit assembly",
+						"namespace": "biological_process",
+						"def": "The aggregation, arrangement and bonding together of constituent RNAs and proteins to form the small ribosomal subunit.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0003729",
+						"name": "mRNA binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with messenger RNA (mRNA), an intermediate molecule between DNA and protein. mRNA includes UTR and coding sequences, but does not contain introns.",
+						"subset": [
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0003735",
+						"name": "structural constituent of ribosome",
+						"namespace": "molecular_function",
+						"def": "The action of a molecule that contributes to the structural integrity of the ribosome.",
+						"subset": [
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0022627",
+						"name": "cytosolic small ribosomal subunit",
+						"namespace": "cellular_component",
+						"def": "The small subunit of a ribosome located in the cytosol.",
+						"subset": null,
+						"evidence_code": "IBA"
+					}
+				],
+				"ancestors": [
+					3674,
+					3676,
+					3723,
+					5198,
+					5488,
+					5575,
+					5622,
+					5623,
+					5737,
+					5829,
+					5840,
+					6518,
+					6807,
+					6996,
+					8150,
+					8152,
+					9058,
+					9059,
+					9987,
+					10467,
+					15935,
+					16043,
+					19538,
+					22607,
+					22613,
+					22618,
+					22626,
+					32991,
+					34622,
+					34641,
+					34645,
+					42254,
+					42255,
+					42274,
+					43043,
+					43170,
+					43226,
+					43228,
+					43229,
+					43232,
+					43603,
+					43604,
+					43933,
+					44085,
+					44237,
+					44238,
+					44249,
+					44260,
+					44267,
+					44271,
+					44391,
+					44422,
+					44424,
+					44444,
+					44445,
+					44446,
+					44464,
+					65003,
+					70925,
+					71704,
+					71826,
+					71840,
+					97159,
+					1901363,
+					1901564,
+					1901566,
+					1901576,
+					1990904
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"BGIOSGA002574",
+					"OBART01G00070",
+					"OPUNC01G00050",
+					"OB11G20650",
+					"LPERR11G10750"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G00150"
+				],
+				"within_species_paralog": [
+					"Os11g0482000"
+				],
+				"ortholog_one2many": [
+					"SETIT_026877mg",
+					"TraesCS3B01G100800",
+					"TraesCS3D01G085600",
+					"TRIUR3_34934",
+					"TraesCS3A01G085600",
+					"BRADI_2g03760v3",
+					"HORVU3Hr1G015190",
+					"SORBI_3003G109600",
+					"F775_31857",
+					"TCM_025037",
+					"BVRB_3g050700",
+					"CCACVL1_29533",
+					"OSTLU_12674",
+					"CHLRE_06g290950v5",
+					"Gasu_44440",
+					"ENSCSAVG00000005966",
+					"YJR123W",
+					"CHC_T00008165001",
+					"ENSG00000083845",
+					"CMT627C",
+					"WBGene00004474"
+				],
+				"ortholog_many2many": [
+					"Zm00001d037929",
+					"Zm00001d008387",
+					"GSMUA_Achr8G08850_001",
+					"GSMUA_Achr11G15170_001",
+					"GSMUA_Achr5G25340_001",
+					"GSMUA_AchrUn_randomG00810_001",
+					"GSMUA_Achr5G25350_001",
+					"GSMUA_Achr8G00980_001",
+					"Dr09945",
+					"Dr07919",
+					"Dr12679",
+					"HannXRQ_Chr03g0090501",
+					"B456_013G079500",
+					"A4A49_12438",
+					"DCAR_009684",
+					"A4A49_24066",
+					"PGSC0003DMG400017812",
+					"HannXRQ_Chr13g0397821",
+					"Solyc11g042610.1",
+					"B456_002G189300",
+					"A4A49_32625",
+					"VIT_04s0043g00440",
+					"PGSC0003DMG400008351",
+					"B456_003G077100",
+					"B456_011G118300",
+					"VIT_08s0007g07220",
+					"A4A49_35794",
+					"A4A49_04231",
+					"Solyc10g078620.1",
+					"HannXRQ_Chr02g0054411",
+					"DCAR_008346",
+					"HannXRQ_Chr11g0328401",
+					"A4A49_05175",
+					"HannXRQ_Chr02g0054481",
+					"DCAR_013679",
+					"TanjilG_20426",
+					"AT2G37270",
+					"Bo5g135030",
+					"LR48_Vigan05g152000",
+					"GLYMA_13G300300",
+					"PRUPE_7G086600",
+					"MTR_7g107380",
+					"Bo4g030710",
+					"GSBRNA2T00132548001",
+					"Csa_2G373440",
+					"Csa_5G292230",
+					"Tp57577_TGAC_v2_gene908",
+					"GSBRNA2T00111116001",
+					"GSBRNA2T00086098001",
+					"MANES_09G041000",
+					"PHAVU_005G107000g",
+					"GSBRNA2T00016838001",
+					"Bo4g186790",
+					"POPTR_006G197700v3",
+					"MTR_1g054310",
+					"Bra034799",
+					"GLYMA_11G206800",
+					"PRUPE_1G502000",
+					"GSBRNA2T00000251001",
+					"GSBRNA2T00111549001",
+					"Bo3g064690",
+					"GSBRNA2T00088421001",
+					"GSBRNA2T00116990001",
+					"Tp57577_TGAC_v2_gene32296",
+					"Bra023113",
+					"Tp57577_TGAC_v2_gene31109",
+					"Bo3g031660",
+					"GLYMA_09G103400",
+					"POPTR_016G063200v3",
+					"MANES_08G039000",
+					"GSBRNA2T00005459001",
+					"MTR_0306s0010",
+					"MTR_0515s0010",
+					"LR48_Vigan02g020700",
+					"PRUPE_7G086700",
+					"AMTR_s00068p00119380",
+					"GSBRNA2T00152637001",
+					"Bra005209",
+					"Bra038689",
+					"TanjilG_20424",
+					"fgenesh2_kg.3__1244__AT3G11940.2",
+					"AT3G11940",
+					"GSBRNA2T00000248001",
+					"Bra001428",
+					"Tp57577_TGAC_v2_gene543",
+					"POPTR_013G056300v3",
+					"fgenesh2_kg.4__1779__AT2G37270.2",
+					"Csa_1G168900",
+					"Bra017199",
+					"GLYMA_12G201900",
+					"GSBRNA2T00011704001",
+					"AMTR_s00090p00050460",
+					"PHAVU_007G264200g",
+					"GLYMA_02G167900",
+					"Tp57577_TGAC_v2_gene7387",
+					"Csa_7G232530",
+					"SELMODRAFT_228853",
+					"SELMODRAFT_164593",
+					"SELMODRAFT_113426",
+					"SELMODRAFT_271466",
+					"PHYPA_011667",
+					"PHYPA_011664",
+					"PHYPA_029257",
+					"PHYPA_025325",
+					"PHYPA_027672",
+					"FBgn0038277",
+					"FBgn0002590"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"oryzabase": {
+		"CGSNL Gene Symbol": " _ ",
+		"Gene symbol synonym(s)": " RPS5 ",
+		"CGSNL Gene Name": " _ ",
+		"Gene name synonym(s)": " ribosomal protein S5 ribosomal protein small subunit 5 ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " Tolerance and resistance - Disease resistance Tolerance and resistance - Stress tolerance Other ",
+		"Gene Ontology": " GO:0000028 - ribosomal small subunit assembly GO:0003729 - mRNA binding GO:0003735 - structural constituent of ribosome GO:0006412 - translation GO:0009414 - response to water deprivation GO:0009651 - response to salt stress GO:0009737 - response to abscisic acid stimulus GO:0019843 - rRNA binding GO:0022627 - cytosolic small ribosomal subunit GO:0042542 - response to hydrogen peroxide GO:0050832 - defense response to fungus ",
+		"Trait Ontology": " TO:0000615 - abscisic acid sensitivity TO:0000276 - drought tolerance TO:0006001 - salt tolerance TO:0002657 - oxidative stress TO:0000255 - sheath blight disease resistance ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os01g0100700 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"rapdb": {
+		"ID": "Os01g0100700",
+		"Description": "Similar to 40S ribosomal protein S5-1. (Os01t0100700-01)",
+		"Position": "chr01:27143..28644",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "RPS5",
+		"Oryzabase Gene Name Synonym(s)": "ribosomal protein S5, ribosomal protein small subunit 5"
+	}
+}

@@ -1,0 +1,237 @@
+{
+	"Gramene": {
+		"_id": "Os01g0110800",
+		"name": "Os01g0110800",
+		"description": "Leucine-rich repeat, plant specific containing protein. (Os01t0110800-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 153,
+		"location": {
+			"region": "1",
+			"start": 576495,
+			"end": 579569,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI000043A128"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q657S8"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015634738.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS70013.1",
+					"BAD44939.1",
+					"BAF03714.1",
+					"EEE53735.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK065190"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015779252.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326139"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR001611",
+						"name": "Leu-rich_rpt",
+						"description": "Leucine-rich repeat"
+					},
+					{
+						"id": "IPR032675",
+						"name": "LRR_dom_sf",
+						"description": "Leucine-rich repeat domain superfamily"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0005515",
+						"name": "protein binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with any protein or protein complex (a complex of two or more proteins that may include other nonprotein molecules).",
+						"subset": [
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_metagenomics",
+							"goslim_pir",
+							"goslim_plant",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					3674,
+					5488
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G00780",
+					"BGIOSGA002536",
+					"ORGLA01G0006800",
+					"OBART01G00800",
+					"OMERI01G00220",
+					"KN539550.1_FG006",
+					"OPUNC01G00650",
+					"OB01G10760",
+					"LPERR01G00640",
+					"SETIT_001122mg",
+					"TraesCS3B01G086700",
+					"BRADI_2g00920v3",
+					"GSMUA_Achr8G03860_001",
+					"MTR_1g093900",
+					"POPTR_008G114700v3",
+					"LR48_Vigan02g183000",
+					"Tp57577_TGAC_v2_gene9822",
+					"VIT_01s0011g02800",
+					"BVRB_6g141180",
+					"Csa_5G608240",
+					"AMTR_s00024p00252070"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G00720",
+					"OGLUM01G00790",
+					"Zm00001d040130"
+				],
+				"ortholog_one2many": [
+					"HORVU1Hr1G008420",
+					"TraesCS3A01G072600",
+					"F775_19640",
+					"F775_24546",
+					"TRIUR3_28561",
+					"TraesCS3A01G072700",
+					"TraesCS3D01G072400",
+					"TraesCS3D01G072300",
+					"HORVU3Hr1G013160",
+					"TRIUR3_18930",
+					"TRIUR3_03570",
+					"SORBI_3003G100200",
+					"SORBI_3003G100400",
+					"Dr15873",
+					"Dr10056",
+					"Bra004336",
+					"AT1G13230",
+					"Bo7g081950",
+					"DCAR_026710",
+					"Solyc06g069290.2",
+					"GLYMA_10G205300",
+					"A4A49_38596",
+					"Bo5g015250",
+					"PHAVU_007G101600g",
+					"B456_008G187600",
+					"HannXRQ_Chr16g0528811",
+					"PHAVU_003G178800g",
+					"B456_001G064500",
+					"AT1G68780",
+					"GLYMA_20G185100",
+					"TanjilG_10639",
+					"CCACVL1_07484",
+					"TCM_014483",
+					"HannXRQ_Chr08g0214451",
+					"Bo6g107220",
+					"GSBRNA2T00012497001",
+					"GSBRNA2T00105359001",
+					"GSBRNA2T00008928001",
+					"GSBRNA2T00077977001",
+					"GLYMA_05G014600",
+					"GSBRNA2T00054901001",
+					"DCAR_023697",
+					"PRUPE_1G303600",
+					"DCAR_030094",
+					"GSBRNA2T00102016001",
+					"HannXRQ_Chr17g0568131",
+					"GSBRNA2T00139161001",
+					"Bra019819",
+					"fgenesh2_kg.1__1433__AT1G13230.1",
+					"TCM_011886",
+					"AT3G25670",
+					"PRUPE_5G215600",
+					"A4A49_39200",
+					"GLYMA_17G123100",
+					"fgenesh2_kg.2__1135__AT1G68780.1",
+					"Solyc05g009990.2",
+					"CCACVL1_29468",
+					"PGSC0003DMG400004056",
+					"Al_scaffold_0005_382",
+					"PHAVU_003G025400g",
+					"Bra025154",
+					"TanjilG_31641",
+					"GLYMA_02G101900",
+					"PGSC0003DMG400000819",
+					"TanjilG_25411",
+					"MANES_14G096200",
+					"GLYMA_01G090200",
+					"MANES_06G074100"
+				],
+				"within_species_paralog": [
+					"Os06g0627500",
+					"Os01g0623000",
+					"Os01g0729400",
+					"Os05g0530701"
+				],
+				"ortholog_many2many": [
+					"SELMODRAFT_105632",
+					"SELMODRAFT_64019",
+					"SELMODRAFT_98845",
+					"SELMODRAFT_33328",
+					"SELMODRAFT_43960",
+					"SELMODRAFT_33330",
+					"PHYPA_011529",
+					"PHYPA_028719",
+					"PHYPA_028294"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0110800",
+		"Description": "Leucine-rich repeat, plant specific containing protein. (Os01t0110800-01)",
+		"Position": "chr01:576495..579569",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

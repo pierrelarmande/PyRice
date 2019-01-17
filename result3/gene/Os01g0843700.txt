@@ -1,0 +1,198 @@
+{
+	"Gramene": {
+		"_id": "Os01g0843700",
+		"name": "Os01g0843700",
+		"description": "Conserved hypothetical protein. (Os01t0843700-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 9062,
+		"location": {
+			"region": "1",
+			"start": 36232930,
+			"end": 36233540,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0000F170F1"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"A2ZZH8"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g62584.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015645240.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAH91376.1",
+					"BAS75180.1",
+					"EAZ14125.1"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015789754.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"9270895"
+				]
+			}
+		],
+		"annotations": {
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0016021",
+						"name": "integral component of membrane",
+						"namespace": "cellular_component",
+						"def": "The component of a membrane consisting of the gene products and protein complexes having at least some part of their peptide sequence embedded in the hydrophobic region of the membrane.",
+						"subset": [
+							"goslim_chembl",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					5575,
+					16020,
+					31224,
+					44425
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G40290",
+					"BGIOSGA004781",
+					"ORGLA01G0308100",
+					"OBART01G36950",
+					"OMERI01G34040",
+					"KN538690.1_FG001",
+					"OPUNC01G35830",
+					"LPERR01G31750",
+					"TraesCS3D01G354800",
+					"HORVU3Hr1G086110",
+					"TraesCS3B01G393400",
+					"TraesCS3A01G361000",
+					"BRADI_2g54731v3",
+					"SORBI_3003G353100",
+					"SETIT_003557mg",
+					"Zm00001d042902"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA09G00360",
+					"OGLUM01G40950"
+				],
+				"within_species_paralog": [
+					"Os03g0822400"
+				],
+				"ortholog_many2many": [
+					"GSMUA_Achr6G17910_001",
+					"GSMUA_Achr2G16400_001",
+					"POPTR_008G057600v3",
+					"PHAVU_008G119300g",
+					"B456_009G097700",
+					"Bra028880",
+					"Bo2g002490",
+					"Bo9g184740",
+					"scaffold_303355.1",
+					"PRUPE_6G072300",
+					"MANES_09G092400",
+					"MTR_7g062230",
+					"CCACVL1_21203",
+					"Bra015583",
+					"GSBRNA2T00119559001",
+					"Csa_3G734160",
+					"Bra009606",
+					"A4A49_28012",
+					"B456_012G104900",
+					"GSBRNA2T00089802001",
+					"LR48_Vigan03g141400",
+					"AT5G02220",
+					"GSBRNA2T00145069001",
+					"Bra030687",
+					"GSBRNA2T00122893001",
+					"Csa_4G296170",
+					"Bo5g008250",
+					"Bo8g009640",
+					"MANES_07G117700",
+					"PGSC0003DMG400030326",
+					"GLYMA_14G067700",
+					"GSBRNA2T00069525001",
+					"GSBRNA2T00032109001",
+					"MTR_5g080060",
+					"PHAVU_008G231900g",
+					"AT1G07500",
+					"POPTR_016G100000v3",
+					"Solyc05g053050.1",
+					"B456_006G171600",
+					"TCM_021910",
+					"GSBRNA2T00088799001",
+					"PGSC0003DMG400027224",
+					"scaffold_801377.1",
+					"GLYMA_02G248800",
+					"fgenesh2_kg.6__133__AT5G02220.1",
+					"GLYMA_07G133800",
+					"scaffold_100757.1",
+					"POPTR_010G201900v3",
+					"TCM_041801",
+					"PRUPE_6G257600",
+					"MANES_10G028900",
+					"MTR_5g080040",
+					"GSBRNA2T00014713001",
+					"GSBRNA2T00032387001",
+					"A4A49_28480",
+					"Csa_5G182660",
+					"MANES_02G130300",
+					"CCACVL1_23071",
+					"LR48_Vigan07g070100",
+					"Solyc06g076310.1"
+				],
+				"ortholog_one2many": [
+					"Dr10917",
+					"HannXRQ_Chr08g0220931",
+					"TanjilG_14431",
+					"VIT_13s0019g01870",
+					"AMTR_s00012p00245380"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0843700",
+		"Description": "Conserved hypothetical protein. (Os01t0843700-01)",
+		"Position": "chr01:36232930..36233540",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

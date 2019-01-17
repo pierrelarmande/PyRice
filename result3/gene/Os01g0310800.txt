@@ -1,0 +1,284 @@
+{
+	"Gramene": {
+		"_id": "Os01g0310800",
+		"name": "WALL-ASSOCIATED KINASE GENE 4",
+		"description": "Similar to Pto kinase interactor 1. (Os01t0310800-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 3119,
+		"location": {
+			"region": "1",
+			"start": 11677483,
+			"end": 11681874,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "CGSNL",
+				"ids": [
+					"WAK4"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0000DD8ABC"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"A0A0P0V290"
+				]
+			},
+			{
+				"db": "KEGG_Enzyme",
+				"ids": [
+					"04150+2.7.11.1",
+					"05165+2.7.11.1",
+					"04151+2.7.11.1",
+					"04714+2.7.11.1",
+					"04926+2.7.11.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS71779.1"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g20900.1"
+				]
+			},
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"OsWAK4, OsRLCK32, RLCK32"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR001245",
+						"name": "Ser-Thr/Tyr_kinase_cat_dom",
+						"description": "Serine-threonine/tyrosine-protein kinase, catalytic domain"
+					},
+					{
+						"id": "IPR011009",
+						"name": "Kinase-like_dom_sf",
+						"description": "Protein kinase-like domain superfamily"
+					},
+					{
+						"id": "IPR017441",
+						"name": "Protein_kinase_ATP_BS",
+						"description": "Protein kinase, ATP binding site"
+					},
+					{
+						"id": "IPR024171",
+						"name": "SRK-like_kinase",
+						"description": "S-receptor-like serine/threonine-protein kinase"
+					}
+				],
+				"ancestors": [
+					719
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0005524",
+						"name": "ATP binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with ATP, adenosine 5'-triphosphate, a universally important coenzyme and enzyme regulator.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0004675",
+						"name": "transmembrane receptor protein serine/threonine kinase activity",
+						"namespace": "molecular_function",
+						"def": "Combining with a signal and transmitting the signal from one side of the membrane to the other to initiate a change in cell activity by catalysis of the reaction: ATP protein serine = ADP + protein serine phosphate, and ATP + protein threonine = ADP + protein threonine phosphate.",
+						"subset": null,
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0005886",
+						"name": "plasma membrane",
+						"namespace": "cellular_component",
+						"def": "The membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins.",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_mouse",
+							"goslim_plant",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					}
+				],
+				"ancestors": [
+					166,
+					3674,
+					3824,
+					4672,
+					4674,
+					4888,
+					5488,
+					5575,
+					5623,
+					6464,
+					6468,
+					6793,
+					6796,
+					6807,
+					7154,
+					7165,
+					7166,
+					7167,
+					7178,
+					8144,
+					8150,
+					8152,
+					9987,
+					16020,
+					16301,
+					16310,
+					16740,
+					16772,
+					16773,
+					17076,
+					19199,
+					19538,
+					23052,
+					30554,
+					32553,
+					32555,
+					32559,
+					35639,
+					36094,
+					36211,
+					38023,
+					43167,
+					43168,
+					43170,
+					43412,
+					44237,
+					44238,
+					44260,
+					44267,
+					44464,
+					50789,
+					50794,
+					50896,
+					51716,
+					60089,
+					65007,
+					71704,
+					71944,
+					97159,
+					97367,
+					140096,
+					1901265,
+					1901363,
+					1901564
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORGLA01G0107200",
+					"BGIOSGA003356",
+					"ORUFI01G14210",
+					"OBART01G12930",
+					"OGLUM01G14630"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G15700"
+				],
+				"within_species_paralog": [
+					"Os01g0310500",
+					"Os07g0493200",
+					"Os07g0494800",
+					"Os07g0493800",
+					"Os07g0494300",
+					"Os11g0555600",
+					"Os11g0556400",
+					"Os11g0553500",
+					"Os10g0112700",
+					"Os10g0141200",
+					"Os10g0141300",
+					"Os10g0142600",
+					"Os10g0143866"
+				],
+				"ortholog_one2many": [
+					"LPERR01G12970",
+					"Zm00001d024744",
+					"SORBI_3009G033100",
+					"SETIT_004820mg",
+					"HORVU6Hr1G003940",
+					"BRADI_2g38370v3",
+					"OPUNC01G12790",
+					"TraesCSU01G194300"
+				],
+				"ortholog_many2many": [
+					"F775_18549",
+					"TraesCS6B01G029600",
+					"TraesCS1B01G079900",
+					"TraesCS1A01G061500",
+					"F775_20595",
+					"TraesCS6A01G020100",
+					"F775_03665",
+					"TRIUR3_02126",
+					"TraesCS1D01G062300",
+					"TRIUR3_02129",
+					"TraesCS6D01G025700",
+					"TRIUR3_17776",
+					"ENSCSAVG00000004952",
+					"ENSCSAVG00000006173",
+					"ENSCSAVG00000009855"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"oryzabase": {
+		"CGSNL Gene Symbol": " WAK4 ",
+		"Gene symbol synonym(s)": " OsWAK4 OsRLCK32 RLCK32 ",
+		"CGSNL Gene Name": " WALL-ASSOCIATED KINASE GENE 4 ",
+		"Gene name synonym(s)": " Receptor-like Cytoplasmic Kinase 32 ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " Biochemical character Seed Tolerance and resistance - Disease resistance ",
+		"Gene Ontology": " GO:0042742 - defense response to bacterium GO:0005524 - ATP binding GO:0050832 - defense response to fungus GO:0048316 - seed development GO:0004672 - protein kinase activity ",
+		"Trait Ontology": " TO:0000653 - seed development trait TO:0000175 - bacterial blight disease resistance TO:0000074 - blast disease ",
+		"Plant Ontology": " PO:0001170 - seed development stage PO:0009010 - seed ",
+		"RAP ID": " Os01g0310800 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"rapdb": {
+		"ID": "Os01g0310800",
+		"Description": "Similar to Pto kinase interactor 1. (Os01t0310800-01)",
+		"Position": "chr01:11677483..11681874",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "WAK4",
+		"CGSNL Gene Name": "WALL-ASSOCIATED KINASE GENE 4",
+		"Oryzabase Gene Symbol Synonym(s)": "OsWAK4, OsRLCK32, RLCK32",
+		"Oryzabase Gene Name Synonym(s)": "Receptor-like Cytoplasmic Kinase 32"
+	}
+}

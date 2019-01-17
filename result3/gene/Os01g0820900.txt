@@ -1,0 +1,32 @@
+{
+	"oryzabase": {
+		"CGSNL Gene Symbol": " WRKY20 ",
+		"Gene symbol synonym(s)": " OsWRKY20 ",
+		"CGSNL Gene Name": " RICE WRKY GENE20 ",
+		"Gene name synonym(s)": " Rice WRKY gene20 ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " Tolerance and resistance - Disease resistance Tolerance and resistance - Stress tolerance ",
+		"Gene Ontology": " GO:0003700 - transcription factor activity GO:0006952 - defense response GO:0009651 - response to salt stress GO:0042742 - defense response to bacterium GO:0043565 - sequence-specific DNA binding ",
+		"Trait Ontology": " TO:0000175 - bacterial blight disease resistance TO:0006001 - salt tolerance ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os01g0820900 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"funricegene_faminfo": {
+		"Symbol": "{'OsWRKY20'}",
+		"RAPdb": "{'Os01g0820900'}",
+		"MSU": "{'LOC_Os01g60540'}",
+		"Name": "{'WRKY'}"
+	},
+	"rapdb": {
+		"ID": "Os01g0820900",
+		"Description": "",
+		"Position": "chr01:35008866..35011098",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "WRKY20",
+		"CGSNL Gene Name": "RICE WRKY GENE20",
+		"Oryzabase Gene Symbol Synonym(s)": "OsWRKY20",
+		"Oryzabase Gene Name Synonym(s)": "Rice WRKY gene20"
+	}
+}

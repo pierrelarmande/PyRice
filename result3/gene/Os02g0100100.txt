@@ -1,0 +1,354 @@
+{
+	"Gramene": {
+		"_id": "Os02g0100100",
+		"name": "PROTEIN DISULFIDE ISOMERASE-LIKE 1;4, protein disulfide-isomerase 1-4, protein disulfide isomerase 1-4, PDI-like protein 1-4",
+		"description": "Thioredoxin domain domain containing protein. (Os02t0100100-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 11413,
+		"location": {
+			"region": "2",
+			"start": 3634,
+			"end": 8377,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"PDIL1;4, PDIL1-4, PDIL 1-4, OsPDIL1-4"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI00004265B4"
+				]
+			},
+			{
+				"db": "Uniprot/SWISSPROT",
+				"ids": [
+					"Q67IX6"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAF07493.1",
+					"BAS76496.1",
+					"BAD38565.1",
+					"EEE56114.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK071514"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015627045.1"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os02g01010.1"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015771559.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4327971"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR005788",
+						"name": "Disulphide_isomerase",
+						"description": "Disulphide isomerase"
+					},
+					{
+						"id": "IPR005792",
+						"name": "Prot_disulphide_isomerase",
+						"description": "Protein disulphide isomerase"
+					},
+					{
+						"id": "IPR017937",
+						"name": "Thioredoxin_CS",
+						"description": "Thioredoxin, conserved site"
+					},
+					{
+						"id": "IPR036249",
+						"name": "Thioredoxin-like_sf",
+						"description": "Thioredoxin-like superfamily"
+					}
+				],
+				"ancestors": [
+					12336,
+					13766
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0003756",
+						"name": "protein disulfide isomerase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the rearrangement of both intrachain and interchain disulfide bonds in proteins.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0045454",
+						"name": "cell redox homeostasis",
+						"namespace": "biological_process",
+						"def": "Any process that maintains the redox environment of a cell or compartment within a cell.",
+						"subset": [
+							"goslim_metagenomics",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0034976",
+						"name": "response to endoplasmic reticulum stress",
+						"namespace": "biological_process",
+						"def": "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stress acting at the endoplasmic reticulum. ER stress usually results from the accumulation of unfolded or misfolded proteins in the ER lumen.",
+						"subset": null,
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0005788",
+						"name": "endoplasmic reticulum lumen",
+						"namespace": "cellular_component",
+						"def": "The volume enclosed by the membranes of the endoplasmic reticulum.",
+						"subset": null,
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0006457",
+						"name": "protein folding",
+						"namespace": "biological_process",
+						"def": "The process of assisting in the covalent and noncovalent assembly of single chain polypeptides or multisubunit complexes into the correct tertiary structure.",
+						"subset": [
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_pir",
+							"goslim_pombe",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					}
+				],
+				"ancestors": [
+					3674,
+					3824,
+					5575,
+					5622,
+					5623,
+					5737,
+					5783,
+					6950,
+					8150,
+					9987,
+					12505,
+					16853,
+					16860,
+					16864,
+					19725,
+					31974,
+					33554,
+					42592,
+					43226,
+					43227,
+					43229,
+					43231,
+					43233,
+					44422,
+					44424,
+					44432,
+					44444,
+					44446,
+					44464,
+					50789,
+					50794,
+					50896,
+					51716,
+					65007,
+					65008,
+					70013,
+					140096
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"BGIOSGA007319",
+					"ONIVA02G00020",
+					"ORUFI02G00010",
+					"OBART02G00010",
+					"KN539724.1_FG009",
+					"OGLUM02G00030",
+					"OMERI02G00020",
+					"OPUNC11G05700",
+					"OB02G10030",
+					"LPERR02G00010",
+					"HORVU6Hr1G001700",
+					"BRADI_3g00210v3",
+					"SORBI_3004G000400",
+					"SETIT_016761mg",
+					"GSMUA_AchrUn_randomG16240_001",
+					"BVRB_3g070560",
+					"AMTR_s00175p00064090",
+					"CCACVL1_20500",
+					"Csa_1G084280",
+					"POPTR_009G013600v3",
+					"TCM_042047",
+					"PRUPE_6G101200",
+					"TanjilG_11280",
+					"DCAR_018813",
+					"Dr11002"
+				],
+				"ortholog_one2many": [
+					"F775_04120",
+					"TraesCS6B01G005100",
+					"TraesCS6D01G005200",
+					"TRIUR3_31623",
+					"TraesCS6A01G001100",
+					"TraesCS6B01G005500",
+					"TraesCS6A01G000600",
+					"TRIUR3_19218",
+					"TraesCS3B01G532200",
+					"F775_00484",
+					"TRIUR3_11464",
+					"TraesCS6D01G004700",
+					"Zm00001d054106",
+					"Zm00001d014912",
+					"A4A49_40096",
+					"SELMODRAFT_52354",
+					"Bra007120",
+					"PGSC0003DMG400012875",
+					"Solyc04g049450.2",
+					"Tp57577_TGAC_v2_gene15563",
+					"MANES_11G144900",
+					"VIT_06s0004g02890",
+					"SELMODRAFT_422791",
+					"PHAVU_011G079000g",
+					"GSBRNA2T00020356001",
+					"MANES_04G021500",
+					"Solyc11g069400.1",
+					"GLYMA_12G172800",
+					"AT5G60640",
+					"A4A49_17227",
+					"Bra020239",
+					"Tp57577_TGAC_v2_gene11507",
+					"Bra002464",
+					"GLYMA_11G146800",
+					"MTR_4g059450",
+					"Solyc06g075210.2",
+					"GSBRNA2T00001435001",
+					"MTR_2g094180",
+					"fgenesh2_kg.5__1905__AT3G54960.1",
+					"PGSC0003DMG400008076",
+					"GLYMA_13G326200",
+					"HannXRQ_Chr07g0197531",
+					"A4A49_27436",
+					"VIT_13s0019g04240",
+					"PGSC0003DMG400003370",
+					"HannXRQ_Chr01g0011491",
+					"Bo2g024770",
+					"LR48_Vigan05g179600",
+					"GLYMA_12G067700",
+					"GSBRNA2T00108919001",
+					"B456_009G106600",
+					"AT3G54960",
+					"B456_003G141300",
+					"PHAVU_005G135600g",
+					"Bo9g144810",
+					"LR48_Vigan08g151300",
+					"fgenesh2_kg.8__2028__AT5G60640.1",
+					"GSBRNA2T00011107001",
+					"GSBRNA2T00047838001",
+					"Bo8g087250",
+					"PHYPA_027521",
+					"PHYPA_011839",
+					"CHLRE_02g088200v5",
+					"ENSCSAVG00000011186",
+					"FBgn0014002"
+				],
+				"within_species_paralog": [
+					"Os06g0163400",
+					"Os05g0156300",
+					"Os11g0199200",
+					"Os01g0339900",
+					"Os02g0550300",
+					"Os04g0432500",
+					"Os09g0451500",
+					"Os03g0287900",
+					"Os04g0436300",
+					"Os02g0554900"
+				],
+				"ortholog_many2many": [
+					"WBGene00003962",
+					"WBGene00003963",
+					"ENSG00000185615",
+					"ENSG00000169340",
+					"ENSG00000185624"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"oryzabase": {
+		"CGSNL Gene Symbol": " _ ",
+		"Gene symbol synonym(s)": " PDIL1;4 PDIL1-4 PDIL 1-4 OsPDIL1-4 ",
+		"CGSNL Gene Name": " _ ",
+		"Gene name synonym(s)": " PROTEIN DISULFIDE ISOMERASE-LIKE 1;4 protein disulfide-isomerase 1-4 protein disulfide isomerase 1-4 PDI-like protein 1-4 ",
+		"Chr. No.": " 2 ",
+		"Trait Class": " Biochemical character Tolerance and resistance - Stress tolerance ",
+		"Gene Ontology": " GO:0015035 - protein disulfide oxidoreductase activity GO:0034975 - protein folding in endoplasmic reticulum GO:0003756 - protein disulfide isomerase activity GO:0009055 - electron carrier activity GO:0006662 - glycerol ether metabolic process GO:0005788 - endoplasmic reticulum lumen GO:0045454 - cell redox homeostasis ",
+		"Trait Ontology": " ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os02g0100100 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"rapdb": {
+		"ID": "Os02g0100100",
+		"Description": "Thioredoxin domain domain containing protein. (Os02t0100100-01)",
+		"Position": "chr02:3634..8377",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "PDIL1;4, PDIL1-4, PDIL 1-4, OsPDIL1-4",
+		"Oryzabase Gene Name Synonym(s)": "PROTEIN DISULFIDE ISOMERASE-LIKE 1;4, protein disulfide-isomerase 1-4, protein disulfide isomerase 1-4, PDI-like protein 1-4"
+	},
+	"funricegene_faminfo": {
+		"Symbol": "{'PDIL1;4|PDIL1-4|OsPDIL1-4'}",
+		"RAPdb": "{'Os02g0100100'}",
+		"MSU": "{'LOC_Os02g01010'}",
+		"Name": "{'PDIL'}"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"rapdb": {
+		"ID": "Os01g0843200",
+		"Description": "",
+		"Position": "chr01:36219265..36220410",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

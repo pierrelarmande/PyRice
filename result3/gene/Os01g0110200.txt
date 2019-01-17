@@ -1,0 +1,128 @@
+{
+	"oryzabase": {
+		"CGSNL Gene Symbol": " AGP12 ",
+		"Gene symbol synonym(s)": " OsAGP12 ",
+		"CGSNL Gene Name": " ARABINOGALACTAN PROTEIN 12 ",
+		"Gene name synonym(s)": " Arabinogalactan protein 12 ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " ",
+		"Gene Ontology": " ",
+		"Trait Ontology": " ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os01g0110200 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"Gramene": {
+		"_id": "Os01g0110200",
+		"name": "ARABINOGALACTAN PROTEIN 12",
+		"description": "Conserved hypothetical protein. (Os01t0110200-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 144,
+		"location": {
+			"region": "1",
+			"start": 543425,
+			"end": 544510,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "CGSNL",
+				"ids": [
+					"AGP12"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI000043A126"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q657S4"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS70007.1",
+					"BAD44937.1",
+					"BAF03710.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015623381.1"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015767895.1"
+				]
+			},
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"OsAGP12"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326135"
+				]
+			}
+		],
+		"annotations": {},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G00720",
+					"BGIOSGA002539",
+					"OBART01G00750",
+					"OPUNC01G00610",
+					"OB01G10700",
+					"TraesCS3B01G009600",
+					"TraesCS3D01G006500",
+					"SORBI_3003G100900"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G00680",
+					"OGLUM01G00740",
+					"Zm00001d040126"
+				],
+				"ortholog_one2many": [
+					"HORVU6Hr1G007500",
+					"HORVU6Hr1G090770",
+					"HORVU3Hr1G000720",
+					"HORVU5Hr1G026890"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"funricegene_faminfo": {
+		"Symbol": "{'AGP12'}",
+		"RAPdb": "{'Os01g0110200'}",
+		"MSU": "{'LOC_Os01g02010'}",
+		"Name": "{'AGP'}"
+	},
+	"rapdb": {
+		"ID": "Os01g0110200",
+		"Description": "Conserved hypothetical protein. (Os01t0110200-01)",
+		"Position": "chr01:543425..544510",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "AGP12",
+		"CGSNL Gene Name": "ARABINOGALACTAN PROTEIN 12",
+		"Oryzabase Gene Symbol Synonym(s)": "OsAGP12",
+		"Oryzabase Gene Name Synonym(s)": "Arabinogalactan protein 12"
+	}
+}

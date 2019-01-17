@@ -1,0 +1,345 @@
+{
+	"Gramene": {
+		"_id": "Os01g0141000",
+		"name": "APETALA2/ETHYLENE-RESPONSIVE ELEMENT BINDING PROTEIN 129",
+		"description": "AP2/ERF and B3 domain-containing protein, Salt stress response (Os01t0141000-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 619,
+		"location": {
+			"region": "1",
+			"start": 2202278,
+			"end": 2203787,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "CGSNL",
+				"ids": [
+					"AP2/EREBP129"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI00000AB6B5"
+				]
+			},
+			{
+				"db": "Uniprot/SWISSPROT",
+				"ids": [
+					"Q9AWS0"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g04800.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015622259.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS70316.1",
+					"BAB21218.1",
+					"BAF03896.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK065008"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015766773.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4325479"
+				]
+			},
+			{
+				"db": "RAP-DB",
+				"ids": [
+					"AP2/EREBP129, AP2/EREBP#129, OsRAV2, RAV2"
+				]
+			},
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"AP2/EREBP#129, OsRAV2, RAV2"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR001471",
+						"name": "AP2/ERF_dom",
+						"description": "AP2/ERF domain"
+					},
+					{
+						"id": "IPR003340",
+						"name": "B3_DNA-bd",
+						"description": "B3 DNA binding domain"
+					},
+					{
+						"id": "IPR015300",
+						"name": "DNA-bd_pseudobarrel_sf",
+						"description": "DNA-binding pseudobarrel domain superfamily"
+					},
+					{
+						"id": "IPR016177",
+						"name": "DNA-bd_dom_sf",
+						"description": "DNA-binding domain superfamily"
+					},
+					{
+						"id": "IPR036955",
+						"name": "AP2/ERF_dom_sf",
+						"description": "AP2/ERF domain superfamily"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0003700",
+						"name": "DNA-binding transcription factor activity",
+						"namespace": "molecular_function",
+						"def": "A protein or a member of a complex that interacts selectively and non-covalently with a specific DNA sequence (sometimes referred to as a motif) within the regulatory region of a gene in order to modulate transcription. Regulatory regions include promoters (proximal and distal) and enhancers. Genes are transcriptional units, and include bacterial operons.",
+						"subset": [
+							"goslim_agr",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_mouse",
+							"goslim_plant",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0003677",
+						"name": "DNA binding",
+						"namespace": "molecular_function",
+						"def": "Any molecular function by which a gene product interacts selectively and non-covalently with DNA (deoxyribonucleic acid).",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_mouse",
+							"goslim_plant",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0005634",
+						"name": "nucleus",
+						"namespace": "cellular_component",
+						"def": "A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell's chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent.",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_mouse",
+							"goslim_pir",
+							"goslim_plant",
+							"goslim_yeast"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0006351",
+						"name": "transcription, DNA-templated",
+						"namespace": "biological_process",
+						"def": "The cellular synthesis of RNA on a template of DNA.",
+						"subset": [
+							"goslim_aspergillus",
+							"goslim_metagenomics",
+							"goslim_pir",
+							"goslim_pombe",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					3674,
+					3676,
+					5488,
+					5575,
+					5622,
+					5623,
+					6139,
+					6355,
+					6725,
+					6807,
+					8150,
+					8152,
+					9058,
+					9059,
+					9889,
+					9987,
+					10467,
+					10468,
+					10556,
+					16070,
+					18130,
+					19219,
+					19222,
+					19438,
+					31323,
+					31326,
+					32774,
+					34641,
+					34645,
+					34654,
+					43170,
+					43226,
+					43227,
+					43229,
+					43231,
+					44237,
+					44238,
+					44249,
+					44260,
+					44271,
+					44424,
+					44464,
+					46483,
+					50789,
+					50794,
+					51171,
+					51252,
+					60255,
+					65007,
+					71704,
+					80090,
+					90304,
+					97159,
+					97659,
+					140110,
+					1901360,
+					1901362,
+					1901363,
+					1901576,
+					1903506,
+					2000112,
+					2001141
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ONIVA01G02990",
+					"ORGLA01G0022600",
+					"OBART01G02620",
+					"OMERI01G02500",
+					"OPUNC01G02270",
+					"OB01G12610",
+					"LPERR01G02380",
+					"BRADI_2g02720v3",
+					"Zm00001d039907",
+					"SORBI_3003G078100",
+					"SETIT_001909mg"
+				],
+				"ortholog_one2many": [
+					"BGIOSGA002753",
+					"BGIOSGA002748",
+					"HORVU3Hr1G010240",
+					"TraesCS4D01G322600",
+					"TraesCS3B01G065100",
+					"HORVU3Hr1G010140",
+					"TRIUR3_24851",
+					"TraesCS3D01G052400",
+					"HORVU3Hr1G010200",
+					"TraesCS4B01G325700",
+					"TraesCSU01G227200",
+					"F775_21293",
+					"HORVU3Hr1G010190",
+					"TRIUR3_24850",
+					"TraesCS3A01G054000",
+					"TraesCS5A01G497900",
+					"TraesCS3B01G064900",
+					"HORVU4Hr1G082030",
+					"F775_20035",
+					"F775_21292",
+					"TraesCSU01G231000",
+					"TraesCS3B01G065000",
+					"TraesCS3D01G052300",
+					"AMTR_s00007p00238950"
+				],
+				"syntenic_ortholog_one2one": [
+					"OGLUM01G02860"
+				],
+				"within_species_paralog": [
+					"Os01g0140700",
+					"Os02g0764100",
+					"Os05g0549800",
+					"Os01g0693400",
+					"Os02g0455900",
+					"Os02g0455800",
+					"Os04g0581400",
+					"Os02g0683500",
+					"Os06g0107800",
+					"Os12g0157000",
+					"Os08g0157700",
+					"Os11g0156000",
+					"Os10g0537100",
+					"Os03g0120900"
+				],
+				"ortholog_many2many": [
+					"PHYPA_000747",
+					"PHYPA_003115"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"funricegene_faminfo": {
+		"Symbol": "{'AP2;EREBP129'}",
+		"RAPdb": "{'Os01g0141000'}",
+		"MSU": "{'LOC_Os01g04800'}",
+		"Name": "{'AP2'}"
+	},
+	"rapdb": {
+		"ID": "Os01g0141000",
+		"Description": "AP2/ERF and B3 domain-containing protein, Salt stress response (Os01t0141000-01)",
+		"Position": "chr01:2202278..2203787",
+		"RAP-DB Gene Symbol Synonym(s)": "AP2/EREBP129, AP2/EREBP#129, OsRAV2, RAV2",
+		"RAP-DB Gene Name Synonym(s)": "APETALA2/ETHYLENE-RESPONSIVE ELEMENT BINDING PROTEIN 129, APETALA2/ethylene-responsive element binding protein 129, related to ABI3/VP1-2, RAV subfamily member 2",
+		"CGSNL Gene Symbol": "AP2/EREBP129",
+		"CGSNL Gene Name": "APETALA2/ETHYLENE-RESPONSIVE ELEMENT BINDING PROTEIN 129",
+		"Oryzabase Gene Symbol Synonym(s)": "AP2/EREBP#129, OsRAV2, RAV2",
+		"Oryzabase Gene Name Synonym(s)": "APETALA2/ethylene-responsive element binding protein 129, related to ABI3/VP1-2, RAV subfamily member 2"
+	},
+	"funricegene_geneinfo": {
+		"Symbol": "{'OsRAV2'}",
+		"RAPdb": "{'Os01g0141000'}",
+		"MSU": "{'LOC_Os01g04800'}"
+	}
+}

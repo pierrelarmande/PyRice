@@ -1,0 +1,72 @@
+{
+	"Gramene": {
+		"_id": "Os01g0673400",
+		"name": "Os01g0673400",
+		"description": "Conserved hypothetical protein. (Os01t0673400-00)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 6654,
+		"location": {
+			"region": "1",
+			"start": 27658843,
+			"end": 27659146,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI000048DF1D"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q5QMP7"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"EAZ13054.1",
+					"BAD73364.1",
+					"BAS73628.1",
+					"BAD73311.1"
+				]
+			}
+		],
+		"annotations": {},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G29130",
+					"BGIOSGA001039",
+					"ORGLA01G0213800",
+					"OBART01G26180",
+					"OGLUM01G29990",
+					"OMERI01G23850",
+					"OPUNC01G26070",
+					"LPERR01G22390"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G27870"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0673400",
+		"Description": "Conserved hypothetical protein. (Os01t0673400-00)",
+		"Position": "chr01:27658843..27659146",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

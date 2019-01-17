@@ -1,0 +1,209 @@
+{
+	"Gramene": {
+		"_id": "Os01g0617600",
+		"name": "Os01g0617600",
+		"description": "Plant organelle RNA recognition domain domain containing protein. (Os01t0617600-00)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 5898,
+		"location": {
+			"region": "1",
+			"start": 24549202,
+			"end": 24554122,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI000393A74C"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"A0A0P0V5B6"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g43040.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS73179.1"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR021099",
+						"name": "PORR_domain",
+						"description": "Plant organelle RNA recognition domain"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0010102",
+						"name": "lateral root morphogenesis",
+						"namespace": "biological_process",
+						"def": "The process in which the anatomical structures of a lateral root are generated and organized. A lateral root is one formed from pericycle cells located on the xylem radius of the root, as opposed to the initiation of the main root from the embryo proper.",
+						"subset": null,
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0008285",
+						"name": "negative regulation of cell proliferation",
+						"namespace": "biological_process",
+						"def": "Any process that stops, prevents or reduces the rate or extent of cell proliferation.",
+						"subset": null,
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0016021",
+						"name": "integral component of membrane",
+						"namespace": "cellular_component",
+						"def": "The component of a membrane consisting of the gene products and protein complexes having at least some part of their peptide sequence embedded in the hydrophobic region of the membrane.",
+						"subset": [
+							"goslim_chembl",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					5575,
+					7275,
+					8150,
+					9653,
+					9791,
+					10015,
+					10101,
+					16020,
+					22622,
+					31224,
+					32501,
+					32502,
+					42127,
+					44425,
+					48364,
+					48519,
+					48523,
+					48527,
+					48528,
+					48731,
+					48856,
+					50789,
+					50794,
+					65007,
+					90696,
+					90697,
+					90698,
+					99402,
+					1905392
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G25620",
+					"BGIOSGA001201",
+					"OBART01G22820",
+					"OGLUM01G26560",
+					"KN539181.1_FG013",
+					"OMERI01G20920",
+					"OPUNC09G15420",
+					"OB09G23630",
+					"LPERR09G13070",
+					"HORVU5Hr1G080730",
+					"F775_18148",
+					"TraesCS5A01G314300",
+					"TRIUR3_19427",
+					"TraesCS5D01G320500",
+					"TraesCS5B01G315000",
+					"SETIT_032383mg",
+					"Zm00001d021232",
+					"SORBI_3002G270800",
+					"GSMUA_Achr11G06720_001",
+					"Dr08736",
+					"B456_004G120600",
+					"Solyc06g063270.2",
+					"BVRB_3g066310",
+					"AT4G33495",
+					"PGSC0003DMG400026504",
+					"Csa_5G173460",
+					"MANES_14G028000",
+					"CCACVL1_09857",
+					"Tp57577_TGAC_v2_gene10745",
+					"Bra011447",
+					"VIT_16s0100g00680",
+					"TCM_015115",
+					"GLYMA_16G196600",
+					"Bo1g008090",
+					"PRUPE_2G291500",
+					"HannXRQ_Chr09g0274811",
+					"DCAR_014593",
+					"LR48_Vigan10g085600",
+					"AMTR_s00069p00092600"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G25980"
+				],
+				"ortholog_one2many": [
+					"BRADI_4g35750v3",
+					"BRADI_3g39570v3",
+					"PHAVU_004G119900g",
+					"MTR_6g033595",
+					"POPTR_015G141700v3",
+					"GSBRNA2T00121240001",
+					"MTR_2g067960",
+					"POPTR_012G139200v3",
+					"GSBRNA2T00130732001",
+					"PHAVU_001G0100000g",
+					"PHYPA_011574"
+				],
+				"within_species_paralog": [
+					"Os10g0510300",
+					"Os02g0464400",
+					"Os12g0130100",
+					"Os04g0546100",
+					"Os01g0293200",
+					"Os03g0646200",
+					"Os06g0265900",
+					"Os03g0786600",
+					"Os02g0526600",
+					"Os11g0544300",
+					"Os03g0181400",
+					"Os03g0667400",
+					"Os03g0668400",
+					"Os09g0473400",
+					"Os04g0312100",
+					"Os05g0571100"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0617600",
+		"Description": "Plant organelle RNA recognition domain domain containing protein. (Os01t0617600-00)",
+		"Position": "chr01:24549202..24554122",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

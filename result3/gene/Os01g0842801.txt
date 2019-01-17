@@ -1,0 +1,295 @@
+{
+	"Gramene": {
+		"_id": "Os01g0842801",
+		"name": "WRKY GENE 56",
+		"description": "Similar to WRKY transcription factor 56. (Os01t0842801-00)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 9055,
+		"location": {
+			"region": "1",
+			"start": 36193840,
+			"end": 36194611,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "CGSNL",
+				"ids": [
+					"WRKY56"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0001C7E7CF"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"A0A0P0VA49"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g62514.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS75171.1"
+				]
+			},
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"OsWRKY56"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR003657",
+						"name": "WRKY_dom",
+						"description": "WRKY domain"
+					},
+					{
+						"id": "IPR036576",
+						"name": "WRKY_dom_sf",
+						"description": "WRKY domain superfamily"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0003700",
+						"name": "DNA-binding transcription factor activity",
+						"namespace": "molecular_function",
+						"def": "A protein or a member of a complex that interacts selectively and non-covalently with a specific DNA sequence (sometimes referred to as a motif) within the regulatory region of a gene in order to modulate transcription. Regulatory regions include promoters (proximal and distal) and enhancers. Genes are transcriptional units, and include bacterial operons.",
+						"subset": [
+							"goslim_agr",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_mouse",
+							"goslim_plant",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0006351",
+						"name": "transcription, DNA-templated",
+						"namespace": "biological_process",
+						"def": "The cellular synthesis of RNA on a template of DNA.",
+						"subset": [
+							"goslim_aspergillus",
+							"goslim_metagenomics",
+							"goslim_pir",
+							"goslim_pombe",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0005634",
+						"name": "nucleus",
+						"namespace": "cellular_component",
+						"def": "A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell's chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent.",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_mouse",
+							"goslim_pir",
+							"goslim_plant",
+							"goslim_yeast"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0043565",
+						"name": "sequence-specific DNA binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with DNA of a specific nucleotide composition, e.g. GC-rich DNA binding, or with a specific sequence motif or type of DNA e.g. promotor binding or rDNA binding.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					3674,
+					3676,
+					3677,
+					5488,
+					5575,
+					5622,
+					5623,
+					6139,
+					6355,
+					6725,
+					6807,
+					8150,
+					8152,
+					9058,
+					9059,
+					9889,
+					9987,
+					10467,
+					10468,
+					10556,
+					16070,
+					18130,
+					19219,
+					19222,
+					19438,
+					31323,
+					31326,
+					32774,
+					34641,
+					34645,
+					34654,
+					43170,
+					43226,
+					43227,
+					43229,
+					43231,
+					44237,
+					44238,
+					44249,
+					44260,
+					44271,
+					44424,
+					44464,
+					46483,
+					50789,
+					50794,
+					51171,
+					51252,
+					60255,
+					65007,
+					71704,
+					80090,
+					90304,
+					97159,
+					97659,
+					140110,
+					1901360,
+					1901362,
+					1901363,
+					1901576,
+					1903506,
+					2000112,
+					2001141
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G40230",
+					"OBART01G36870",
+					"OMERI01G33970",
+					"BGIOSGA000506",
+					"OPUNC01G35780",
+					"OB01G45670",
+					"LPERR01G31730",
+					"TraesCS3A01G360900",
+					"TRIUR3_34281",
+					"BRADI_2g54720v3",
+					"TraesCS3D01G354700",
+					"TraesCS3B01G393300",
+					"SETIT_002957mg",
+					"SORBI_3003G353000",
+					"GSMUA_Achr2G16390_001"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA11G10840",
+					"OGLUM01G40860"
+				],
+				"syntenic_ortholog_one2many": [
+					"Zm00001d012413",
+					"VIT_08s0007g00570"
+				],
+				"ortholog_one2many": [
+					"Zm00001d042903",
+					"LR48_Vigan03g141000",
+					"Csa_4G296160",
+					"PRUPE_6G257500",
+					"AT5G43290",
+					"Bo9g059010",
+					"Bra027480",
+					"MTR_7g062220",
+					"MANES_08G084300",
+					"DCAR_028753",
+					"Solyc09g010960.2",
+					"TCM_021911",
+					"HannXRQ_Chr16g0499001",
+					"TanjilG_12755",
+					"PHAVU_008G119400g",
+					"AMTR_s00012p00243090"
+				],
+				"within_species_paralog": [
+					"Os01g0972800",
+					"Os03g0657400"
+				],
+				"ortholog_many2many": [
+					"GSBRNA2T00053165001",
+					"Tp57577_TGAC_v2_gene1686",
+					"scaffold_800733.1",
+					"fgenesh2_kg.97__1__AT5G43290.1",
+					"POPTR_006G087000v3",
+					"scaffold_800734.1",
+					"Tp57577_TGAC_v2_gene40440",
+					"B456_006G171700",
+					"scaffold_9700001.1",
+					"GLYMA_07G133700",
+					"GSBRNA2T00076922001",
+					"B456_012G104800",
+					"Al_scaffold_0008_672",
+					"POPTR_016G099900v3",
+					"GLYMA_18G183100"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"oryzabase": {
+		"CGSNL Gene Symbol": " WRKY56 ",
+		"Gene symbol synonym(s)": " OsWRKY56 ",
+		"CGSNL Gene Name": " WRKY GENE 56 ",
+		"Gene name synonym(s)": " Rice WRKY gene56 ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " Tolerance and resistance - Disease resistance ",
+		"Gene Ontology": " GO:0003700 - transcription factor activity GO:0006952 - defense response GO:0042742 - defense response to bacterium GO:0043565 - sequence-specific DNA binding ",
+		"Trait Ontology": " TO:0000175 - bacterial blight disease resistance ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os01g0842801 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"rapdb": {
+		"ID": "Os01g0842801",
+		"Description": "Similar to WRKY transcription factor 56. (Os01t0842801-00)",
+		"Position": "chr01:36193840..36194611",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "WRKY56",
+		"CGSNL Gene Name": "WRKY GENE 56",
+		"Oryzabase Gene Symbol Synonym(s)": "OsWRKY56",
+		"Oryzabase Gene Name Synonym(s)": "Rice WRKY gene56"
+	}
+}

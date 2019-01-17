@@ -107,3 +107,46 @@ def connectionError(link, data=""):
         return
         #raise Exception("Internet Connection error")
         # sys.exit(1)
+
+def fetch_description(db):
+    # Fetch database description
+    database_description = BeautifulSoup(open(
+        "database-description.xml").read(), "xml").findAll("database", dbname=db.lower())
+    if not database_description:
+        raise ValueError('Database Not Found')
+    return database_description
+
+def execute_query(db, qfields=[], verbose=False):
+    #Get query qfields list
+    fields = db[0].find_all("field")
+    # Prepare URL
+    link = db[0].find_all("link")[0]["stern"]
+    # Compile URL
+    if link[:4] == 'http':
+        if db[0]["method"] == "POST":
+            i = 0
+            for field in fields:
+                data = {field.text: qfields[i]}
+                i += 1
+            return connectionError(link, data)
+        elif db[0]["method"] == "GET":
+            query_string = ""
+            if db[0]["type"] != "text/csv":
+                i = 0
+                for field in fields:
+                    # Detect controller field (always first field)
+                    if "lowercase" in field:
+                        print(qfields[i].lower())
+                    if field.text == "":
+                        query_string += qfields[i] + "?"
+                    # All other fields are query fields
+                    else:
+                        query_string += field.text + field["op"] + qfields[i] + "&"
+                    i += 1
+                query_string = query_string[:-1]
+                link += query_string + \
+                        db[0].find_all("link")[0]["aft"]
+                if verbose: print(link)
+            return connectionError(link)
+    else:
+        return open(link)

@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 from MultiQuery import MultiQuery
 import time
-
+import re
+import csv
 if __name__ == "__main__":
-    #Search gene and queryloc
+    # #Search gene and queryloc
     # t = time.time()
     # test = MultiQuery()
     # file_id = test.search_gene(chro="chr01", start_pos="1",
@@ -19,18 +20,40 @@ if __name__ == "__main__":
 
     # a,b,c,d = multi_query.check_gene(idents=["Os08g0164400", "Os07g0586200","Os01g0100900"]
     #                                          ,locs=["LOC_Os10g01006", "LOC_Os07g39750","LOC_Os10g13914","LOC_Os01g01019"])
-    # print("a: ",a)
-    # print("b: ",b)
-    # print("c: ",c)
-    # print("d: ",d)
+    # print("set_ids: ",a)
+    # print("set_locs: ",b)
+    # print("true_ids: ",c)
+    # print("true_locs: ",d)
 
     #Query with only id and
     multi_query = MultiQuery()
-    test = multi_query.query_ids_locs(idents=["Os08g0164400", "Os07g0586200","Os01g0100900"]
-                                             ,locs=["LOC_Os10g01006", "LOC_Os07g39750","LOC_Os10g13914","LOC_Os01g01019"],save_path="./result2/")
-    print(test)
+    # test = multi_query.query_ids_locs(idents=["Os08g0164400", "Os07g0586200","Os01g0100900"]
+    #                                          ,locs=["LOC_Os10g01006", "LOC_Os07g39750","LOC_Os10g13914","LOC_Os01g01019"],save_path="./result2/")
+    # print(test)
     #test = multi_query.query_ids_locs(idents=[],locs=["LOC_Os01g01019"],dbs=["Gramene","msu"])
+    #
 
+    idents = []
+    locs = []
+    with open('/Users/mac/Downloads/Test4Stef.csv') as mapping:
+        for line in mapping:
+            loc, annot = re.split(';', line)
+            if loc != "":
+                locs.append(loc)
+    print(len(locs),locs)
+    #locs = locs[:30]
+    t = time.time()
+    test = multi_query.query_ids_locs(idents=[], locs=locs,dbs=[
+        "oryzabase", "Gramene", "funricegene_genekeywords", "funricegene_faminfo", "rapdb", "funricegene_geneinfo"],
+                                      save_path="./result3/")
+    print(time.time()-t)
+    print(test)
+
+    # multi_query = MultiQuery()
+    # test = multi_query.query_ids_locs(idents=[], locs=locs, dbs[
+    #     "oryzabase", "Gramene", "funricegene_genekeywords", "funricegene_faminfo", "rapdb", "funricegene_geneinfo"],
+    #                                   save_path="./result3/")
+    # print(test)
 
 
 

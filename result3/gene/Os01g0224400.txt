@@ -1,0 +1,143 @@
+{
+	"Gramene": {
+		"_id": "Os01g0224400",
+		"name": "Os01g0224400",
+		"description": "Similar to Mitochondrial carrier protein. (Os01t0224400-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 1900,
+		"location": {
+			"region": "1",
+			"start": 6838234,
+			"end": 6841165,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI00039391A9"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"A0A0P0UZT6"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS71102.1"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR018108",
+						"name": "Mitochondrial_sb/sol_carrier",
+						"description": "Mitochondrial substrate/solute carrier"
+					},
+					{
+						"id": "IPR023395",
+						"name": "Mt_carrier_dom_sf",
+						"description": "Mitochondrial carrier domain superfamily"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0016021",
+						"name": "integral component of membrane",
+						"namespace": "cellular_component",
+						"def": "The component of a membrane consisting of the gene products and protein complexes having at least some part of their peptide sequence embedded in the hydrophobic region of the membrane.",
+						"subset": [
+							"goslim_chembl",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					5575,
+					16020,
+					31224,
+					44425
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"KN538689.1_FG086",
+					"ORUFI01G08560",
+					"OMERI01G07800",
+					"OPUNC01G07630",
+					"ORGLA01G0069700",
+					"BGIOSGA003034",
+					"OBART01G07790",
+					"OGLUM01G08940",
+					"OB01G18040",
+					"LPERR01G07370",
+					"F775_05152",
+					"HORVU3Hr1G030340",
+					"TraesCS3D01G157400",
+					"BRADI_2g07390v3",
+					"TRIUR3_17523",
+					"TraesCS3A01G149300",
+					"TraesCS3B01G176600",
+					"SETIT_002581mg",
+					"SORBI_3006G275100",
+					"Zm00001d026670",
+					"B456_004G1156001",
+					"Tp57577_TGAC_v2_gene9389"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G10050"
+				],
+				"within_species_paralog": [
+					"Os08g0386800"
+				],
+				"ortholog_many2many": [
+					"SELMODRAFT_110994",
+					"SELMODRAFT_107897",
+					"PHYPA_029303",
+					"PHYPA_011936",
+					"ENSG00000075303",
+					"ENSG00000013306",
+					"FBgn0031039",
+					"FBgn0037512",
+					"FBgn0031038"
+				],
+				"ortholog_one2many": [
+					"CHLRE_06g267800v5",
+					"OSTLU_28374",
+					"ENSCSAVG00000000586",
+					"CMS501C",
+					"YGR257C",
+					"WBGene00007622",
+					"Gasu_10280",
+					"CHC_T00008818001"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0224400",
+		"Description": "Similar to Mitochondrial carrier protein. (Os01t0224400-01)",
+		"Position": "chr01:6838234..6841165",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

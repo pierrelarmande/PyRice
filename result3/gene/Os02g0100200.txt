@@ -1,0 +1,331 @@
+{
+	"Gramene": {
+		"_id": "Os02g0100200",
+		"name": "Os02g0100200",
+		"description": "Steroid nuclear receptor, ligand-binding domain containing protein. (Os02t0100200-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 11416,
+		"location": {
+			"region": "2",
+			"start": 9298,
+			"end": 13896,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI00002368D5"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q6YUA2"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os02g01020.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015625790.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK121311"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"EEE56115.1",
+					"BAS76498.1",
+					"BAF07494.1",
+					"BAD08176.1",
+					"BAD38566.1"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015770304.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4327972"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR019542",
+						"name": "Enhancer_polycomb-like_N",
+						"description": "Enhancer of polycomb-like, N-terminal"
+					},
+					{
+						"id": "IPR024943",
+						"name": "Enhancer_polycomb",
+						"description": "Enhancer of polycomb protein"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0006351",
+						"name": "transcription, DNA-templated",
+						"namespace": "biological_process",
+						"def": "The cellular synthesis of RNA on a template of DNA.",
+						"subset": [
+							"goslim_aspergillus",
+							"goslim_metagenomics",
+							"goslim_pir",
+							"goslim_pombe",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0032777",
+						"name": "Piccolo NuA4 histone acetyltransferase complex",
+						"namespace": "cellular_component",
+						"def": "A heterotrimeric H4/H2A histone acetyltransferase complex with a substrate preference of chromatin over free histones. It contains a subset of the proteins found in the larger NuA4 histone acetyltransferase complex; for example, the S. cerevisiae complex contains Esa1p, Yng2p, and Epl1p.",
+						"subset": null,
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0006357",
+						"name": "regulation of transcription by RNA polymerase II",
+						"namespace": "biological_process",
+						"def": "Any process that modulates the frequency, rate or extent of transcription mediated by RNA polymerase II.",
+						"subset": null,
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0004402",
+						"name": "histone acetyltransferase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the reaction: acetyl-CoA + histone = CoA + acetyl-histone.",
+						"subset": null,
+						"evidence_code": "IBA"
+					}
+				],
+				"ancestors": [
+					123,
+					3674,
+					3824,
+					5575,
+					5622,
+					5623,
+					5634,
+					5654,
+					6139,
+					6325,
+					6355,
+					6464,
+					6473,
+					6475,
+					6725,
+					6807,
+					6996,
+					8080,
+					8150,
+					8152,
+					9058,
+					9059,
+					9889,
+					9987,
+					10467,
+					10468,
+					10556,
+					16043,
+					16070,
+					16407,
+					16410,
+					16569,
+					16570,
+					16573,
+					16740,
+					16746,
+					16747,
+					18130,
+					18193,
+					18205,
+					18393,
+					18394,
+					19219,
+					19222,
+					19438,
+					19538,
+					31248,
+					31323,
+					31326,
+					31974,
+					31981,
+					32774,
+					32991,
+					34212,
+					34641,
+					34645,
+					34654,
+					35267,
+					36211,
+					43170,
+					43189,
+					43226,
+					43227,
+					43229,
+					43231,
+					43233,
+					43412,
+					43543,
+					44237,
+					44238,
+					44249,
+					44260,
+					44267,
+					44271,
+					44422,
+					44424,
+					44428,
+					44446,
+					44451,
+					44464,
+					46483,
+					50789,
+					50794,
+					51171,
+					51252,
+					51276,
+					60255,
+					61733,
+					65007,
+					70013,
+					71704,
+					71840,
+					80090,
+					90304,
+					97659,
+					1901360,
+					1901362,
+					1901564,
+					1901576,
+					1902493,
+					1902494,
+					1902562,
+					1903506,
+					1990234,
+					2000112,
+					2001141
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI02G00030",
+					"BGIOSGA007318",
+					"OBART02G00020",
+					"KN539724.1_FG004",
+					"OGLUM02G00050",
+					"OMERI02G00030",
+					"OPUNC11G05690",
+					"OB02G10040",
+					"LPERR02G00020",
+					"TRIUR3_11467",
+					"TraesCS6B01G005300",
+					"HORVU6Hr1G001680",
+					"TraesCS6D01G004900",
+					"TraesCS6A01G000800",
+					"F775_31583",
+					"SETIT_013262mg",
+					"SORBI_3007G096000",
+					"Csa_6G045070",
+					"PGSC0003DMG400026179",
+					"CCACVL1_03911",
+					"TCM_043753",
+					"LR48_Vigan02g040500",
+					"A4A49_12136",
+					"Solyc07g053190.2",
+					"MANES_10G057400",
+					"PRUPE_2G084200",
+					"AT5G04670",
+					"VIT_13s0074g00710",
+					"PHAVU_007G247300g",
+					"scaffold_600409.1",
+					"BVRB_4g094980",
+					"AMTR_s00040p00182900"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA02G00030"
+				],
+				"ortholog_one2many": [
+					"BRADI_3g00240v3",
+					"BRADI_4g15730v3",
+					"Zm00001d050174",
+					"Zm00001d024088",
+					"GSMUA_Achr5G18700_001",
+					"GSMUA_Achr11G16480_001",
+					"GSMUA_Achr11G22700_001",
+					"GLYMA_02G160100",
+					"POPTR_008G024300v3",
+					"HannXRQ_Chr05g0146881",
+					"HannXRQ_Chr07g0194201",
+					"MTR_1g092650",
+					"Tp57577_TGAC_v2_gene2536",
+					"B456_011G230300",
+					"GSBRNA2T00119641001",
+					"Bra005812",
+					"POPTR_010G235900v3",
+					"GSBRNA2T00078692001",
+					"GSBRNA2T00049335001",
+					"GSBRNA2T00134323001",
+					"HannXRQ_Chr11g0321261",
+					"Tp57577_TGAC_v2_gene22707",
+					"B456_002G145600",
+					"Bra028782",
+					"Bo2g006630",
+					"GLYMA_10G112500",
+					"MTR_1g050512",
+					"Bo3g002920"
+				],
+				"within_species_paralog": [
+					"Os01g0179500"
+				],
+				"ortholog_many2many": [
+					"SELMODRAFT_425401",
+					"SELMODRAFT_444069",
+					"PHYPA_014935",
+					"PHYPA_010370"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os02g0100200",
+		"Description": "Steroid nuclear receptor, ligand-binding domain containing protein. (Os02t0100200-01)",
+		"Position": "chr02:9298..13896",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

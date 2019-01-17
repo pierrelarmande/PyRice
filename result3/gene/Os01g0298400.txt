@@ -1,0 +1,267 @@
+{
+	"Gramene": {
+		"_id": "Os01g0298400",
+		"name": "Os01g0298400",
+		"description": "Myb transcription factor domain containing protein. (Os01t0298400-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 2950,
+		"location": {
+			"region": "1",
+			"start": 10934895,
+			"end": 10935992,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI000009EE26"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q93V35"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g19330.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015630818.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAB67851.1",
+					"BAF04724.1",
+					"EAZ11558.1",
+					"BAB55768.1",
+					"BAS71697.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK241615"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015775332.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326726"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR009057",
+						"name": "Homeobox-like_sf",
+						"description": "Homeobox-like domain superfamily"
+					},
+					{
+						"id": "IPR017930",
+						"name": "Myb_dom",
+						"description": "Myb domain"
+					}
+				],
+				"ancestors": [
+					1005
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0030154",
+						"name": "cell differentiation",
+						"namespace": "biological_process",
+						"def": "The process in which relatively unspecialized cells, e.g. embryonic or regenerative cells, acquire specialized structural and/or functional features that characterize the cells, tissues, or organs of the mature organism or some other relatively stable phase of the organism's life history. Differentiation includes the processes involved in commitment of a cell to a specific fate and its subsequent development to the mature state.",
+						"subset": [
+							"goslim_agr",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_mouse",
+							"goslim_plant",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0001135",
+						"name": "RNA polymerase II transcription factor recruiting activity",
+						"namespace": "molecular_function",
+						"def": "The function of binding to an RNA polymerase II (RNAP II) transcription factor and recruiting it to the transcription machinery complex in order to modulate transcription by RNAP II.",
+						"subset": null,
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0005634",
+						"name": "nucleus",
+						"namespace": "cellular_component",
+						"def": "A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell's chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent.",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_mouse",
+							"goslim_pir",
+							"goslim_plant",
+							"goslim_yeast"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0000981",
+						"name": "RNA polymerase II transcription factor activity, sequence-specific DNA binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with a specific DNA sequence in order to modulate transcription by RNA polymerase II.",
+						"subset": null,
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0043565",
+						"name": "sequence-specific DNA binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with DNA of a specific nucleotide composition, e.g. GC-rich DNA binding, or with a specific sequence motif or type of DNA e.g. promotor binding or rDNA binding.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0044212",
+						"name": "transcription regulatory region DNA binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with a DNA region that regulates the transcription of a region of DNA, which may be a gene, cistron, or operon. Binding may occur as a sequence specific interaction or as an interaction observed only once a factor has been recruited to the DNA by other factors.",
+						"subset": null,
+						"evidence_code": "IBA"
+					}
+				],
+				"ancestors": [
+					1067,
+					1134,
+					3674,
+					3676,
+					3677,
+					3700,
+					5488,
+					5515,
+					5575,
+					5622,
+					5623,
+					6355,
+					6357,
+					8134,
+					8150,
+					9889,
+					9987,
+					10468,
+					10556,
+					19219,
+					19222,
+					31323,
+					31326,
+					32502,
+					43226,
+					43227,
+					43229,
+					43231,
+					44424,
+					44464,
+					48869,
+					50789,
+					50794,
+					51171,
+					51252,
+					60255,
+					65007,
+					80090,
+					97159,
+					140110,
+					1901363,
+					1903506,
+					2000112,
+					2001141
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G13460",
+					"OBART01G12500",
+					"ORGLA01G0104900",
+					"OGLUM01G13990",
+					"OPUNC01G12250",
+					"OB01G22230",
+					"LPERR01G11480",
+					"HORVU3Hr1G092820",
+					"BRADI_2g11430v3",
+					"TraesCS3A01G418100",
+					"TraesCS3D01G413700",
+					"TraesCS3B01G453300",
+					"F775_25717",
+					"TRIUR3_12707",
+					"SETIT_002446mg",
+					"SORBI_3003G142300",
+					"GSMUA_Achr11G20830_001"
+				],
+				"syntenic_ortholog_one2many": [
+					"Zm00001d009066"
+				],
+				"ortholog_one2many": [
+					"Zm00001d040594",
+					"Dr15646",
+					"AMTR_s00003p00219710"
+				],
+				"within_species_paralog": [
+					"Os03g0315400",
+					"Os07g0688200",
+					"Os11g0684000",
+					"Os05g0132700",
+					"Os01g0637800",
+					"Os03g0142600",
+					"Os12g0567300",
+					"Os02g0618400",
+					"Os11g0700500",
+					"Os04g0508500",
+					"Os01g0128000",
+					"Os01g0975300"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0298400",
+		"Description": "Myb transcription factor domain containing protein. (Os01t0298400-01)",
+		"Position": "chr01:10934895..10935992",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

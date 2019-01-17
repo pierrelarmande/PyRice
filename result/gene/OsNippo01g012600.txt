@@ -203,15 +203,6 @@
 		},
 		"species_idx": 5
 	},
-	"ic4r": {
-		"All": "",
-		"OS Gene ID": "Os01g0103700",
-		"LOC Gene ID": "LOC_Os01g01380",
-		"Symbol": "-",
-		"Location": "Chr1:191036-196287 (+)",
-		"Description": "expressed protein",
-		"Box Plot": ""
-	},
 	"rapdb": {
 		"ID": "Os01g0103700",
 		"Description": "Conserved hypothetical protein. (Os01t0103700-01)",
@@ -222,5 +213,14 @@
 		"CGSNL Gene Name": "",
 		"Oryzabase Gene Symbol Synonym(s)": "",
 		"Oryzabase Gene Name Synonym(s)": ""
+	},
+	"ic4r": {
+		"All": "",
+		"OS Gene ID": "Os01g0103700",
+		"LOC Gene ID": "LOC_Os01g01380",
+		"Symbol": "-",
+		"Location": "Chr1:191036-196287 (+)",
+		"Description": "expressed protein",
+		"Box Plot": ""
 	}
 }

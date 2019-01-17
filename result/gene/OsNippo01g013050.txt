@@ -1,13 +1,4 @@
 {
-	"ic4r": {
-		"All": "",
-		"OS Gene ID": "Os01g0104400",
-		"LOC Gene ID": "LOC_Os01g01450",
-		"Symbol": "-",
-		"Location": "Chr1:226897-229331 (+)",
-		"Description": "stress responsive protein, putative, expressed",
-		"Box Plot": ""
-	},
 	"Gramene": {
 		"_id": "Os01g0104400",
 		"name": "Os01g0104400",
@@ -186,5 +177,14 @@
 		"CGSNL Gene Name": "",
 		"Oryzabase Gene Symbol Synonym(s)": "",
 		"Oryzabase Gene Name Synonym(s)": ""
+	},
+	"ic4r": {
+		"All": "",
+		"OS Gene ID": "Os01g0104400",
+		"LOC Gene ID": "LOC_Os01g01450",
+		"Symbol": "-",
+		"Location": "Chr1:226897-229331 (+)",
+		"Description": "stress responsive protein, putative, expressed",
+		"Box Plot": ""
 	}
 }

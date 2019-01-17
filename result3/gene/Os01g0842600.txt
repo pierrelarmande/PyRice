@@ -1,0 +1,389 @@
+{
+	"Gramene": {
+		"_id": "Os01g0842600",
+		"name": "FTSH3",
+		"description": "Similar to AAA-metalloprotease FtsH. (Os01t0842600-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 9052,
+		"location": {
+			"region": "1",
+			"start": 36182463,
+			"end": 36187878,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "CGSNL",
+				"ids": [
+					"FTSH3"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI00000A05CC"
+				]
+			},
+			{
+				"db": "Uniprot/SWISSPROT",
+				"ids": [
+					"Q8S2A7"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g62500.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015626112.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAF06688.1",
+					"EAZ14117.1",
+					"BAB86453.1",
+					"BAS75170.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK100245"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015770626.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4327502"
+				]
+			},
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"OsFtsH3, FtsH3"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR000642",
+						"name": "Peptidase_M41",
+						"description": "Peptidase M41"
+					},
+					{
+						"id": "IPR003593",
+						"name": "AAA+_ATPase",
+						"description": "AAA+ ATPase domain"
+					},
+					{
+						"id": "IPR003959",
+						"name": "ATPase_AAA_core",
+						"description": "ATPase, AAA-type, core"
+					},
+					{
+						"id": "IPR003960",
+						"name": "ATPase_AAA_CS",
+						"description": "ATPase, AAA-type, conserved site"
+					},
+					{
+						"id": "IPR005936",
+						"name": "FtsH",
+						"description": "Peptidase, FtsH"
+					},
+					{
+						"id": "IPR011546",
+						"name": "Pept_M41_FtsH_extracell",
+						"description": "Peptidase M41, FtsH extracellular"
+					},
+					{
+						"id": "IPR027417",
+						"name": "P-loop_NTPase",
+						"description": "P-loop containing nucleoside triphosphate hydrolase"
+					},
+					{
+						"id": "IPR037219",
+						"name": "Peptidase_M41-like",
+						"description": "Peptidase M41-like"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0005524",
+						"name": "ATP binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with ATP, adenosine 5'-triphosphate, a universally important coenzyme and enzyme regulator.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0008270",
+						"name": "zinc ion binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with zinc (Zn) ions.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0005743",
+						"name": "mitochondrial inner membrane",
+						"namespace": "cellular_component",
+						"def": "The inner, i.e. lumen-facing, lipid bilayer of the mitochondrial envelope. It is highly folded to form cristae.",
+						"subset": null,
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0004222",
+						"name": "metalloendopeptidase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the hydrolysis of internal, alpha-peptide bonds in a polypeptide chain by a mechanism in which water acts as a nucleophile, one or two metal ions hold the water molecule in place, and charged amino acid side chains are ligands for the metal ions.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0016021",
+						"name": "integral component of membrane",
+						"namespace": "cellular_component",
+						"def": "The component of a membrane consisting of the gene products and protein complexes having at least some part of their peptide sequence embedded in the hydrophobic region of the membrane.",
+						"subset": [
+							"goslim_chembl",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					166,
+					3674,
+					3824,
+					4175,
+					5488,
+					5575,
+					5622,
+					5623,
+					5737,
+					5739,
+					5740,
+					6508,
+					6807,
+					8144,
+					8150,
+					8152,
+					8233,
+					8237,
+					16020,
+					16787,
+					17076,
+					19538,
+					19866,
+					30554,
+					31090,
+					31224,
+					31966,
+					31967,
+					31975,
+					32553,
+					32555,
+					32559,
+					35639,
+					36094,
+					43167,
+					43168,
+					43169,
+					43170,
+					43226,
+					43227,
+					43229,
+					43231,
+					44238,
+					44422,
+					44424,
+					44425,
+					44429,
+					44444,
+					44446,
+					44464,
+					46872,
+					46914,
+					70011,
+					71704,
+					97159,
+					97367,
+					140096,
+					1901265,
+					1901363,
+					1901564
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G40210",
+					"BGIOSGA000507",
+					"ORGLA01G0307200",
+					"OBART01G36860",
+					"KN538690.1_FG012",
+					"OMERI01G33950",
+					"OPUNC01G35770",
+					"OB01G45660",
+					"LPERR01G31720",
+					"TraesCS3A01G360800",
+					"TRIUR3_18419",
+					"TraesCS3D01G354500",
+					"F775_31187",
+					"TraesCS3B01G393200",
+					"BRADI_2g54697v3",
+					"SORBI_3003G352900",
+					"SETIT_000339mg"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA11G10860",
+					"OGLUM01G40850"
+				],
+				"within_species_paralog": [
+					"Os05g0458400",
+					"Os01g0574400",
+					"Os01g0574500",
+					"Os01g0618800",
+					"Os04g0466100",
+					"Os02g0649700",
+					"Os06g0725900",
+					"Os06g0229000",
+					"Os06g0229066",
+					"Os06g0669400"
+				],
+				"ortholog_many2many": [
+					"GSMUA_Achr11G24090_001",
+					"CCACVL1_21206",
+					"A4A49_06555",
+					"B456_002G257200",
+					"CCACVL1_21205",
+					"Solyc10g086550.1",
+					"Solyc10g086540.1",
+					"B456_006G171800",
+					"A4A49_43434",
+					"A4A49_06556",
+					"Solyc09g010950.2",
+					"GLYMA_11G137700",
+					"MTR_7g078570",
+					"GLYMA_12G061400",
+					"MTR_0376s0020",
+					"GSBRNA2T00122182001",
+					"GSBRNA2T00031676001",
+					"AT1G07510",
+					"GSBRNA2T00088381001",
+					"MTR_7g096060",
+					"Bo4g168070",
+					"scaffold_100758.1",
+					"MTR_4g064350",
+					"PHAVU_011G062800g",
+					"Bra031579",
+					"fgenesh1_pg.C_scaffold_4001026",
+					"Tp57577_TGAC_v2_gene23594",
+					"GLYMA_12G061200",
+					"Bra028392",
+					"Tp57577_TGAC_v2_gene19240",
+					"PHAVU_011G162000g",
+					"MTR_6g059690",
+					"AT2G29080",
+					"Bo4g065820",
+					"LR48_Vigan08g015200",
+					"LR48_Vigan238s004100",
+					"Tp57577_TGAC_v2_gene1425",
+					"MTR_1g044600",
+					"Bo8g114040",
+					"Bra035651",
+					"GSBRNA2T00127901001",
+					"GSBRNA2T00050398001",
+					"GSBRNA2T00068064001",
+					"AMTR_s00005p00257390",
+					"AMTR_s00005p00256120",
+					"AMTR_s00005p00257870",
+					"PHYPA_000096",
+					"PHYPA_003452",
+					"PHYPA_014442",
+					"SELMODRAFT_169256",
+					"SELMODRAFT_115113",
+					"YER017C",
+					"YMR089C"
+				],
+				"syntenic_ortholog_many2many": [
+					"GSMUA_Achr9G03360_001"
+				],
+				"ortholog_one2many": [
+					"Dr13070",
+					"DCAR_010405",
+					"MANES_09G092500",
+					"PRUPE_6G257400",
+					"HannXRQ_Chr01g0003301",
+					"PGSC0003DMG400008828",
+					"Csa_4G296150",
+					"TCM_021912",
+					"POPTR_016G099800v3",
+					"BVRB_7g173570",
+					"VIT_06s0004g05030",
+					"OSTLU_13471",
+					"CHLRE_01g019850v5",
+					"CME055C",
+					"Gasu_58030",
+					"CHC_T00009243001",
+					"WBGene00004978",
+					"ENSCSAVG00000002646",
+					"FBgn0036702",
+					"ENSG00000141385"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"oryzabase": {
+		"CGSNL Gene Symbol": " FTSH3 ",
+		"Gene symbol synonym(s)": " OsFtsH3 FtsH3 ",
+		"CGSNL Gene Name": " _ ",
+		"Gene name synonym(s)": " ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " Biochemical character ",
+		"Gene Ontology": " GO:0005743 - mitochondrial inner membrane GO:0045041 - protein import into mitochondrial intermembrane space GO:0042407 - cristae formation GO:0034982 - mitochondrial protein processing GO:0016021 - integral to membrane GO:0009535 - chloroplast thylakoid membrane GO:0008270 - zinc ion binding GO:0008237 - metallopeptidase activity GO:0008053 - mitochondrial fusion GO:0004176 - ATP-dependent peptidase activity GO:0004222 - metalloendopeptidase activity GO:0005524 - ATP binding GO:0006461 - protein complex assembly ",
+		"Trait Ontology": " ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os01g0842600 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"rapdb": {
+		"ID": "Os01g0842600",
+		"Description": "Similar to AAA-metalloprotease FtsH. (Os01t0842600-01)",
+		"Position": "chr01:36182463..36187878",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "FTSH3",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "OsFtsH3, FtsH3",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

@@ -1,0 +1,331 @@
+{
+	"Gramene": {
+		"_id": "Os01g0110400",
+		"name": "Os01g0110400",
+		"description": "Similar to Acetyl-CoA C-acetyltransferase. (Os01t0110400-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 147,
+		"location": {
+			"region": "1",
+			"start": 549157,
+			"end": 552574,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI000009FD22"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q9ASK5"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g02020.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015621311.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK103194"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAB39872.1",
+					"BAS70008.1",
+					"BAF03711.1",
+					"EEE53732.1"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015765825.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4326136"
+				]
+			},
+			{
+				"db": "notGramene_Plant_Reactome",
+				"ids": [
+					"R-OSA-1119615.1"
+				]
+			}
+		],
+		"annotations": {
+			"pathways": {
+				"ancestors": [
+					2744345,
+					2744344,
+					1119615
+				],
+				"entries": [
+					{
+						"id": "R-OSA-1120481",
+						"link": "http://plantreactome.gramene.org/PathwayBrowser/#/R-OSA-1120481",
+						"name": "Acetyl-CoA C-acetyltransferase"
+					}
+				]
+			},
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR002155",
+						"name": "Thiolase",
+						"description": "Thiolase"
+					},
+					{
+						"id": "IPR016039",
+						"name": "Thiolase-like",
+						"description": "Thiolase-like"
+					},
+					{
+						"id": "IPR020610",
+						"name": "Thiolase_AS",
+						"description": "Thiolase, active site"
+					},
+					{
+						"id": "IPR020613",
+						"name": "Thiolase_CS",
+						"description": "Thiolase, conserved site"
+					},
+					{
+						"id": "IPR020615",
+						"name": "Thiolase_acyl_enz_int_AS",
+						"description": "Thiolase, acyl-enzyme intermediate active site"
+					},
+					{
+						"id": "IPR020616",
+						"name": "Thiolase_N",
+						"description": "Thiolase, N-terminal"
+					},
+					{
+						"id": "IPR020617",
+						"name": "Thiolase_C",
+						"description": "Thiolase, C-terminal"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0003985",
+						"name": "acetyl-CoA C-acetyltransferase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the reaction: 2 acetyl-CoA = CoA + acetoacetyl-CoA.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0005829",
+						"name": "cytosol",
+						"namespace": "cellular_component",
+						"def": "The part of the cytoplasm that does not contain organelles but which does contain other particulate matter, such as protein complexes.",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_mouse",
+							"goslim_plant",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0006635",
+						"name": "fatty acid beta-oxidation",
+						"namespace": "biological_process",
+						"def": "A fatty acid oxidation process that results in the complete oxidation of a long-chain fatty acid. Fatty acid beta-oxidation begins with the addition of coenzyme A to a fatty acid, and occurs by successive cycles of reactions during each of which the fatty acid is shortened by a two-carbon fragment removed as acetyl coenzyme A; the cycle continues until only two or three carbons remain (as acetyl-CoA or propionyl-CoA respectively).",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					}
+				],
+				"ancestors": [
+					3674,
+					3824,
+					3988,
+					5575,
+					5622,
+					5623,
+					5737,
+					6082,
+					6629,
+					6631,
+					8150,
+					8152,
+					9056,
+					9062,
+					9987,
+					16042,
+					16054,
+					16407,
+					16408,
+					16453,
+					16740,
+					16746,
+					16747,
+					19395,
+					19752,
+					30258,
+					32787,
+					34440,
+					43436,
+					44237,
+					44238,
+					44242,
+					44248,
+					44255,
+					44281,
+					44282,
+					44424,
+					44444,
+					44464,
+					46395,
+					55114,
+					71704,
+					72329,
+					1901575
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G00740",
+					"BGIOSGA002627",
+					"OBART01G00760",
+					"ORGLA01G0006500",
+					"KN538831.1_FG020",
+					"OMERI01G00190",
+					"OPUNC01G00620",
+					"OB01G10720",
+					"LPERR01G00610",
+					"Zm00001d008432",
+					"SETIT_001588mg",
+					"HORVU3Hr1G000760",
+					"TRIUR3_04185",
+					"TraesCS3A01G003800",
+					"F775_26594",
+					"SORBI_3003G100800",
+					"BRADI_2g00890v3",
+					"TraesCS3D01G005500",
+					"TraesCS3B01G008700"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G00690",
+					"OGLUM01G00750"
+				],
+				"within_species_paralog": [
+					"Os09g0252100",
+					"Os02g0817700",
+					"Os10g0457600"
+				],
+				"ortholog_many2many": [
+					"GSMUA_Achr1G19180_001",
+					"GSMUA_Achr1G16400_001",
+					"GSMUA_Achr1G09500_001",
+					"MTR_0449s0040",
+					"Bo2g149790",
+					"MANES_12G063500",
+					"Bra037501",
+					"Solyc05g017760.2",
+					"LR48_Vigan651s000200",
+					"HannXRQ_Chr11g0329391",
+					"Bra036182",
+					"GSBRNA2T00144440001",
+					"GSBRNA2T00142983001",
+					"LR48_Vigan484s000300",
+					"MANES_13G061200",
+					"Bo9g009320",
+					"MTR_5g098310",
+					"Bra020710",
+					"LR48_Vigan651s000100",
+					"PGSC0003DMG401017380",
+					"GLYMA_14G004600",
+					"GSBRNA2T00120697001",
+					"MANES_08G068600",
+					"GSBRNA2T00120698001",
+					"PGSC0003DMG400010900",
+					"Bo2g149800",
+					"Solyc07g045350.2",
+					"LR48_Vigan07g006100",
+					"HannXRQ_Chr03g0060191",
+					"GSBRNA2T00009776001",
+					"GSBRNA2T00091644001",
+					"GSBRNA2T00109563001",
+					"GLYMA_02G308500",
+					"SELMODRAFT_173909",
+					"SELMODRAFT_146037",
+					"WBGene00002183",
+					"WBGene00020166"
+				],
+				"ortholog_one2many": [
+					"Dr07452",
+					"DCAR_019674",
+					"TCM_002426",
+					"VIT_12s0057g01200",
+					"CCACVL1_03179",
+					"B456_007G165600",
+					"A4A49_22037",
+					"BVRB_9g206140",
+					"AT5G48230",
+					"PHAVU_008G288400g",
+					"POPTR_014G168700v3",
+					"PRUPE_3G196800",
+					"Csa_7G031640",
+					"Tp57577_TGAC_v2_gene15057",
+					"fgenesh2_kg.8__692__AT5G48230.2",
+					"AMTR_s00061p00203040",
+					"PHYPA_005661",
+					"CHLRE_02g146050v5",
+					"YPL028W",
+					"ENSCSAVG00000003163",
+					"CMA042C",
+					"CHC_T00008981001",
+					"FBgn0029969",
+					"ENSG00000075239",
+					"Gasu_55920"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0110400",
+		"Description": "Similar to Acetyl-CoA C-acetyltransferase. (Os01t0110400-01)",
+		"Position": "chr01:549157..552574",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

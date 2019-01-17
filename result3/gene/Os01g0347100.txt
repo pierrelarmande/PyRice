@@ -1,0 +1,164 @@
+{
+	"Gramene": {
+		"_id": "Os01g0347100",
+		"name": "Os01g0347100",
+		"description": "Protein of unknown function DUF1399 family protein. (Os01t0347100-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 3572,
+		"location": {
+			"region": "1",
+			"start": 13799955,
+			"end": 13804764,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0000446B3B"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q5Z8D9"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS72005.1",
+					"BAD52746.1",
+					"BAF04881.1",
+					"BAD53940.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK100716"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR009836",
+						"name": "GRDP-like",
+						"description": "Glycine-rich domain-containing protein-like"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0005886",
+						"name": "plasma membrane",
+						"namespace": "cellular_component",
+						"def": "The membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins.",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_mouse",
+							"goslim_plant",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					5575,
+					5623,
+					16020,
+					44464,
+					71944
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G16220",
+					"ONIVA05G23960",
+					"BGIOSGA001705",
+					"OGLUM01G16430",
+					"OBART01G14530",
+					"OMERI01G13230",
+					"KN539336.1_FG003",
+					"OPUNC01G14360",
+					"LPERR01G13210",
+					"OB01G24360",
+					"BRADI_2g12637v3",
+					"TraesCS7D01G249400",
+					"TraesCS7A01G250700",
+					"HORVU7Hr1G051590",
+					"TraesCS7B01G140400",
+					"F775_05877",
+					"TRIUR3_01976",
+					"SETIT_005129mg",
+					"Zm00001d040784",
+					"SORBI_3003G158100",
+					"GSMUA_Achr6G20440_001",
+					"fgenesh2_kg.1__4741__AT1G56230.1",
+					"Solyc01g099980.2",
+					"PGSC0003DMG400024769",
+					"Csa_1G569190",
+					"VIT_14s0060g01980",
+					"DCAR_014259",
+					"CCACVL1_04137",
+					"Bo00581s120",
+					"Bra038176",
+					"TCM_026691",
+					"BVRB_4g076070",
+					"AT1G56230",
+					"Tp57577_TGAC_v2_gene17725",
+					"POPTR_013G013000v3",
+					"PHAVU_007G198300g",
+					"PRUPE_6G318400",
+					"MTR_1g083540",
+					"AMTR_s00003p00137660"
+				],
+				"ortholog_one2many": [
+					"HannXRQ_Chr16g0513341",
+					"GSBRNA2T00013368001",
+					"GLYMA_10G150500",
+					"MANES_08G115100",
+					"GSBRNA2T00067064001",
+					"HannXRQ_Chr10g0293511",
+					"GLYMA_14G124200",
+					"A4A49_40831",
+					"MANES_09G173800",
+					"B456_007G302300",
+					"GLYMA_20G237900",
+					"B456_004G238600",
+					"A4A49_63875",
+					"GSBRNA2T00032896001",
+					"PHYPA_029737",
+					"PHYPA_012957",
+					"PHYPA_001354",
+					"PHYPA_018530",
+					"PHYPA_013912",
+					"WBGene00017980"
+				],
+				"within_species_paralog": [
+					"Os11g0621300"
+				],
+				"ortholog_many2many": [
+					"CHC_T00002244001",
+					"CHC_T00001797001"
+				]
+			}
+		},
+		"species_idx": 5
+	}
+}

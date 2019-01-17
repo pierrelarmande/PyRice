@@ -1,0 +1,278 @@
+{
+	"Gramene": {
+		"_id": "Os01g0673500",
+		"name": "Os01g0673500",
+		"description": "Similar to predicted protein. (Os01t0673500-01);Similar to Katanin p60 ATPase-containing subunit A1 (EC 3.6.4.3) (Katanin p60 subunit A1) (p60 katanin). Splice isoform 2. (Os01t0673500-02);Similar to predicted protein. (Os01t0673500-03)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 6655,
+		"location": {
+			"region": "1",
+			"start": 27660018,
+			"end": 27666746,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI000048DF1E"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q5QMP6"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS73630.1",
+					"BAF05747.1",
+					"BAD73365.1",
+					"EEE55161.1",
+					"BAS73629.1",
+					"BAD73312.1"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g48270.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015622246.1"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015766760.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"4325904"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR003593",
+						"name": "AAA+_ATPase",
+						"description": "AAA+ ATPase domain"
+					},
+					{
+						"id": "IPR003959",
+						"name": "ATPase_AAA_core",
+						"description": "ATPase, AAA-type, core"
+					},
+					{
+						"id": "IPR027417",
+						"name": "P-loop_NTPase",
+						"description": "P-loop containing nucleoside triphosphate hydrolase"
+					},
+					{
+						"id": "IPR015415",
+						"name": "Vps4_C",
+						"description": "Vps4 oligomerisation, C-terminal"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0005634",
+						"name": "nucleus",
+						"namespace": "cellular_component",
+						"def": "A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell's chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent.",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_mouse",
+							"goslim_pir",
+							"goslim_plant",
+							"goslim_yeast"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0005524",
+						"name": "ATP binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with ATP, adenosine 5'-triphosphate, a universally important coenzyme and enzyme regulator.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0016887",
+						"name": "ATPase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the reaction: ATP + H2O = ADP + phosphate + 2 H+. May or may not be coupled to another reaction.",
+						"subset": [
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					}
+				],
+				"ancestors": [
+					166,
+					3674,
+					3824,
+					5488,
+					5575,
+					5622,
+					5623,
+					8144,
+					16462,
+					16787,
+					16817,
+					16818,
+					17076,
+					17111,
+					30554,
+					32553,
+					32555,
+					32559,
+					35639,
+					36094,
+					43167,
+					43168,
+					43226,
+					43227,
+					43229,
+					43231,
+					44424,
+					44464,
+					97159,
+					97367,
+					1901265,
+					1901363
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORGLA01G0213900",
+					"ORUFI01G29140",
+					"BGIOSGA001038",
+					"OBART01G26190",
+					"OGLUM01G30000",
+					"KN540788.1_FG002",
+					"OMERI01G23860",
+					"OPUNC01G26080",
+					"OB01G35320",
+					"LPERR01G22400",
+					"TraesCS3A01G271900",
+					"BRADI_2g46277v3",
+					"F775_28456",
+					"TraesCS3D01G271500",
+					"HORVU3Hr1G061800",
+					"TraesCS3B01G305600",
+					"Zm00001d011563",
+					"SETIT_001683mg",
+					"SORBI_3003G252900",
+					"GSMUA_Achr10G21590_001"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G27880"
+				],
+				"within_species_paralog": [
+					"Os01g0757400",
+					"Os02g0159900",
+					"Os01g0141300",
+					"Os01g0141100",
+					"Os01g0683100",
+					"Os06g0130000",
+					"Os12g0443800",
+					"Os06g0714500",
+					"Os02g0749150",
+					"Os01g0226400",
+					"Os05g0584600",
+					"Os11g0661400",
+					"Os03g0344700",
+					"Os06g0225900",
+					"Os01g0623500",
+					"Os07g0672500"
+				],
+				"ortholog_one2many": [
+					"Tp57577_TGAC_v2_gene2955",
+					"MANES_15G121700",
+					"CCACVL1_19013",
+					"VIT_10s0003g03500",
+					"HannXRQ_Chr15g0480851",
+					"PGSC0003DMG400021168",
+					"Solyc02g070440.2",
+					"TanjilG_19190",
+					"Csa_6G523400",
+					"BVRB_004060",
+					"PRUPE_4G080800",
+					"PHAVU_002G193200g",
+					"MTR_4g096870",
+					"TCM_029482",
+					"AMTR_s00058p00211230",
+					"fgenesh2_kg.4__1479__AT2G34560.2",
+					"AT2G34560",
+					"PHYPA_013375",
+					"CHLRE_10g446400v5",
+					"ENSG00000167216",
+					"FBgn0029656"
+				],
+				"ortholog_many2many": [
+					"A4A49_10729",
+					"DCAR_007891",
+					"B456_011G044000",
+					"GLYMA_05G130700",
+					"B456_010G166700",
+					"POPTR_011G085200v3",
+					"DCAR_003917",
+					"POPTR_004G065100v3",
+					"GLYMA_08G085500",
+					"A4A49_41408",
+					"Bo3g027770",
+					"Bra005414",
+					"Bo4g039710",
+					"GSBRNA2T00141912001",
+					"Bra022979",
+					"GSBRNA2T00141410001",
+					"GSBRNA2T00095340001",
+					"GSBRNA2T00132327001",
+					"SELMODRAFT_81377",
+					"SELMODRAFT_130083"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0673500",
+		"Description": "Similar to predicted protein. (Os01t0673500-01);Similar to Katanin p60 ATPase-containing subunit A1 (EC 3.6.4.3) (Katanin p60 subunit A1) (p60 katanin). Splice isoform 2. (Os01t0673500-02);Similar to predicted protein. (Os01t0673500-03)",
+		"Position": "chr01:27660018..27666746",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

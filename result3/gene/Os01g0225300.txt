@@ -1,0 +1,154 @@
+{
+	"Gramene": {
+		"_id": "Os01g0225300",
+		"name": "Os01g0225300",
+		"description": "Conserved hypothetical protein. (Os01t0225300-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 1914,
+		"location": {
+			"region": "1",
+			"start": 6906353,
+			"end": 6909594,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI000393AA39"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"A0A0P0UZY1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS71109.1"
+				]
+			}
+		],
+		"annotations": {
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0015031",
+						"name": "protein transport",
+						"namespace": "biological_process",
+						"def": "The directed movement of proteins into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.",
+						"subset": [
+							"goslim_pir",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					6810,
+					8104,
+					8150,
+					15833,
+					33036,
+					42886,
+					45184,
+					51179,
+					51234,
+					71702,
+					71705
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORGLA01G0070400",
+					"OPUNC01G07690",
+					"BGIOSGA003038",
+					"OBART01G07850",
+					"OMERI01G07850",
+					"ORUFI01G08640",
+					"OB01G18100",
+					"LPERR01G07440",
+					"F775_06277",
+					"BRADI_2g07450v3",
+					"HORVU3Hr1G030610",
+					"TraesCS3B01G177500",
+					"TRIUR3_12972",
+					"TraesCS3A01G150500",
+					"TraesCS3D01G158400",
+					"SETIT_001606mg",
+					"SORBI_3003G011900",
+					"GSMUA_Achr10G22030_001",
+					"Dr05124",
+					"Csa_5G140440",
+					"LR48_Vigan10g108500",
+					"BVRB_3g053210",
+					"A4A49_24335",
+					"DCAR_008898",
+					"TCM_046205",
+					"PGSC0003DMG400009503",
+					"MTR_6g053110",
+					"KK1_049322",
+					"Solyc03g007620.2",
+					"VIT_16s0050g01470",
+					"PRUPE_2G302400",
+					"Bra010109",
+					"MANES_06G153500",
+					"PHAVU_004G105900g",
+					"TanjilG_06381",
+					"AT5G62650",
+					"Bo3g107280",
+					"AMTR_s00053p00021770",
+					"PHYPA_022494"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G10130"
+				],
+				"ortholog_one2many": [
+					"Zm00001d017228",
+					"Zm00001d017229",
+					"fgenesh2_kg.8__2264__AT5G62650.1",
+					"B456_003G069400",
+					"CCACVL1_09364",
+					"CCACVL1_25474",
+					"POPTR_017G148900v3",
+					"GSBRNA2T00141464001",
+					"B456_006G199600",
+					"Al_scaffold_0584_1",
+					"Tp57577_TGAC_v2_gene9177",
+					"POPTR_001G203000v3",
+					"GLYMA_16G177100",
+					"POPTR_010G079800v3",
+					"GLYMA_09G129300",
+					"HannXRQ_Chr15g0494171",
+					"HannXRQ_Chr00c0486g0575011",
+					"Tp57577_TGAC_v2_gene27774",
+					"GSBRNA2T00058829001",
+					"Tp57577_TGAC_v2_gene9175",
+					"POPTR_004G072100v3",
+					"SELMODRAFT_425928",
+					"SELMODRAFT_424522"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0225300",
+		"Description": "Conserved hypothetical protein. (Os01t0225300-01)",
+		"Position": "chr01:6906353..6909594",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

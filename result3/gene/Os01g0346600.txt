@@ -1,0 +1,125 @@
+{
+	"Gramene": {
+		"_id": "Os01g0346600",
+		"name": "Os01g0346600",
+		"description": "Conserved hypothetical protein. (Os01t0346600-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 3568,
+		"location": {
+			"region": "1",
+			"start": 13775186,
+			"end": 13776654,
+			"strand": 1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI000393B02C"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"A0A0N7KCX1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS72001.1"
+				]
+			}
+		],
+		"annotations": {
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0016021",
+						"name": "integral component of membrane",
+						"namespace": "cellular_component",
+						"def": "The component of a membrane consisting of the gene products and protein complexes having at least some part of their peptide sequence embedded in the hydrophobic region of the membrane.",
+						"subset": [
+							"goslim_chembl",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					5575,
+					16020,
+					31224,
+					44425
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G16160",
+					"BGIOSGA003459",
+					"ORGLA01G0119400",
+					"OBART01G14500",
+					"OGLUM01G16390",
+					"OMERI01G13190",
+					"ONIVA05G23920",
+					"KN539336.1_FG004",
+					"OPUNC01G14320",
+					"OB01G24330",
+					"LPERR01G13180"
+				],
+				"within_species_paralog": [
+					"Os01g0343400",
+					"Os01g0347200"
+				],
+				"ortholog_many2many": [
+					"HORVU5Hr1G122290",
+					"TraesCS3D01G010600",
+					"F775_19951",
+					"TraesCS3A01G012200",
+					"TraesCS3B01G014800",
+					"TraesCS5D01G542100",
+					"TraesCS4A01G331200",
+					"TRIUR3_08764",
+					"TRIUR3_30026",
+					"TRIUR3_15157",
+					"TraesCS5B01G546200",
+					"TRIUR3_22720",
+					"HORVU5Hr1G118950",
+					"HORVU7Hr1G122080",
+					"TraesCS5B01G545500",
+					"TraesCS3B01G016100",
+					"BRADI_4g43450v3",
+					"F775_00102",
+					"TraesCS4A01G330800",
+					"TRIUR3_31466",
+					"BRADI_4g43471v3",
+					"F775_08693",
+					"TRIUR3_13832",
+					"TraesCS3A01G013200"
+				],
+				"ortholog_one2many": [
+					"Zm00001d040780",
+					"SORBI_3003G157700"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0346600",
+		"Description": "Conserved hypothetical protein. (Os01t0346600-01)",
+		"Position": "chr01:13775186..13776654",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

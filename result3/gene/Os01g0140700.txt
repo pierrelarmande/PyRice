@@ -1,0 +1,32 @@
+{
+	"rapdb": {
+		"ID": "Os01g0140700",
+		"Description": "Similar to RAV2 (REGULATOR OF THE ATPASE OF THE VACUOLAR MEMBRANE); DNA binding / transcription factor. (Os01t0140700-00)",
+		"Position": "chr01:2154326..2155279",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "AP2/EREBP77",
+		"CGSNL Gene Name": "APETALA2/ETHYLENE-RESPONSIVE ELEMENT BINDING PROTEIN 77",
+		"Oryzabase Gene Symbol Synonym(s)": "AP2/EREBP#077, OsRAV1, RAV1",
+		"Oryzabase Gene Name Synonym(s)": "APETALA2/ethylene-responsive element binding protein 77, related to ABI3/VP1-1, RAV subfamily member 1"
+	},
+	"funricegene_faminfo": {
+		"Symbol": "{'AP2;EREBP77'}",
+		"RAPdb": "{'Os01g0140700'}",
+		"MSU": "{'LOC_Os01g04750'}",
+		"Name": "{'AP2'}"
+	},
+	"oryzabase": {
+		"CGSNL Gene Symbol": " AP2/EREBP77 ",
+		"Gene symbol synonym(s)": " AP2/EREBP#077 OsRAV1 RAV1 ",
+		"CGSNL Gene Name": " APETALA2/ETHYLENE-RESPONSIVE ELEMENT BINDING PROTEIN 77 ",
+		"Gene name synonym(s)": " APETALA2/ethylene-responsive element binding protein 77 related to ABI3/VP1-1 RAV subfamily member 1 ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " Other ",
+		"Gene Ontology": " GO:0003677 - DNA binding GO:0003700 - transcription factor activity GO:0005634 - nucleus GO:0006351 - transcription, DNA-dependent ",
+		"Trait Ontology": " ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os01g0140700 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	}
+}
