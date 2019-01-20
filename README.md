@@ -24,25 +24,44 @@ Note:
 ### Query Module
 
 ```py
-MultiQuery().search_gene(chro="", start_pos="",end_pos="",dbs='all',save_path=None)
+search_gene(chro="", start_pos="",end_pos="",dbs='all',save_path=None)
+  """
+  Search gene in snpseek database
+  :param chro: (str) chromosome
+  :param start_pos: (str)
+  :param end_pos: (str)
+  :param dbs: list of database: ["rap", "msu7", "iric"]
+  :param save_path: path to save result after call function
+  :return: a dictionary, format: iricname:{{msu7Name:LOC_Os..},{raprepName:Os}}
+  """
 ```
-Return a dictionary in snpseek database
-1. dbs : list of database,default is search gene in all: "msu7","rap","iric"
-2. save_path: link folder save output function, default is None => don't save 
-
-Note: the computation time depend on the length of position you decide.
 
 ```py
-test = MultiQuery()
-file_id = test.search_gene(...)
-db = test.query_iric(file_id,dbs='all',save_path=None)
-```
-Return a dictionary in databases follow iricname
-1. file_id : result of function search_gene()
-2. dbs : list of database,default is search gene in all of "oryzabase", "Gramene", "funricegene_genekeywords",
+query_iric(file_id,dbs='all',save_path=None)
+  """
+  Query with iricname
+  :param file_id: result of function search_gene
+  :param dbs: list databases (support 9 available databases:["oryzabase", "Gramene", "funricegene_genekeywords",
                        "funricegene_faminfo", "msu", "rapdb","ic4r",
-                       "funricegene_geneinfo"
-3. save_path: link folder save output function, default is None => don't save 
+                       "funricegene_geneinfo"])
+  :param save_path: (str) path to save result after call function
+  :return: a dictionary, format : gene:{database: attributes}
+  """
+```
+```py
+query_ids_locs(self,idents, locs, dbs='all',save_path = None):
+  """
+  Query with id and loc of gene
+  :param idents: list id of gene
+  :param locs: list loc of gene
+  :param dbs: list databases (support 9 available databases: ["oryzabase", "Gramene", "funricegene_genekeywords",
+                       "funricegene_faminfo", "msu", "rapdb","ic4r",
+                       "funricegene_geneinfo"])
+  :param save_path: (str) path to save result after call function
+  :return: a dictionary, format : gene:{database: attribute}
+  """
+```
+Note: the computation time depend on the length of position you decide.
 
 ## Structure of Database description
 
@@ -106,6 +125,14 @@ Output database {'OsNippo01g010050': {'Gramene': {'_id': 'Os01g0100100', 'name':
 
 Process finished with exit code 0
 
+```
+
+### Example of system query_ids_locs
+```py
+multi_query = MultiQuery()
+    test = multi_query.query_ids_locs(idents=["Os08g0164400", "Os07g0586200","Os01g0100900"]
+                                             ,locs=["LOC_Os10g01006", "LOC_Os07g39750","LOC_Os10g13914","LOC_Os01g01019"],save_path="./result2/")
+    print(test)
 ```
 
 ### Example of database description
