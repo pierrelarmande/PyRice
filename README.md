@@ -49,7 +49,7 @@ query_iric(file_id,dbs='all',save_path=None)
   """
 ```
 ```py
-query_ids_locs(self,idents, locs, dbs='all',save_path = None):
+query_ids_locs(idents, locs, dbs='all',save_path = None):
   """
   Query with id and loc of gene
   :param idents: list id of gene
