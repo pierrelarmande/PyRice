@@ -30,8 +30,8 @@ search_gene(chro="", start_pos="",end_pos="",dbs='all',save_path=None)
   :param chro: (str) chromosome
   :param start_pos: (str)
   :param end_pos: (str)
-  :param dbs: list of database: ["rap", "msu7", "iric"]
-  :param save_path: path to save result after call function
+  :param dbs: list of database:["rap", "msu7", "iric"]; default = 'all' is query on all database
+  :param save_path: path to save result after call function; default = None is do not save result
   :return: a dictionary, format: iricname:{{msu7Name:LOC_Os..},{raprepName:Os}}
   """
 ```
@@ -43,8 +43,8 @@ query_iric(file_id,dbs='all',save_path=None)
   :param file_id: result of function search_gene
   :param dbs: list databases (support 9 available databases:["oryzabase", "Gramene", "funricegene_genekeywords",
                        "funricegene_faminfo", "msu", "rapdb","ic4r",
-                       "funricegene_geneinfo"])
-  :param save_path: (str) path to save result after call function
+                       "funricegene_geneinfo"]); default = 'all' is query on all database
+  :param save_path: (str) path to save result after call function; default = None is do not save result
   :return: a dictionary, format : gene:{database: attributes}
   """
 ```
@@ -56,8 +56,8 @@ query_ids_locs(self,idents, locs, dbs='all',save_path = None):
   :param locs: list loc of gene
   :param dbs: list databases (support 9 available databases: ["oryzabase", "Gramene", "funricegene_genekeywords",
                        "funricegene_faminfo", "msu", "rapdb","ic4r",
-                       "funricegene_geneinfo"])
-  :param save_path: (str) path to save result after call function
+                       "funricegene_geneinfo"]); default = 'all' is query on all database
+  :param save_path: (str) path to save result after call function; default = None is do not save result
   :return: a dictionary, format : gene:{database: attribute}
   """
 ```
@@ -130,9 +130,9 @@ Process finished with exit code 0
 ### Example of system query_ids_locs
 ```py
 multi_query = MultiQuery()
-    test = multi_query.query_ids_locs(idents=["Os08g0164400", "Os07g0586200","Os01g0100900"]
-                                             ,locs=["LOC_Os10g01006", "LOC_Os07g39750","LOC_Os10g13914","LOC_Os01g01019"],save_path="./result2/")
-    print(test)
+test = multi_query.query_ids_locs(idents=["Os08g0164400", "Os07g0586200","Os01g0100900"]
+                  ,locs=["LOC_Os10g01006", "LOC_Os07g39750","LOC_Os10g13914","LOC_Os01g01019"],save_path="./result2/")
+print(test)
 ```
 
 ### Example of database description
