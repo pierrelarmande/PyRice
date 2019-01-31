@@ -37,6 +37,7 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
 def existFile(pathToFile):
     """
     :param pathToFile: entire path to the file
+
     :return: return True if the file already exist, else return False
     """
     return (os.path.isfile(pathToFile))
@@ -45,6 +46,7 @@ def existFile(pathToFile):
 def formatPathToFile(nameFile):
     """
     :param nameFile: name of the file with its extension
+
     :return: return the entire path to the file
     """
 
@@ -89,6 +91,7 @@ def connectionError(link, data=""):
 
     :param link: URL
     :param data: data to give to the form
+
     :return: requests.get(link)
     """
     try:
@@ -96,14 +99,14 @@ def connectionError(link, data=""):
         if data!= "":
             res = requests.post(link, data=data, headers=headers)
         else:
-            res = requests.get(link, allow_redirects=False,timeout=5)
+            res = requests.get(link, allow_redirects=False,stream=True)
         if res.status_code != 200:
             print('Server Error: ' + str(res.status_code) + '\n' + 'For url:' + link)
             #raise Exception('Server Error: ' + str(res.status_code) + '\n' + 'For url:' + link)
             # sys.exit(1)
         return res
-    except requests.exceptions.RequestException:
-        print("Can't connect:",link)
+    except requests.exceptions.RequestException as error:
+        print("Can't connect: {} - Eror: {}".format(link,error))
         return
         #raise Exception("Internet Connection error")
         # sys.exit(1)
