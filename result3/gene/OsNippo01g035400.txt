@@ -1,8 +1,8 @@
 {
 	"rapdb": {
-		"ID": "Os08g0164400",
+		"ID": "Os01g0141200",
 		"Description": "",
-		"Position": "chr08:3773830..3780099",
+		"Position": "chr01:2224683..2225060",
 		"RAP-DB Gene Symbol Synonym(s)": "",
 		"RAP-DB Gene Name Synonym(s)": "",
 		"CGSNL Gene Symbol": "",

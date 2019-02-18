@@ -1,0 +1,339 @@
+{
+	"oryzabase": {
+		"CGSNL Gene Symbol": " _ ",
+		"Gene symbol synonym(s)": " OsWD40-2 UV-DDB2 OsUV-DDB2 ",
+		"CGSNL Gene Name": " _ ",
+		"Gene name synonym(s)": " UV-damaged DNA binding protein 2 Ultraviolet-damaged DNA binding protein 2 ",
+		"Chr. No.": " 1 ",
+		"Trait Class": " Biochemical character Tolerance and resistance - Stress tolerance ",
+		"Gene Ontology": " GO:0005634 - nucleus GO:0006281 - DNA repair GO:0010224 - response to UV-B ",
+		"Trait Ontology": " ",
+		"Plant Ontology": " ",
+		"RAP ID": " Os01g0141700 Oryzabase ( IRGSP 1.0 / Build5 ) Rap ( IRGSP 1.0 / Build5 ) ",
+		"Mutant Image": " "
+	},
+	"Gramene": {
+		"_id": "Os01g0141700",
+		"name": "UV-damaged DNA binding protein 2, Ultraviolet-damaged DNA binding protein 2",
+		"description": "Similar to predicted protein. (Os01t0141700-01)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 642,
+		"location": {
+			"region": "1",
+			"start": 2250838,
+			"end": 2255073,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "Oryzabase",
+				"ids": [
+					"OsWD40-2, UV-DDB2, OsUV-DDB2"
+				]
+			},
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI00000A91D8"
+				]
+			},
+			{
+				"db": "Uniprot/Varsplic",
+				"ids": [
+					"Q84KJ3-2"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015622245.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"BAS70324.1",
+					"BAB16450.1"
+				]
+			},
+			{
+				"db": "EMBL",
+				"ids": [
+					"AK111907",
+					"AK112097"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015766759.1"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR001680",
+						"name": "WD40_repeat",
+						"description": "WD40 repeat"
+					},
+					{
+						"id": "IPR015943",
+						"name": "WD40/YVTN_repeat-like_dom_sf",
+						"description": "WD40/YVTN repeat-like-containing domain superfamily"
+					},
+					{
+						"id": "IPR017986",
+						"name": "WD40_repeat_dom",
+						"description": "WD40-repeat-containing domain"
+					},
+					{
+						"id": "IPR019775",
+						"name": "WD40_repeat_CS",
+						"description": "WD40 repeat, conserved site"
+					},
+					{
+						"id": "IPR033312",
+						"name": "DDB2",
+						"description": "DNA damage-binding protein 2"
+					},
+					{
+						"id": "IPR036322",
+						"name": "WD40_repeat_dom_sf",
+						"description": "WD40-repeat-containing domain superfamily"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0003684",
+						"name": "damaged DNA binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with damaged DNA.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0006281",
+						"name": "DNA repair",
+						"namespace": "biological_process",
+						"def": "The process of restoring DNA after damage. Genomes are subject to damage by chemical and physical agents in the environment (e.g. UV and ionizing radiations, chemical mutagens, fungal and bacterial toxins, etc.) and by free radicals or alkylating agents endogenously generated in metabolism. DNA is also damaged because of errors during its replication. A variety of different DNA repair pathways have been reported that include direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, double-strand break repair pathway, and mismatch repair pathway.",
+						"subset": [
+							"goslim_pir",
+							"goslim_pombe",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0010224",
+						"name": "response to UV-B",
+						"namespace": "biological_process",
+						"def": "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a UV-B radiation stimulus. UV-B radiation (UV-B light) spans the wavelengths 280 to 315 nm.",
+						"subset": null,
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0005634",
+						"name": "nucleus",
+						"namespace": "cellular_component",
+						"def": "A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell's chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent.",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_mouse",
+							"goslim_pir",
+							"goslim_plant",
+							"goslim_yeast"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0080008",
+						"name": "Cul4-RING E3 ubiquitin ligase complex",
+						"namespace": "cellular_component",
+						"def": "A ubiquitin ligase complex in which a cullin from the Cul4 family and a RING domain protein form the catalytic core; substrate specificity is conferred by an adaptor protein.",
+						"subset": null,
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0005515",
+						"name": "protein binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with any protein or protein complex (a complex of two or more proteins that may include other nonprotein molecules).",
+						"subset": [
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_metagenomics",
+							"goslim_pir",
+							"goslim_plant",
+							"gosubset_prok"
+						],
+						"evidence_code": "IPI"
+					},
+					{
+						"id": "GO:0046872",
+						"name": "metal ion binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with any metal ion.",
+						"subset": [
+							"goslim_agr",
+							"goslim_metagenomics",
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					}
+				],
+				"ancestors": [
+					151,
+					3674,
+					3676,
+					3677,
+					5488,
+					5575,
+					5622,
+					5623,
+					6139,
+					6259,
+					6725,
+					6807,
+					6950,
+					6974,
+					8150,
+					8152,
+					9314,
+					9411,
+					9416,
+					9628,
+					9987,
+					31461,
+					32991,
+					33554,
+					34641,
+					43167,
+					43169,
+					43170,
+					43226,
+					43227,
+					43229,
+					43231,
+					44237,
+					44238,
+					44260,
+					44424,
+					44464,
+					46483,
+					50896,
+					51716,
+					71704,
+					90304,
+					97159,
+					1901360,
+					1901363,
+					1902494,
+					1990234
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"ORUFI01G02720",
+					"BGIOSGA002424",
+					"ORGLA01G0023000",
+					"OBART01G02650",
+					"KN540133.1_FG003",
+					"OMERI01G02550",
+					"OPUNC01G02320",
+					"OB01G12660",
+					"LPERR01G02410",
+					"F775_16273",
+					"TRIUR3_09514",
+					"TraesCS3A01G054700",
+					"TraesCS3B01G066200",
+					"BRADI_2g02750v3",
+					"TraesCS3D01G054200",
+					"SORBI_3003G077600",
+					"Zm00001d008597",
+					"SETIT_000798mg",
+					"GSMUA_Achr11G24160_001",
+					"Dr18132",
+					"A4A49_33501",
+					"fgenesh2_kg.8__1817__AT5G58760.1",
+					"PGSC0003DMG400022078",
+					"LR48_Vigan10g275300",
+					"TCM_041629",
+					"Tp57577_TGAC_v2_gene5774",
+					"MANES_02G119900",
+					"Bra020355",
+					"B456_013G260300",
+					"Csa_6G185330",
+					"PRUPE_6G058000",
+					"VIT_06s0004g06550",
+					"AT5G58760",
+					"MTR_5g070310",
+					"Solyc09g031610.2",
+					"BVRB_1g015970",
+					"PHAVU_008G261700g",
+					"POPTR_001G251000v3",
+					"HannXRQ_Chr01g0011191",
+					"Bo2g028390",
+					"AMTR_s00029p00242040",
+					"PHYPA_011655",
+					"CHLRE_13g577550v5",
+					"Gasu_51510",
+					"CHC_T00004000001",
+					"ENSG00000134574"
+				],
+				"syntenic_ortholog_one2one": [
+					"ONIVA01G29450"
+				],
+				"syntenic_ortholog_one2many": [
+					"OGLUM01G02900",
+					"OGLUM01G02920"
+				],
+				"ortholog_one2many": [
+					"GLYMA_14G193200",
+					"GLYMA_02G2263002",
+					"GSBRNA2T00115034001",
+					"GLYMA_02G2263001",
+					"GSBRNA2T00052729001",
+					"SELMODRAFT_21554",
+					"SELMODRAFT_31884"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"funricegene_faminfo": {
+		"Symbol": "{'OsWD40-2'}",
+		"RAPdb": "{'Os01g0141700'}",
+		"MSU": "{'LOC_Os01g04870'}",
+		"Name": "{'OSWD40'}"
+	},
+	"rapdb": {
+		"ID": "Os01g0141700",
+		"Description": "Similar to predicted protein. (Os01t0141700-01)",
+		"Position": "chr01:2250838..2255073",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "OsWD40-2, UV-DDB2, OsUV-DDB2",
+		"Oryzabase Gene Name Synonym(s)": "UV-damaged DNA binding protein 2, Ultraviolet-damaged DNA binding protein 2"
+	}
+}

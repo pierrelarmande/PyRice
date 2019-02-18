@@ -1,0 +1,307 @@
+{
+	"Gramene": {
+		"_id": "Os01g0141300",
+		"name": "Os01g0141300",
+		"description": "Similar to vacuolar sorting protein 4b. (Os01t0141300-00)",
+		"biotype": "protein_coding",
+		"taxon_id": 39947,
+		"system_name": "oryza_sativa",
+		"db_type": "core",
+		"gene_idx": 627,
+		"location": {
+			"region": "1",
+			"start": 2226409,
+			"end": 2229526,
+			"strand": -1,
+			"map": "GCA_001433935.1"
+		},
+		"xrefs": [
+			{
+				"db": "UniParc",
+				"ids": [
+					"UPI0000450437"
+				]
+			},
+			{
+				"db": "Uniprot/SPTREMBL",
+				"ids": [
+					"Q5ZEN9"
+				]
+			},
+			{
+				"db": "STRING",
+				"ids": [
+					"39947.LOC_Os01g04840.1"
+				]
+			},
+			{
+				"db": "RefSeq_peptide",
+				"ids": [
+					"XP_015642485.1"
+				]
+			},
+			{
+				"db": "protein_id",
+				"ids": [
+					"EEE53841.1",
+					"BAS70321.1",
+					"BAD61062.1"
+				]
+			},
+			{
+				"db": "RefSeq_dna",
+				"ids": [
+					"XM_015786999.1"
+				]
+			},
+			{
+				"db": "EntrezGene",
+				"ids": [
+					"107275709"
+				]
+			}
+		],
+		"annotations": {
+			"domains": {
+				"entries": [
+					{
+						"id": "IPR003593",
+						"name": "AAA+_ATPase",
+						"description": "AAA+ ATPase domain"
+					},
+					{
+						"id": "IPR003959",
+						"name": "ATPase_AAA_core",
+						"description": "ATPase, AAA-type, core"
+					},
+					{
+						"id": "IPR007330",
+						"name": "MIT",
+						"description": "MIT"
+					},
+					{
+						"id": "IPR015415",
+						"name": "Vps4_C",
+						"description": "Vps4 oligomerisation, C-terminal"
+					},
+					{
+						"id": "IPR027417",
+						"name": "P-loop_NTPase",
+						"description": "P-loop containing nucleoside triphosphate hydrolase"
+					},
+					{
+						"id": "IPR036181",
+						"name": "MIT_dom_sf",
+						"description": "MIT domain superfamily"
+					}
+				]
+			},
+			"GO": {
+				"entries": [
+					{
+						"id": "GO:0005634",
+						"name": "nucleus",
+						"namespace": "cellular_component",
+						"def": "A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell's chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent.",
+						"subset": [
+							"goslim_agr",
+							"goslim_aspergillus",
+							"goslim_candida",
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_metagenomics",
+							"goslim_mouse",
+							"goslim_pir",
+							"goslim_plant",
+							"goslim_yeast"
+						],
+						"evidence_code": "IBA"
+					},
+					{
+						"id": "GO:0005524",
+						"name": "ATP binding",
+						"namespace": "molecular_function",
+						"def": "Interacting selectively and non-covalently with ATP, adenosine 5'-triphosphate, a universally important coenzyme and enzyme regulator.",
+						"subset": [
+							"gosubset_prok"
+						],
+						"evidence_code": "IEA"
+					},
+					{
+						"id": "GO:0016887",
+						"name": "ATPase activity",
+						"namespace": "molecular_function",
+						"def": "Catalysis of the reaction: ATP + H2O = ADP + phosphate + 2 H+. May or may not be coupled to another reaction.",
+						"subset": [
+							"goslim_chembl",
+							"goslim_generic",
+							"goslim_yeast",
+							"gosubset_prok"
+						],
+						"evidence_code": "IBA"
+					}
+				],
+				"ancestors": [
+					166,
+					3674,
+					3824,
+					5488,
+					5575,
+					5622,
+					5623,
+					8144,
+					16462,
+					16787,
+					16817,
+					16818,
+					17076,
+					17111,
+					30554,
+					32553,
+					32555,
+					32559,
+					35639,
+					36094,
+					43167,
+					43168,
+					43226,
+					43227,
+					43229,
+					43231,
+					44424,
+					44464,
+					97159,
+					97367,
+					1901265,
+					1901363
+				]
+			}
+		},
+		"homology": {
+			"homologous_genes": {
+				"ortholog_one2one": [
+					"BGIOSGA002426",
+					"ORGLA01G0022800",
+					"OPUNC01G02300"
+				],
+				"within_species_paralog": [
+					"Os01g0141100",
+					"Os02g0159900",
+					"Os01g0757400",
+					"Os01g0673500",
+					"Os01g0683100",
+					"Os06g0130000",
+					"Os12g0443800",
+					"Os06g0714500",
+					"Os02g0749150",
+					"Os01g0226400",
+					"Os05g0584600",
+					"Os11g0661400",
+					"Os03g0344700",
+					"Os06g0225900",
+					"Os01g0623500",
+					"Os07g0672500"
+				],
+				"ortholog_one2many": [
+					"TRIUR3_34594",
+					"F775_10928",
+					"BRADI_2g02730v3",
+					"TraesCS3A01G054100",
+					"HORVU3Hr1G010300",
+					"TraesCS3D01G053600",
+					"TraesCS3B01G065200",
+					"SORBI_3003G077900",
+					"SETIT_001506mg",
+					"Tp57577_TGAC_v2_gene17229",
+					"VIT_13s0106g00490",
+					"PGSC0003DMG400019489",
+					"Solyc11g007170.1",
+					"TanjilG_16281",
+					"CCACVL1_30983",
+					"TCM_041448",
+					"Dr05060",
+					"BVRB_7g176290",
+					"PRUPE_6G127200",
+					"Csa_6G152960",
+					"AT2G27600",
+					"AMTR_s00168p00030500",
+					"CHLRE_02g079300v5",
+					"OSTLU_26031",
+					"Gasu_30700",
+					"FBgn0283469",
+					"YPR173C",
+					"CMO281C",
+					"WBGene00021334"
+				],
+				"ortholog_many2many": [
+					"Zm00001d008596",
+					"Zm00001d039904",
+					"DCAR_006346",
+					"DCAR_002570",
+					"HannXRQ_Chr01g0024251",
+					"HannXRQ_Chr11g0321271",
+					"HannXRQ_Chr11g0346771",
+					"DCAR_006345",
+					"MANES_11G160400",
+					"GLYMA_12G183700",
+					"Bo3g040410",
+					"GSBRNA2T00047297001",
+					"MTR_2g086160",
+					"Bra000503",
+					"MANES_04G005000",
+					"B456_001G121400",
+					"B456_006G111300",
+					"GLYMA_13G317300",
+					"Bra018640",
+					"B456_009G086700",
+					"Bo5g008860",
+					"Bra012009",
+					"fgenesh2_kg.4__813__AT2G27600.1",
+					"PHAVU_011G092700g",
+					"fgenesh1_pm.C_scaffold_1000660",
+					"LR48_Vigan05g169500",
+					"B456_004G009400",
+					"Bo4g074310",
+					"GLYMA_12G087700",
+					"MTR_4g053350",
+					"GSBRNA2T00100600001",
+					"LR48_Vigan08g138900",
+					"GSBRNA2T00138826001",
+					"GSBRNA2T00118671001",
+					"GSBRNA2T00148287001",
+					"GSBRNA2T00156258001",
+					"GLYMA_11G184700",
+					"PHAVU_005G125100g",
+					"POPTR_010G237100v3",
+					"GSMUA_Achr2G22550_001",
+					"GSMUA_Achr3G01430_001",
+					"GSMUA_Achr4G24320_001",
+					"POPTR_008G022300v3",
+					"A4A49_38088",
+					"A4A49_30232",
+					"SELMODRAFT_267596",
+					"SELMODRAFT_426754",
+					"PHYPA_003693",
+					"PHYPA_000062",
+					"ENSG00000132612",
+					"ENSG00000119541",
+					"CHC_T00006748001",
+					"ENSG00000260914",
+					"CHC_T00008459001"
+				]
+			}
+		},
+		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0141300",
+		"Description": "Similar to vacuolar sorting protein 4b. (Os01t0141300-00)",
+		"Position": "chr01:2226409..2229526",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
+	}
+}

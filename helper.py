@@ -7,6 +7,7 @@ import requests
 import sys
 import time
 from bs4 import BeautifulSoup
+import urllib3
 
 def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█', elasped_time = None):
     """
@@ -95,11 +96,12 @@ def connectionError(link, data=""):
     :return: requests.get(link)
     """
     try:
+        urllib3.disable_warnings()
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0'}
         if data!= "":
-            res = requests.post(link, data=data, headers=headers)
+            res = requests.post(link, data=data, headers=headers,verify=False)
         else:
-            res = requests.get(link, allow_redirects=False,stream=True)
+            res = requests.get(link, allow_redirects=False,stream=True,verify=False)
         if res.status_code != 200:
             print('Server Error: ' + str(res.status_code) + '\n' + 'For url:' + link)
             #raise Exception('Server Error: ' + str(res.status_code) + '\n' + 'For url:' + link)
