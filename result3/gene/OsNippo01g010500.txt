@@ -88,10 +88,6 @@
 					"Zm00001d008388",
 					"SORBI_3003G109500"
 				],
-				"syntenic_ortholog_one2one": [
-					"ONIVA01G00160",
-					"OGLUM01G00070"
-				],
 				"within_species_paralog": [
 					"Os05g0103700",
 					"Os05g0182700",
@@ -136,21 +132,6 @@
 					"PHYPA_013461",
 					"PHYPA_029983",
 					"PHYPA_000924"
-				],
-				"ortholog_one2many": [
-					"Dr11285",
-					"PRUPE_1G223300",
-					"PHAVU_008G017700g",
-					"VIT_01s0010g03920",
-					"Solyc05g015820.2",
-					"MTR_7g022230",
-					"TCM_008646",
-					"DCAR_024667",
-					"TanjilG_12064",
-					"Csa_6G094740",
-					"Tp57577_TGAC_v2_gene2940",
-					"CCACVL1_24067",
-					"AMTR_s00013p00157940"
 				]
 			}
 		},

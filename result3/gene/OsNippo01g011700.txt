@@ -100,7 +100,6 @@
 						"name": "chloroplast",
 						"namespace": "cellular_component",
 						"def": "A chlorophyll-containing plastid with thylakoids organized into grana and frets, or stroma thylakoids, and embedded in a stroma.",
-						"subset": null,
 						"evidence_code": "IEA"
 					},
 					{
@@ -108,25 +107,8 @@
 						"name": "thylakoid lumen",
 						"namespace": "cellular_component",
 						"def": "The volume enclosed by a thylakoid membrane.",
-						"subset": null,
 						"evidence_code": "IEA"
 					}
-				],
-				"ancestors": [
-					5575,
-					5622,
-					5623,
-					5737,
-					9536,
-					9579,
-					43226,
-					43227,
-					43229,
-					43231,
-					44424,
-					44436,
-					44444,
-					44464
 				]
 			}
 		},
@@ -175,24 +157,6 @@
 					"PHYPA_009357",
 					"CHLRE_17g714900v5",
 					"OSTLU_33443"
-				],
-				"syntenic_ortholog_one2one": [
-					"ONIVA09G12730",
-					"OGLUM01G00180"
-				],
-				"ortholog_one2many": [
-					"GLYMA_06G169300",
-					"GLYMA_04G196500",
-					"Al_scaffold_0005_2811",
-					"Al_scaffold_0006_3399",
-					"GSBRNA2T00056365001",
-					"Al_scaffold_0001_3970",
-					"scaffold_701835.1",
-					"GSBRNA2T00116051001",
-					"AMTR_s00278p00013150",
-					"AMTR_s03074p00007770",
-					"SELMODRAFT_405808",
-					"SELMODRAFT_430257"
 				]
 			}
 		},
@@ -202,7 +166,7 @@
 		"Symbol": "{'OsTLP27'}",
 		"RAPdb": "{'Os01g0102300'}",
 		"MSU": "{'LOC_Os01g01280'}",
-		"Keyword": "{'leaf', 'photosynthesis', 'chloroplast', 'sheath'}",
+		"Keyword": "{'chloroplast', 'sheath', 'photosynthesis', 'leaf'}",
 		"Title": "{'Overexpression of OsTLP27 in rice improves chloroplast function and photochemical efficiency'}"
 	},
 	"rapdb": {

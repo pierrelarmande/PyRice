@@ -1,15 +1,4 @@
 {
-	"rapdb": {
-		"ID": "Os01g0100466",
-		"Description": "Hypothetical protein. (Os01t0100466-00)",
-		"Position": "chr01:12808..13978",
-		"RAP-DB Gene Symbol Synonym(s)": "",
-		"RAP-DB Gene Name Synonym(s)": "",
-		"CGSNL Gene Symbol": "",
-		"CGSNL Gene Name": "",
-		"Oryzabase Gene Symbol Synonym(s)": "",
-		"Oryzabase Gene Name Synonym(s)": ""
-	},
 	"Gramene": {
 		"_id": "Os01g0100466",
 		"name": "Os01g0100466",
@@ -48,5 +37,16 @@
 		],
 		"annotations": {},
 		"species_idx": 5
+	},
+	"rapdb": {
+		"ID": "Os01g0100466",
+		"Description": "Hypothetical protein. (Os01t0100466-00)",
+		"Position": "chr01:12808..13978",
+		"RAP-DB Gene Symbol Synonym(s)": "",
+		"RAP-DB Gene Name Synonym(s)": "",
+		"CGSNL Gene Symbol": "",
+		"CGSNL Gene Name": "",
+		"Oryzabase Gene Symbol Synonym(s)": "",
+		"Oryzabase Gene Name Synonym(s)": ""
 	}
 }

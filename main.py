@@ -17,8 +17,8 @@ if __name__ == "__main__":
     # t = time.time()
     # test = MultiQuery()
     # db = test.query_iric(chro="chr01", start_pos="1",
-    #                     end_pos="20000",dbs="all")
-    # test.save_file(db,save_path="./result/")
+    #                     end_pos="100000",dbs="all")
+    # test.save_file(db,save_path="./result/",format=["csv","html"])
     # print("Time for query:", time.time() - t)
     # print("Output database",db)
 
@@ -35,9 +35,9 @@ if __name__ == "__main__":
     test = MultiQuery()
     t = time.time()
     db = test.query_ids_locs(idents=["Os08g0164400", "Os07g0586200","Os01g0100900"],locs=locs,irics=[],dbs=[
-        "oryzabase", "Gramene", "funricegene_genekeywords", "funricegene_faminfo", "rapdb", "funricegene_geneinfo"],save_path="./result3/")
+        "oryzabase", "Gramene", "funricegene_genekeywords", "funricegene_faminfo", "rapdb", "funricegene_geneinfo"])
     print(time.time()-t)
-    #test.save_file(db,'./result3/')
+    test.save_file(db,'./result3/',format=["csv","html"])
     print("Output database",db)
 
 

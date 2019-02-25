@@ -163,13 +163,7 @@ class MultiQuery():
 
     #Do not use
     @staticmethod
-    def save_file(result,save_path):
-        # change format to save file
-        demo = dict()
-        for key, value in result.items():
-            demo.setdefault(key, dict())
-            for subdb, data in value.items():
-                demo[key].setdefault(subdb, data)
+    def save_file(result,save_path,format=None):
         if save_path != None:
             data_folder = save_path + "data/"
             gene_folder = save_path + "gene/"
@@ -178,7 +172,7 @@ class MultiQuery():
             if not os.path.exists(gene_folder):
                 os.makedirs(gene_folder)
             # ouput data/db.csv
-            test = copy.deepcopy(demo)
+            test = copy.deepcopy(result)
             # filter allow attributes
             filter_ = ["db_type", "gene_idx", "location", "xrefs", "gene_structure", "bins", "annotations", "homology"]
             for i in test.keys():
@@ -186,7 +180,6 @@ class MultiQuery():
                     if k == "Gramene":
                         for att in filter_:
                             v.pop(att, None)
-            my_db = data_folder + "db" + '.csv'
             # Convert output db.csv
             total_dict = dict()
             for iricname, databases in test.items():
@@ -198,15 +191,28 @@ class MultiQuery():
                             new_data.setdefault(db + "." + att, value)
                     new_dict.update(new_data)
                 total_dict.setdefault(iricname, new_dict)
-            df = pd.DataFrame.from_dict(total_dict, orient='index')
-            with open(my_db, 'w') as f:
-                df.to_csv(f, header=True)
-                f.close()
+            for form in format:
+                if form == "csv" :
+                    my_db = data_folder + "db" + '.csv'
+                    df = pd.DataFrame.from_dict(total_dict, orient='index')
+                    with open(my_db, 'w') as f:
+                        df.to_csv(f, header=True)
+                        f.close()
+                elif form == "html":
+                    my_db = data_folder + "db" + '.html'
+                    df = pd.DataFrame.from_dict(total_dict, orient='index')
+                    df.to_html(my_db)
+                elif form=="json":
+                    my_db = data_folder + "db" + '.json'
+                    df = pd.DataFrame.from_dict(total_dict, orient='index')
+                    df.to_json(my_db)
             # output gene/iricname.txt
-            test = copy.deepcopy(demo)
+            test = copy.deepcopy(result)
             # filter allow attributes
             filter_ = ["gene_structure", "bins", ]
             annotations = ["taxonomy", "familyRoot"]
+            go = ["ancestors"]
+            entries = ["subset"]
             homology = ["gene_tree"]
             homologous_genes = ["syntenic_ortholog_one2one", "ortholog_one2many"]
             for i in test.keys():
@@ -217,10 +223,21 @@ class MultiQuery():
                         if "annotations" in v.keys():
                             for att in annotations:
                                 v["annotations"].pop(att, None)
+                            if "GO" in v["annotations"].keys():
+                                for att in go:
+                                    v["annotations"]["GO"].pop(att, None)
+                                if "entries" in v["annotations"]["GO"].keys():
+                                    # list entries
+                                    for j in range(len(v["annotations"]["GO"]["entries"])):
+                                        # print(v["annotations"]["GO"]["entries"][j],type(v["annotations"]["GO"]["entries"][j]))
+                                        for att in entries:
+                                            v["annotations"]["GO"]["entries"][j].pop(att, None)
+                                        # print(v["annotations"]["GO"]["entries"][j],
+                                        #     type(v["annotations"]["GO"]["entries"][j]))
                         if "homology" in v.keys():
                             for att in homology:
                                 v["homology"].pop(att, None)
-                            if "homologous_genes" in v.keys():
+                            if "homologous_genes" in v["homology"].keys():
                                 for att in homologous_genes:
                                     v["homology"]["homologous_genes"].pop(att, None)
             for iricname, databases in test.items():
@@ -229,7 +246,7 @@ class MultiQuery():
                     f.write(json.dumps(test[iricname], indent="\t"))
                     f.close()
 
-    def query_iric(self,chro, start_pos, end_pos,dbs='all',save_path = None):
+    def query_iric(self,chro, start_pos, end_pos,dbs='all'):
         """
         Query with chromosome
 
@@ -291,68 +308,10 @@ class MultiQuery():
             demo.setdefault(key, dict())
             for subdb, data in value.items():
                 demo[key].setdefault(subdb, data)
-        if save_path != None:
-            data_folder = save_path + "data/"
-            gene_folder = save_path + "gene/"
-            if not os.path.exists(data_folder):
-                os.makedirs(data_folder)
-            if not os.path.exists(gene_folder):
-                os.makedirs(gene_folder)
-            #ouput data/db.csv
-            test = copy.deepcopy(demo)
-            #filter allow attributes
-            filter_ = ["db_type", "gene_idx", "location", "xrefs", "gene_structure", "bins", "annotations", "homology"]
-            for i in test.keys():
-                for k, v in test[i].items():
-                    if k == "Gramene":
-                        for att in filter_:
-                            v.pop(att, None)
-            my_db = data_folder + "db" + '.csv'
-            #Convert output db.csv
-            total_dict = dict()
-            for iricname,databases in test.items():
-                new_dict = dict()
-                for db,data in databases.items():
-                    new_data = dict()
-                    for att,value in data.items():
-                        if value != "":
-                            new_data.setdefault(db+"."+att,value)
-                    new_dict.update(new_data)
-                total_dict.setdefault(iricname, new_dict)
-            df = pd.DataFrame.from_dict(total_dict,orient='index')
-            with open(my_db, 'w') as f:
-                df.to_csv(f, header=True)
-                f.close()
-            # output gene/iricname.txt
-            test = copy.deepcopy(demo)
-            # filter allow attributes
-            filter_ = ["gene_structure", "bins", ]
-            annotations = ["taxonomy", "familyRoot"]
-            homology = ["gene_tree"]
-            homologous_genes = ["syntenic_ortholog_one2one", "ortholog_one2many"]
-            for i in test.keys():
-                for k, v in test[i].items():
-                    if k == "Gramene":
-                        for att in filter_:
-                            v.pop(att, None)
-                        if "annotations" in v.keys():
-                            for att in annotations:
-                                v["annotations"].pop(att, None)
-                        if "homology" in v.keys():
-                            for att in homology:
-                                v["homology"].pop(att, None)
-                            if "homologous_genes" in v.keys():
-                                for att in homologous_genes:
-                                    v["homology"]["homologous_genes"].pop(att, None)
-            for iricname,databases in test.items():
-                my_gene = gene_folder + iricname + '.txt'
-                with open(my_gene, 'w') as f:
-                    f.write(json.dumps(test[iricname], indent="\t"))
-                    f.close()
         self.result = demo
         return self.result
 
-    def query_ids_locs(self,idents, locs, irics, dbs='all',save_path = None):
+    def query_ids_locs(self,idents, locs, irics, dbs='all'):
         """
         Query with id and loc of gene
 
@@ -420,167 +379,13 @@ class MultiQuery():
         finally:
             p.close()
             p.join()
-        # set_ids, set_locs, idents, locs = self.check_gene(idents, locs)
-        # manager = Manager()
-        # self.result = manager.dict()
-        # support_db = ["oryzabase", "Gramene", "funricegene_genekeywords",
-        #            "funricegene_faminfo", "msu", "rapdb", "ic4r",
-        #            "funricegene_geneinfo"]
-        # if dbs == 'all':
-        #     name_db = support_db
-        # else:
-        #     name_db=[]
-        #     for db in dbs:
-        #         if db not in support_db:
-        #             print("Don't support databse: ", db)
-        #         else:
-        #             name_db.append(db)
-        # i = 1;
-        # number_query = len(idents)
-        # try:
-        #     p = Pool(processes=cpu_count()*2) #number_core*2
-        #     for key, value in idents.items():
-        #         print("Query ID: {} --- Step {}/{}".format(key,i,number_query))
-        #         i+=1
-        #         self.result.setdefault(key,manager.dict())
-        #         for db in name_db:
-        #             if db == "rapdb" or db == 'oryzabase' or db == "Gramene" or db == "ic4r":
-        #                 p.apply_async(self.query, args=(key,db,[key],))
-        #             elif db == "msu":
-        #                 for loc in value:
-        #                     p.apply_async(self.query, args=(key,db, [loc],))
-        #             elif db == "funricegene_genekeywords" or db == "funricegene_faminfo" or db == "funricegene_geneinfo":
-        #                 if len(value) >0:
-        #                     for loc in value:
-        #                         p.apply_async(self.query, args=(key, db, [key,loc],))
-        #                 else:
-        #                     for loc in value:
-        #                         p.apply_async(self.query, args=(key, db, [key,loc],))
-        #     if "msu" in name_db:
-        #         print("Query LOC with out ID")
-        #         i=1;
-        #         number_query = len(locs)
-        #         for loc in locs.keys():
-        #             self.result.setdefault(loc,manager.dict())
-        #             print("Query LOC: {} --- Step {}/{} ".format(loc,i,number_query))
-        #             i+=1;
-        #             p.apply_async(self.query, args=(loc, "msu", [loc],))
-        # finally:
-        #     p.close()
-        #     p.join()
-        # change format to save file
         demo = dict()
         for key, value in self.result.items():
             demo.setdefault(key, dict())
             for subdb, data in value.items():
                 demo[key].setdefault(subdb, data)
-        if save_path != None:
-            data_folder = save_path + "data/"
-            gene_folder = save_path + "gene/"
-            if not os.path.exists(data_folder):
-                os.makedirs(data_folder)
-            if not os.path.exists(gene_folder):
-                os.makedirs(gene_folder)
-            # ouput data/db.csv
-            test = copy.deepcopy(demo)
-            # filter allow attributes
-            filter_ = ["db_type", "gene_idx", "location", "xrefs", "gene_structure", "bins", "annotations",
-                       "homology"]
-            for i in test.keys():
-                for k, v in test[i].items():
-                    if k == "Gramene":
-                        for att in filter_:
-                            v.pop(att, None)
-            my_db = data_folder + "db" + '.csv'
-            # Convert output db.csv
-            total_dict = dict()
-            for iricname, databases in test.items():
-                new_dict = dict()
-                for db, data in databases.items():
-                    new_data = dict()
-                    for att, value in data.items():
-                        if value != "":
-                            new_data.setdefault(db + "." + att, value)
-                    new_dict.update(new_data)
-                total_dict.setdefault(iricname, new_dict)
-            df = pd.DataFrame.from_dict(total_dict, orient='index')
-            with open(my_db, 'w') as f:
-                df.to_csv(f, header=True)
-                f.close()
-            # output gene/iricname.txt
-            test = copy.deepcopy(demo)
-            # filter allow attributes
-            filter_ = ["gene_structure", "bins", ]
-            annotations = ["taxonomy", "familyRoot"]
-            homology = ["gene_tree"]
-            homologous_genes = ["syntenic_ortholog_one2one", "ortholog_one2many"]
-            for i in test.keys():
-                for k, v in test[i].items():
-                    if k == "Gramene":
-                        for att in filter_:
-                            v.pop(att, None)
-                        if "annotations" in v.keys():
-                            for att in annotations:
-                                v["annotations"].pop(att, None)
-                        if "homology" in v.keys():
-                            for att in homology:
-                                v["homology"].pop(att, None)
-                            if "homologous_genes" in v.keys():
-                                for att in homologous_genes:
-                                    v["homology"]["homologous_genes"].pop(att, None)
-            for iricname, databases in test.items():
-                my_gene = gene_folder + iricname + '.txt'
-                with open(my_gene, 'w') as f:
-                    f.write(json.dumps(test[iricname], indent="\t"))
-                    f.close()
         self.result = demo
         return self.result
-        # new_result = dict()
-        # new_name_db=[]
-        # fun_db =[]
-        # if dbs == 'all':
-        #     new_name_db = ["oryzabase", "Gramene", "rapdb", "ic4r"]
-        #     fun_db = ["funricegene_genekeywords", "funricegene_faminfo", "funricegene_geneinfo"]
-        # else:
-        #     for db in name_db:
-        #         if db == "rapdb" or db == 'oryzabase' or db == "Gramene" or db == "ic4r":
-        #             new_name_db.append(db)
-        #         else:
-        #             fun_db.append(db)
-        # for ident in idents.keys():
-        #     id_data = dict()
-        #     for db in new_name_db:
-        #         #check ident in {db:{id:data}}
-        #         if ident in self.result[db].keys():
-        #             #get data
-        #             id_data.setdefault(db,self.result[db][ident])
-        #     #create dict with new_key : id-loc
-        #     new_key = ident
-        #     loc_data = dict()
-        #     #get locs for create new_key
-        #     for loc in idents[ident]:
-        #         # search id-loc in fun
-        #         new_key += "-" + loc
-        #         # search loc in msu
-        #         if "msu" in name_db:
-        #             if loc in self.result["msu"].keys():
-        #                 loc_data.setdefault("msu",self.result["msu"][loc])
-        #                 id_data.update(loc_data)
-        #         fun_data = dict()
-        #         for fun in fun_db:
-        #             if (ident,loc) in self.result[fun].keys():
-        #                 fun_data.setdefault(fun,self.result[fun][ident,loc])
-        #                 id_data.update(fun_data)
-        #     new_result.setdefault(new_key,id_data)
-        # for loc in locs.keys():
-        #     if loc in self.result["msu"].keys():
-        #         new_result.setdefault(loc,self.result["msu"][loc])
-        # #print("new_result",new_result)
-        # with open('./support/data.json', 'w') as fp:
-        #     json.dump(new_result, fp)
-        # self.result = new_result
-        # #self.save_file("./data/")
-        # return self.result
 
     def check_gene(self, idents, locs):
         """

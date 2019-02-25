@@ -89,21 +89,8 @@
 						"name": "nucleic acid binding",
 						"namespace": "molecular_function",
 						"def": "Interacting selectively and non-covalently with any nucleic acid.",
-						"subset": [
-							"goslim_chembl",
-							"goslim_metagenomics",
-							"goslim_pir",
-							"goslim_plant",
-							"gosubset_prok"
-						],
 						"evidence_code": "IEA"
 					}
-				],
-				"ancestors": [
-					3674,
-					5488,
-					97159,
-					1901363
 				]
 			}
 		},
@@ -148,18 +135,6 @@
 					"AMTR_s00020p00156350",
 					"SELMODRAFT_422523",
 					"PHYPA_010982"
-				],
-				"syntenic_ortholog_one2one": [
-					"ONIVA01G00140",
-					"OGLUM01G00060"
-				],
-				"ortholog_one2many": [
-					"Zm00001d047466",
-					"Zm00001d029189",
-					"GLYMA_20G219700",
-					"Tp57577_TGAC_v2_gene14653",
-					"Tp57577_TGAC_v2_gene14659",
-					"GLYMA_10G170300"
 				]
 			}
 		},

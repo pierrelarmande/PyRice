@@ -48,18 +48,8 @@
 						"name": "integral component of membrane",
 						"namespace": "cellular_component",
 						"def": "The component of a membrane consisting of the gene products and protein complexes having at least some part of their peptide sequence embedded in the hydrophobic region of the membrane.",
-						"subset": [
-							"goslim_chembl",
-							"gosubset_prok"
-						],
 						"evidence_code": "IEA"
 					}
-				],
-				"ancestors": [
-					5575,
-					16020,
-					31224,
-					44425
 				]
 			}
 		},
@@ -97,27 +87,6 @@
 					"AT5G16520",
 					"Bo3g012080",
 					"AMTR_s00020p00152550"
-				],
-				"syntenic_ortholog_one2one": [
-					"ONIVA01G00130"
-				],
-				"ortholog_one2many": [
-					"GSMUA_Achr3G19470_001",
-					"GSMUA_Achr8G17460_001",
-					"Dr07621",
-					"Dr11338",
-					"GSBRNA2T00130123001",
-					"LR48_Vigan03g041800",
-					"HannXRQ_Chr05g0156961",
-					"BVRB_4g080840",
-					"LR48_Vigan03g041900",
-					"HannXRQ_Chr11g0323931",
-					"GLYMA_09G252300",
-					"GLYMA_18G240300",
-					"PGSC0003DMG402016935",
-					"BVRB_2g024580",
-					"PGSC0003DMG401016935",
-					"GSBRNA2T00140562001"
 				]
 			}
 		},

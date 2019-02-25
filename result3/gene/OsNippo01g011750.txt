@@ -99,17 +99,6 @@
 						"name": "DNA binding",
 						"namespace": "molecular_function",
 						"def": "Any molecular function by which a gene product interacts selectively and non-covalently with DNA (deoxyribonucleic acid).",
-						"subset": [
-							"goslim_agr",
-							"goslim_aspergillus",
-							"goslim_candida",
-							"goslim_chembl",
-							"goslim_generic",
-							"goslim_mouse",
-							"goslim_plant",
-							"goslim_yeast",
-							"gosubset_prok"
-						],
 						"evidence_code": "IEA"
 					},
 					{
@@ -117,9 +106,6 @@
 						"name": "protein heterodimerization activity",
 						"namespace": "molecular_function",
 						"def": "Interacting selectively and non-covalently with a nonidentical protein to form a heterodimer.",
-						"subset": [
-							"goslim_chembl"
-						],
 						"evidence_code": "IEA"
 					},
 					{
@@ -127,37 +113,8 @@
 						"name": "nucleosome",
 						"namespace": "cellular_component",
 						"def": "A complex comprised of DNA wound around a multisubunit core and associated proteins, which forms the primary packing unit of DNA into higher order structures.",
-						"subset": [
-							"goslim_pir"
-						],
 						"evidence_code": "IEA"
 					}
-				],
-				"ancestors": [
-					785,
-					3674,
-					3676,
-					5488,
-					5515,
-					5575,
-					5622,
-					5623,
-					5694,
-					32991,
-					32993,
-					43226,
-					43228,
-					43229,
-					43232,
-					44422,
-					44424,
-					44427,
-					44446,
-					44464,
-					44815,
-					46983,
-					97159,
-					1901363
 				]
 			}
 		},
@@ -168,9 +125,6 @@
 					"BGIOSGA002585",
 					"ORGLA01G0001300",
 					"OBART01G00200"
-				],
-				"syntenic_ortholog_one2one": [
-					"ONIVA09G12720"
 				],
 				"within_species_paralog": [
 					"Os01g0580400",
@@ -183,17 +137,6 @@
 					"Os06g0667100",
 					"Os08g0206500",
 					"Os09g0480700"
-				],
-				"ortholog_one2many": [
-					"KN538826.1_FG018",
-					"OPUNC01G00170",
-					"OB01G10170",
-					"Zm00001d023466",
-					"PHAVU_008G008900g",
-					"DCAR_007494",
-					"LR48_Vigan549s008600",
-					"GLYMA_02G089600",
-					"WBGene00017742"
 				],
 				"ortholog_many2many": [
 					"LPERR06G10620",

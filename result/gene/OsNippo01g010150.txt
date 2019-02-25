@@ -47,13 +47,6 @@
 					"ONIVA02G14150",
 					"OBART01G00030",
 					"OB02G44720"
-				],
-				"ortholog_one2many": [
-					"OMERI05G17330",
-					"OMERI06G01950"
-				],
-				"syntenic_ortholog_one2one": [
-					"OGLUM01G00040"
 				]
 			}
 		},

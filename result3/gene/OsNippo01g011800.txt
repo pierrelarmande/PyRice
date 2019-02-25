@@ -66,9 +66,6 @@
 						"name": "nucleoside transmembrane transporter activity",
 						"namespace": "molecular_function",
 						"def": "Enables the transfer of a nucleoside, a nucleobase linked to either beta-D-ribofuranose (ribonucleoside) or 2-deoxy-beta-D-ribofuranose, (a deoxyribonucleotide) from one side of a membrane to the other.",
-						"subset": [
-							"gosubset_prok"
-						],
 						"evidence_code": "IEA"
 					},
 					{
@@ -76,34 +73,8 @@
 						"name": "integral component of membrane",
 						"namespace": "cellular_component",
 						"def": "The component of a membrane consisting of the gene products and protein complexes having at least some part of their peptide sequence embedded in the hydrophobic region of the membrane.",
-						"subset": [
-							"goslim_chembl",
-							"gosubset_prok"
-						],
 						"evidence_code": "IEA"
 					}
-				],
-				"ancestors": [
-					3674,
-					5215,
-					5575,
-					6810,
-					8150,
-					15858,
-					15931,
-					15932,
-					16020,
-					22857,
-					31224,
-					44425,
-					51179,
-					51234,
-					55085,
-					71702,
-					71705,
-					1901264,
-					1901505,
-					1901642
 				]
 			}
 		},
@@ -143,47 +114,8 @@
 					"TCM_008611",
 					"AMTR_s00016p00013560"
 				],
-				"ortholog_one2many": [
-					"ONIVA07G16830",
-					"GLYMA_18G284500",
-					"LR48_Vigan03g011000",
-					"CCACVL1_26677",
-					"LR48_Vigan03g110100",
-					"GSBRNA2T00104229001",
-					"VIT_01s0010g04010",
-					"MANES_13G008600",
-					"LR48_Vigan05g022800",
-					"GSBRNA2T00135697001",
-					"VIT_01s0146g00020",
-					"GSBRNA2T00129906001",
-					"A4A49_38306",
-					"TanjilG_11939",
-					"A4A49_32334",
-					"MANES_12G008200",
-					"Bra008856",
-					"TanjilG_12065",
-					"POPTR_003G168300v3",
-					"LR48_Vigan10g138500",
-					"VIT_01s0146g00040",
-					"GLYMA_02G097000",
-					"Bo9g169050",
-					"LR48_Vigan561s006100",
-					"GSBRNA2T00140322001",
-					"CCACVL1_19553",
-					"POPTR_001G059700v3",
-					"LR48_Vigan09g111800",
-					"Bo3g008990",
-					"Bra006180",
-					"Bra006181",
-					"SELMODRAFT_66188",
-					"SELMODRAFT_71087"
-				],
 				"syntenic_ortholog_one2many": [
 					"ONIVA09G12710"
-				],
-				"syntenic_ortholog_one2one": [
-					"OGLUM01G00190",
-					"Zm00001d040204"
 				]
 			}
 		},

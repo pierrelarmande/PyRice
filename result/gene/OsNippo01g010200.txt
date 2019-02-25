@@ -82,9 +82,6 @@
 						"name": "copper ion binding",
 						"namespace": "molecular_function",
 						"def": "Interacting selectively and non-covalently with copper (Cu) ions.",
-						"subset": [
-							"gosubset_prok"
-						],
 						"evidence_code": "IEA"
 					},
 					{
@@ -92,9 +89,6 @@
 						"name": "oxidoreductase activity, oxidizing metal ions",
 						"namespace": "molecular_function",
 						"def": "Catalysis of an oxidation-reduction in which the oxidation state of metal ion is altered.",
-						"subset": [
-							"gosubset_prok"
-						],
 						"evidence_code": "IBA"
 					},
 					{
@@ -102,18 +96,6 @@
 						"name": "plasma membrane",
 						"namespace": "cellular_component",
 						"def": "The membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins.",
-						"subset": [
-							"goslim_agr",
-							"goslim_aspergillus",
-							"goslim_candida",
-							"goslim_chembl",
-							"goslim_generic",
-							"goslim_metagenomics",
-							"goslim_mouse",
-							"goslim_plant",
-							"goslim_yeast",
-							"gosubset_prok"
-						],
 						"evidence_code": "IEA"
 					},
 					{
@@ -121,30 +103,8 @@
 						"name": "plasmodesma",
 						"namespace": "cellular_component",
 						"def": "A fine cytoplasmic channel, found in all higher plants, that connects the cytoplasm of one cell to that of an adjacent cell.",
-						"subset": null,
 						"evidence_code": "IEA"
 					}
-				],
-				"ancestors": [
-					3674,
-					3824,
-					5488,
-					5575,
-					5623,
-					5911,
-					8150,
-					8152,
-					16020,
-					16491,
-					30054,
-					43167,
-					43169,
-					44464,
-					46872,
-					46914,
-					55044,
-					55114,
-					71944
 				]
 			}
 		},
@@ -192,17 +152,6 @@
 					"MANES_12G059200",
 					"Bo2g149950",
 					"AMTR_s00163p00059030"
-				],
-				"syntenic_ortholog_one2one": [
-					"ONIVA01G00120",
-					"OGLUM01G00050"
-				],
-				"ortholog_one2many": [
-					"TraesCS3B01G101500",
-					"TraesCS3B01G101200",
-					"GSBRNA2T00120674001",
-					"GSBRNA2T00091663001",
-					"PHYPA_030378"
 				],
 				"within_species_paralog": [
 					"Os08g0154250",

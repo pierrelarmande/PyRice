@@ -57,9 +57,6 @@
 						"name": "heme binding",
 						"namespace": "molecular_function",
 						"def": "Interacting selectively and non-covalently with heme, any compound of iron complexed in a porphyrin (tetrapyrrole) ring.",
-						"subset": [
-							"gosubset_prok"
-						],
 						"evidence_code": "IEA"
 					},
 					{
@@ -67,9 +64,6 @@
 						"name": "oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen",
 						"namespace": "molecular_function",
 						"def": "Catalysis of an oxidation-reduction (redox) reaction in which hydrogen or electrons are transferred from each of two donors, and molecular oxygen is reduced or incorporated into a donor.",
-						"subset": [
-							"gosubset_prok"
-						],
 						"evidence_code": "IEA"
 					},
 					{
@@ -77,9 +71,6 @@
 						"name": "iron ion binding",
 						"namespace": "molecular_function",
 						"def": "Interacting selectively and non-covalently with iron (Fe) ions.",
-						"subset": [
-							"gosubset_prok"
-						],
 						"evidence_code": "IEA"
 					},
 					{
@@ -87,38 +78,13 @@
 						"name": "monooxygenase activity",
 						"namespace": "molecular_function",
 						"def": "Catalysis of the incorporation of one atom from molecular oxygen into a compound and the reduction of the other atom of oxygen to water.",
-						"subset": [
-							"goslim_pir",
-							"gosubset_prok"
-						],
 						"evidence_code": "IBA"
 					}
-				],
-				"ancestors": [
-					3674,
-					3824,
-					5488,
-					8150,
-					8152,
-					16491,
-					43167,
-					43169,
-					46872,
-					46906,
-					46914,
-					48037,
-					55114,
-					97159,
-					1901363
 				]
 			}
 		},
 		"homology": {
 			"homologous_genes": {
-				"syntenic_ortholog_one2one": [
-					"ONIVA01G00110",
-					"OGLUM01G00030"
-				],
 				"ortholog_one2one": [
 					"OMERI09G10390",
 					"BGIOSGA002567",
