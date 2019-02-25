@@ -13,6 +13,7 @@ import pandas as pd
 from pathlib import Path
 import os
 import copy
+import json2table
 
 class MultiQuery():
     """
@@ -192,19 +193,17 @@ class MultiQuery():
                     new_dict.update(new_data)
                 total_dict.setdefault(iricname, new_dict)
             for form in format:
+                df = pd.DataFrame.from_dict(total_dict, orient='index')
                 if form == "csv" :
                     my_db = data_folder + "db" + '.csv'
-                    df = pd.DataFrame.from_dict(total_dict, orient='index')
                     with open(my_db, 'w') as f:
                         df.to_csv(f, header=True)
                         f.close()
                 elif form == "html":
                     my_db = data_folder + "db" + '.html'
-                    df = pd.DataFrame.from_dict(total_dict, orient='index')
                     df.to_html(my_db)
                 elif form=="json":
                     my_db = data_folder + "db" + '.json'
-                    df = pd.DataFrame.from_dict(total_dict, orient='index')
                     df.to_json(my_db)
             # output gene/iricname.txt
             test = copy.deepcopy(result)
@@ -240,10 +239,19 @@ class MultiQuery():
                             if "homologous_genes" in v["homology"].keys():
                                 for att in homologous_genes:
                                     v["homology"]["homologous_genes"].pop(att, None)
-            for iricname, databases in test.items():
-                my_gene = gene_folder + iricname + '.txt'
-                with open(my_gene, 'w') as f:
-                    f.write(json.dumps(test[iricname], indent="\t"))
+            # for iricname, databases in test.items():
+            #     df = pd.DataFrame.from_dict(databases, orient='index')
+            #     my_gene = gene_folder + iricname + '.html'
+            #     df.to_html(my_gene,justify="left")
+            for iricname in test.keys():
+                my_gene = gene_folder + iricname + '.html'
+                build_direction = "LEFT_TO_RIGHT"
+                table_attributes = {"style": "width:100%","class" : "table table-striped","border" : 1 }
+                html = json2table.convert(test[iricname],
+                                          build_direction=build_direction,
+                                          table_attributes=table_attributes)
+                with open(my_gene, "w") as f:
+                    f.write(html)
                     f.close()
 
     def query_iric(self,chro, start_pos, end_pos,dbs='all'):

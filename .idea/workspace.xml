@@ -2,135 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3ee6667-1ce7-4f35-8494-c9a711eca489" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010550.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo07g234650.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo08g047400.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/MultiQuery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010050.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010150.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010250.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010300.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010350.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010400.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010450.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010500.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010550.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010600.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010650.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010700.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010750.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010800.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010850.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010900.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010950.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011050.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011150.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011250.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011300.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011350.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011400.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011450.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011500.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011550.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011600.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011650.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011700.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011750.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011800.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011850.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011900.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011950.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012050.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012150.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012250.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012300.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012350.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012400.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012450.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012500.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012550.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012600.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012650.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012700.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012750.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012800.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012850.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012900.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012950.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013050.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013150.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013250.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013300.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013350.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013400.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013450.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013500.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013550.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013600.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013650.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013700.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013750.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/chr01_items.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/data/db.csv" beforeDir="false" afterPath="$PROJECT_DIR$/result/data/db.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/gene/OsNippo01g010050.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/gene/OsNippo01g010050.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/gene/OsNippo01g010100.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/gene/OsNippo01g010100.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/gene/OsNippo01g010150.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/gene/OsNippo01g010150.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/gene/OsNippo01g010200.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/gene/OsNippo01g010200.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/gene/OsNippo01g010250.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/gene/OsNippo01g010250.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/gene/OsNippo01g010300.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/gene/OsNippo01g010300.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0100100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0100200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0100400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0100500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0100600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0100700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0100800.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0100900.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0102300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0102400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0102500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0102600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0102700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0110100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0110200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0110400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0110700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0110800.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0140500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0140700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0141000.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0141100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0141200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0141300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0141600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0141700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0224400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0224500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0224700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0225000.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0225100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0225200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0225300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0297700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0298200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0298400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0310500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0310600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0310800.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0311100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0311400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0311500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0311600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0342500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0342700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0342750.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0342800.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0342900.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0346250.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0346600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0346700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0346800.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0347000.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0347100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0616900.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0617500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0617600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0617650.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0672700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0672800.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0673100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0673300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0673400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0673500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0673600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0820900.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0821300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0842200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0842400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0842500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0842600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0842801.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0842900.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0843100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0843200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0843300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0843432.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0843700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0843800.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0844200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0844300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os01g0844400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os02g0100100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os02g0100200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os07g0586200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/Os08g0164400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010050.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010050.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010150.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010150.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010200.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010200.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010300.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010300.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010350.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010350.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010450.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010450.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010500.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010500.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010550.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010550.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g011700.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g011700.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g011750.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g011750.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g011800.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g011800.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g011850.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g011900.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g016050.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g016100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g016200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g016250.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g016400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g016450.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g034750.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g034850.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g034900.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g034950.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g035250.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g035300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g035400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g035450.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g035600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g035650.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g082250.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g082300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo07g234650.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result3/gene/OsNippo07g234650.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010050.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010150.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010300.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010350.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010450.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010500.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010550.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g011700.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g011750.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g011800.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo07g234650.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo08g047400.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +124,7 @@
           <entry key="csv" value="12" />
           <entry key="ipynb" value="1" />
           <entry key="json" value="1" />
-          <entry key="py" value="13" />
+          <entry key="py" value="14" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
@@ -168,19 +133,19 @@
           <entry key="IPNB" value="1" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="13" />
+          <entry key="Python" value="14" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="9372" />
+          <entry key="py" value="9556" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="9372" />
+          <entry key="Python" value="9556" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -191,8 +156,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="228">
+              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
               <folding>
                 <element signature="e#24#57#0" expanded="true" />
               </folding>
@@ -203,12 +168,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MultiQuery.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-127">
-              <caret line="165" column="46" selection-start-line="165" selection-start-column="46" selection-end-line="165" selection-end-column="46" />
+            <state relative-caret-position="91">
+              <caret line="245" column="39" selection-start-line="245" selection-start-column="39" selection-end-line="245" selection-end-column="39" />
               <folding>
                 <element signature="e#24#103#0" expanded="true" />
-                <marker date="1551070233158" expanded="true" signature="14542:14547" ph="..." />
+                <marker date="1551083059848" expanded="true" signature="14965:14970" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/site-packages/json2table/json2table.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -313,7 +287,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="55" />
+    <option name="x" value="89" />
     <option name="y" value="23" />
     <option name="width" value="1175" />
     <option name="height" value="721" />
@@ -435,7 +409,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="23" width="1175" height="721" extended-state="0" />
+    <frame x="89" y="23" width="1175" height="721" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5975904" visible="true" weight="0.26863086" />
       <window_info id="Structure" order="1" sideWeight="0.40240964" side_tool="true" visible="true" weight="0.26863086" />
@@ -567,21 +542,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/site-packages/json2table/json2table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MultiQuery.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="165" column="46" selection-start-line="165" selection-start-column="46" selection-end-line="165" selection-end-column="46" />
+        <state relative-caret-position="91">
+          <caret line="245" column="39" selection-start-line="245" selection-start-column="39" selection-end-line="245" selection-end-column="39" />
           <folding>
             <element signature="e#24#103#0" expanded="true" />
-            <marker date="1551070233158" expanded="true" signature="14542:14547" ph="..." />
+            <marker date="1551083059848" expanded="true" signature="14965:14970" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="228">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
           <folding>
             <element signature="e#24#57#0" expanded="true" />
           </folding>
