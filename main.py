@@ -34,7 +34,7 @@ if __name__ == "__main__":
     locs = locs[:0]
     test = MultiQuery()
     t = time.time()
-    db = test.query_ids_locs(idents=["Os08g0164400", "Os07g0586200","Os01g0100900"],locs=locs,irics=[],dbs=[
+    db = test.query_ids_locs(idents=["Os08g0164400", "Os07g0586200","Os01g0100900","Os01g0311400"],locs=locs,irics=[],dbs=[
         "oryzabase", "Gramene", "funricegene_genekeywords", "funricegene_faminfo", "rapdb", "funricegene_geneinfo"])
     print(time.time()-t)
     test.save_file(db,'./result3/',format=["csv","html","json"])

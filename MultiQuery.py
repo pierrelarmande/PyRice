@@ -202,9 +202,10 @@ class MultiQuery():
                 elif form == "html":
                     my_db = data_folder + "db" + '.html'
                     df.to_html(my_db)
-                elif form=="json":
+                elif form =="json":
                     my_db = data_folder + "db" + '.json'
-                    df.to_json(my_db)
+                    with open(my_db, 'w') as f:
+                        json.dump(test,f)
             # output gene/iricname.txt
             test = copy.deepcopy(result)
             # filter allow attributes
@@ -301,8 +302,12 @@ class MultiQuery():
                     elif db == "funricegene_genekeywords" or db == "funricegene_faminfo" or db == "funricegene_geneinfo":
                         if len(value["raprepName"]) >0:
                             for ident in value["raprepName"]:
-                                for loc in value["msu7Name"]:
-                                    p.apply_async(self.query, args=(key, db, [ident,loc],))
+                                if len(value["msu7Name"]) >0:
+                                    for loc in value["msu7Name"]:
+                                        p.apply_async(self.query, args=(key, db, [ident,loc],))
+                                else:
+                                    p.apply_async(self.query, args=(key, db, [ident, ""],))
+
                         else:
                             for loc in value["msu7Name"]:
                                 p.apply_async(self.query, args=(key, db, ["",loc],))
@@ -371,19 +376,22 @@ class MultiQuery():
                     if db == "rapdb" or db == 'oryzabase' or db == "Gramene" or db == "ic4r":
                         for ident in value["raprepName"]:
                             p.apply_async(self.query, args=(key, db, [ident],))
-                        for loc in value["msu7Name"]:
-                            p.apply_async(self.query, args=(key, db, [loc],))
+                        # for loc in value["msu7Name"]:
+                        #     p.apply_async(self.query, args=(key, db, [loc],))
                     elif db == "msu":
                         for loc in value["msu7Name"]:
                             p.apply_async(self.query, args=(key, db, [loc],))
                     elif db == "funricegene_genekeywords" or db == "funricegene_faminfo" or db == "funricegene_geneinfo":
-                        if len(value["raprepName"]) > 0:
+                        if len(value["raprepName"]) >0:
                             for ident in value["raprepName"]:
-                                for loc in value["msu7Name"]:
-                                    p.apply_async(self.query, args=(key, db, [ident, loc],))
+                                if len(value["msu7Name"]) >0:
+                                    for loc in value["msu7Name"]:
+                                        p.apply_async(self.query, args=(key, db, [ident,loc],))
+                                else:
+                                    p.apply_async(self.query, args=(key, db, [ident, ""],))
                         else:
                             for loc in value["msu7Name"]:
-                                p.apply_async(self.query, args=(key, db, ["", loc],))
+                                p.apply_async(self.query, args=(key, db, ["",loc],))
         finally:
             p.close()
             p.join()

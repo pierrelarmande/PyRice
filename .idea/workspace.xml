@@ -2,100 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3ee6667-1ce7-4f35-8494-c9a711eca489" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010550.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo07g234650.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo08g047400.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010050.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010150.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010200.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010300.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010350.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010450.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g011700.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g011750.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g011800.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g129900.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/MultiQuery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010050.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010150.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010250.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010350.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010450.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010550.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010650.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010750.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010800.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010850.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010900.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g010950.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011000.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011050.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011150.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011250.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011350.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011450.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011550.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011650.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011750.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011800.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011850.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011900.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g011950.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012000.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012050.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012150.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012250.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012350.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012450.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012550.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012650.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012750.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012800.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012850.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012900.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g012950.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013000.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013050.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013150.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013250.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013350.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013400.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013450.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013550.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013600.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013650.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gene/OsNippo01g013750.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_dictionary.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/build_dictionary.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010050.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010150.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010350.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010450.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010500.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010550.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g011700.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g011750.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g011800.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo07g234650.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo08g047400.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo01g010550.html" beforeDir="false" afterPath="$PROJECT_DIR$/result3/gene/OsNippo01g010550.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result3/gene/OsNippo07g234650.html" beforeDir="false" afterPath="$PROJECT_DIR$/result3/gene/OsNippo07g234650.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,16 +30,16 @@
     <session id="-1663692191">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="30" />
+          <entry key="project.closed" value="31" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="6" />
           <entry key="project.open.time.6" value="9" />
-          <entry key="project.open.time.7" value="6" />
+          <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.opened" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -139,13 +62,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="9556" />
+          <entry key="py" value="9634" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="9556" />
+          <entry key="Python" value="9634" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -153,11 +76,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="161">
+              <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding>
                 <element signature="e#24#57#0" expanded="true" />
               </folding>
@@ -165,14 +88,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MultiQuery.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="245" column="39" selection-start-line="245" selection-start-column="39" selection-end-line="245" selection-end-column="39" />
+            <state relative-caret-position="-426">
+              <caret line="388" column="57" selection-start-line="388" selection-start-column="57" selection-end-line="388" selection-end-column="57" />
               <folding>
                 <element signature="e#24#103#0" expanded="true" />
-                <marker date="1551083059848" expanded="true" signature="14965:14970" ph="..." />
+                <marker date="1551254323374" expanded="true" signature="15219:15224" ph="..." />
               </folding>
             </state>
           </provider>
@@ -181,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/site-packages/json2table/json2table.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
+            <state relative-caret-position="690">
               <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
@@ -199,7 +122,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/multiprocessing/pool.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
+            <state relative-caret-position="8400">
               <caret line="571" selection-start-line="571" selection-end-line="571" />
             </state>
           </provider>
@@ -208,7 +131,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
+            <state relative-caret-position="1440">
               <caret line="101" column="75" selection-start-line="101" selection-start-column="75" selection-end-line="101" selection-end-column="75" />
               <folding>
                 <element signature="e#134#143#0" expanded="true" />
@@ -220,7 +143,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build_dictionary.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
+            <state relative-caret-position="480">
               <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
               <folding>
                 <element signature="e#24#57#0" expanded="true" />
@@ -412,12 +335,12 @@
     <frame x="89" y="23" width="1175" height="721" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5975904" visible="true" weight="0.26863086" />
-      <window_info id="Structure" order="1" sideWeight="0.40240964" side_tool="true" visible="true" weight="0.26863086" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5947136" visible="true" weight="0.26863086" />
+      <window_info id="Structure" order="1" sideWeight="0.40528634" side_tool="true" visible="true" weight="0.26863086" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49740034" visible="true" weight="0.34022257" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49740034" visible="true" weight="0.2782194" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990461" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -494,13 +417,7 @@
     <entry file="file://$PROJECT_DIR$/result3/data/db.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/chr01_items.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/result/chr01_items.csv" />
     <entry file="file://$PROJECT_DIR$/build_dictionary.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -508,30 +425,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build_dictionary.py">
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/site-packages/json2table/json2table.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding>
-            <element signature="e#24#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="101" column="75" selection-start-line="101" selection-start-column="75" selection-end-line="101" selection-end-column="75" />
-          <folding>
-            <element signature="e#134#143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/multiprocessing/pool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="571" selection-start-line="571" selection-end-line="571" />
+        <state relative-caret-position="690">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
@@ -542,30 +439,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/site-packages/json2table/json2table.py">
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/multiprocessing/pool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="8400">
+          <caret line="571" selection-start-line="571" selection-end-line="571" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MultiQuery.py">
+    <entry file="file://$PROJECT_DIR$/helper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="245" column="39" selection-start-line="245" selection-start-column="39" selection-end-line="245" selection-end-column="39" />
+        <state relative-caret-position="1440">
+          <caret line="101" column="75" selection-start-line="101" selection-start-column="75" selection-end-line="101" selection-end-column="75" />
           <folding>
-            <element signature="e#24#103#0" expanded="true" />
-            <marker date="1551083059848" expanded="true" signature="14965:14970" ph="..." />
+            <element signature="e#134#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build_dictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <element signature="e#24#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="161">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
           <folding>
             <element signature="e#24#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiQuery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-426">
+          <caret line="388" column="57" selection-start-line="388" selection-start-column="57" selection-end-line="388" selection-end-column="57" />
+          <folding>
+            <element signature="e#24#103#0" expanded="true" />
+            <marker date="1551254323374" expanded="true" signature="15219:15224" ph="..." />
           </folding>
         </state>
       </provider>
