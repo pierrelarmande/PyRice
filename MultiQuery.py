@@ -14,6 +14,7 @@ from pathlib import Path
 import os
 import copy
 import json2table
+from IPython.display import HTML
 
 class MultiQuery():
     """
@@ -183,6 +184,9 @@ class MultiQuery():
                             v.pop(att, None)
             # Convert output db.csv
             total_dict = dict()
+            html_dict = dict()
+            csv_dict = dict()
+            path = os.path.abspath(data_folder+"gene/")
             for iricname, databases in test.items():
                 new_dict = dict()
                 for db,data in databases.items():
@@ -192,16 +196,21 @@ class MultiQuery():
                             new_data.setdefault(db + "." + att, value)
                     new_dict.update(new_data)
                 total_dict.setdefault(iricname, new_dict)
+                html_dict.setdefault("<a href= \"../gene/" + iricname + ".html\" target=\"_blank\">" + iricname + "</a>", new_dict)
+                csv_dict.setdefault("=HYPERLINK(\"file://"+path+iricname + ".html\""+",\""+ iricname+"\")",new_dict)
+               #= "\"=HYPERLINK(\"\"file://" + DocumentDataType.strDirectoy + docName + "\"\",\"\"" + DocumentDataType.strDirectoy + docName + "\"\")\"" + ",";
             for form in format:
                 df = pd.DataFrame.from_dict(total_dict, orient='index')
                 if form == "csv" :
                     my_db = data_folder + "db" + '.csv'
+                    df = pd.DataFrame.from_dict(csv_dict, orient='index')
                     with open(my_db, 'w') as f:
                         df.to_csv(f, header=True)
                         f.close()
                 elif form == "html":
                     my_db = data_folder + "db" + '.html'
-                    df.to_html(my_db)
+                    df = pd.DataFrame.from_dict(html_dict, orient='index')
+                    HTML(df.to_html(my_db,escape=False))
                 elif form =="json":
                     my_db = data_folder + "db" + '.json'
                     with open(my_db, 'w') as f:
