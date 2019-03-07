@@ -4,8 +4,6 @@
     <list default="true" id="a3ee6667-1ce7-4f35-8494-c9a711eca489" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/MultiQuery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,18 +15,18 @@
     <session id="-1663692191">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="37" />
+          <entry key="project.closed" value="38" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="6" />
           <entry key="project.open.time.6" value="12" />
           <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="38" />
+          <entry key="project.opened" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -51,13 +49,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="10075" />
+          <entry key="py" value="10085" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="10075" />
+          <entry key="Python" value="10085" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -80,11 +78,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MultiQuery.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="199" column="56" selection-start-line="199" selection-start-column="56" selection-end-line="199" selection-end-column="56" />
+            <state relative-caret-position="249">
+              <caret line="569" column="31" lean-forward="true" selection-start-line="569" selection-start-column="31" selection-end-line="569" selection-end-column="31" />
               <folding>
                 <element signature="e#24#103#0" expanded="true" />
-                <marker date="1551877091624" expanded="true" signature="15946:15951" ph="..." />
+                <marker date="1551934702433" expanded="true" signature="15946:15951" ph="..." />
               </folding>
             </state>
           </provider>
@@ -161,7 +159,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Can't connect</find>
       <find>AttributeError: 'ForkAwareLocal' object has no attribute 'connection'</find>
       <find>exec</find>
       <find>query</find>
@@ -191,6 +188,7 @@
       <find>print(</find>
       <find>oryzabase</find>
       <find>html</find>
+      <find>gene_folder</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -328,8 +326,8 @@
     <frame x="87" y="41" width="1175" height="721" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5866455" visible="true" weight="0.26863086" />
-      <window_info id="Structure" order="1" sideWeight="0.41335455" side_tool="true" visible="true" weight="0.26863086" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.58505565" visible="true" weight="0.26863086" />
+      <window_info id="Structure" order="1" sideWeight="0.41494435" side_tool="true" visible="true" weight="0.26863086" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
@@ -407,9 +405,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result3/data/db.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/result3/data/db.csv" />
     <entry file="file://$PROJECT_DIR$/result/chr01_items.csv" />
     <entry file="file://$PROJECT_DIR$/build_dictionary.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
@@ -492,11 +488,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MultiQuery.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="199" column="56" selection-start-line="199" selection-start-column="56" selection-end-line="199" selection-end-column="56" />
+        <state relative-caret-position="249">
+          <caret line="569" column="31" lean-forward="true" selection-start-line="569" selection-start-column="31" selection-end-line="569" selection-end-column="31" />
           <folding>
             <element signature="e#24#103#0" expanded="true" />
-            <marker date="1551877091624" expanded="true" signature="15946:15951" ph="..." />
+            <marker date="1551934702433" expanded="true" signature="15946:15951" ph="..." />
           </folding>
         </state>
       </provider>

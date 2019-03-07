@@ -186,7 +186,7 @@ class MultiQuery():
             total_dict = dict()
             html_dict = dict()
             csv_dict = dict()
-            path = os.path.abspath(data_folder+"gene/")
+            path = os.path.abspath(gene_folder+"gene/")
             for iricname, databases in test.items():
                 new_dict = dict()
                 for db,data in databases.items():
