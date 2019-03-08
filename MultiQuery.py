@@ -186,7 +186,7 @@ class MultiQuery():
             total_dict = dict()
             html_dict = dict()
             csv_dict = dict()
-            path = os.path.abspath(gene_folder+"gene/")
+            path = os.path.abspath(gene_folder)
             for iricname, databases in test.items():
                 new_dict = dict()
                 for db,data in databases.items():
@@ -197,7 +197,7 @@ class MultiQuery():
                     new_dict.update(new_data)
                 total_dict.setdefault(iricname, new_dict)
                 html_dict.setdefault("<a href= \"../gene/" + iricname + ".html\" target=\"_blank\">" + iricname + "</a>", new_dict)
-                csv_dict.setdefault("=HYPERLINK(\"file://"+path+iricname + ".html\""+",\""+ iricname+"\")",new_dict)
+                csv_dict.setdefault("=HYPERLINK(\"file://"+path+"/"+iricname + ".html\""+",\""+ iricname+"\")",new_dict)
                #= "\"=HYPERLINK(\"\"file://" + DocumentDataType.strDirectoy + docName + "\"\",\"\"" + DocumentDataType.strDirectoy + docName + "\"\")\"" + ",";
             for form in format:
                 df = pd.DataFrame.from_dict(total_dict, orient='index')
