@@ -176,12 +176,30 @@ class MultiQuery():
             # ouput data/db.csv
             test = copy.deepcopy(result)
             # filter allow attributes
-            filter_ = ["db_type", "gene_idx", "location", "xrefs", "gene_structure", "bins", "annotations", "homology"]
+            filter_ = ["db_type", "gene_idx", "location", "xrefs", "gene_structure", "bins", "homology"]
+            annotations =["taxonomy", "familyRoot","pathways","domains"]
+            go = ["ancestors"]
+            entries = ["subset"]
             for i in test.keys():
                 for k, v in test[i].items():
                     if k == "Gramene":
                         for att in filter_:
                             v.pop(att, None)
+                    if "annotations" in v.keys():
+                        for att in annotations:
+                            v["annotations"].pop(att, None)
+                        if "GO" in v["annotations"].keys():
+                            for att in go:
+                                v["annotations"]["GO"].pop(att, None)
+                            if "entries" in v["annotations"]["GO"].keys():
+                                # list entries
+                                for j in range(len(v["annotations"]["GO"]["entries"])):
+                                    # print(v["annotations"]["GO"]["entries"][j],type(v["annotations"]["GO"]["entries"][j]))
+                                    for att in entries:
+                                        v["annotations"]["GO"]["entries"][j].pop(att, None)
+                                    # print(v["annotations"]["GO"]["entries"][j],
+                                    #     type(v["annotations"]["GO"]["entries"][j]))
+
             # Convert output db.csv
             total_dict = dict()
             html_dict = dict()

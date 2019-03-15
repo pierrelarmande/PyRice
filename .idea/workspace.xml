@@ -16,24 +16,25 @@
     <session id="-1663692191">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="39" />
+          <entry key="project.closed" value="41" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.5" value="6" />
           <entry key="project.open.time.6" value="12" />
           <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="40" />
+          <entry key="project.opened" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="12" />
+          <entry key="csv" value="13" />
           <entry key="ipynb" value="2" />
           <entry key="json" value="1" />
           <entry key="py" value="18" />
@@ -44,20 +45,20 @@
         <counts>
           <entry key="IPNB" value="2" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="PLAIN_TEXT" value="13" />
           <entry key="Python" value="18" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="10099" />
+          <entry key="py" value="10163" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="10099" />
+          <entry key="Python" value="10163" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -68,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+            <state relative-caret-position="75">
+              <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
               <folding>
                 <element signature="e#24#57#0" expanded="true" />
               </folding>
@@ -80,11 +81,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MultiQuery.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="199" column="66" selection-start-line="199" selection-start-column="66" selection-end-line="199" selection-end-column="66" />
+            <state relative-caret-position="133">
+              <caret line="168" column="29" lean-forward="true" selection-start-line="168" selection-start-column="29" selection-end-line="168" selection-end-column="29" />
               <folding>
                 <element signature="e#24#103#0" expanded="true" />
-                <marker date="1552033835841" expanded="true" signature="15942:15947" ph="..." />
+                <marker date="1552646848243" expanded="true" signature="17047:17052" ph="..." />
               </folding>
             </state>
           </provider>
@@ -209,7 +210,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="87" />
-    <option name="y" value="41" />
+    <option name="y" value="30" />
     <option name="width" value="1175" />
     <option name="height" value="721" />
   </component>
@@ -325,15 +326,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="87" y="41" width="1175" height="721" extended-state="0" />
+    <frame x="87" y="30" width="1175" height="721" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5828221" visible="true" weight="0.26863086" />
-      <window_info id="Structure" order="1" sideWeight="0.41717792" side_tool="true" visible="true" weight="0.26863086" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.57983196" visible="true" weight="0.26863086" />
+      <window_info id="Structure" order="1" sideWeight="0.42016807" side_tool="true" visible="true" weight="0.26863086" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49740034" visible="true" weight="0.48171702" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49740034" visible="true" weight="0.43243244" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990461" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -408,7 +409,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/result3/data/db.csv" />
-    <entry file="file://$PROJECT_DIR$/result/chr01_items.csv" />
     <entry file="file://$PROJECT_DIR$/build_dictionary.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -478,10 +478,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/result/chr01_items.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40016" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        <state relative-caret-position="75">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding>
             <element signature="e#24#57#0" expanded="true" />
           </folding>
@@ -490,11 +495,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MultiQuery.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="199" column="66" selection-start-line="199" selection-start-column="66" selection-end-line="199" selection-end-column="66" />
+        <state relative-caret-position="133">
+          <caret line="168" column="29" lean-forward="true" selection-start-line="168" selection-start-column="29" selection-end-line="168" selection-end-column="29" />
           <folding>
             <element signature="e#24#103#0" expanded="true" />
-            <marker date="1552033835841" expanded="true" signature="15942:15947" ph="..." />
+            <marker date="1552646848243" expanded="true" signature="17047:17052" ph="..." />
           </folding>
         </state>
       </provider>

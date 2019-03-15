@@ -9,7 +9,7 @@ if __name__ == "__main__":
     # test = MultiQuery()
     # t = time.time()
     # file_id = test.search_gene(chro="chr01", start_pos="1",
-    #                     end_pos="300000",dbs=["iric"],save_path="./result/")
+    #                     end_pos="43270923",dbs=["iric"],save_path="./result/")
     # print("Time for search gene:",time.time() - t)
     # print("Ouput file",file_id)
 
