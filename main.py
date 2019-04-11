@@ -3,6 +3,8 @@ from MultiQuery import MultiQuery
 import time
 import re
 import csv
+from helper import *
+
 if __name__ == "__main__":
     ##Search gene and query loc
     # t = time.time()
@@ -32,12 +34,20 @@ if __name__ == "__main__":
     #             locs.append(loc)
     # print(len(locs),locs)
     # locs = locs[:0]
+    # test = MultiQuery()
+    # t = time.time()
+    # db = test.query_ids_locs(idents=["Os08g0164400", "Os07g0586200","Os01g0100900","Os01g0311400"],locs=locs,irics=[],dbs=[
+    #     "oryzabase", "Gramene", "funricegene_genekeywords", "funricegene_faminfo", "rapdb", "funricegene_geneinfo"])
+    # print(time.time()-t)
+    # test.save_file(db,'./result4/',format=["csv","html","json"])
+    # print("Output database",db)
+
     test = MultiQuery()
     t = time.time()
-    db = test.query_ids_locs(idents=["Os08g0164400", "Os07g0586200","Os01g0100900","Os01g0311400"],locs=locs,irics=[],dbs=[
-        "oryzabase", "Gramene", "funricegene_genekeywords", "funricegene_faminfo", "rapdb", "funricegene_geneinfo"])
+    db = test.query_ids_locs(idents=["Os04g0557800"]
+                             ,locs=[],irics=[],dbs=["oryzabase", "Gramene", "funricegene_genekeywords", "funricegene_faminfo", "rapdb", "funricegene_geneinfo"])
     print(time.time()-t)
-    test.save_file(db,'./result4/',format=["csv","html","json"])
+    test.save_file(db,'./fix/',format=["csv","html","json","pkl"],hyper_link=False)
     print("Output database",db)
 
 

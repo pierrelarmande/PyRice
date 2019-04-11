@@ -4,13 +4,11 @@ from bs4 import BeautifulSoup
 import helper
 import json
 import regex,re
-import urllib
 import requests
 import time
 import pickle
 import csv
 import pandas as pd
-from pathlib import Path
 import os
 import copy
 import json2table
@@ -27,14 +25,20 @@ class MultiQuery():
         self.id_dict: dictionary for looking id of gene
         """
         self.result = None
-        with open('./support/iric_dict', 'rb') as f:
+        with open('./support/iric_dict.pkl', 'rb') as f:
             self.iric_dict = pickle.load(f)
             f.close()
-        with open('./support/loc_dict', 'rb') as f:
+        with open('./support/loc_dict.pkl', 'rb') as f:
             self.loc_dict = pickle.load(f)
             f.close()
-        with open('./support/id_dict', 'rb') as f:
+        with open('./support/id_dict.pkl', 'rb') as f:
             self.id_dict = pickle.load(f)
+            f.close()
+        with open('./support/oryzabase.pkl', 'rb') as f:
+            self.oryzabase = pickle.load(f)
+            f.close()
+        with open('./support/rapdb.pkl', 'rb') as f:
+            self.rapdb = pickle.load(f)
             f.close()
 
     def query(self,iricname, db, qfields=[], outputFormat="dict", outputFile=None, verbose=False):
@@ -165,7 +169,7 @@ class MultiQuery():
 
     #Do not use
     @staticmethod
-    def save_file(result,save_path,format=None):
+    def save_file(result,save_path,format=None,hyper_link=False):
         if save_path != None:
             data_folder = save_path + "data/"
             gene_folder = save_path + "gene/"
@@ -199,9 +203,7 @@ class MultiQuery():
                                         v["annotations"]["GO"]["entries"][j].pop(att, None)
                                     # print(v["annotations"]["GO"]["entries"][j],
                                     #     type(v["annotations"]["GO"]["entries"][j]))
-
             # Convert output db.csv
-            total_dict = dict()
             html_dict = dict()
             csv_dict = dict()
             path = os.path.abspath(gene_folder)
@@ -213,17 +215,24 @@ class MultiQuery():
                         if value != "":
                             new_data.setdefault(db + "." + att, value)
                     new_dict.update(new_data)
-                total_dict.setdefault(iricname, new_dict)
                 html_dict.setdefault("<a href= \"../gene/" + iricname + ".html\" target=\"_blank\">" + iricname + "</a>", new_dict)
-                csv_dict.setdefault("=HYPERLINK(\"file://"+path+"/"+iricname + ".html\""+",\""+ iricname+"\")",new_dict)
+                if hyper_link == True:
+                    csv_dict.setdefault("=HYPERLINK(\"file://"+path+"/"+iricname + ".html\""+",\""+ iricname+"\")",new_dict)
+                else:
+                    csv_dict.setdefault(iricname, new_dict)
                #= "\"=HYPERLINK(\"\"file://" + DocumentDataType.strDirectoy + docName + "\"\",\"\"" + DocumentDataType.strDirectoy + docName + "\"\")\"" + ",";
             for form in format:
-                df = pd.DataFrame.from_dict(total_dict, orient='index')
                 if form == "csv" :
                     my_db = data_folder + "db" + '.csv'
                     df = pd.DataFrame.from_dict(csv_dict, orient='index')
                     with open(my_db, 'w') as f:
                         df.to_csv(f, header=True)
+                        f.close()
+                elif form == "pkl":
+                    my_db = data_folder + "db" + '.pkl'
+                    df = pd.DataFrame.from_dict(csv_dict, orient='index')
+                    with open(my_db,"wb") as f:
+                        df.to_pickle(f)
                         f.close()
                 elif form == "html":
                     my_db = data_folder + "db" + '.html'
@@ -320,7 +329,11 @@ class MultiQuery():
                 i+=1
                 self.result.setdefault(key,manager.dict())
                 for db in name_db:
-                    if db == "rapdb" or db == 'oryzabase' or db == "Gramene" or db == "ic4r":
+                    if db == 'oryzabase':
+                        for ident in value["raprepName"]:
+                            if key in self.oryzabase.keys():
+                                self.result[key].setdefault("oryzabase",self.oryzabase[key]["oryzabase"])
+                    if db == "rapdb" or db == "Gramene" or db == "ic4r":
                         for ident in value["raprepName"]:
                             p.apply_async(self.query,args=(key,db,[ident],))
                     elif db == "msu":
@@ -371,7 +384,7 @@ class MultiQuery():
                 set_iric.add(self.loc_dict[loc])
         for iric in irics:
             if iric in self.iric_dict.keys():
-                set_iric.add(self.iric_dict[iric])
+                set_iric.add(iric)
 
         manager = Manager()
         self.result = manager.dict()
@@ -400,7 +413,11 @@ class MultiQuery():
                 i += 1
                 self.result.setdefault(key, manager.dict())
                 for db in name_db:
-                    if db == "rapdb" or db == 'oryzabase' or db == "Gramene" or db == "ic4r":
+                    if db == 'oryzabase':
+                        for ident in value["raprepName"]:
+                            if key in self.oryzabase.keys():
+                                self.result[key].setdefault("oryzabase",self.oryzabase[key]["oryzabase"])
+                    if db == "rapdb" or db == "Gramene" or db == "ic4r":
                         for ident in value["raprepName"]:
                             p.apply_async(self.query, args=(key, db, [ident],))
                         # for loc in value["msu7Name"]:
