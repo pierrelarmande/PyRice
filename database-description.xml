@@ -52,7 +52,7 @@
         <prettify replaceBy='\s'>\n>LOC_.*\n|\n|\r|\t</prettify>
     </database>
     <database dbname="gramene" type="text/JSON" method="GET" normalize="false">
-        <link stern="http://data.gramene.org/v58/genes?" aft=""/>
+        <link stern="http://data.gramene.org/v59/genes?" aft=""/>
         <fields>
             <field op="=">q</field>
         </fields>
