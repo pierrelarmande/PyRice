@@ -198,7 +198,7 @@
             <field lowercase="true" op="/">get</field>
         </fields>
         <data_struct indicator="html" identifier="" line_separator="body" cell_separator="p"/>
-        <prettify replaceBy='\s'>((^(?!DEFINITION.*).*)&(^(?!DESCRIPTION.*).*))|\n|(DEFINITION *)|(DESCRIPTION *)</prettify>
+        <prettify replaceBy='\s'>((^(?!DEFINITION.*).*)(^(?!DESCRIPTION.*).*))|\n|(DEFINITION *)|(DESCRIPTION *)</prettify>
     </database>
     <database dbname="eggnog_og" type="text/JSON" method="GET" normalize="true">
         <link stern="http://eggnogapi.embl.de/nog_data/json/" aft=""/>
@@ -232,6 +232,6 @@
             <field lowercase="true" op=":">ko</field>
         </fields>
         <data_struct indicator="html" identifier="" line_separator="body" cell_separator="p"/>
-        <prettify replaceBy='\s'>((^(?!DEFINITION.*).*)&(^(?!DESCRIPTION.*).*))|\n|(DEFINITION *)|(DESCRIPTION *)</prettify>
+        <prettify replaceBy='\s'>((^(?!DEFINITION.*).*)(^(?!DESCRIPTION.*).*))|\n|(DEFINITION *)|(DESCRIPTION *)</prettify>
     </database>
 </databases>
