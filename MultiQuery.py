@@ -14,6 +14,19 @@ import copy
 import json2table
 from IPython.display import HTML
 
+def search_text(df,text):
+    df = df.astype(str)
+    result_set = set()
+    for column in df.columns:
+        #print(column)
+        result = df[column].str.contains(text)
+        for i in range(len(result.values)):
+            if result.values[i] == True:
+                result_set.add(result.index[i])
+#             print(column,df[column].str.contains(text))
+    return df.loc[result_set]
+
+
 class MultiQuery():
     """
     This class will represent query gene rice for database
@@ -112,6 +125,8 @@ class MultiQuery():
                 # self.result[db].setdefault(qfields[-1],json.loads(res.content.decode('utf-8')))
                 if iricname == "snpseek":
                     self.result[iricname].setdefault(qfields[-1],json.loads(res.content.decode('utf-8')))
+                elif db == "ic4r":
+                    self.result[iricname].setdefault(db, json.loads(res.content.decode('utf-8'))[0][1])
                 else:
                     self.result[iricname].setdefault(db, json.loads(res.content.decode('utf-8'))[0])
                     # if db not in self.result[iricname].keys():
@@ -189,18 +204,30 @@ class MultiQuery():
                     if k == "Gramene":
                         for att in filter_:
                             v.pop(att, None)
-                    if "annotations" in v.keys():
-                        for att in annotations:
-                            v["annotations"].pop(att, None)
-                        if "GO" in v["annotations"].keys():
-                            for att in go:
-                                v["annotations"]["GO"].pop(att, None)
-                            if "entries" in v["annotations"]["GO"].keys():
-                                # list entries
-                                for j in range(len(v["annotations"]["GO"]["entries"])):
-                                    # print(v["annotations"]["GO"]["entries"][j],type(v["annotations"]["GO"]["entries"][j]))
-                                    for att in entries:
-                                        v["annotations"]["GO"]["entries"][j].pop(att, None)
+                        if "annotations" in v.keys():
+                            for att in annotations:
+                                v["annotations"].pop(att, None)
+                            if "GO" in v["annotations"].keys():
+                                for att in go:
+                                    v["annotations"]["GO"].pop(att, None)
+                                if "entries" in v["annotations"]["GO"].keys():
+                                    # list entries
+                                    for j in range(len(v["annotations"]["GO"]["entries"])):
+                                        # print(v["annotations"]["GO"]["entries"][j],type(v["annotations"]["GO"]["entries"][j]))
+                                        for att in entries:
+                                            v["annotations"]["GO"]["entries"][j].pop(att, None)
+                    # if "annotations" in v.keys():
+                    #     for att in annotations:
+                    #         v["annotations"].pop(att, None)
+                    #     if "GO" in v["annotations"].keys():
+                    #         for att in go:
+                    #             v["annotations"]["GO"].pop(att, None)
+                    #         if "entries" in v["annotations"]["GO"].keys():
+                    #             # list entries
+                    #             for j in range(len(v["annotations"]["GO"]["entries"])):
+                    #                 # print(v["annotations"]["GO"]["entries"][j],type(v["annotations"]["GO"]["entries"][j]))
+                    #                 for att in entries:
+                    #                     v["annotations"]["GO"]["entries"][j].pop(att, None)
                                     # print(v["annotations"]["GO"]["entries"][j],
                                     #     type(v["annotations"]["GO"]["entries"][j]))
             # Convert output db.csv
@@ -211,9 +238,13 @@ class MultiQuery():
                 new_dict = dict()
                 for db,data in databases.items():
                     new_data = dict()
+                    count = 0
                     for att,value in data.items():
                         if value != "":
                             new_data.setdefault(db + "." + att, value)
+                            count +=1
+                        if db == "ic4r" and count==3:
+                            break
                     new_dict.update(new_data)
                 html_dict.setdefault("<a href= \"../gene/" + iricname + ".html\" target=\"_blank\">" + iricname + "</a>", new_dict)
                 if hyper_link == True:
@@ -347,7 +378,6 @@ class MultiQuery():
                                         p.apply_async(self.query, args=(key, db, [ident,loc],))
                                 else:
                                     p.apply_async(self.query, args=(key, db, [ident, ""],))
-
                         else:
                             for loc in value["msu7Name"]:
                                 p.apply_async(self.query, args=(key, db, ["",loc],))

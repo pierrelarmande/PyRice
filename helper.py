@@ -20,6 +20,7 @@ def connectionError(link, data=""):
     try:
         urllib3.disable_warnings()
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0'}
+        #print(link)
         if data!= "":
             res = requests.post(link, data=data, headers=headers,verify=False)
         else:

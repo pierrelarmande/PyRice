@@ -52,13 +52,13 @@
         <prettify replaceBy='\s'>\n>LOC_.*\n|\n|\r|\t</prettify>
     </database>
     <database dbname="gramene" type="text/JSON" method="GET" normalize="false">
-        <link stern="http://data.gramene.org/v58/genes?" aft=""/>
+        <link stern="http://data.gramene.org/v60/genes?" aft=""/>
         <fields>
-            <field op="=">q</field>
+            <field op="=">_id</field>
         </fields>
     </database>
-    <database dbname="ic4r" type="text/html" method="GET">
-        <link stern="http://expression.ic4r.org/global-search?" aft=""/>
+    <database dbname="ic4r" type="text/JSON" method="GET">
+        <link stern="http://expression.ic4r.org/api/fpkm?" aft=""/>
         <headers>
             <header type="">All</header>
             <header type="">OS Gene ID</header>

@@ -3,18 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a3ee6667-1ce7-4f35-8494-c9a711eca489" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/test-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/test-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/MultiQuery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_dictionary.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/build_dictionary.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-description.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database-description.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/id_dict" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/iric_dict" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/loc_dict" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,31 +21,32 @@
     <session id="-1663692191">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="56" />
+          <entry key="project.closed" value="67" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.11" value="3" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.2" value="4" />
-          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.2" value="5" />
+          <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="7" />
           <entry key="project.open.time.6" value="12" />
-          <entry key="project.open.time.7" value="9" />
-          <entry key="project.open.time.8" value="5" />
+          <entry key="project.open.time.7" value="12" />
+          <entry key="project.open.time.8" value="8" />
           <entry key="project.open.time.9" value="5" />
-          <entry key="project.opened" value="57" />
+          <entry key="project.opened" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="14" />
-          <entry key="ipynb" value="3" />
+          <entry key="csv" value="15" />
+          <entry key="ipynb" value="6" />
           <entry key="json" value="2" />
-          <entry key="py" value="20" />
+          <entry key="py" value="22" />
           <entry key="tsv" value="1" />
           <entry key="txt" value="6" />
           <entry key="xml" value="5" />
@@ -59,93 +54,37 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="IPNB" value="3" />
+          <entry key="IPNB" value="6" />
           <entry key="JSON" value="2" />
-          <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="20" />
+          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="Python" value="22" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="10669" />
-          <entry key="xml" value="2" />
+          <entry key="py" value="10843" />
+          <entry key="xml" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="10669" />
-          <entry key="XML" value="2" />
+          <entry key="Python" value="10843" />
+          <entry key="XML" value="20" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MultiQuery.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1273">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="141">
+              <caret line="116" column="21" lean-forward="true" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
               <folding>
                 <element signature="e#24#103#0" expanded="true" />
-                <marker date="1554979114463" expanded="true" signature="17771:17776" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/site-packages/pandas/core/indexes/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="3077" selection-start-line="3077" selection-end-line="3077" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database-description.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/multiprocessing/pool.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="571" selection-start-line="571" selection-end-line="571" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="80" column="26" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
-              <folding>
-                <element signature="e#134#143#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="49" column="82" selection-start-line="49" selection-start-column="82" selection-end-line="49" selection-end-column="82" />
-              <folding>
-                <element signature="e#24#57#0" expanded="true" />
+                <marker date="1560763857659" expanded="true" signature="18951:18956" ph="..." />
               </folding>
             </state>
           </provider>
@@ -154,8 +93,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build_dictionary.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="385">
               <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database-description.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="58" column="15" lean-forward="true" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+              <folding>
+                <element signature="e#134#143#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding>
                 <element signature="e#24#57#0" expanded="true" />
               </folding>
@@ -174,14 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>query(</find>
-      <find>(</find>
-      <find>self.result</find>
-      <find>query(self</find>
-      <find>type</find>
-      <find>88300</find>
-      <find>218100</find>
-      <find>0694200</find>
       <find>08g0512400</find>
       <find>Os12g0484700</find>
       <find>query_i</find>
@@ -204,6 +165,14 @@
       <find>Os02g0642050</find>
       <find>oryzabase</find>
       <find>total_dict</find>
+      <find>gramene</find>
+      <find>fetch_</find>
+      <find>connectionError</find>
+      <find>unipro</find>
+      <find>http://www.uniprot.org/uniprot/?query=</find>
+      <find>dbs</find>
+      <find>ic4r</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -213,18 +182,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build_dictionary.py" />
-        <option value="$PROJECT_DIR$/database-description.xml" />
-        <option value="$PROJECT_DIR$/helper.py" />
-        <option value="$PROJECT_DIR$/MultiQuery.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/helper.py" />
+        <option value="$PROJECT_DIR$/database-description.xml" />
+        <option value="$PROJECT_DIR$/MultiQuery.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="63" />
-    <option name="y" value="23" />
+    <option name="x" value="282" />
+    <option name="y" value="70" />
     <option name="width" value="1175" />
-    <option name="height" value="721" />
+    <option name="height" value="707" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -343,21 +312,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="63" y="23" width="1175" height="721" extended-state="0" />
+    <frame x="0" y="23" width="1175" height="707" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.60890305" visible="true" weight="0.26863086" />
-      <window_info id="Structure" order="1" sideWeight="0.39109698" side_tool="true" visible="true" weight="0.26863086" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5883777" visible="true" weight="0.26863086" />
+      <window_info id="Structure" order="1" sideWeight="0.4116223" side_tool="true" visible="true" weight="0.26863086" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49740034" weight="0.36248013" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49740034" weight="0.36097562" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990461" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290938" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3290938" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3284553" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50259966" side_tool="true" weight="0.15580286" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3290938" />
       <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3290938" />
@@ -365,25 +334,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.62801933" visible="true" weight="0.24133949" />
-      <window_info id="Structure" order="1" sideWeight="0.37198067" side_tool="true" weight="0.24133949" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3418124" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990461" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
@@ -392,9 +342,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/support/data.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/support/data.json" />
     <entry file="file://$PROJECT_DIR$/result/items.csv" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_tracing.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -442,13 +390,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/result/chr01_items.csv" />
-    <entry file="file://$PROJECT_DIR$/fix/data/db.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="399" selection-start-column="390" selection-end-column="399" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/site-packages/json2table/json2table.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
@@ -463,37 +404,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build_dictionary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding>
-            <element signature="e#24#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/support/OryzabaseGeneListEn_20190329010058.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database-description.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/site-packages/pandas/core/indexes/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="3077" selection-start-line="3077" selection-end-line="3077" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/multiprocessing/pool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="571" selection-start-line="571" selection-end-line="571" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/support/IRGSP-1.0_representative_annotation_2019-03-22.tsv" />
     <entry file="file://$PROJECT_DIR$/build_dictionary.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -501,42 +415,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helper.py">
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/multiprocessing/pool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="80" column="26" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
-          <folding>
-            <element signature="e#134#143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/OryzabaseGeneListEn_20190329010058.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/IRGSP-1.0_representative_annotation_2019-03-22.tsv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MultiQuery.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1273">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-          <folding>
-            <element signature="e#24#103#0" expanded="true" />
-            <marker date="1554979114463" expanded="true" signature="17771:17776" ph="..." />
-          </folding>
+        <state relative-caret-position="549">
+          <caret line="571" selection-start-line="571" selection-end-line="571" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/fix/data/db.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/site-packages/pandas/core/indexes/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="3077" selection-start-line="3077" selection-end-line="3077" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="49" column="82" selection-start-line="49" selection-start-column="82" selection-end-line="49" selection-end-column="82" />
+        <state relative-caret-position="136">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding>
             <element signature="e#24#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+          <folding>
+            <element signature="e#134#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database-description.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="58" column="15" lean-forward="true" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build_dictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Untitled.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiQuery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="116" column="21" lean-forward="true" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+          <folding>
+            <element signature="e#24#103#0" expanded="true" />
+            <marker date="1560763857659" expanded="true" signature="18951:18956" ph="..." />
           </folding>
         </state>
       </provider>
