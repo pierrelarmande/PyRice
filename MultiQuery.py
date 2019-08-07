@@ -54,7 +54,7 @@ class MultiQuery():
             self.rapdb = pickle.load(f)
             f.close()
 
-    def query(self,iricname, db, qfields=[], outputFormat="dict", outputFile=None, verbose=False):
+    def query(self,iricname, db, qfields=[], outputFormat="dict", outputFile=None, verbose=True):
         """
         Query one gene with id or loc in each database
 
@@ -127,8 +127,10 @@ class MultiQuery():
                     self.result[iricname].setdefault(qfields[-1],json.loads(res.content.decode('utf-8')))
                 elif db == "ic4r":
                     self.result[iricname].setdefault(db, json.loads(res.content.decode('utf-8'))[0][1])
-                else:
+                elif db == "gramene":
                     self.result[iricname].setdefault(db, json.loads(res.content.decode('utf-8'))[0])
+                else:
+                    self.result[iricname].setdefault(db, json.loads(res.content.decode('utf-8')))
                     # if db not in self.result[iricname].keys():
                     #     self.result[iricname].setdefault(db,json.loads(res.content.decode('utf-8'))[0])
                     # else:
@@ -199,6 +201,7 @@ class MultiQuery():
             annotations =["taxonomy", "familyRoot","pathways","domains"]
             go = ["ancestors"]
             entries = ["subset"]
+            ic4r_atts = ["Leaf", "Root", "Panicle"]
             for i in test.keys():
                 for k, v in test[i].items():
                     if k == "Gramene":
@@ -216,6 +219,11 @@ class MultiQuery():
                                         # print(v["annotations"]["GO"]["entries"][j],type(v["annotations"]["GO"]["entries"][j]))
                                         for att in entries:
                                             v["annotations"]["GO"]["entries"][j].pop(att, None)
+                    elif k == "ic4r":
+                       #Get all att of ic4r
+                       for att in list(v):
+                           if att not in ic4r_atts:
+                                v.pop(att,None)
                     # if "annotations" in v.keys():
                     #     for att in annotations:
                     #         v["annotations"].pop(att, None)
@@ -238,13 +246,9 @@ class MultiQuery():
                 new_dict = dict()
                 for db,data in databases.items():
                     new_data = dict()
-                    count = 0
                     for att,value in data.items():
                         if value != "":
                             new_data.setdefault(db + "." + att, value)
-                            count +=1
-                        if db == "ic4r" and count==3:
-                            break
                     new_dict.update(new_data)
                 html_dict.setdefault("<a href= \"../gene/" + iricname + ".html\" target=\"_blank\">" + iricname + "</a>", new_dict)
                 if hyper_link == True:
@@ -449,7 +453,7 @@ class MultiQuery():
                                 self.result[key].setdefault("oryzabase",self.oryzabase[key]["oryzabase"])
                     if db == "rapdb" or db == "Gramene" or db == "ic4r":
                         for ident in value["raprepName"]:
-                            p.apply_async(self.query, args=(key, db, [ident],))
+                            p.apply_async(self.query, args=(key, db, [ident],True))
                         # for loc in value["msu7Name"]:
                         #     p.apply_async(self.query, args=(key, db, [loc],))
                     elif db == "msu":
@@ -476,6 +480,68 @@ class MultiQuery():
                 demo[key].setdefault(subdb, data)
         self.result = demo
         return self.result
+
+    def new_query(self,atts, dbs = 'all'):
+        manager = Manager()
+        self.result = manager.dict()
+        # Check support of database
+        support_db = ["arabidpsis","urgi"]
+        if dbs == 'all':
+            name_db = support_db
+        else:
+            name_db = []
+            for db in dbs:
+                # if db not in support_db:
+                #     print("Don't support databse: ", db)
+                # else:
+                    name_db.append(db)
+        # Query in multi_database
+        i = 1
+        set_iric = atts
+        number_query = len(set_iric)
+        try:
+            p = Pool(processes=cpu_count() * 2)  # number_core*2
+            for key in set_iric:
+                # value = self.iric_dict[key]
+                # print("Query iricname: {} --- Gene {}/{}".format(key, i, number_query))
+                # print(value["raprepName"], value["msu7Name"])
+                i += 1
+                self.result.setdefault(key, manager.dict())
+                for db in name_db:
+                    # if db == 'oryzabase':
+                    #     for ident in value["raprepName"]:
+                    #         if key in self.oryzabase.keys():
+                    #             self.result[key].setdefault("oryzabase", self.oryzabase[key]["oryzabase"])
+                    # if db == "rapdb" or db == "Gramene" or db == "ic4r":
+                    #     for ident in value["raprepName"]:
+                    #         p.apply_async(self.query, args=(key, db, [ident],))
+                    # elif db == "msu":
+                    #     for loc in value["msu7Name"]:
+                    #         p.apply_async(self.query, args=(key, db, [loc],))
+                    # elif db == "funricegene_genekeywords" or db == "funricegene_faminfo" or db == "funricegene_geneinfo":
+                    #     if len(value["raprepName"]) > 0:
+                    #         for ident in value["raprepName"]:
+                    #             if len(value["msu7Name"]) > 0:
+                    #                 for loc in value["msu7Name"]:
+                    #                     p.apply_async(self.query, args=(key, db, [ident, loc],))
+                    #             else:
+                    #                 p.apply_async(self.query, args=(key, db, [ident, ""],))
+                    #     else:
+                    #         for loc in value["msu7Name"]:
+                    #             p.apply_async(self.query, args=(key, db, ["", loc],))
+                    # else:
+                    p.apply_async(self.query, args=(key, db,[key],True))
+        finally:
+            p.close()
+            p.join()
+        demo = dict()
+        for key, value in self.result.items():
+            demo.setdefault(key, dict())
+            for subdb, data in value.items():
+                demo[key].setdefault(subdb, data)
+        self.result = demo
+        return self.result
+
 
     def check_gene(self, idents, locs):
         """

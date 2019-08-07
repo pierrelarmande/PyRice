@@ -57,6 +57,14 @@
             <field op="=">_id</field>
         </fields>
     </database>
+
+    <database dbname="urgi" type="text/JSON" method="GET" normalize="false">
+        <link stern="https://urgi.versailles.inra.fr/wheatis-srv/results/facet?" aft="&amp;start=1&amp;length=10"/>
+        <fields>
+            <field op="=">term</field>
+        </fields>
+    </database>
+
     <database dbname="ic4r" type="text/JSON" method="GET">
         <link stern="http://expression.ic4r.org/api/fpkm?" aft=""/>
         <headers>
@@ -81,6 +89,29 @@
         <data_struct indicator="table" identifier="" identification_string="" line_separator="tr" cell_separator="td"/>
         <prettify replaceBy='\s'>\n>LOC_.*\n|\n|\r|\t</prettify>
     </database>
+
+    <database dbname="arabidpsis" type="text/html" method="GET">
+        <link stern="https://www.arabidopsis.org/servlets/TairObject?" aft="&amp;type=locus"/>
+        <headers>
+            <header type="">Representative Gene Model</header>
+            <header type="">Gene Model Type</header>
+            <header type="">Other names</header>
+            <header type="">Description</header>
+            <header type="">Map Detail Image</header>
+            <header type="">Annotations s</header>
+            <!--<header type="">Gene Ontology</header>-->
+            <!--<header type="">Trait Ontology</header>-->
+            <!--<header type="">Plant Ontology</header>-->
+            <!--<header type="">RAP ID</header>-->
+            <!--<header type="">Mutant Image</header> -->
+        </headers>
+         <fields>
+            <field op="=">name</field>
+        </fields>
+        <data_struct indicator="table" identifier="" identification_string="" line_separator="tr" cell_separator="td"/>
+        <prettify replaceBy='\s'>\n>LOC_.*\n|\n|\r|\t</prettify>
+    </database>
+
     <database dbname="plntfdb" type="text/html" method="GET">
         <link stern="http://plntfdb.bio.uni-potsdam.de/v3.0/get_id.php?" aft=""/>
         <headers>

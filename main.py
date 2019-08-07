@@ -16,13 +16,13 @@ if __name__ == "__main__":
     # print("Ouput file",file_id)
 
     #Query with chromosome
-    t = time.time()
-    test = MultiQuery()
-    db = test.query_iric(chro="chr01", start_pos="1",
-                        end_pos="100000",dbs="all")
-    test.save_file(db,save_path="./result/",format=["csv","html","json","pkl"],hyper_link=False)
-    print("Time for query:", time.time() - t)
-    print("Output database",db)
+    # t = time.time()
+    # test = MultiQuery()
+    # db = test.query_iric(chro="chr01", start_pos="1",
+    #                     end_pos="100000",dbs="all")
+    # test.save_file(db,save_path="./result/",format=["csv","html","json","pkl"],hyper_link=False)
+    # print("Time for query:", time.time() - t)
+    # print("Output database",db)
 
     ##Query with ids, locs and irics
     idents = []
@@ -46,11 +46,14 @@ if __name__ == "__main__":
     # test = MultiQuery()
     # t = time.time()
     # db = test.query_ids_locs(idents=["Os04g0557800"]
-    #                          ,locs=[],irics=[],dbs=[ "Gramene"
-    #                                                 ])
+    #                          ,locs=[],irics=[],dbs=[ "Gramene"])
     # print(time.time()-t)
     # test.save_file(db,'./fix/',format=["csv","html","json","pkl"],hyper_link=False)
     # print("Output database",db)
+
+    test = MultiQuery()
+    t = time.time()
+    db = test.new_query(atts=['TRAES3BF001000010CFD'], dbs=['urgi'])
 
 
 # chro="chr01", start_pos="1", end_pos="43270923"
