@@ -54,7 +54,7 @@ class MultiQuery():
             self.rapdb = pickle.load(f)
             f.close()
 
-    def query(self,iricname, db, qfields=[], outputFormat="dict", outputFile=None, verbose=True):
+    def query(self,iricname, db, qfields=[], outputFormat="dict", outputFile=None, verbose=False):
         """
         Query one gene with id or loc in each database
 
@@ -339,7 +339,7 @@ class MultiQuery():
         :return: a dictionary, format : gene:{database: attributes}
         """
         #Check support of database
-        support_db = ["oryzabase", "Gramene", "funricegene_genekeywords",
+        support_db = ["oryzabase", "gramene", "funricegene_genekeywords",
                    "funricegene_faminfo", "msu", "rapdb", "ic4r",
                    "funricegene_geneinfo"]
         if dbs == 'all':
@@ -365,12 +365,18 @@ class MultiQuery():
                 self.result.setdefault(key,manager.dict())
                 for db in name_db:
                     if db == 'oryzabase':
+                        # print("value",value["raprepName"])
+                        # for ident in value["raprepName"]:
+                        #     print("Key",key)
+                        if key in self.oryzabase.keys():
+                            self.result[key].setdefault("oryzabase", self.oryzabase[key]["oryzabase"])
+                    elif db == "rapdb":
+                        if key in self.rapdb.keys():
+                            self.result[key].setdefault("rapdb", self.rapdb[key]["rapdb"])
+                    # if db == "rapdb" or db == "Gramene" or db == "ic4r":
+                    elif db == "gramene" or db == "ic4r":
                         for ident in value["raprepName"]:
-                            if key in self.oryzabase.keys():
-                                self.result[key].setdefault("oryzabase",self.oryzabase[key]["oryzabase"])
-                    if db == "rapdb" or db == "Gramene" or db == "ic4r":
-                        for ident in value["raprepName"]:
-                            p.apply_async(self.query,args=(key,db,[ident],))
+                            p.apply_async(self.query, args=(key, db, [ident], True))
                     elif db == "msu":
                         for loc in value["msu7Name"]:
                             p.apply_async(self.query, args=(key,db, [loc],))
@@ -423,7 +429,7 @@ class MultiQuery():
         manager = Manager()
         self.result = manager.dict()
         # Check support of database
-        support_db = ["oryzabase", "Gramene", "funricegene_genekeywords",
+        support_db = ["oryzabase", "gramene", "funricegene_genekeywords",
                       "funricegene_faminfo", "msu", "rapdb", "ic4r",
                       "funricegene_geneinfo"]
         if dbs == 'all':
@@ -448,10 +454,16 @@ class MultiQuery():
                 self.result.setdefault(key, manager.dict())
                 for db in name_db:
                     if db == 'oryzabase':
-                        for ident in value["raprepName"]:
-                            if key in self.oryzabase.keys():
-                                self.result[key].setdefault("oryzabase",self.oryzabase[key]["oryzabase"])
-                    if db == "rapdb" or db == "Gramene" or db == "ic4r":
+                        # print("value",value["raprepName"])
+                        # for ident in value["raprepName"]:
+                        #     print("Key",key)
+                        if key in self.oryzabase.keys():
+                            self.result[key].setdefault("oryzabase",self.oryzabase[key]["oryzabase"])
+                    if db == "rapdb":
+                        if key in self.rapdb.keys():
+                            self.result[key].setdefault("rapdb",self.rapdb[key]["rapdb"])
+                   # if db == "rapdb" or db == "Gramene" or db == "ic4r":
+                    if db == "gramene" or db == "ic4r":
                         for ident in value["raprepName"]:
                             p.apply_async(self.query, args=(key, db, [ident],True))
                         # for loc in value["msu7Name"]:
