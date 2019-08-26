@@ -168,7 +168,7 @@ print(test)
 * Gramene
 * ic4r
 * SNP-Seek
-* funricegene (3 databse)
+* funricegene
 * MSU
 
 ## List of exception
