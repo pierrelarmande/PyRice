@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from multiprocessing import Process,Lock,Manager,active_children,Pool,cpu_count
+from multiprocessing.dummy import Pool
 from bs4 import BeautifulSoup
 import helper
 import json
@@ -53,6 +54,7 @@ class MultiQuery():
         with open('./support/rapdb.pkl', 'rb') as f:
             self.rapdb = pickle.load(f)
             f.close()
+        self.database_file = open("database-description.xml").read()
 
     def query(self,iricname, db, qfields=[], outputFormat="dict", outputFile=None, verbose=False):
         """
@@ -69,7 +71,9 @@ class MultiQuery():
         """
 
         # Fetch database description
-        database_description = helper.fetch_description(db)
+        t=time.time()
+        print(t)
+        database_description = helper.fetch_description(self.database_file,db)
         # Get Headers list
         headers = []
         for header in database_description[0].find_all("header"):
@@ -77,6 +81,7 @@ class MultiQuery():
 
         res = helper.execute_query(database_description, qfields, verbose)
         if res == None:
+            # print("Get result", db, qfields, time.time() - t)
             return
         # Handle HTML based query
         if (database_description[0]["type"] == "text/html"):
@@ -112,6 +117,7 @@ class MultiQuery():
                         print(dict_)
                     #self.result[db].setdefault(qfields[-1], dict_)
                     if len(dict_) >0:
+                        print("Get result", db, qfields, time.time() - t)
                         self.result[iricname].setdefault(db, dict_)
                         # if db not in self.result[iricname].keys():
                         #     self.result[iricname].setdefault(db,dict_)
@@ -126,10 +132,13 @@ class MultiQuery():
                 if iricname == "snpseek":
                     self.result[iricname].setdefault(qfields[-1],json.loads(res.content.decode('utf-8')))
                 elif db == "ic4r":
+                    print("Get result", db, qfields, time.time() - t)
                     self.result[iricname].setdefault(db, json.loads(res.content.decode('utf-8'))[0][1])
                 elif db == "gramene":
+                    print("Get result", db, qfields, time.time() - t)
                     self.result[iricname].setdefault(db, json.loads(res.content.decode('utf-8'))[0])
                 else:
+                    print("Get result", db, qfields, time.time() - t)
                     self.result[iricname].setdefault(db, json.loads(res.content.decode('utf-8')))
                     # if db not in self.result[iricname].keys():
                     #     self.result[iricname].setdefault(db,json.loads(res.content.decode('utf-8'))[0])
@@ -173,9 +182,10 @@ class MultiQuery():
                                 dict_2[k].add(v)
                         tmp.append(dict_)
             if len(tmp)>0:
-                #self.result[db].setdefault((qfields[0],qfields[1]),tmp)
+                self.result[db].setdefault((qfields[0],qfields[1]),tmp)
                 for k, v in dict_2.items():
                     dict_2[k] = repr(v);
+                print("Get result", db, qfields, time.time() - t)
                 self.result[iricname].setdefault(db, dict_2)
                 # if db not in self.result[iricname].keys():
                 #     self.result[iricname].setdefault(db,dict_2)
@@ -224,20 +234,6 @@ class MultiQuery():
                        for att in list(v):
                            if att not in ic4r_atts:
                                 v.pop(att,None)
-                    # if "annotations" in v.keys():
-                    #     for att in annotations:
-                    #         v["annotations"].pop(att, None)
-                    #     if "GO" in v["annotations"].keys():
-                    #         for att in go:
-                    #             v["annotations"]["GO"].pop(att, None)
-                    #         if "entries" in v["annotations"]["GO"].keys():
-                    #             # list entries
-                    #             for j in range(len(v["annotations"]["GO"]["entries"])):
-                    #                 # print(v["annotations"]["GO"]["entries"][j],type(v["annotations"]["GO"]["entries"][j]))
-                    #                 for att in entries:
-                    #                     v["annotations"]["GO"]["entries"][j].pop(att, None)
-                                    # print(v["annotations"]["GO"]["entries"][j],
-                                    #     type(v["annotations"]["GO"]["entries"][j]))
             # Convert output db.csv
             html_dict = dict()
             csv_dict = dict()
@@ -311,10 +307,6 @@ class MultiQuery():
                             if "homologous_genes" in v["homology"].keys():
                                 for att in homologous_genes:
                                     v["homology"]["homologous_genes"].pop(att, None)
-            # for iricname, databases in test.items():
-            #     df = pd.DataFrame.from_dict(databases, orient='index')
-            #     my_gene = gene_folder + iricname + '.html'
-            #     df.to_html(my_gene,justify="left")
             for iricname in test.keys():
                 my_gene = gene_folder + iricname + '.html'
                 build_direction = "LEFT_TO_RIGHT"
@@ -326,13 +318,14 @@ class MultiQuery():
                     f.write(html)
                     f.close()
 
-    def query_iric(self,chro, start_pos, end_pos,dbs='all'):
+    def query_iric(self, chro, start_pos, end_pos, number_process, dbs='all'):
         """
         Query with chromosome
 
         :param chro: chro: (str) chromosome
         :param start_pos: (str) start of chromosome
         :param end_pos: (str) end of chromosome
+        :param number_process: number of process
         :param dbs: list databases (support 8 available databases)
         :param save_path: (str) path to save result after call function
 
@@ -353,27 +346,23 @@ class MultiQuery():
                     name_db.append(db)
         #Query in multi_database
         i=1
-        file_id = self.search_gene(chro=chro,start_pos=start_pos,end_pos=end_pos)
+        file_id = self.search_gene(chro=chro,start_pos=start_pos,end_pos=end_pos,number_process =number_process)
         manager = Manager()
         self.result = manager.dict()
         number_query = len(file_id)
         try:
-            p = Pool(processes=cpu_count()*2) #number_core*2
+            p = Pool(processes=number_process) #number_core*2
             for key, value in file_id.items():
                 print("Query iricname: {} --- Gene {}/{}".format(key, i, number_query))
                 i+=1
                 self.result.setdefault(key,manager.dict())
                 for db in name_db:
                     if db == 'oryzabase':
-                        # print("value",value["raprepName"])
-                        # for ident in value["raprepName"]:
-                        #     print("Key",key)
                         if key in self.oryzabase.keys():
                             self.result[key].setdefault("oryzabase", self.oryzabase[key]["oryzabase"])
                     elif db == "rapdb":
                         if key in self.rapdb.keys():
                             self.result[key].setdefault("rapdb", self.rapdb[key]["rapdb"])
-                    # if db == "rapdb" or db == "Gramene" or db == "ic4r":
                     elif db == "gramene" or db == "ic4r":
                         for ident in value["raprepName"]:
                             p.apply_async(self.query, args=(key, db, [ident], True))
@@ -391,10 +380,10 @@ class MultiQuery():
                         else:
                             for loc in value["msu7Name"]:
                                 p.apply_async(self.query, args=(key, db, ["",loc],))
+
         finally:
             p.close()
             p.join()
-            #p.terminate()
         #change format to save file
         demo = dict()
         for key, value in self.result.items():
@@ -404,13 +393,15 @@ class MultiQuery():
         self.result = demo
         return self.result
 
-    def query_ids_locs(self,idents, locs, irics, dbs='all'):
+    def query_ids_locs(self, idents, locs, irics, number_process, dbs='all'):
         """
         Query with id and loc of gene
 
         :param idents: list id of gene
         :param locs: list loc of gene
-        :param dbs: list databases (support 9 available databases)
+        :param irics: list iric name of gene
+        :param number_process: number of process
+        :param dbs: list databases (support 8 available databases)
         :param save_path: (str) path to save result after call function
 
         :return: a dictionary, format : gene:{database: attribute}
@@ -445,7 +436,7 @@ class MultiQuery():
         i = 1
         number_query = len(set_iric)
         try:
-            p = Pool(processes=cpu_count() * 2)  # number_core*2
+            p = Pool(processes=number_process)  # number_core*2
             for key in set_iric:
                 value = self.iric_dict[key]
                 print("Query iricname: {} --- Gene {}/{}".format(key, i, number_query))
@@ -514,34 +505,9 @@ class MultiQuery():
         try:
             p = Pool(processes=cpu_count() * 2)  # number_core*2
             for key in set_iric:
-                # value = self.iric_dict[key]
-                # print("Query iricname: {} --- Gene {}/{}".format(key, i, number_query))
-                # print(value["raprepName"], value["msu7Name"])
                 i += 1
                 self.result.setdefault(key, manager.dict())
                 for db in name_db:
-                    # if db == 'oryzabase':
-                    #     for ident in value["raprepName"]:
-                    #         if key in self.oryzabase.keys():
-                    #             self.result[key].setdefault("oryzabase", self.oryzabase[key]["oryzabase"])
-                    # if db == "rapdb" or db == "Gramene" or db == "ic4r":
-                    #     for ident in value["raprepName"]:
-                    #         p.apply_async(self.query, args=(key, db, [ident],))
-                    # elif db == "msu":
-                    #     for loc in value["msu7Name"]:
-                    #         p.apply_async(self.query, args=(key, db, [loc],))
-                    # elif db == "funricegene_genekeywords" or db == "funricegene_faminfo" or db == "funricegene_geneinfo":
-                    #     if len(value["raprepName"]) > 0:
-                    #         for ident in value["raprepName"]:
-                    #             if len(value["msu7Name"]) > 0:
-                    #                 for loc in value["msu7Name"]:
-                    #                     p.apply_async(self.query, args=(key, db, [ident, loc],))
-                    #             else:
-                    #                 p.apply_async(self.query, args=(key, db, [ident, ""],))
-                    #     else:
-                    #         for loc in value["msu7Name"]:
-                    #             p.apply_async(self.query, args=(key, db, ["", loc],))
-                    # else:
                     p.apply_async(self.query, args=(key, db,[key],True))
         finally:
             p.close()
@@ -601,14 +567,15 @@ class MultiQuery():
         #print(true_ids,true_locs)
         return set_ids,set_locs,true_ids, true_locs
 
-    def search_gene(self, chro, start_pos, end_pos, dbs='all',save_path = None):
+    def search_gene(self, chro, start_pos, end_pos, number_process, save_path = None, dbs='all'):
         """
         Search gene in snpseek
 
         :param chro: (str) chromosome
         :param start_pos: (str)
         :param end_pos: (str)
-        :param dbs: list of database: ["rap", "msu7", "iric"]
+        :param number_process: number of process
+        :param dbs: list databases (support 3 available databases)
         :param save_path: path to save result after call function
 
         :return: a dictionary, format: iricname:{{msu7Name:LOC_Os..},{raprepName:Os..},{contig:chr0..},{fmin:12..},{fmax:22...}}
@@ -621,7 +588,7 @@ class MultiQuery():
             name_db = dbs
         self.result.setdefault('snpseek', manager.dict())
         try:
-            p = Pool(processes=cpu_count()*2)
+            p = Pool(processes=number_process)
             for i in range(len(dbs)):
                 p.apply_async(self.query,args=("snpseek","snpseek",[str(chro), str(start_pos), str(end_pos), name_db[i]],))
         finally:

@@ -36,10 +36,9 @@ def connectionError(link, data=""):
         #raise Exception("Internet Connection error")
         # sys.exit(1)
 
-def fetch_description(db):
+def fetch_description(database_file,db):
     # Fetch database description
-    database_description = BeautifulSoup(open(
-        "database-description.xml").read(), "xml").findAll("database", dbname=db.lower())
+    database_description = BeautifulSoup(database_file, "xml").find_all("database", dbname=db.lower())
     if not database_description:
         raise ValueError('Database Not Found')
     return database_description
