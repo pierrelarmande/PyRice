@@ -4,9 +4,11 @@
     <list default="true" id="a3ee6667-1ce7-4f35-8494-c9a711eca489" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/MultiQuery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demochr01_items.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/new_data.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +20,7 @@
     <session id="-1663692191">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="98" />
+          <entry key="project.closed" value="102" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="6" />
@@ -27,16 +29,17 @@
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="9" />
           <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="7" />
-          <entry key="project.open.time.6" value="17" />
+          <entry key="project.open.time.6" value="18" />
           <entry key="project.open.time.7" value="17" />
-          <entry key="project.open.time.8" value="11" />
+          <entry key="project.open.time.8" value="13" />
           <entry key="project.open.time.9" value="9" />
-          <entry key="project.opened" value="99" />
+          <entry key="project.opened" value="103" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -63,13 +66,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="17398" />
+          <entry key="py" value="17841" />
           <entry key="xml" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="17398" />
+          <entry key="Python" value="17841" />
           <entry key="XML" value="77" />
         </counts>
       </usages-collector>
@@ -92,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+            <state>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
               <folding>
                 <element signature="e#97#131#0" expanded="true" />
               </folding>
@@ -104,13 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MultiQuery.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4590">
-              <caret line="320" column="35" selection-start-line="320" selection-start-column="35" selection-end-line="320" selection-end-column="35" />
-              <folding>
-                <element signature="e#24#103#0" expanded="true" />
-                <marker date="1566550464963" expanded="true" signature="19120:19125" ph="..." />
-                <marker date="1566550464963" expanded="true" signature="23345:24516" ph="..." />
-              </folding>
+            <state relative-caret-position="114">
+              <caret line="327" column="22" selection-start-line="327" selection-start-column="22" selection-end-line="327" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -118,35 +116,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MultiQuery2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8250">
-              <caret line="567" column="31" selection-start-line="567" selection-start-column="31" selection-end-line="567" selection-end-column="31" />
+            <state relative-caret-position="490">
+              <caret line="542" column="65" lean-forward="true" selection-start-line="542" selection-start-column="65" selection-end-line="542" selection-end-column="65" />
               <folding>
                 <element signature="e#24#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MultiQuery3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="376" column="48" selection-start-line="376" selection-start-column="48" selection-end-line="376" selection-end-column="48" />
-              <folding>
-                <element signature="e#24#53#0" expanded="true" />
-                <marker date="1567006669360" expanded="true" signature="16257:16266" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_thread.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -193,18 +166,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>search</find>
-      <find>list_process</find>
-      <find>print(</find>
-      <find>file_id</find>
-      <find>search_gene</find>
-      <find>iric</find>
-      <find>query_i</find>
       <find>query_mu</find>
       <find>cumulti</find>
       <find>number_process</find>
       <find>multi_thre</find>
-      <find>query_iric</find>
       <find>ThreadPool</find>
       <find>elif db == &quot;msu&quot;:</find>
       <find>Use</find>
@@ -218,11 +183,19 @@
       <find>stamap</find>
       <find>count_gene</find>
       <find>print(data</find>
-      <find>multi_processing</find>
       <find>no mu</find>
       <find>multi</find>
       <find>update</find>
       <find>multi-processing</find>
+      <find>multi_processing</find>
+      <find>prin</find>
+      <find>multi_threading</find>
+      <find>Case</find>
+      <find>ThreadPoolExecutor</find>
+      <find>p.map</find>
+      <find>Dont</find>
+      <find>query_iric</find>
+      <find>query_</find>
     </findStrings>
     <replaceStrings>
       <replace>iricname</replace>
@@ -239,17 +212,17 @@
         <option value="$PROJECT_DIR$/database-description.xml" />
         <option value="$PROJECT_DIR$/helper.py" />
         <option value="$USER_HOME$/Desktop/test.py" />
-        <option value="$PROJECT_DIR$/MultiQuery.py" />
         <option value="$PROJECT_DIR$/test_thread.py" />
         <option value="$PROJECT_DIR$/MultiQuery2.py" />
         <option value="$PROJECT_DIR$/MultiQuery3.py" />
+        <option value="$PROJECT_DIR$/MultiQuery.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="47" />
-    <option name="y" value="32" />
+    <option name="x" value="-15" />
+    <option name="y" value="23" />
     <option name="width" value="1175" />
     <option name="height" value="707" />
   </component>
@@ -417,7 +390,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="32" width="1175" height="707" extended-state="0" />
+    <frame x="-15" y="23" width="1175" height="707" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75442046" visible="true" weight="0.26863086" />
@@ -425,7 +398,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.24557957" side_tool="true" weight="0.24622716" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49653378" weight="0.3284553" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49653378" visible="true" weight="0.2292683" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.1495935" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -465,22 +438,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MultiQuery.py</url>
-          <line>127</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MultiQuery.py</url>
-          <line>146</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/support/data.json" />
@@ -671,28 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MultiQuery.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4590">
-          <caret line="320" column="35" selection-start-line="320" selection-start-column="35" selection-end-line="320" selection-end-column="35" />
-          <folding>
-            <element signature="e#24#103#0" expanded="true" />
-            <marker date="1566550464963" expanded="true" signature="19120:19125" ph="..." />
-            <marker date="1566550464963" expanded="true" signature="23345:24516" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MultiQuery2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8250">
-          <caret line="567" column="31" selection-start-line="567" selection-start-column="31" selection-end-line="567" selection-end-column="31" />
-          <folding>
-            <element signature="e#24#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_thread.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -729,19 +664,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MultiQuery3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="376" column="48" selection-start-line="376" selection-start-column="48" selection-end-line="376" selection-end-column="48" />
+        <state relative-caret-position="151">
+          <caret line="553" column="48" lean-forward="true" selection-start-line="553" selection-start-column="48" selection-end-line="553" selection-end-column="48" />
           <folding>
             <element signature="e#24#53#0" expanded="true" />
-            <marker date="1567006669360" expanded="true" signature="16257:16266" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiQuery2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="542" column="65" lean-forward="true" selection-start-line="542" selection-start-column="65" selection-end-line="542" selection-end-column="65" />
+          <folding>
+            <element signature="e#24#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiQuery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="327" column="22" selection-start-line="327" selection-start-column="22" selection-end-line="327" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
           <folding>
             <element signature="e#97#131#0" expanded="true" />
           </folding>
