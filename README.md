@@ -1,11 +1,19 @@
 # Python query engine for PyRice package
 
-## Instruction for install package (on dev branch only)
+## Instruction for install package on git (on products branch only)
 
-- First, to clone project on PyRice `products` branch
+- Clone project on PyRice `products` branch
   ```
   git clone --branch products https://github.com/pierrelarmande/PyRice 
   ```
+## Instruction for install package on pypi
+
+- Use pip to install package PyRice
+    ```
+    pip install pyrice
+    ```
+## Instruction for setup environment
+
 - To open project in Pycharm, File -> Open the PyRice project without create a new project.
 - To set up the environment, please go to File -> Setting -> Project: PyRice -> Project Interpreter. In the Project Interpreter part, click on icon on the right and -> Add. Choose the Conda Environment -> Existing environment -> browser the link to the environment.
 
@@ -17,8 +25,6 @@ Note:
       conda env create -f envs.yml 
      ```
      You could edit the prefix in the last line of `.yml` file to link the destination of environment
- - To run project in Jupyter notebook, just run the `test.ipynb`
-
 ## Function
 
 ### Query Module

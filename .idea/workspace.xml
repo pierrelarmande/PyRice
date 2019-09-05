@@ -66,16 +66,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
-          <entry key="md" value="337" />
-          <entry key="py" value="20218" />
+          <entry key="md" value="452" />
+          <entry key="py" value="20222" />
           <entry key="xml" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="337" />
+          <entry key="Markdown" value="452" />
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="20218" />
+          <entry key="Python" value="20222" />
           <entry key="XML" value="77" />
         </counts>
       </usages-collector>
@@ -90,8 +90,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="198">
-                <caret line="179" column="1869" selection-start-line="179" selection-start-column="1869" selection-end-line="179" selection-end-column="1869" />
+              <first_editor relative-caret-position="203">
+                <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -113,10 +113,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyrice/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="81" />
+            <state relative-caret-position="15">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <marker date="1567700719951" expanded="true" signature="976:1345" ph="..." />
+                <element signature="e#24#65#0" expanded="true" />
+                <marker date="1567701146378" expanded="true" signature="979:1348" ph="..." />
               </folding>
             </state>
           </provider>
@@ -201,8 +202,8 @@
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/MANIFEST.in" />
         <option value="$PROJECT_DIR$/LICENSE.txt" />
-        <option value="$PROJECT_DIR$/pyrice/main.py" />
         <option value="$PROJECT_DIR$/pyrice/build_dictionary.py" />
+        <option value="$PROJECT_DIR$/pyrice/main.py" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -713,10 +714,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pyrice/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="81" />
+        <state relative-caret-position="15">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <marker date="1567700719951" expanded="true" signature="976:1345" ph="..." />
+            <element signature="e#24#65#0" expanded="true" />
+            <marker date="1567701146378" expanded="true" signature="979:1348" ph="..." />
           </folding>
         </state>
       </provider>
@@ -724,8 +726,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="198">
-            <caret line="179" column="1869" selection-start-line="179" selection-start-column="1869" selection-end-line="179" selection-end-column="1869" />
+          <first_editor relative-caret-position="203">
+            <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           </first_editor>
           <second_editor />
         </state>
