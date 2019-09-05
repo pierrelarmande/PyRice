@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-from multi_query import MultiQuery
+from pyrice.multi_query import MultiQuery
 import time
 import csv
-from utils import *
+from pyrice.utils import search_text
 from multiprocessing import cpu_count
 from argparse import ArgumentParser
-
+from pyrice.build_dictionary import update_gene_dictionary,update_rapdb_oryzabase
 parser = ArgumentParser("PyRice", conflict_handler='resolve')
 
 parser.add_argument("--number_process", type=int)

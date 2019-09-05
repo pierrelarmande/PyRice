@@ -143,8 +143,3 @@ def update_rapdb_oryzabase(rapdb_url, oryzabase_url):
     os.remove(source_filepath)
     os.remove(dest_filepath)
     print('Build successfully Rapdb database')
-
-
-if __name__ == "__main__":
-    update_gene_dictionary()
-    update_rapdb_oryzabase(rapdb_url = args.rapdb_url,oryzabase_url = args.oryzabase_url)
