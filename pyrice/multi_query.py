@@ -2,7 +2,7 @@
 from multiprocessing import cpu_count, Pool
 from concurrent.futures import ThreadPoolExecutor
 from bs4 import BeautifulSoup
-import utils
+from pyrice import utils
 import json
 import regex
 import requests

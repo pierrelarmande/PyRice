@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from argparse import ArgumentParser
-import multi_query
-from multi_query import MultiQuery
+from pyrice.multi_query import MultiQuery
+from pyrice import multi_query
 import time
 import pickle
 import gzip
